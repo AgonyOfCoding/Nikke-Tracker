@@ -1,10 +1,9 @@
-import { OverloadValue } from "../types";
+import { OverloadAttribute, OverloadValue } from "../types";
 
 
 export const overload_data: OverloadValue[] = [
     {
-        attribute_id: "elemental_damage",
-        attribute_name: "Increase Element Damage Dealt",
+        attribute: OverloadAttribute.elemental_damage,
         level_values: {
             1: 9.54,
             2: 10.94,
@@ -23,8 +22,7 @@ export const overload_data: OverloadValue[] = [
             15: 29.16
         }
     },{
-        attribute_id: "hit_rate",
-        attribute_name: "Increase Hit Rate",
+        attribute: OverloadAttribute.hit_rate,
         level_values: {
             1: 4.77,
             2: 5.47,
@@ -43,8 +41,7 @@ export const overload_data: OverloadValue[] = [
             15: 14.63
         }
     },{
-        attribute_id: "max_ammo",
-        attribute_name: "Increase Max Ammunition Capacity",
+        attribute: OverloadAttribute.max_ammo,
         level_values: {
             1: 27.84,
             2: 31.95,
@@ -63,8 +60,7 @@ export const overload_data: OverloadValue[] = [
             15: 86.37
         }
     },{
-        attribute_id: "atk",
-        attribute_name: "Increase ATK",
+        attribute: OverloadAttribute.atk,
         level_values: {
             1: 4.77,
             2: 5.47,
@@ -83,8 +79,7 @@ export const overload_data: OverloadValue[] = [
             15: 14.63
         }
     },{
-        attribute_id: "charge_damage",
-        attribute_name: "Increase Charge Damage",
+        attribute: OverloadAttribute.charge_damage,
         level_values: {
             1: 4.77,
             2: 5.47,
@@ -103,8 +98,7 @@ export const overload_data: OverloadValue[] = [
             15: 14.63
         }
     },{
-        attribute_id: "charge_speed",
-        attribute_name: "Increase Charge Speed",
+        attribute: OverloadAttribute.charge_speed,
         level_values: {
             1: 1.98,
             2: 2.28,
@@ -123,8 +117,7 @@ export const overload_data: OverloadValue[] = [
             15: 6.09
         }
     },{
-        attribute_id: "crit_damage",
-        attribute_name: "Increase Critical Damage",
+        attribute: OverloadAttribute.crit_damage,
         level_values: {
             1: 6.64,
             2: 7.62,
@@ -143,8 +136,7 @@ export const overload_data: OverloadValue[] = [
             15: 20.36
         }
     },{
-        attribute_id: "crit_rate",
-        attribute_name: "Increase Critical Rate",
+        attribute: OverloadAttribute.crit_rate,
         level_values: {
             1: 2.30,
             2: 2.64,
@@ -163,8 +155,7 @@ export const overload_data: OverloadValue[] = [
             15: 7.07
         }
     },{
-        attribute_id: "def",
-        attribute_name: "Increase DEF",
+        attribute: OverloadAttribute.def,
         level_values: {
             1: 4.77,
             2: 5.47,

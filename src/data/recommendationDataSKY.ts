@@ -1,142 +1,142 @@
-import { RecommendationData } from "../types";
+import { NikkePriority, OverloadPriority, RecommendationData } from "../types";
 
 export const recommendation_data_SKY: RecommendationData[] = [
     {
         id: 'modernia',
-        priority: 'High',
+        priority: NikkePriority.High,
         skills: ['10', '10', '7-10'],
         overloads: [
             {
                 attribute: 'Hit Rate',
-                priority: 'ideal',
+                priority: OverloadPriority.ideal,
                 count: '0-1'
             },{
                 attribute: 'Max Ammo',
-                priority: 'ideal',
+                priority: OverloadPriority.ideal,
                 count: '2-4'
             },{
                 attribute: 'ATK',
-                priority: 'ideal',
+                priority: OverloadPriority.ideal,
                 count: '3-4'
             },{
                 attribute: 'Elemental Damage',
-                priority: 'ideal',
+                priority: OverloadPriority.ideal,
                 count: '3-4'
             },{
                 attribute: 'Crit Rate',
-                priority: 'good',
+                priority: OverloadPriority.good,
                 count: '0-4'
             },{
                 attribute: 'Crit Damage',
-                priority: 'passable',
+                priority: OverloadPriority.passable,
                 count: '0-4'
             }
         ],
         notes: ""
     },{
         id: 'red_hood',
-        priority: 'High',
+        priority: NikkePriority.High,
         skills: ['10', '10', '10'],
         overloads: [
             {
                 attribute: 'ATK',
-                priority: 'ideal',
+                priority: OverloadPriority.ideal,
                 count: '4'
             },{
                 attribute: 'Elemental Damage',
-                priority: 'ideal',
+                priority: OverloadPriority.ideal,
                 count: '4'
             },{
                 attribute: 'Charge Speed',
-                priority: 'ideal',
+                priority: OverloadPriority.ideal,
                 count: '0-4'
             },{
                 attribute: 'Max Ammo',
-                priority: 'good',
+                priority: OverloadPriority.good,
                 count: '1'
             },{
                 attribute: 'Additional Max Ammo',
-                priority: 'fine',
+                priority: OverloadPriority.fine,
                 count: '0-3'
             },{
                 attribute: 'Charge Damage',
-                priority: 'fine',
+                priority: OverloadPriority.fine,
                 count: '0-4'
             },{
                 attribute: 'Crit Rate',
-                priority: 'passable',
+                priority: OverloadPriority.passable,
                 count: '0-4'
             },{
                 attribute: 'Crit Damage',
-                priority: 'passable',
+                priority: OverloadPriority.passable,
                 count: '0-4'
             }
         ],
         notes: ""
     },{
         id: 'scarlet',
-        priority: 'High',
+        priority: NikkePriority.High,
         skills: ['10', '4+', '7-10'],
         overloads: [
             {
                 attribute: 'Max Ammo',
-                priority: 'ideal',
+                priority: OverloadPriority.ideal,
                 count: '3-4'
             },{
                 attribute: 'Elemental Damage',
-                priority: 'ideal',
+                priority: OverloadPriority.ideal,
                 count: '4'
             },{
                 attribute: 'ATK',
-                priority: 'ideal',
+                priority: OverloadPriority.ideal,
                 count: '0-4'
             },{
                 attribute: 'Crit Damage',
-                priority: 'good',
+                priority: OverloadPriority.good,
                 count: '0-4'
             },{
                 attribute: 'Crit Rate',
-                priority: 'good',
+                priority: OverloadPriority.good,
                 count: '0-4'
             },{
                 attribute: 'Hit Rate',
-                priority: 'fine',
+                priority: OverloadPriority.fine,
                 count: '0-4'
             }
         ],
         notes: ""
     },{
         id: 'snow_white',
-        priority: 'Medium',
+        priority: NikkePriority.Medium,
         skills: ['4', '4-10', '10'],
         overloads: [
             {
                 attribute: 'ATK',
-                priority: 'ideal',
+                priority: OverloadPriority.ideal,
                 count: '4'
             },{
                 attribute: 'Elemental Damage',
-                priority: 'ideal',
+                priority: OverloadPriority.ideal,
                 count: '4'
             },{
                 attribute: 'Crit Rate',
-                priority: 'good',
+                priority: OverloadPriority.good,
                 count: '0-4'
             },{
                 attribute: 'Charge Speed',
-                priority: 'good',
+                priority: OverloadPriority.good,
                 count: '0-3'
             },{
                 attribute: 'Max Ammo',
-                priority: 'passable',
+                priority: OverloadPriority.passable,
                 count: '0-2'
             },{
                 attribute: 'Crit Damage',
-                priority: 'passable',
+                priority: OverloadPriority.passable,
                 count: '0-4'
             },{
                 attribute: 'Charge Damage',
-                priority: 'passable',
+                priority: OverloadPriority.passable,
                 count: '0-4'
             }
         ],

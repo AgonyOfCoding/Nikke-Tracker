@@ -1,5 +1,5 @@
 import React from "react"
-import { OverloadLine, OverloadValue } from "../types";
+import { color_scheme, OverloadLine, OverloadValue } from "../types";
 import { overload_data } from "../data/overloadData";
 import { Button, Menu, MenuItem, Popover } from "@blueprintjs/core";
 
@@ -9,21 +9,16 @@ interface OverloadLineVisualizationProps {
 
 
 const OverloadLineVisualization: React.FC<OverloadLineVisualizationProps> = ({ overload_line }) => {
-    const overload_value: OverloadValue | undefined = overload_data.find((value) => value.attribute_id === overload_line?.attribute_id );
-    if (!overload_value || !overload_line) {
-        return <Button
-            text='Effect not obtained'
-        />
-    }
+    const overload_value: OverloadValue | undefined = overload_data.find((value) => value.attribute === overload_line?.attribute );
 
     const overloadMenu = () => {
         return <Menu>
             <MenuItem text="Effect not obtained" />
             {overload_data.map((attribute, index) => {
                 return (
-                    <MenuItem key={index} text={attribute.attribute_name} >
+                    <MenuItem key={index} text={attribute.attribute} >
                         {Object.entries(attribute.level_values).map(([level, value]) => (
-                            <MenuItem text={value} />
+                            <MenuItem key={value} text={value} />
                         ))}
                     </MenuItem>
                 )
@@ -34,11 +29,16 @@ const OverloadLineVisualization: React.FC<OverloadLineVisualizationProps> = ({ o
     return (
         <Popover content={overloadMenu()} >
             {!overload_value || !overload_line ? 
-                <Button fill text='Effect not obtained' /> :
+                <Button
+                    fill
+                    style={{ backgroundColor: color_scheme[0] }}
+                >
+                    Effect not obtained
+                </Button> :
                 <Button
                     fill
                     style={{
-                        backgroundColor: overload_line.level === 15 ? 'black' : 'white'
+                        backgroundColor: overload_line.level === 15 ? 'black' : color_scheme[0]
                     }}
                 >
                     <div 
@@ -49,7 +49,7 @@ const OverloadLineVisualization: React.FC<OverloadLineVisualizationProps> = ({ o
                         }}
                     >
                         <span>
-                            {`${overload_value.attribute_name}:`}
+                            {`${overload_value.attribute}:`}
                         </span>
                         <span style={{ color: overload_line.level > 11 ? 'lightblue' : 'gray' }}>
                             {`${overload_value.level_values[overload_line.level]}% `}

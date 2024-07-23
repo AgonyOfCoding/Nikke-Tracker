@@ -1,4 +1,4 @@
-import { Nikke } from '../types';
+import { CollectionItemRarity, EquipmentManufacturer, EquipmentType, Nikke, OverloadAttribute } from '../types';
 
 export const nikkeTemplate = (id: string): Nikke => {
     return {
@@ -25,169 +25,81 @@ const sampleCharacters: Nikke[] = [
         core: 4,
         equipment: {
             helm: {
-                type: 'helm',
-                manufacturer: 'ol',
+                type: EquipmentType.helm,
+                manufacturer: EquipmentManufacturer.ol,
                 level: 5,
-                overload_line_1: {attribute_id: 'atk', level: 5},
-                overload_line_2: {attribute_id: 'charge_speed', level: 10},
+                overload_line_1: {attribute: OverloadAttribute.atk, level: 5},
+                overload_line_2: {attribute: OverloadAttribute.charge_speed, level: 10},
                 overload_line_3: undefined
             },
             gloves: {
-                type: 'gloves',
-                manufacturer: 'ol',
+                type: EquipmentType.gloves,
+                manufacturer: EquipmentManufacturer.ol,
                 level: 5,
-                overload_line_1: {attribute_id: 'max_ammo', level: 8},
-                overload_line_2: {attribute_id: 'atk', level: 2},
-                overload_line_3: {attribute_id: 'hit_rate', level: 6}
+                overload_line_1: {attribute: OverloadAttribute.max_ammo, level: 8},
+                overload_line_2: {attribute: OverloadAttribute.atk, level: 2},
+                overload_line_3: {attribute: OverloadAttribute.hit_rate, level: 6}
             },
             chest: {
-                type: 'chest',
-                manufacturer: 'ol',
+                type: EquipmentType.chest,
+                manufacturer: EquipmentManufacturer.ol,
                 level: 5,
-                overload_line_1: {attribute_id: 'charge_speed', level: 11},
-                overload_line_2: {attribute_id: 'hit_rate', level: 11},
-                overload_line_3: {attribute_id: 'atk', level: 11}
+                overload_line_1: {attribute: OverloadAttribute.charge_speed, level: 11},
+                overload_line_2: {attribute: OverloadAttribute.hit_rate, level: 11},
+                overload_line_3: {attribute: OverloadAttribute.atk, level: 11}
             },
             boots: {
-                type: 'boots',
-                manufacturer: 'ol',
+                type: EquipmentType.helm,
+                manufacturer: EquipmentManufacturer.ol,
                 level: 5,
-                overload_line_1: {attribute_id: 'atk', level: 11},
-                overload_line_2: {attribute_id: 'charge_speed', level: 11},
+                overload_line_1: {attribute: OverloadAttribute.atk, level: 11},
+                overload_line_2: {attribute: OverloadAttribute.charge_speed, level: 11},
                 overload_line_3: undefined
             }
         },
         skill_levels: [10, 10, 10],
         collection_item: {
-            rarity: 'SR',
+            rarity: CollectionItemRarity.SR,
             phase: 5
         }
-    },{
-        id: 'modernia',
+    }, {
+        id: '2b',
         core: 3,
         equipment: {
             helm: {
-                type: 'helm',
-                manufacturer: 'ol',
+                type: EquipmentType.helm,
+                manufacturer: EquipmentManufacturer.ol,
                 level: 5,
-                overload_line_1: {attribute_id: 'atk', level: 5},
-                overload_line_2: {attribute_id: 'charge_speed', level: 10},
+                overload_line_1: {attribute: OverloadAttribute.atk, level: 5},
+                overload_line_2: {attribute: OverloadAttribute.charge_speed, level: 10},
                 overload_line_3: undefined
             },
             gloves: {
-                type: 'gloves',
-                manufacturer: 'ol',
+                type: EquipmentType.gloves,
+                manufacturer: EquipmentManufacturer.ol,
                 level: 5,
-                overload_line_1: {attribute_id: 'max_ammo', level: 8},
-                overload_line_2: {attribute_id: 'atk', level: 2},
-                overload_line_3: {attribute_id: 'hit_rate', level: 6}
+                overload_line_1: {attribute: OverloadAttribute.max_ammo, level: 8},
+                overload_line_2: {attribute: OverloadAttribute.atk, level: 2},
+                overload_line_3: {attribute: OverloadAttribute.hit_rate, level: 6}
             },
             chest: {
-                type: 'chest',
-                manufacturer: 'ol',
+                type: EquipmentType.chest,
+                manufacturer: EquipmentManufacturer.ol,
                 level: 5,
-                overload_line_1: {attribute_id: 'charge_speed', level: 11},
-                overload_line_2: {attribute_id: 'hit_rate', level: 11},
-                overload_line_3: {attribute_id: 'atk', level: 11}
+                overload_line_1: {attribute: OverloadAttribute.charge_speed, level: 11},
+                overload_line_2: {attribute: OverloadAttribute.hit_rate, level: 11},
+                overload_line_3: {attribute: OverloadAttribute.atk, level: 11}
             },
             boots: {
-                type: 'boots',
-                manufacturer: 'ol',
+                type: EquipmentType.helm,
+                manufacturer: EquipmentManufacturer.ol,
                 level: 5,
-                overload_line_1: {attribute_id: 'atk', level: 11},
-                overload_line_2: {attribute_id: 'charge_speed', level: 11},
+                overload_line_1: {attribute: OverloadAttribute.atk, level: 11},
+                overload_line_2: {attribute: OverloadAttribute.charge_speed, level: 11},
                 overload_line_3: undefined
             }
         },
-        skill_levels: [10, 10, 10],
-        collection_item: {
-            rarity: 'SR',
-            phase: 5
-        }
-    },{
-        id: 'snow_white',
-        core: 6,
-        equipment: {
-            helm: {
-                type: 'helm',
-                manufacturer: 'ol',
-                level: 5,
-                overload_line_1: {attribute_id: 'atk', level: 5},
-                overload_line_2: {attribute_id: 'charge_speed', level: 10},
-                overload_line_3: undefined
-            },
-            gloves: {
-                type: 'gloves',
-                manufacturer: 'ol',
-                level: 5,
-                overload_line_1: {attribute_id: 'max_ammo', level: 8},
-                overload_line_2: {attribute_id: 'atk', level: 2},
-                overload_line_3: {attribute_id: 'hit_rate', level: 6}
-            },
-            chest: {
-                type: 'chest',
-                manufacturer: 'ol',
-                level: 5,
-                overload_line_1: {attribute_id: 'charge_speed', level: 11},
-                overload_line_2: {attribute_id: 'hit_rate', level: 11},
-                overload_line_3: {attribute_id: 'atk', level: 11}
-            },
-            boots: {
-                type: 'boots',
-                manufacturer: 'ol',
-                level: 5,
-                overload_line_1: {attribute_id: 'atk', level: 11},
-                overload_line_2: {attribute_id: 'charge_speed', level: 11},
-                overload_line_3: undefined
-            }
-        },
-        skill_levels: [10, 10, 10],
-        collection_item: {
-            rarity: 'SR',
-            phase: 5
-        }
-    },{
-        id: 'scarlet',
-        core: 1,
-        equipment: {
-            helm: {
-                type: 'helm',
-                manufacturer: 'ol',
-                level: 5,
-                overload_line_1: {attribute_id: 'atk', level: 5},
-                overload_line_2: {attribute_id: 'charge_speed', level: 10},
-                overload_line_3: undefined
-            },
-            gloves: {
-                type: 'gloves',
-                manufacturer: 'ol',
-                level: 5,
-                overload_line_1: {attribute_id: 'max_ammo', level: 8},
-                overload_line_2: {attribute_id: 'atk', level: 2},
-                overload_line_3: {attribute_id: 'hit_rate', level: 6}
-            },
-            chest: {
-                type: 'chest',
-                manufacturer: 'ol',
-                level: 5,
-                overload_line_1: {attribute_id: 'charge_speed', level: 11},
-                overload_line_2: {attribute_id: 'hit_rate', level: 11},
-                overload_line_3: {attribute_id: 'atk', level: 11}
-            },
-            boots: {
-                type: 'boots',
-                manufacturer: 'ol',
-                level: 5,
-                overload_line_1: {attribute_id: 'atk', level: 11},
-                overload_line_2: {attribute_id: 'charge_speed', level: 11},
-                overload_line_3: undefined
-            }
-        },
-        skill_levels: [10, 10, 10],
-        collection_item: {
-            rarity: 'SR',
-            phase: 5
-        }
-    },
-    
+        skill_levels: [1, 1, 1],
+        collection_item: undefined
+    }
 ];

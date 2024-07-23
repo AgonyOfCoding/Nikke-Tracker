@@ -1,0 +1,177 @@
+{
+    "2b": {
+        "id": "2b",
+        "name": "2B",
+        "manufacturer": "Abnormal",
+        "role": "Defender",
+        "weapon_type": "AR",
+        "rarity": "SSR",
+        "burst": "Burst III",
+        "element": "Fire",
+        "skills": {
+                "skill_1": {
+                    "name": "Survival",
+                    "description": "Activates when using Burst Skill. Affects self. Effect changes according to the number of activation time(s). Previous effects trigger repeatedly: Once: Max HP ▲ __% continuously. Twice: Max HP ▲ __% continuously. Three times: Max HP ▲ __% continuously.",
+                    "values": {
+                        "1": [5.92, 11.85, 34.13],
+                        "2": [6.38, 12.76, 36.75],
+                        "3": [6.84, 13.68, 39.38],
+                        "4": [7.29, 14.59, 42],
+                        "5": [7.75, 15.5, 44.63],
+                        "6": [8.2, 16.41, 47.25],
+                        "7": [8.66, 17.32, 49.88],
+                        "8": [9.12, 18.24, 52.5],
+                        "9": [9.57, 19.15, 55.13],
+                        "10": [10.03, 20.06, 57.76]
+                    }
+                }, "skill_2": {
+                "name": "Cluster Bomb",
+                "description": "Activates after firing 300 time(s). Affects all enemies. Deals __% of final ATK as damage. ■ Activates when entering battle. Affects self. ATK ▲ __% of the caster's final Max HP continuously.",
+                "values": {
+                    "1": [98.94, 3.64],
+                    "2": [106.56, 3.92],
+                    "3": [114.17, 4.2],
+                    "4": [121.78, 4.48],
+                    "5": [129.39, 4.76],
+                    "6": [137, 5.04],
+                    "7": [144.61, 5.32],
+                    "8": [152.22, 5.6],
+                    "9": [159.84, 5.88],
+                    "10": [167.45, 6.16]
+                }
+            }, "burst_skill": {
+                "cooldown": 40,
+                "name": "Series of Attacks",
+                "description": "Affects all enemies. Deals __% of final ATK as Distributed Damage. ■ Affects 1 enemy unit(s) with the highest Max HP. Deals __% of final ATK as damage.",
+                "values": {
+                    "1": [1441.44, 468],
+                    "2": [1552.32, 504],
+                    "3": [1663.2, 540],
+                    "4": [1774.08, 576],
+                    "5": [1884.96, 612],
+                    "6": [1995.84, 648],
+                    "7": [2106.72, 684],
+                    "8": [2217.6, 720],
+                    "9": [2328.48, 756],
+                    "10": [2439.36, 792]
+                }
+            }
+        }
+    }, "a2": {
+        "id": "a2",
+        "name": "A2",
+        "manufacturer": "Abnormal",
+        "role": "Attacker",
+        "weapon_type": "RL",
+        "rarity": "SSR",
+        "burst": "Burst III",
+        "element": "Fire",
+        "skills": {
+            "skill_1": {
+                "name": "Output Increased",
+                "description": "Activates when using Burst Skill. Affects self. Charge Damage ▲ __% for 15 sec. Explosion Radius ▲ __% for 15 sec.",
+                "values": {
+                    "1": [66.81, 60.08],
+                    "2": [71.66, 64.6],
+                    "3": [76.5, 69.12],
+                    "4": [81.35, 73.64],
+                    "5": [86.2, 78.15],
+                    "6": [91.05, 82.67],
+                    "7": [95.9, 87.19],
+                    "8": [100.75, 91.7],
+                    "9": [105.6, 96.22],
+                    "10": [110.44, 100.74]
+                }
+            }, "skill_2": {
+                "name": "Slow Charge Attack",
+                "description": "Activates when hitting a target with Full Charge. Affects the target. Deals __% of final ATK as additional damage. ■ Activates when hitting a target with Full Charge. Affects self. Damage to Parts ▲ __% for 3 sec.",
+                "values": {
+                    "1": [17.78, 24.16],
+                    "2": [19.15, 26.02],
+                    "3": [20.52, 27.87],
+                    "4": [21.89, 29.73],
+                    "5": [23.26, 31.59],
+                    "6": [24.62, 33.45],
+                    "7": [25.99, 35.31],
+                    "8": [27.36, 37.17],
+                    "9": [28.73, 39.03],
+                    "10": [30.1, 40.88]
+                }
+            }, "burst_skill": {
+                "cooldown": 40,
+                "name": "Mode B",
+                "description": "Affects self. Mode B: Own HP decreases every second while ATK and Charge Speed increase. If own HP dips below 40%, Mode B is deactivated. Effect 1: Current HP ▼ __% every 1 sec. Effect 2: ATK ▲ __% Effect 3: Charge Speed ▲ __%.",
+                "values": {
+                    "1": [5.61, 9.36, 23.02],
+                    "2": [5.43, 10, 24.45],
+                    "3": [5.25, 10.65, 25.88],
+                    "4": [5.07, 11.3, 27.31],
+                    "5": [4.89, 11.95, 28.74],
+                    "6": [4.71, 12.6, 30.17],
+                    "7": [4.53, 13.24, 31.6],
+                    "8": [4.35, 13.89, 33.02],
+                    "9": [4.17, 14.54, 34.45],
+                    "10": [3.99, 15.19, 35.88]
+                }
+            }
+        }
+    }, "template": {
+        "id": "",
+        "name": "",
+        "manufacturer": "",
+        "role": "",
+        "weapon_type": "",
+        "rarity": "",
+        "burst": "",
+        "element": "",
+        "skills": {
+            "skill_1": {
+                "name": "",
+                "description": "",
+                "values": {
+                    "1": [],
+                    "2": [],
+                    "3": [],
+                    "4": [],
+                    "5": [],
+                    "6": [],
+                    "7": [],
+                    "8": [],
+                    "9": [],
+                    "10": []
+                }
+            }, "skill_2": {
+                "name": "",
+                "description": "",
+                "values": {
+                    "1": [],
+                    "2": [],
+                    "3": [],
+                    "4": [],
+                    "5": [],
+                    "6": [],
+                    "7": [],
+                    "8": [],
+                    "9": [],
+                    "10": []
+                }
+            }, "burst_skill": {
+                "cooldown": 40,
+                "name": "",
+                "description": "",
+                "values": {
+                    "1": [],
+                    "2": [],
+                    "3": [],
+                    "4": [],
+                    "5": [],
+                    "6": [],
+                    "7": [],
+                    "8": [],
+                    "9": [],
+                    "10": []
+                }
+            }
+        }
+    }
+}

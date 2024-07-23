@@ -1,20 +1,31 @@
 
+export const color_scheme = ["#D1E1FF", "#B2ADED", "#927CCF", "#764EA2", "#5C255C"];
+
 export interface OverloadLine {
-    attribute_id: string;
+    attribute: OverloadAttribute;
     level: number;
 }
 
-export type OverloadLevelValues = Record<number, number>;
+export enum OverloadAttribute {
+    elemental_damage = "Increase Element Damage Dealt",
+    hit_rate = "Increase Hit Rate",
+    max_ammo = "Increase Max Ammunition Capacity",
+    atk = "Increase ATK",
+    charge_damage = "Increase Charge Damage",
+    charge_speed = "Increase Charge Speed",
+    crit_damage = "Increase Critical Damage",
+    crit_rate = "Increase Critical Rate",
+    def = "Increase DEF"
+}
 
 export interface OverloadValue {
-    attribute_id: string;
-    attribute_name: string;
-    level_values: OverloadLevelValues;
+    attribute: OverloadAttribute;
+    level_values: Record<number, number>;
 }
 
 export interface OverloadRecommendation {
     attribute: string;
-    priority: string;
+    priority: OverloadPriority;
     count: string;
 }
 
@@ -25,11 +36,30 @@ export interface Equipment {
     boots: EquipmentData | undefined;
 }
 
-export type EquipmentType = 'helm' | 'gloves' | 'chest' | 'boots';
+export enum EquipmentType {
+    helm = "helm",
+    gloves = "gloves",
+    chest = "chest",
+    boots = "boots"
+}
 
-export type NikkeManufacturer = 'Elysion' | 'Missilis'| 'Tetra' | 'Pilgrim' | 'Abnormal';
+export enum NikkeManufacturer {
+    Elysion = "Elysion",
+    Missilis = "Missilis",
+    Tetra = "Tetra",
+    Pilgrim = "Pilgrim",
+    Abnormal = "Abnormal"
+}
 
-export type EquipmentManufacturer = NikkeManufacturer | 'standard' | 'ol';
+export enum EquipmentManufacturer {
+    Elysion = "Elysion",
+    Missilis = "Missilis",
+    Tetra = "Tetra",
+    Pilgrim = "Pilgrim",
+    Abnormal = "Abnormal",
+    standard = "standard",
+    ol = "ol"
+}
 
 export interface EquipmentData {
     type: EquipmentType;
@@ -40,27 +70,94 @@ export interface EquipmentData {
     overload_line_3: OverloadLine | undefined;
 }
 
-export type NikkeRole = 'Attacker' | 'Supporter' | 'Defender';
+export enum Burst {
+    Burst_I = "Burst I",
+    Burst_II = "Burst II",
+    Burst_III = "Burst III"
+}
 
-export const character_priorities: string[] = [
-    'High', 'Medium', 'Low', 'PVP'
-]
+export enum NikkeRole {
+    Attacker = "Attacker",
+    Supporter = "Supporter",
+    Defender = "Defender"
+}
 
-export const overload_priorities: string[] = [
-    'essential', 'ideal', 'good', 'fine', 'passable', 'no'
-]
+export enum NikkePriority {
+    High = "High",
+    Medium = "Medium",
+    Low = "Low",
+    PVP = "PVP"
+}
+
+export enum OverloadPriority {
+    essential = "essential",
+    ideal = "ideal",
+    good = "good",
+    fine = "fine",
+    passable = "passable",
+    no = "no"
+}
+
+export enum WeaponType {
+    AR = "AR",
+    MG = "MG",
+    RL = "RL",
+    SG = "SG",
+    SMG = "SMG",
+    SR = "SR"
+}
+
+export enum NikkeRarity {
+    R = "R",
+    SR = "SR",
+    SSR = "SSR"
+}
+
+export enum NikkeElement {
+    Fire = "Fire",
+    Wind = "Wind",
+    Water = "Water",
+    Electric = "Electric",
+    Iron = "Iron"
+}
+
+export interface NikkeSkill {
+    name: string;
+    description: string;
+    values: Record<number, number[]>;
+
+}
+
+export interface NikkeSkills {
+    skill_1: NikkeSkill;
+    skill_2: NikkeSkill;
+    burst_skill: NikkeSkill
+}
 
 export interface NikkeStaticData {
     id: string;
     name: string;
     manufacturer: NikkeManufacturer;
     role: NikkeRole;
+    weapon_type: WeaponType;
+    rarity: NikkeRarity;
+    burst: Burst;
+    element: NikkeElement;
+    skills: NikkeSkills;
 }
 
-export type Rarity = 'R' | 'SR' | 'Treasure';
+export interface NikkeStaticList {
+    id: NikkeStaticData;
+}
+
+export enum CollectionItemRarity {
+    R = "R",
+    SR = "SR",
+    SSR = "SSR"
+}
 
 export interface CollectionItem {
-    rarity: Rarity;
+    rarity: CollectionItemRarity;
     phase: number;
 }
 
@@ -74,7 +171,7 @@ export interface Nikke {
 
 export interface RecommendationData {
     id: string;
-    priority: string;
+    priority: NikkePriority;
     skills: string[];
     overloads: OverloadRecommendation[];
     notes: string;
