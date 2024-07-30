@@ -1,0 +1,445 @@
+{
+    "2b": {
+        "nikke_gg": {
+            "ratings": {
+                "story": 8,
+                "pvp": 8.7,
+                "boss": 8.5,
+                "notes": "Requires high personal investments and New team buffer archetype to be sem-invested as well."
+            }, "skills": {
+                "priority": "High",
+                "budget": "5/7/7",
+                "recommended": "7/10/10",
+                "notes": "Skill 1 Is good, but the user can hold off upgrading it as you’ll be using her with Max HP buffers for the most part anyways.\nSkill 2 is where you’ll be getting your enormous ATK Pool from.\nBurst is where you’ll be hitting HARD"
+            }, "overloads": {
+                "elemental_damage": 4,
+                "hit_rate": 2,
+                "max_ammo": 2,
+                "atk": 2,
+                "charge_damage": 0,
+                "charge_speed": 0,
+                "crit_damage": 4,
+                "crit_rate": 5,
+                "def": 0
+            }, "cube": {
+                "cube": ["vigor", "bastion"],
+                "notes": "Vigor Increases her burst damage."
+            }
+        }, "prydwen": {
+            "ratings": {
+                "story_low_deficit": "A",
+                "story_high_deficit": "A",
+                "boss_solo": "S",
+                "boss_adds": "A",
+                "pvp": "SS"
+            }, "skills": {
+                "priority": "Low",
+                "pve": "1/1/1 → 4/7/7 → 7/10/10 (→ 10/10/10)",
+                "pvp": "1/1/1 → 4/7/7 → 4/10/10 (→ 7/10/10)"
+            }, "overloads": {
+                "priority": "Medium",
+                "essential": [],
+                "ideal": ["4× Elemental Damage", "4x Critical Rate", "4x Critical Damage"],
+                "passable": ["4× ATK"],
+                "notes": "Niche for Fire Weak Bosses in Solo Raids, benefits greatly from Crit Rate and Crit Damage since ATK is extremely diluted. 2B is also used in PvP as a nuker, where elemental damage can allow her to nuke high hp Wind Element units."
+            }, "cube": {
+                "pre_overload": ["vigor"],
+                "post_overload": ["vigor"],
+                "notes": "After the introduction of Vigor Cube (Increased Max HP), this cube is the best for her. Put it if you plan to invest in 2B."
+            }
+        }, "skyfall": {
+            "priority": "Low",
+            "skills": ["7-10", "4-7-10", "4-7-10"],
+            "overloads": {
+                "ideal": ["4x Elemental Damage"],
+                "good": ["0-4x Crit Rate", "0-4x Crit Damage", "0-4x ATK", "0-2x Max Ammo"],
+                "fine": [],
+                "passable": ["0-4x Hit Rate"],
+                "no": []
+            }, "cube": {
+                "cube": ["vigor", "bastion"],
+                "notes": ""
+            },"notes": "2B gets too much ATK buff from her skill 2 that ATK% isn't as high of a priority. It's still good but just not gonna see as much dividend compared to other units. Crit ends up being a more valuable stat due to this. Her reload time isn't as long so she doesn't require a lot of max ammo if at all. Her priority/niche nowadays is using her as a tank to soak up some damage for certain bosses where her Skill 1 can be taken advantage of (increasing HP is pseudo heal). Some bosses target highest attack units with certain mechanics and 2B is almost always guaranteed to be highest attack (if lower core, might need to ramp up a bit with a few bursts)."
+        }
+    }, "a2": {
+        "nikke_gg": {
+            "ratings": {
+                "story": 8.5,
+                "pvp": 8.7,
+                "boss": 8.4,
+                "notes": "Good DPS unit against bosses with parts, falls off real fast if there's none"
+            }, "skills": {
+                "priority": "High",
+                "budget": "1/1/1",
+                "recommended": "7/7/7",
+                "notes": "All skills pretty much synergize with each other, and hold almost equal value."
+            }, "overloads": {
+                "elemental_damage": 4,
+                "hit_rate": 0,
+                "max_ammo": 2,
+                "atk": 5,
+                "charge_damage": 3,
+                "charge_speed": 4,
+                "crit_damage": 2,
+                "crit_rate": 2,
+                "def": 0
+            }, "cube": {
+                "cube": ["resilience", "bastion"],
+                "notes": "Post Overloaded equipment with 1+ Max ammo rolls, Bastion Becomes Best in Slot"
+            }
+        }, "prydwen": {
+            "ratings": {
+                "story_low_deficit": "SS",
+                "story_high_deficit": "S",
+                "boss_solo": "A",
+                "boss_adds": "S",
+                "pvp": "S"
+            }, "skills": {
+                "priority": "Low",
+                "pve": "1/1/1 → 4/4/4 → 7/7/7 (→ 10/10/10)",
+                "pvp": "1/1/1 → 4/1/4 → 7/4/7 (→ 10/4/10)"
+            }, "overloads": {
+                "priority": "Low",
+                "essential": [],
+                "ideal": ["4× Elemental Damage", "4× ATK", "4× Charge Speed"],
+                "passable": ["1-2× Max Ammo"],
+                "notes": "Niche for Bosses with parts in Solo Raids, can also be used in Campaign. A2 is also used in PvP, mostly for Burst Generation, where Charge Speed OL can help her greatly."
+            }, "cube": {
+                "pre_overload": ["resilience", "adjutant"],
+                "post_overload": ["resilience", "adjutant"],
+                "notes": "Resilience is preferred if no Max Ammo OL. Otherwise, just use your highest-level cube for more attack and elemental damage bonuses. Adjutant might actually be the best in slot but more testing needs to be done."
+            }
+        }, "skyfall": {
+            "priority": "Low",
+            "skills": ["5-10", "4-10", "7-10"],
+            "overloads": {
+                "ideal": ["4× ATK", "4x Elemental Damage"],
+                "good": ["0-4x Charge Speed", "0-2x Max Ammo"],
+                "fine": ["0-4x Charge Damage"],
+                "passable": ["0-4x Crit Rate", "0-4x Crit Damage"],
+                "no": []
+            }, "cube": {
+                "cube": ["bastion", "resilience", "adjutant"],
+                "notes": "With enough ammo, she can have unlimited ammo with Liter/Noir"
+            }, "notes": "Level 7 skill 1 is likely enough for most AOE purposes. Any further is more just bonus damage. Higher burst level allows easier time to upkeep her burst buff. Don't need much max ammo since it takes time for her to use up her bullets and her reload time isn't as much as other SR/RL's. With Bastion and Noir, you could have infinite ammo for A2. Higher Charge Speed may want more Max Ammo."
+        }
+    }, "ade": {
+        "nikke_gg": {
+            "ratings": {
+                "story": 7.1,
+                "pvp": 5,
+                "boss": 7,
+                "notes": "Used mostly against content that needs cleanse. Not viable anywhere else"
+            }, "skills": {
+            }, "overloads": {
+            }, "cube": {
+                "cube": ["resilience", "bastion"],
+                "notes": "Wants to fire as much as possible to get her Cleanse procs faster"
+            }
+        }, "prydwen": {
+            "ratings": {
+                "story_low_deficit": "C",
+                "story_high_deficit": "B",
+                "boss_solo": "B",
+                "boss_adds": "B",
+                "pvp": "C"
+            }, "skills": {
+                "priority": "Very Low",
+                "pve": "1/1/1 → 1/5/1",
+                "pvp": "1/1/1"
+            }, "overloads": {
+                "priority": "Very Low",
+                "essential": [],
+                "ideal": ["4× Max Ammo"],
+                "passable": [],
+                "notes": "Cleanse Mechanic can come into play in Tribe Tower"
+            }, "cube": {
+                "pre_overload": ["bastion", "resilience"],
+                "post_overload": ["bastion", "resilience"],
+                "notes": "Both Bastion and Resilience would serve her well for PvE purposes for more reliable Reset Time (Skill 2) stacking. Bastion > Resilience for Ade."
+            }
+        }, "skyfall": {
+        }
+    }, "admi": {
+        "nikke_gg": {
+            "ratings": {
+                "story": 7.5,
+                "pvp": 2,
+                "boss": 7.5,
+                "notes": "Strong reload speed buffer, pairs very well with Scarlet and/or Alice to help them reach 100% reload speed. Also a decent charge support, or last bullet support with Privaty."
+            }, "skills": {
+                "priority": "Medium",
+                "budget": "1/1/1",
+                "recommended": "4/4/5",
+                "notes": "Skill 1 requires getting hit 20 times to proc passive which is horrible. Burst not too highly rated as reload speed slightly falls off late game if over/invested; also needs to be with Scarlet or Modernia to benefit greatly"
+            }, "overloads": {
+            }, "cube": {
+                "cube": ["resilience", "bastion"],
+                "notes": ""
+            }
+        }, "prydwen": {
+            "ratings": {
+                "story_low_deficit": "B",
+                "story_high_deficit": "B",
+                "boss_solo": "B",
+                "boss_adds": "B",
+                "pvp": "C"
+            }, "skills": {
+                "priority": "Very Low",
+                "pve": "1/1/1 → 1/1/5",
+                "pvp": "1/1/1"
+            }, "overloads": {
+            }, "cube": {
+                "pre_overload": ["resilience", "onslaught"],
+                "post_overload": ["resilience", "onslaught"],
+                "notes": "Admi doesn't really have anything in her kit that warrants the use of other than the generic damage increase cubes for an SR wielder."
+            }
+        }, "skyfall": {
+            "priority": "Zero",
+            "skills": ["1-4", "4", "4-7"],
+            "overloads": {
+                "ideal": [],
+                "good": [],
+                "fine": [],
+                "passable": ["0-4× ATK", "0-4× Max Ammo", "0-4x Charge Speed"],
+                "no": []
+            }, "cube": {
+                "cube": ["quantum", "resilience"],
+                "notes": ""
+            }, "notes": "An outdated unit. Don't upgrade now in this day and age. Not Recommended to OL. Primarily here for skill suggestion. Admi is usually paired with Privaty and so her burst usually is enough low levels since you can make your DPS wear Resilience and achieve 100% reload speed. Skill 1 almost never triggers in real battle."
+        }
+    }, "alice": {
+        "nikke_gg": {
+            "ratings": {
+                "story": 9.3,
+                "pvp": 9.1,
+                "boss": 9.8,
+                "notes": "Very strong self DPS buffs on burst that scales extremely well with reload speed and charge speed buffs. Good charge shot support. Good AoE from pierce. Must be kept above 80% HP for pierce, but this is easily achievable thanks to her passive."
+            }, "skills": {
+                "priority": "Highest",
+                "budget": "7/4/7",
+                "recommended": "10/4/10",
+                "notes": "Very investment hungry unit, but pays off in the late game. Burst is main priority followed by skill 1. Skill 2 can be raised just for HP leech comfort. Does not perform too well at lower investment levels, only invest when you plan to commit. Huge single target damage Need to max out skill 1 and burst with 2x overload rolls to reach 100% charge speed and achieve her maximum potential."
+            }, "overloads": {
+                "elemental_damage": 3,
+                "hit_rate": 0,
+                "max_ammo": 5,
+                "atk": 3,
+                "charge_damage": 2,
+                "charge_speed": 3,
+                "crit_damage": 1,
+                "crit_rate": 1,
+                "def": 0
+            }, "cube": {
+                "cube": ["resilience", "bastion"],
+                "notes": "Post Overloaded equipment with 2+ Max ammo rolls, Bastion Becomes best in slot. Adjutant can be considered if Charge speed is at 98% (achievable with overload rolls/Maxwell charge speed) and the user is fast at clicking."
+            }
+        }, "prydwen": {
+            "ratings": {
+                "story_low_deficit": "SS",
+                "story_high_deficit": "SSS",
+                "boss_solo": "SSS",
+                "boss_adds": "SSS",
+                "pvp": "SS"
+            }, "skills": {
+                "priority": "Highest",
+                "pve": "1/1/1 → 10/4/10",
+                "pvp": "1/1/1 → 10/4/10"
+            }, "overloads": {
+                "priority": "Highest",
+                "essential": ["2x Charge Speed", "2x Max Ammo"],
+                "ideal": ["3-4× ATK", "1× Max Ammo", "3-4× Elemental Damage"],
+                "passable": [],
+                "notes": "Ideally reach >99% Charge Speed in total from her Skill1 + Burst Skill + OL rolls. Alice reloads a lot due to her high rate of fire during her burst, and to minimise this problem we need Max Ammo OL on her. If you use Alice in infinite reload comps such as one with Crown+Privaty or with Blanc+Noir, 2 Ammo rolls can suffice. However, if you plan to use Alice elsewhere, it is ideal to have 3 Ammo Rolls for Alice."
+            }, "cube": {
+                "pre_overload": ["resilience", "bastion"],
+                "post_overload": ["bastion"],
+                "notes": "Bastion and Resilience provide quite the same \"effective\" ammo increased, so you just need to put the highest level cube on her. After overload, when you have enough ammo OL, she prefers bastion over resilience."
+            }
+        }, "skyfall": {
+            "priority": "High",
+            "skills": ["10", "4-7", "10"],
+            "overloads": {
+                "ideal": ["1-2× Charge Speed", "2-4× Max Ammo", "3-4× ATK", "3-4× Elemental Damage"],
+                "good": [],
+                "fine": [],
+                "passable": ["0-4x Crit Rate", "0-4x Crit Damage", "0-4x Charge Damage"],
+                "no": []
+            }, "cube": {
+                "cube": ["resilience", "bastion"],
+                "notes": "Bastion if with Liter & Noir and high ammo capacity (3 high rolls or 4 rolls of max ammo)"
+            }, "notes": "CHARGE SPEED NOTE: https://youtu.be/OGCVZ3QVKQQ Charge Speed allows Alice to have 99~100% Charge Speed when she bursts. With 98.88% Charge Speed, she can full charge within frame 1 and thus releasing full charge quickly. If you pair her with Maxwell, she only needs 1 line of it. Requires 2 lines if you don't use Maxwell with her. Lately we've been using her without Maxwell more so it's recommended to go 2 lines of Charge Speed (total of 7.06% or higher Charge Speed within 2 lines). Max Ammo is necessity especially since you run her typically with Privaty which has Max Ammo reduction or Noir which has Ammo Refresh. Fast Shooting is her typical gameplay which means she uses up ammo fast so Max Ammo and Resilience Cube are necessary. You can have entire ammo capacity shooting without reloading with Bastion during burst if you have have enough Ammo capacity with Liter+Noir"
+        }
+    }, "alice_wonderland_bunny": {
+        "nikke_gg": {
+            "ratings": {
+                "story": 7.2,
+                "pvp": 6.9,
+                "boss": 8.6,
+                "notes": "Great passive healing. Reduces RNG in SG Tove teams, a rather strong team archetype"
+            }, "skills": {
+            }, "overloads": {
+            }, "cube": {
+            }
+        }, "prydwen": {
+            "ratings": {
+                "story_low_deficit": "SS",
+                "story_high_deficit": "SS",
+                "boss_solo": "SS",
+                "boss_adds": "S",
+                "pvp": "C"
+            }, "skills": {
+                "priority": "High",
+                "pve": "1/1/1 → 4/4/4 → 7/7/4 (→ 7/10/4)",
+                "pvp": "1/1/1 → 4/4/4"
+            }, "overloads": {
+                "priority": "Medium (PvE)",
+                "essential": [],
+                "ideal": ["1-3× Max Ammo"],
+                "passable": [],
+                "notes": "Ammo OL for Alice helps increases uptime/consistency of Tove's S2."
+            }, "cube": {
+                "pre_overload": ["bastion", "resilience"],
+                "post_overload": ["bastion", "resilience"],
+                "notes": "Bastion theoretically has slightly more uptime than Resilience because of reload animation delay (built-in on all characters), but Resilience will also do just fine."
+            }
+        }, "skyfall": {
+            "priority": "Low",
+            "skills": ["4", "4-10", "4"],
+            "overloads": {
+                "ideal": ["3×+ Max Ammo", "0-4x Elemental Damage", "0-4× ATK"],
+                "good": [""],
+                "fine": [""],
+                "passable": ["0-4x Hit Rate", "0-4x Crit Rate", "0-4x Crit Damage"],
+                "no": []
+            }, "cube": {
+                "cube": ["bastion"],
+                "notes": ""
+            }, "notes": "Upgrade skill 1 and burst for more healing as needed, but very optional and would recommend to keep at minimal investment. Upgrade Skill 2 for more ammo. Recommended to just 1 tap the OLs without rerolling (check video guide section Bunny Alice Build)"
+        }
+    }, "anis_sparkling_summer": {
+        "nikke_gg": {
+            "ratings": {
+                "story": 8.1,
+                "pvp": 9.7,
+                "boss": 9.1,
+                "notes": "Does great in all forms of content. She has very strong personal damage and buffs for electric code teams."
+            }, "skills": {
+                "priority": "High",
+                "budget": "7/7/4",
+                "recommended": "10/10/9",
+                "notes": "Skill 1 Is where her buffs for the team lie. Really great buffs with good scaling when paired with electric teams. Skill 2 Is the meat of her damage. Works well in all content and probably the strongest skill 1/2 in the game. Burst can stay at level 4 until you have enough skill mats to level it up to 9 as that is when Anis is able to have 1 ammo on her burst without Privaty. Leveling the burst incrementally gives little benefit in normal scenarios."
+            }, "overloads": {
+                "elemental_damage": 4,
+                "hit_rate": 2,
+                "max_ammo": -1,
+                "atk": 5,
+                "charge_damage": 0,
+                "charge_speed": 0,
+                "crit_damage": 4,
+                "crit_rate": 4,
+                "def": 0
+            }, "cube": {
+                "cube": ["resilience", "assault"],
+                "notes": "do NOT use bastion, gimps her damage because of kit nature."
+            }
+        }, "prydwen": {
+            "ratings": {
+                "story_low_deficit": "SS",
+                "story_high_deficit": "S",
+                "boss_solo": "SS",
+                "boss_adds": "SS",
+                "pvp": "SSS"
+            }, "skills": {
+                "priority": "High",
+                "pve": "4/4/5 → 7/7/9 → 10/10/9 (→ 10/10/10)",
+                "pvp": "4/4/5 → 7/7/9 → 10/10/9"
+            }, "overloads": {
+                "priority": "Highest",
+                "essential": ["MUST NOT HAVE MAX AMMO"],
+                "ideal": ["4× Elemental Damage", "4× ATK"],
+                "passable": ["4× Hit Rate", "4× Crit Rate", "4× Crit Damage"],
+                "notes": "Anis: Sparkling Summer has last bullet mechanics, which is why she should NOT have Max Ammo OL on any piece no matter what! Anis is also a PvP unit, where ATK is better than Elemental Damage."
+            }, "cube": {
+                "pre_overload": ["resilience"],
+                "post_overload": ["resilience"],
+                "notes": "Resilience is the best cube you can use on Summer Anis."
+            }
+        }, "skyfall": {
+            "priority": "High",
+            "skills": ["7-10", "7-10", "9-10"],
+            "overloads": {
+                "ideal": ["4× ATK", "4× Elemental Damage"],
+                "good": [],
+                "fine": [],
+                "passable": ["0-4x Hit Rate", "0-4x Crit Rate", "0-4x Crit Damage"],
+                "no": ["0x Max Ammo"]
+            }, "cube": {
+                "cube": ["resilience"],
+                "notes": ""
+            }, "notes": "Level 9 on her Burst allows her to be ran without privaty and maintain 1 bullet during her burst. Higher skill 1 and Burst level allows her to do 15-16 shots during burst when Privaty isn't there. Make sure 0 Ammo OL so she can proc skill 2 more often. Make it a priority that you don't have any Max Ammo"
+        }
+    }, "template": {
+        "nikke_gg": {
+            "ratings": {
+                "story": 0,
+                "pvp": 0,
+                "boss": 0,
+                "notes": ""
+            }, "skills": {
+                "priority": "",
+                "budget": "",
+                "recommended": "",
+                "notes": ""
+            }, "overloads": {
+                "elemental_damage": 0,
+                "hit_rate": 0,
+                "max_ammo": 0,
+                "atk": 0,
+                "charge_damage": 0,
+                "charge_speed": 0,
+                "crit_damage": 0,
+                "crit_rate": 0,
+                "def": 0
+            }, "cube": {
+                "cube": [],
+                "notes": ""
+            }
+        }, "prydwen": {
+            "ratings": {
+                "story_low_deficit": "",
+                "story_high_deficit": "",
+                "boss_solo": "",
+                "boss_adds": "",
+                "pvp": ""
+            }, "skills": {
+                "priority": "",
+                "pve": "",
+                "pvp": ""
+            }, "overloads": {
+                "priority": "",
+                "essential": [],
+                "ideal": [],
+                "passable": [],
+                "notes": ""
+            }, "cube": {
+                "pre_overload": [],
+                "post_overload": [],
+                "notes": ""
+            }
+        }, "skyfall": {
+            "priority": "",
+            "skills": ["", "", ""],
+            "overloads": {
+                "ideal": [],
+                "good": [],
+                "fine": [],
+                "passable": [],
+                "no": []
+            }, "cube": {
+                "cube": [],
+                "notes": ""
+            }, "notes": ""
+        }
+    }
+}

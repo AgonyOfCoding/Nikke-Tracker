@@ -5,9 +5,9 @@ import AppNavbar from './components/navbar/appNavbar';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" >
       <AppNavbar />
-      <div className="content">
+      <div className="content" >
         <NikkeList />
       </div>
     </div>

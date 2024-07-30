@@ -1,11 +1,17 @@
 import { configureStore } from '@reduxjs/toolkit'
 import filterReducer from './filterOptions'
+import sortReducer from './sortOptions'
 import searchReducer from './search'
+import investmentReducer from './investment'
+import recommendationReducer from './recommendationSources'
 
 export const store = configureStore({
   reducer: {
     filter: filterReducer,
-    search: searchReducer
+    sort: sortReducer,
+    search: searchReducer,
+    investments: investmentReducer,
+    recommendations: recommendationReducer
   },
 })
 

@@ -1,7 +1,7 @@
-import { OverloadAttribute, OverloadValue } from "../types";
+import { OverloadAttribute, OverloadValues } from "../types";
 
 
-export const overload_data: OverloadValue[] = [
+export const overload_data: OverloadValues[] = [
     {
         attribute: OverloadAttribute.elemental_damage,
         level_values: {

@@ -6,42 +6,30 @@ import { RootState } from '../../state/store';
 import { clearFilters, FilterOptions, setBurstFilter, setRoleFilter, setWeaponFilter } from '../../state/filterOptions';
 import { setSearch } from '../../state/search';
 import NavbarAdditionalFilters from './navbarAdditionalFilters';
+import { getMiscIcon } from '../../utility/iconGetters';
+import NavbarSort from './navbarSort';
+import { RecommendationSource, RecommendationSourceState, setRecommendationSource } from '../../state/recommendationSources';
 
 const AppNavbar: React.FC = () => {
     const filterState: FilterOptions = useSelector((state: RootState) => state.filter)
-    const dispatch = useDispatch()
-
-    // const bursts: Burst[] = [
-    //     'Burst I',
-    //     'Burst II',
-    //     'Burst III',    
-    // ];
-
-    // const roles: NikkeRole[] = [
-    //     'Attacker',
-    //     'Defender',
-    //     'Supporter',    
-    // ];
-
-    // const weapon_types: WeaponType[] = [
-    //     'AR',
-    //     'MG',
-    //     'RL',
-    //     'SMG',
-    //     'SR'    
-    // ];
-
-    const recommendation_sources: string[] = [
-        'Skyfall',
-        'Nikke.gg',
-        'Prydwen'
-    ];
-    const [recommendations_state, setSecommendations] = useState(recommendation_sources[0]);
+    const recommendationSourceState: RecommendationSourceState = useSelector((state: RootState) => state.recommendations)
+    const dispatch = useDispatch();
 
     return (
-        <Navbar style={{ backgroundColor: color_scheme[1] }}>
+        <Navbar
+            style={{
+                backgroundColor: color_scheme[1],
+                color: color_scheme[4],
+                position: 'fixed',
+                width: '100%',
+                zIndex: 10,
+                top: 0
+            }}
+        >
             <Navbar.Group align={Alignment.LEFT}>
-            <Navbar.Heading>Nikke Tracker</Navbar.Heading>
+            <Navbar.Heading>NIT</Navbar.Heading>
+            <Navbar.Divider />
+            <NavbarSort />
             <Navbar.Divider />
             <Navbar.Heading style={{ fontWeight: 'bold' }} >Filters</Navbar.Heading>
             <Button 
@@ -50,7 +38,7 @@ const AppNavbar: React.FC = () => {
                 onClick={() => dispatch(clearFilters())}
             />
             <Navbar.Divider />
-            {Object.values(Burst).map(burst => 
+            {Object.values(Burst).filter(burst => burst !== Burst.Burst_Lambda).map(burst => 
                 <Button
                     style={{ 
                         backgroundColor: burst === filterState.burst ? color_scheme[3] : color_scheme[1],
@@ -58,7 +46,7 @@ const AppNavbar: React.FC = () => {
                     }}
                     key={burst}
                     className="bp5-minimal"
-                    text={burst}
+                    icon={<img src={getMiscIcon("burst", burst)} alt={burst} style={{ height: 32 }} />}
                     onClick={
                         burst === filterState.burst ?
                         () => dispatch(setBurstFilter(undefined)) :
@@ -75,7 +63,7 @@ const AppNavbar: React.FC = () => {
                     }}
                     key={role}
                     className="bp5-minimal"
-                    text={role}
+                    icon={<img src={getMiscIcon("role", role)} alt={role} style={{ height: 32 }} />}
                     onClick={role === filterState.role ?
                         () => dispatch(setRoleFilter(undefined)) :
                         () => dispatch(setRoleFilter(role))
@@ -91,7 +79,7 @@ const AppNavbar: React.FC = () => {
                     }}
                     key={weapon}
                     className="bp5-minimal"
-                    text={weapon}
+                    icon={<img src={getMiscIcon("weapon", weapon)} alt={weapon} style={{ height: 32 }} />}
                     onClick={weapon === filterState.weapon ?
                         () => dispatch(setWeaponFilter(undefined)) :
                         () => dispatch(setWeaponFilter(weapon))
@@ -102,16 +90,16 @@ const AppNavbar: React.FC = () => {
             <NavbarAdditionalFilters />
             <Navbar.Divider />
             <Navbar.Heading style={{ fontWeight: 'bold' }} >Recommendations</Navbar.Heading>
-            {recommendation_sources.map((source) => (
+            {Object.values(RecommendationSource).map((source) => (
                 <Button
                     style={{ 
-                        backgroundColor: source === recommendations_state ? color_scheme[3] : color_scheme[1],
-                        color: source === recommendations_state ? color_scheme[0] : color_scheme[4]
+                        backgroundColor: source === recommendationSourceState.source ? color_scheme[3] : color_scheme[1],
+                        color: source === recommendationSourceState.source ? color_scheme[0] : color_scheme[4]
                     }}
                     key={source}
                     className="bp5-minimal"
                     text={source}
-                    onClick={() => setSecommendations(source)}
+                    onClick={() => dispatch(setRecommendationSource(source))}
                 />
             ))}
             <Navbar.Divider />
