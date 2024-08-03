@@ -1,5 +1,4 @@
 import { Navbar, Button, Alignment, InputGroup } from '@blueprintjs/core';
-import { useState } from 'react';
 import { Burst, color_scheme, NikkeRole, WeaponType } from '../../types';
 import { useDispatch, useSelector } from 'react-redux';
 import { RootState } from '../../state/store';
@@ -9,6 +8,7 @@ import NavbarAdditionalFilters from './navbarAdditionalFilters';
 import { getMiscIcon } from '../../utility/iconGetters';
 import NavbarSort from './navbarSort';
 import { RecommendationSource, RecommendationSourceState, setRecommendationSource } from '../../state/recommendationSources';
+import NavbarSettings from './navbarSettings';
 
 const AppNavbar: React.FC = () => {
     const filterState: FilterOptions = useSelector((state: RootState) => state.filter)
@@ -27,7 +27,9 @@ const AppNavbar: React.FC = () => {
             }}
         >
             <Navbar.Group align={Alignment.LEFT}>
-            <Navbar.Heading>NIT</Navbar.Heading>
+            <Navbar.Heading style={{ fontWeight: 'bold' }}>NIT</Navbar.Heading>
+            <Navbar.Divider />
+            <NavbarSettings />
             <Navbar.Divider />
             <NavbarSort />
             <Navbar.Divider />

@@ -1,5 +1,5 @@
 import { useDispatch } from "react-redux";
-import { CollectionItem, CollectionItemRarity, color_scheme, Nikke, NikkeStaticData, WeaponType } from "../../types";
+import { CollectionItem, CollectionItemRarity, color_scheme, Nikke, NikkeStaticData, RecommendationData, WeaponType } from "../../types";
 import { NumericInput, Popover } from "@blueprintjs/core";
 import { useCallback, useState } from "react";
 import { getCollectionItemIcon } from "../../utility/iconGetters";
@@ -9,12 +9,50 @@ import { nikkes_with_treasure } from "../../data/miscData";
 interface CollectionItemVisualizationProps {
     nikke: Nikke;
     nikke_static: NikkeStaticData;
+    recommendations: RecommendationData | undefined;
 }
 
-const CollectionItemVisualization: React.FC<CollectionItemVisualizationProps> = ({ nikke, nikke_static }) => {
+const collectionItemPriorityDescriptions: { [key: string]: string } = {
+    highest: "Highest priority",
+    high: "High priority",
+    priority_treasure: "Priority Treasure",
+    priority_stats: "Priority, for stats",
+    priority_solo_raid: "Priority (Solo Raid)",
+    priority_rest: "Priority after other priority units",
+    treasure: "Has a Treasure",
+    element_advantage: "Could be useful when element advantage",
+    pvp: "PVP / CP padding",
+    useful_but_not_priority: "Useful unit, but not a priority",
+    maybe_someday: "Maybe useful someday",
+    ignore_for_now: "Ignore for now",
+    dont_bother: "Don't bother",
+    not_rated: "Not rated"
+}
+
+export const collectionItemPriorityRanks: { [key: string]: number } = {
+    highest: 1,
+    high: 2,
+    priority_treasure: 3,
+    priority_stats: 4,
+    priority_solo_raid: 5,
+    priority_rest: 6,
+    treasure: 7,
+    element_advantage: 8,
+    pvp: 9,
+    useful_but_not_priority: 10,
+    maybe_someday: 11,
+    ignore_for_now: 12,
+    dont_bother: 13,
+    not_rated: 14,
+}
+
+const CollectionItemVisualization: React.FC<CollectionItemVisualizationProps> = ({ nikke, nikke_static, recommendations }) => {
     const dispatch = useDispatch();
     const [popover_open, setPopoverOpen] = useState(false);
     const collection_item: CollectionItem | undefined = nikke.collection_item;
+    console.log(recommendations);
+    const priority = collectionItemPriorityDescriptions[recommendations ? recommendations.skyfall.collection_item_priority : "not_rated"];
+    const rank = collectionItemPriorityRanks[recommendations ? recommendations.skyfall.collection_item_priority : "not_rated"]
 
     const collectionItemSelector = () => {
         return (
@@ -76,6 +114,7 @@ const CollectionItemVisualization: React.FC<CollectionItemVisualizationProps> = 
 
     return (
         <div>
+            <div>Collection Item Priority: {priority} ({rank})</div>
             <Popover
                 minimal
                 interactionKind='click'

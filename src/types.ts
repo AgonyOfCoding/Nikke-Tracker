@@ -1,5 +1,6 @@
 
-export const color_scheme = ["#D1E1FF", "#B2ADED", "#927CCF", "#764EA2", "#5C255C"];
+export const color_scheme = ["#C5CBD3", "#ABB3BF", "#8F99A8", "#738091", "#5F6B7C"];
+// export const color_scheme = ["#D1E1FF", "#B2ADED", "#927CCF", "#764EA2", "#5C255C"];
 
 //// Enums
 
@@ -108,11 +109,53 @@ export enum CollectionItemRarity {
 
 // Recommendations
 
-export enum Priority {
+export enum PriorityNikkeGG {
+    Highest = "Highest",
     High = "High",
     Medium = "Medium",
     Low = "Low",
-    Zero = "Zero"
+    no = "-"
+}
+
+export const priorityColorsSkillsPrydwen: { [priority: string]: string } = {
+    Meta: "#e76ee5",
+    Meta_Late_Game: "#dc4247",
+    High: "#de4347",
+    Medium: "#db5d47",
+    Low: "#d6904f",
+    Very_Low: "#fbdc80",
+    Very_Low_PVP: "#e4c466",
+    PVP: "#61d1f1",
+    no: color_scheme[0]
+}
+
+export const priorityColorsOverloadsPrydwen: { [priority: string]: string } = {
+    Meta: "#ea6fea",
+    High: "#da4044",
+    Medium: "#dc954d",
+    Medium_PVP: "#d6904f",
+    Low: "#efcd72",
+    Very_Low: "#6fdefd",
+    Low_PVP: "#edce72",
+    no: color_scheme[0]
+}
+
+export enum PriorityPrydwen {
+    Meta = "Meta",
+    Meta_Late_Game = "Meta (Late Game)",
+    High = "High",
+    Medium = "Medium",
+    Medium_PVP = "Medium (PVP)",
+    Low = "Low",
+    Very_Low = "Very Low",
+    PVP = "PVP",
+    Low_PVP = "Low (PVP)",
+    no = "-"
+}
+
+export enum PrioritySkyfall {
+    Low_to_Med = "Low to Med",
+    Low = "Low"
 }
 
 export enum RatingPrydwen {
@@ -226,22 +269,31 @@ export interface RatingsNikkeGG {
 }
 
 export interface SkillsNikkeGG {
-    priority: Priority;
+    priority: PriorityNikkeGG;
     budget: string;
     recommended: string;
     notes: string;
 }
 
 export interface OverloadsNikkeGG {
-    elemental_damage: number,
-    hit_rate: number,
-    max_ammo: number,
-    atk: number,
-    charge_damage: number,
-    charge_speed: number,
-    crit_damage: number,
-    crit_rate: number,
-    def: number
+    priority: PriorityNikkeGG,
+    priority_rank: number;
+    elemental_damage: OverloadLineNikkeGG,
+    hit_rate: OverloadLineNikkeGG,
+    max_ammo: OverloadLineNikkeGG,
+    atk: OverloadLineNikkeGG,
+    charge_damage: OverloadLineNikkeGG,
+    charge_speed: OverloadLineNikkeGG,
+    crit_damage: OverloadLineNikkeGG,
+    crit_rate: OverloadLineNikkeGG,
+    def: OverloadLineNikkeGG,
+    notes: string
+}
+
+export interface OverloadLineNikkeGG {
+    priority: number;
+    recommended: string;
+    notes: string;
 }
 
 export interface CubeNikkeGG {
@@ -254,6 +306,7 @@ export interface RecommendationsPrydwen {
     skills: SkillsPrydwen;
     overloads: OverloadsPrydwen;
     cube: CubePrydwen;
+    with_treasure: RecommendationsPrydwen | undefined;
 }
 
 export interface RatingsPrydwen {
@@ -265,13 +318,13 @@ export interface RatingsPrydwen {
 }
 
 export interface SkillsPrydwen {
-    priority: Priority;
+    priority: PriorityPrydwen;
     pve: string;
     pvp: string;
 }
 
 export interface OverloadsPrydwen {
-    priority: Priority,
+    priority: PriorityPrydwen,
     essential: string[];
     ideal: string[];
     passable: string[];
@@ -285,7 +338,8 @@ export interface CubePrydwen {
 }
 
 export interface RecommendationsSkyfall {
-    priority: Priority;
+    priority: PrioritySkyfall;
+    collection_item_priority: string;
     skills: string[];
     overloads: OverloadsSkyfall;
     cube: CubeSkyfall;
@@ -293,7 +347,6 @@ export interface RecommendationsSkyfall {
 }
 
 export interface OverloadsSkyfall {
-    priority: Priority;
     ideal: string[];
     good: string[];
     fine: string[];

@@ -4,6 +4,7 @@ import sortReducer from './sortOptions'
 import searchReducer from './search'
 import investmentReducer from './investment'
 import recommendationReducer from './recommendationSources'
+import settingsReducer from './settings'
 
 export const store = configureStore({
   reducer: {
@@ -11,7 +12,8 @@ export const store = configureStore({
     sort: sortReducer,
     search: searchReducer,
     investments: investmentReducer,
-    recommendations: recommendationReducer
+    recommendations: recommendationReducer,
+    settings: settingsReducer,
   },
 })
 

@@ -1,37 +1,41 @@
 import { Button, Dialog, DialogBody, DialogFooter } from "@blueprintjs/core";
-import { color_scheme, Nikke, NikkeStaticData, RecommendationData } from "../../types";
+import { color_scheme, Nikke, NikkeRarity, NikkeStaticData, RecommendationData } from "../../types";
 import { useState } from "react";
 import SkillDialogSkill from "./skillDialogSkill";
 import "../../customStyles/customDialogStyles.css"
 import NikkeIconRow from "./nikkeIconRow";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { addNikke } from "../../state/investment";
 import { getNikkeIcon } from "../../utility/iconGetters";
 import CoreVisualization from "./coreVisualization";
 import CollectionItemVisualization from "./collectionItemVisualization";
+import { RootState } from "../../state/store";
 
 interface ProfileProps {
     nikke_static: NikkeStaticData;
     nikke_data: Nikke | undefined;
+    recommendations: RecommendationData;
 }
 
 
-const Profile: React.FC<ProfileProps> = ({ nikke_static, nikke_data }) => {
+const Profile: React.FC<ProfileProps> = ({ nikke_static, nikke_data, recommendations }) => {
+    const wide_layout: boolean = useSelector((state: RootState) => state.settings.wide_layout)
     const dispatch = useDispatch();
-    const priorityColors: { [key: string]: string } = {
-        High: 'green',
-        Medium: 'yellow',
-        Low: 'red',
-        PVP: 'magenta',
-    };
     const [skill_dialog_open, setSkillDialogOpen] = useState(false);
+
+    const rarityColors: { [rarity: string]: string } = {
+        SSR: "#f18031", //#f5a763
+        SR: "#883af8", //#a665eb
+        R: "#3b81eb" //#68a3ea
+    }
     
     return (
         <div>
-            <h3 style={{ margin:0 }}>{nikke_static.name}</h3>
-            <img src={getNikkeIcon(nikke_static.id)}
-                    alt="Icon not found"
-                    style={{ width: '128px', height: '128px' }}
+            <h2 style={{ margin:0 }}>{nikke_static.name}</h2>
+            <img 
+                src={getNikkeIcon(nikke_static.id)}
+                alt="Icon not found"
+                style={{ width: '128px', height: '128px', backgroundColor: rarityColors[nikke_static.rarity] }}
             />
             <NikkeIconRow nikke_static={nikke_static} />
             {nikke_data &&
@@ -61,8 +65,8 @@ const Profile: React.FC<ProfileProps> = ({ nikke_static, nikke_data }) => {
                                 }
                         />
                     </Dialog>
-                    {nikke_data && 
-                        <CollectionItemVisualization nikke={nikke_data} nikke_static={nikke_static} />
+                    {nikke_data && !wide_layout &&
+                        <CollectionItemVisualization nikke={nikke_data} nikke_static={nikke_static} recommendations={recommendations} />
                     }
                 </div>
             }
