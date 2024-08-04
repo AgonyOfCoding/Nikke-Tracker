@@ -6,9 +6,10 @@ import { RootState } from '../state/store';
 import { FilterOptions } from '../state/filterOptions';
 import nikkeStaticDataJson from '../data/nikkeStaticData.json'
 import recomendationDataJson from '../data/recommendationData.json'
-import nikkeInvestmentDataJson from '../data/investmentData.json'
+import nikkeInvestmentDataJson from '../../server/data/investmentData.json'
 import { setInvestments } from '../state/investment';
 import { SortOptions } from '../state/sortOptions';
+import axios from 'axios';
 
 const transformStaticData = ( data: { [key: string]: any }): { [key: string]: NikkeStaticData } => {
     const transformedData: { [key: string]: NikkeStaticData } = {};
@@ -72,17 +73,25 @@ const NikkeList: React.FC = () => {
     const dispatch = useDispatch();
     
     useEffect(() => {
+        const fetchInvestmentData = async () => {
+            try {
+                const response = await axios.get('/api/investmentData');
+                const inv = transformInvestmentData(response.data);
+                setNikkeInvestmentData(inv);
+                dispatch(setInvestments(inv));
+            } catch (error) {
+                console.error('Error fetching investment data:', error);
+            }
+        };
         const sta = transformStaticData(nikkeStaticDataJson);
         const rec = transformRecommendationData(recomendationDataJson)
-        const inv = transformInvestmentData(nikkeInvestmentDataJson);
         setNikkeStaticData(sta)
         setRecommendationData(rec)
-        setNikkeInvestmentData(inv)
-        dispatch(setInvestments(inv));
+        fetchInvestmentData()
     }, [dispatch]);
 
     if (!nikke_static_data || !recommendation_data || !nikke_investment_data) {
-        return <div>Loading...</div>;
+        return <div style={{marginTop: 100}}>Loading...</div>;
     }
 
     var filtered_static_data: NikkeStaticData[] = Object.values(nikke_static_data).filter((nikke) =>

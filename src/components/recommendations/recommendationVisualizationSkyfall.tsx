@@ -78,7 +78,7 @@ const RecommendationVisualizationSkyfall: React.FC<RecommendationVisualizationSk
                 }}
             >
                 {recommendations.cube.cube.map((cube, index) =>
-                    <Tooltip content={cube} >
+                    <Tooltip key={index} content={cube} >
                         <div key={index} style={{ gridColumn: `${index+1} / ${index+2}` }} >
                             <img src={getMiscIcon("cube", cube)} alt="Icon not found" style={{ width: "64px", height: "64px" }} />
                         </div>

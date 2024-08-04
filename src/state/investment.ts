@@ -1,5 +1,6 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { Nikke } from "../types";
+import axios from "axios";
 
 export interface NikkeInvestments {
     investments: Nikke[];
@@ -8,6 +9,15 @@ export interface NikkeInvestments {
 const initialState: NikkeInvestments = {
     investments: []
 }
+
+const saveInvestments = async (investments: Nikke[]) => {
+    try {
+        const response = await axios.post('/api/save-investments', investments);
+        console.log('Investments saved successfully:', response.data);
+    } catch (error) {
+        console.error('Error saving investments:', error);
+    }
+};
 
 export const investmentSlice = createSlice({
     name: "nikkeInvestments",
@@ -34,6 +44,7 @@ export const investmentSlice = createSlice({
             const new_investments: Nikke[] = state.investments.filter(nikke => nikke.id !== action.payload.id);
             new_investments.push(action.payload);
             state.investments = new_investments;
+            saveInvestments(new_investments);
         }
     }
 })

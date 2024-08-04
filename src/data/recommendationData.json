@@ -3753,6 +3753,2382 @@
         }, "skyfall": {
             "collection_item_priority": "pvp"
         }
+    }, "noir": {
+        "nikke_gg": {
+            "ratings": {
+                "story": 9.2,
+                "pvp": 8.6,
+                "boss": 9.4,
+                "notes": "The best bossing support duo in the game when paired with Blanc."
+            }, "skills": {
+                "priority": "High",
+                "budget": "7/5/4",
+                "recommended": "10/9/4",
+                "notes": "Skill 1 increases team attack basically permanently, good skill to invest towards to. Skill 2 increases max ammo capacity to 4 at level 5, so it is recommended to at least reach there. the next break point is level 9 at max ammo + 5. Ammo refresh is amazing to make sure maximum firing uptime during full burst. Burst is rather situational with the boss raptures we have currently, therefore no reason to overly upgrade it as of right now."
+            }, "overloads": {
+                "priority": "Medium",
+                "priority_rank": 6,
+                "elemental_damage": {
+                    "priority": 4,
+                    "recommended": "2-4x",
+                    "notes": "Situationally useful"
+                },
+                "hit_rate": {
+                    "priority": 4,
+                    "recommended": "1-4x",
+                    "notes": "With enough hit rate rolls, Noir might as well become a sniper rifle"
+                },
+                "max_ammo": {
+                    "priority": 3,
+                    "recommended": "2-4x",
+                    "notes": "Max ammo is never bad, however she reloads extremely fast and has mag refund too. It’s pretty much diminishing returns, better to focus on other stats after having 2x rolls."
+                },
+                "atk": {
+                    "priority": 5,
+                    "recommended": "4x",
+                    "notes": "Shotguns scale really well with ATK. Does not improve her skill 1 buffs."
+                },
+                "charge_damage": {
+                    "priority": 0,
+                    "recommended": "0x",
+                    "notes": ""
+                },
+                "charge_speed": {
+                    "priority": 0,
+                    "recommended": "0x",
+                    "notes": ""
+                },
+                "crit_damage": {
+                    "priority": 2,
+                    "recommended": "1-2x",
+                    "notes": "SG’s Can’t Core hit very well, Critical Damage/Rate is more useful for them (Core hits and Crit damage are in the same bracket in the damage formula)"
+                },
+                "crit_rate": {
+                    "priority": 2,
+                    "recommended": "1-2x",
+                    "notes": "SG’s Can’t Core hit very well, Critical Damage/Rate is more useful for them (Core hits and Crit damage are in the same bracket in the damage formula)"
+                },
+                "def": {
+                    "priority": 0,
+                    "recommended": "0x",
+                    "notes": ""
+                },
+                "notes": ""
+            }, "cube": {
+                "cube": ["bastion", "resilience"],
+                "notes": "Bastion is BiS with Noir as she provides ammo refill and increased ammo buffs / She reloads very fast anyways."
+            }
+        }, "prydwen": {
+            "ratings": {
+                "story_low_deficit": "SSS",
+                "story_high_deficit": "SS",
+                "boss_solo": "SS",
+                "boss_adds": "SS",
+                "pvp": "S"
+            }, "skills": {
+                "priority": "Meta",
+                "pve": "4/4/4 → 7/5/4 → 10/9/4 (→ 10/10/4)",
+                "pvp": "4/4/4 → 7/5/4 (→ 10/5/4)"
+            }, "overloads": {
+                "priority": "Medium",
+                "essential": [],
+                "ideal": ["4× Elemental Damage"],
+                "passable": ["4x Ammo", "4x ATK", "4x Crit Rate"],
+                "notes": "Increases Base ATK stats, no rerolling needed, can act as a sub DPS against Near Bosses. Warning: May steal buff, highly advise against ATK roll"
+            }, "cube": {
+                "pre_overload": ["bastion", "resilience"],
+                "post_overload": ["bastion", "resilience"],
+                "notes": "Bastion allows here to shoot the most ammo, but you can use Resilience cube if bastion doesn't have any more slots remaining."
+            }
+        }, "skyfall": {
+            "priority": "High (w/Blanc)",
+            "collection_item_priority": "high",
+            "skills": ["10", "5 or 9+*", "4-7"],
+            "overloads": {
+                "ideal": ["4x Elemental Damage"],
+                "good": ["0-4x ATK"],
+                "fine": ["0-4x Max Ammo"],
+                "passable": ["0-4x Crit Rate", "0-4x Crit Damage", "0-4x Hit Rate"],
+                "no": []
+            }, "cube": {
+                "cube": ["bastion", "quantum"],
+                "notes": "Quantum is good if your team has low burst energy generation (no SR/RL)"
+            }, "notes": "Noir's reload speed is so fast that Resilience is not really that necessary on her. Skill 2 should be either level 5 or level 9 to get the bonus max ammo round threshold. Leveling Up Burst is primarily if you plan to use her on SG teams. Sometimes ATK% might mess with buffs for other DPS units (e.g. Maxwell buffs highest 2 attack, Noir could end up being one of the receivers for this due to her typing as an Attacker). So careful consideration of her ATK% is something to pay attention to. Crit Stats and Hit Rate are generally helpful for SG."
+        }
+    }, "noise": {
+        "nikke_gg": {
+            "ratings": {
+                "story": 7.4,
+                "pvp": 9.3,
+                "boss": 8.4,
+                "notes": "Thanks to her taunt on charge attack with high uptime and self-healing, Noise is one of the best taunters in the game. However, to maintain good self-healing she must be played on manual."
+            }, "skills": {
+                "priority": "High",
+                "budget": "5/7/7",
+                "recommended": "7/7/10",
+                "notes": "Skill 1 is great in Arena but not so much in PvE content, invest if PvP focused. Skill 2 is her tool to live forever; but skill scaling is rather low, still extremely helpful for her survivability nonetheless to invest modestly into. Burst gives good max HP buff and team healing that also scales rather well. Lower Investments if not PvP focused."
+            }, "overloads": {
+                "priority": "Low",
+                "priority_rank": 5,
+                "elemental_damage": {
+                    "priority": 1,
+                    "recommended": "0x",
+                    "notes": ""
+                },
+                "hit_rate": {
+                    "priority": 0,
+                    "recommended": "0x",
+                    "notes": ""
+                },
+                "max_ammo": {
+                    "priority": 0,
+                    "recommended": "0x",
+                    "notes": "More ammo gimps her healing capabilities in PvP (Self heal from skill 2 proc)."
+                },
+                "atk": {
+                    "priority": 3,
+                    "recommended": "2x",
+                    "notes": ""
+                },
+                "charge_damage": {
+                    "priority": 1,
+                    "recommended": "0x",
+                    "notes": ""
+                },
+                "charge_speed": {
+                    "priority": 5,
+                    "recommended": "4x",
+                    "notes": "Takes less time to empty her clip and reload. Reloading and shooting the first bullet will activate her healing proc on s2 in Arena."
+                },
+                "crit_damage": {
+                    "priority": 1,
+                    "recommended": "0x",
+                    "notes": ""
+                },
+                "crit_rate": {
+                    "priority": 1,
+                    "recommended": "0x",
+                    "notes": ""
+                },
+                "def": {
+                    "priority": 4,
+                    "recommended": "3-4x",
+                    "notes": "More survivability. "
+                },
+                "notes": "OL if wanted for Strictly PvP purposes in mind as noise is a staple tank there. Extra Health on Campaign/PvE is only an added bonus. Focus For Chest, Helm, and Boots in order. Chest only is totally fine if not wanting to spend more resources on her. "
+            }, "cube": {
+                "cube": ["vigor", "resilience"],
+                "notes": "Vigor Increases her tanking abilities and healing."
+            }
+        }, "prydwen": {
+            "ratings": {
+                "story_low_deficit": "S",
+                "story_high_deficit": "S",
+                "boss_solo": "S",
+                "boss_adds": "S",
+                "pvp": "SS"
+            }, "skills": {
+                "priority": "Medium (PVP)",
+                "pve": "1/4/4 → 4/4/4",
+                "pvp": "1/4/4 → 4/4/7 (→ 7/7/10)"
+            }, "overloads": {
+                "priority": "High (PVP)",
+                "essential": ["Preferebly do NOT have Max Ammo"],
+                "ideal": ["4× Charge Speed"],
+                "passable": ["4× ATK", "4× Elemental Damage"],
+                "notes": "CP Padding + Small Boost in Survivability + Heals Also used in PvE content against Bosses, so elemental damage can help if team needs survivability and also needs Electric Element Unit in team."
+            }, "cube": {
+                "pre_overload": ["healing"],
+                "post_overload": ["healing"],
+                "notes": "Healing Cube is the go-to cube for her currently."
+            }
+        }, "skyfall": {
+            "priority": "Low",
+            "collection_item_priority": "pvp",
+            "skills": ["4+", "4+", "4+"],
+            "overloads": {
+                "ideal": ["0-4× Charge Speed", "0-4× Max Ammo", "0-4x DEF"],
+                "good": [],
+                "fine": [],
+                "passable": ["0-4× ATK", "0-4× Elemental Damage"],
+                "no": []
+            }, "cube": {
+                "cube": ["quantum", "resilience", "adjutant"],
+                "notes": ""
+            }, "notes": "Not Recommended to OL unless you have spare resources for PVP. Primarily here for skill suggestion. Tank/Taunt / Heal unit so she needs these OL stats. Don't need a lot of investment but if you use her on PvP and want to be active on it, you can level skills up more."
+        }
+    }, "novel": {
+        "nikke_gg": {
+            "ratings": {
+                "story": 5,
+                "pvp": 3,
+                "boss": 8.7,
+                "notes": "Powerful +damage taken% debuff for boss battles, which can be quite valuable if there are already attack buffers on the team to avoid diminishing returns.Very inconsistent in story as her burst has unpredictable targetting. "
+            }, "skills": {
+                "priority": "High",
+                "budget": "4/1/7",
+                "recommended": "4/1/10",
+                "notes": "Skill 1 and 2 affects gameplay minimally. Burst, however, is very good for long duration boss battles and even better with very high burst damage units such as Alice, Maxwell, and SW; good skill scaling as well; great skill in Union Raids in Solo Raids."
+            }, "overloads": {
+            }, "cube": {
+                "cube": ["bastion", "resilience"],
+                "notes": ""
+            }
+        }, "prydwen": {
+            "ratings": {
+                "story_low_deficit": "D",
+                "story_high_deficit": "D",
+                "boss_solo": "A",
+                "boss_adds": "A",
+                "pvp": "D"
+            }, "skills": {
+                "priority": "Low",
+                "pve": "1/1/1 → 1/1/7 (→ 4/4/10)",
+                "pvp": "1/1/1"
+            }, "overloads": {
+                "priority": "Low (PVE)",
+                "essential": [],
+                "ideal": ["3-4× Max Ammo"],
+                "passable": [],
+                "notes": "Allows Novel to reach max stacks faster, allowing for one extra burst with her Damage Taken Debuff on opponent."
+            }, "cube": {
+                "pre_overload": ["bastion", "resilience"],
+                "post_overload": ["bastion", "resilience"],
+                "notes": "Bastion Cube will give her a higher uptime on her S2 buff while Resilience Cube will be a general improvement to her performance."
+            }
+        }, "skyfall": {
+            "priority": "Low",
+            "collection_item_priority": "useful_but_not_priority",
+            "skills": ["1-4", "1-4", "7-10"],
+            "overloads": {
+                "ideal": ["2-4× Max Ammo"],
+                "good": [],
+                "fine": [],
+                "passable": ["0-4× ATK", "0-4× Elemental Damage", "0-4x Hit Rate"],
+                "no": []
+            }, "cube": {
+                "cube": ["quantum", "bastion", "resilience"],
+                "notes": "Quantum is useful especially if no fast charge units (SR/RL/SG). Since she can maintain her stacks with or without Bastion/Resilience, Quantum is a good default cube"
+            }, "notes": "Her burst needs high investment before you start seeing huge difference. You can make her get max stacks (within 30 seconds) without reloading with 193%+ Max Ammo and Bastion"
+        }
+    }, "pepper": {
+        "nikke_gg": {
+            "ratings": {
+                "story": 7,
+                "pvp": 8.6,
+                "boss": 8.4,
+                "notes": "A “healer” that heals the team by killing the enemy with an high multiplier on her burst. Her healing is still stronger on manual, but she performs well with Privaty on auto. good in boss fights with her strong ST burst and shotgun weapon type."
+            }, "skills": {
+                "priority": "Medium",
+                "budget": "1/1/1",
+                "recommended": "7/1/7",
+                "notes": "Skill 1 has insane sustain/healing under manual play and especially paired with Privaty; very useful in boss stages that demand survivability instead of raw damage; despite rather low skill scaling, still worth investing into moderately. Burst also does great healing with a rather strong ST nuke; stacks are easily gained by manually controlling Pepper."
+            }, "overloads": {
+            }, "cube": {
+                "cube": ["resilience", "vigor"],
+                "notes": "Her healing is based on last bullet, do NOT use ammo increasing cubes on her. When not manualing with Pepper, use Vigor instead."
+            }
+        }, "prydwen": {
+            "ratings": {
+                "story_low_deficit": "A",
+                "story_high_deficit": "A",
+                "boss_solo": "B",
+                "boss_adds": "A",
+                "pvp": "S"
+            }, "skills": {
+                "priority": "Low (PVP)",
+                "pve": "1/1/1 → 4/4/4",
+                "pvp": "1/1/1 → 4/4/4 → 4/4/7 (→ 4/4/10)"
+            }, "overloads": {
+                "priority": "Low (PVP)",
+                "essential": [],
+                "ideal": ["4× ATK", "4× Elemental Damage"],
+                "passable": ["4× DEF"],
+                "notes": "Increased damage of Single Target Nuke"
+            }, "cube": {
+                "pre_overload": ["resilience"],
+                "post_overload": ["resilience"],
+                "notes": "A Shotgun wielder with the last bullet mechanic really needs the Resilience Cube."
+            }
+        }, "skyfall": {
+            "priority": "Low",
+            "collection_item_priority": "pvp",
+            "skills": ["4-7", "1-4", "4-10"],
+            "overloads": {
+                "ideal": ["4× ATK", "4x Elemental Damage"],
+                "good": [],
+                "fine": [],
+                "passable": ["0-4x Hit Rate", "0-4x Crit Rate", "0-4x Crit Damage"],
+                "no": ["0x Max Ammo"]
+            }, "cube": {
+                "cube": ["resilience"],
+                "notes": ""
+            }, "notes": "Pepper could dish out decent damage so having DPS lines is good on her. Make sure she doesn't get Max Ammo so she can keep healing with skill 1. Her heals might need more investment to fully support the team sometimes since she's not as good as Rapunzel."
+        }
+    }, "poli": {
+        "nikke_gg": {
+            "ratings": {
+                "story": 6.7,
+                "pvp": 8,
+                "boss": 7.6,
+                "notes": "Strong buffs, damage share and shield. Great sub for close range fights."
+            }, "skills": {
+                "priority": "Medium",
+                "budget": "1/1/1",
+                "recommended": "4/1/4",
+                "notes": "Skill 1 has a basically permanent uptime; but very nerfed score because of how small the buff is. Burst has a good attack buff that lasts 10s and also comes with a shield; decent sidegrade to Anne: Miracle Fairy for SW and Maxwell teams."
+            }, "overloads": {
+            }, "cube": {
+                "cube": ["vigor", "resilience"],
+                "notes": "Vigor increases her shield HP."
+            }
+        }, "prydwen": {
+            "ratings": {
+                "story_low_deficit": "A",
+                "story_high_deficit": "A",
+                "boss_solo": "A",
+                "boss_adds": "A",
+                "pvp": "A"
+            }, "skills": {
+                "priority": "Low",
+                "pve": "1/1/4 → 4/4/4 → 4/4/7 (→ 4/4/10)",
+                "pvp": "1/1/4 → 4/4/4 → 4/4/7 (→ 4/4/10)"
+            }, "overloads": {
+                "priority": "Very Low",
+                "essential": [],
+                "ideal": [],
+                "passable": ["-"],
+                "notes": "Cp Padding for PvP"
+            }, "cube": {
+                "pre_overload": ["assault", "resilience"],
+                "post_overload": ["assault", "resilience"],
+                "notes": "Assault Cube helps Shotgun wielders to actually hit something past Near range. While the Resilience Cube is a generic DPS increase (but it's better in scenarios when you fight stuff only in Near range as there Hit Rate isn't that useful)."
+            }
+        }, "skyfall": {
+            "priority": "Low",
+            "collection_item_priority": "ignore_for_now",
+            "skills": ["4+", "4", "4-10"],
+            "overloads": {
+                "ideal": [],
+                "good": [],
+                "fine": [],
+                "passable": ["0-4× ATK", "0-4× Max Ammo", "0-4x Hit Rate"],
+                "no": []
+            }, "cube": {
+                "cube": ["quantum", "bastion", "resilience"],
+                "notes": ""
+            }, "notes": "Not Recommended to OL. Primarily here for skill suggestion. Skills have low scaling so you can stay at lower levels. Cube options are for skill 1 uptime and energy generation."
+        }
+    }, "power": {
+        "nikke_gg": {
+            "ratings": {
+                "story": 7.25,
+                "pvp": 8.75,
+                "boss": 6.7,
+                "notes": "Decent B3 DPS"
+            }, "skills": {
+                "priority": "Medium",
+                "budget": "1/1/1",
+                "recommended": "5/1/4",
+                "notes": "Skill 1 is good to upgrade, more attack equals more damage. Her burst is deals good damage, which can easily be used against Bosses, however it does not scale too well, so higher levels of investments are not quite worth it."
+            }, "overloads": {
+            }, "cube": {
+                "cube": ["resilience", "bastion"],
+                "notes": ""
+            }
+        }, "prydwen": {
+            "ratings": {
+                "story_low_deficit": "B",
+                "story_high_deficit": "B",
+                "boss_solo": "B",
+                "boss_adds": "B",
+                "pvp": "A"
+            }, "skills": {
+                "priority": "PVP",
+                "pve": "1/1/1",
+                "pvp": "1/1/1 → 4/4/4 → 4/4/7 (→ 7/4/10)"
+            }, "overloads": {
+                "priority": "Low (PVP)",
+                "essential": [],
+                "ideal": ["4× ATK", "4× Charge Speed", "4× Elemental Damage"],
+                "passable": [],
+                "notes": "Increased damage of Single Target Nuke, however she is not widely used"
+            }, "cube": {
+                "pre_overload": ["resilience"],
+                "post_overload": ["resilience"],
+                "notes": "You really need Reload Speed on Power if you want to keep S1 buff stacks permanently."
+            }
+        }, "skyfall": {
+            "collection_item_priority": "ignore_for_now"
+        }
+    }, "privaty": {
+        "nikke_gg": {
+            "ratings": {
+                "story": 8.2,
+                "pvp": 8.4,
+                "boss": 8.6,
+                "notes": "Free welfare unit that everyone should aim to MLB. Strong reload speed and last bullet support, but can do well on almost any team. Stun on burst allows for strategic plays in PvE and is very strong in PvP."
+            }, "skills": {
+                "priority": "High",
+                "budget": "7/4/4",
+                "recommended": "10/4/4",
+                "notes": "Skill 1 has really good scaling regarding the reload buff, and also gives a good attack buff; also scales well late game as her reduced mag debuff does not account for max ammo increases from Overload equipment. For example, if Scarlet has 30 ammo, Privaty would only reduce her ammo by 10 instead of 15 as Scarlet’s base ammo count is only 20 unbuffed, basically reducing the mag debuff handicap even more. TLDR: Privaty’s Skill 1 has great scaling for units that have OL equipments with the ammo max increase stat. Skill 2 can hit hard in PvE mob content, but useless in boss stages. Burst is not very important but still worth some investment; not very important as her stun is the main sought after part of the skill, not the damage."
+            }, "overloads": {
+            }, "cube": {
+                "cube": ["resilience"],
+                "notes": "Has last bullet mechanic, avoid ammo-increasing cubes."
+            }
+        }, "prydwen": {
+            "ratings": {
+                "story_low_deficit": "SS",
+                "story_high_deficit": "SS",
+                "boss_solo": "S",
+                "boss_adds": "S",
+                "pvp": "A"
+            }, "skills": {
+                "priority": "Medium",
+                "pve": "4/1/1 → 7/1/1 (→ 10/4/4)",
+                "pvp": "4/1/1 → 7/7/4 (→ 7/10/4)"
+            }, "overloads": {
+                "priority": "Low",
+                "essential": [],
+                "ideal": [],
+                "passable": ["-"],
+                "notes": "Privaty has a last bullet mechanic, hence she ideally does not want Max Ammo OL gear, but it isn't something critical to her kit in the current meta so it can be ignored. It is also suggested to avoid ATK on Privaty's OL gear since it can lead to Privaty being the target of enemy attacks which target Highest ATK stat unit. This especially comes into play when using Privaty with Anis: Sparkling Summer, who is a support type Nikke, and hence has lower base ATK. It is ideal that Anis gets targeted over Privaty since she can heal back up quickly, and hence Privaty is a very low priority unit to OL."
+            }, "cube": {
+                "pre_overload": ["resilience"],
+                "post_overload": ["resilience"],
+                "notes": "Last bullet mechanic with reload buff? Resilience all the way! "
+            }
+        }, "skyfall": {
+            "priority": "Medium",
+            "collection_item_priority": "useful_but_not_priority",
+            "skills": ["7-10", "1-4", "1-4"],
+            "overloads": {
+                "ideal": ["4× ATK", "4x Elemental Damage"],
+                "good": [],
+                "fine": [],
+                "passable": ["0-4x Hit Rate", "0-4x Crit Rate", "0-4x Crit Damage"],
+                "no": ["0x Max Ammo"]
+            }, "cube": {
+                "cube": ["resilience"],
+                "notes": ""
+            }, "notes": "Privaty's low priority in a sense that she's fine being 7/1/1 on skill investment and no OL. OL is not necessary to make the best use of her (ATK Buffer/ Ammo Reduction / Stun). Don't have Max Ammo lines for her skill 2 trigger. Rest are standard DPS Lines for OL. Privaty is primarily used for her buff skill 1. Her damage is not typically notable so rerolling her OL isn't a big priority."
+        }
+    }, "privaty_unkind_maid": {
+        "nikke_gg": {
+            "ratings": {
+                "story": 8.3,
+                "pvp": 8.6,
+                "boss": 8.3,
+                "notes": "Needs A specialized team to do well, otherwise performs rather averagely, Has a strong Screenwipe for campaign and PvP."
+            }, "skills": {
+                "priority": "High",
+                "budget": "7/5/5",
+                "recommended": "7/7/7",
+                "notes": "Skill 1 Gives Consistent good damage, with slight wave clear viability. Skill 2 Investment Depends if using with Tove/Leona, if not, leave it at level 1. Burst is Good for campaign purposes, higher value if the player has Crit rate rolls on gear."
+            }, "overloads": {
+            }, "cube": {
+                "cube": ["bastion"],
+                "notes": "Synergizes with her skill as it also gives ammo refund, ensuring her stacks don't drop during burst"
+            }
+        }, "prydwen": {
+            "ratings": {
+                "story_low_deficit": "S",
+                "story_high_deficit": "A",
+                "boss_solo": "SS",
+                "boss_adds": "S",
+                "pvp": "SS"
+            }, "skills": {
+                "priority": "High (Late Game)",
+                "pve": "1/1/4 → 4/4/4 → 7/7/4 (→ 10/10/7)",
+                "pvp": "1/1/4 → 4/4/4 → 4/4/7 (→ 4/4/10)"
+            }, "overloads": {
+                "priority": "High",
+                "essential": ["1-2× Max Ammo"],
+                "ideal": ["4× Elemental Damage", "4× ATK", "1× Max Ammo"],
+                "passable": ["2-3× Hit Rate", "2-3× Crit Rate", "2-3× Crit Damage"],
+                "notes": "If Privaty reloads for any reason during Full Burst, she will lose her buffs (they will reset to 0 stacks). Max Ammo is important to shoot for 15s + 2s straight during Full Burst. If you only need to reload once every 20s, that's even better! Privaty: Unkind Maid is also used in PvP, where ATK > Elemental Damage. Only OL if you plan to build Meta SG Team or for PvP"
+            }, "cube": {
+                "pre_overload": ["bastion", "resilience"],
+                "post_overload": ["bastion", "resilience"],
+                "notes": "Most of the time, you will want to use Bastion and reload before every Full Burst to guarantee no reload during the DPS window, in case Tove loses stacks immediately, and it's even better with 1 line Max Ammo Overload. But if you have enough reload speed (SAnis in team), you can use Resilience instead."
+            }
+        }, "skyfall": {
+            "priority": "Low to Med (w/ Tove)",
+            "collection_item_priority": "priority_solo_raid",
+            "skills": ["7-10", "1-4* or 7-10", "7-10"],
+            "overloads": {
+                "ideal": ["1-2× Max Ammo", "4x Elemental Damage", "4× ATK"],
+                "good": ["0-3x Crit Rate", "0-3x Crit Damage"],
+                "fine": [],
+                "passable": ["0-3x Hit Rate"],
+                "no": []
+            }, "cube": {
+                "cube": ["bastion", "resilience"],
+                "notes": "Bastion primarily, Resilience OK with Summer Anis"
+            }, "notes": "At least 1x Max Ammo to allow proper ramping up of accuracy prior to burst and have enough ammo in the duration of full burst. 2 is good QOL for more consistency. Skills are evenly good if you have at least either Tove or Leona. *If you don't have both, then skill 2 can be less priority. If you have at least one, then all skills do increase damage similarly so leveling them evenly is good"
+        }
+    }, "quency": {
+        "nikke_gg": {
+            "ratings": {
+                "story": 7,
+                "pvp": 4,
+                "boss": 6.65,
+                "notes": "Heals 2 units with the highest attack every burst, while also giving them a MAX HP buff for a short duration. More than half uptime on her Modest ATK buff from passive."
+            }, "skills": {
+                "priority": "Low",
+                "budget": "1/1/1",
+                "recommended": "1/4/4",
+                "notes": "Skill 1 basically just activates once per battles under auto play, useless to invest into. Skill 2 does give pretty high uptime on a modest ATK buff. Burst Is where her healing comes from, so some investment is required there."
+            }, "overloads": {
+            }, "cube": {
+                "cube": ["bastion", "resilience"],
+                "notes": ""
+            }
+        }, "prydwen": {
+            "ratings": {
+                "story_low_deficit": "A",
+                "story_high_deficit": "A",
+                "boss_solo": "B",
+                "boss_adds": "A",
+                "pvp": "C"
+            }, "skills": {
+                "priority": "Very Low",
+                "pve": "1/1/1 → 4/4/4",
+                "pvp": "1/1/1"
+            }, "overloads": {
+                "priority": "-",
+                "essential": [],
+                "ideal": [],
+                "passable": ["-"],
+                "notes": ""
+            }, "cube": {
+                "pre_overload": ["bastion", "resilience"],
+                "post_overload": ["bastion", "resilience"],
+                "notes": "Bastion Cube will give her a higher uptime on her S1 buff while Resilience Cube will be a general improvement to her performance."
+            }
+        }, "skyfall": {
+            "collection_item_priority": "ignore_for_now"
+        }
+    }, "quiry": {
+        "nikke_gg": {
+            "ratings": {
+                "story": 6.5,
+                "pvp": 8.4,
+                "boss": 6.8,
+                "notes": "Has a pretty good Burst heal, that's about it "
+            }, "skills": {
+                "priority": "Low",
+                "budget": "1/1/1",
+                "recommended": "4/4/5",
+                "notes": "Skill 1 and Skill 2 has pretty horrible scaling, and buff itself is mediocre. Her burst Actually does some good healing."
+            }, "overloads": {
+            }, "cube": {
+                "cube": ["vigor", "resilience"],
+                "notes": "Vigor increases her burst healing, however does not increases the Max hp given to allies."
+            }
+        }, "prydwen": {
+            "ratings": {
+                "story_low_deficit": "C",
+                "story_high_deficit": "C",
+                "boss_solo": "C",
+                "boss_adds": "B",
+                "pvp": "A"
+            }, "skills": {
+                "priority": "PVP",
+                "pve": "1/1/1",
+                "pvp": "1/1/1 (→ 4/4/7)"
+            }, "overloads": {
+                "priority": "Low (PVP)",
+                "essential": [],
+                "ideal": ["4× Charge Speed"],
+                "passable": ["4× ATK", "4× Elemental Damage", "4× DEF"],
+                "notes": "CP Padding + Small Boost in Survivability + Heals"
+            }, "cube": {
+                "pre_overload": ["healing"],
+                "post_overload": ["healing"],
+                "notes": "Healing Cube is the go-to cube for her currently."
+            }
+        }, "skyfall": {
+            "collection_item_priority": "ignore_for_now"
+        }
+    }, "rapunzel": {
+        "nikke_gg": {
+            "ratings": {
+                "story": 7,
+                "pvp": 9,
+                "boss": 8.3,
+                "notes": "High healing per second and decent AOE damage. Unique ability to resurrect a fallen ally on burst. Sometimes resurrects an ally at 0 HP due to another bug."
+            }, "skills": {
+                "priority": "Medium",
+                "budget": "1/1/1",
+                "recommended": "7/5/7",
+                "notes": "Skill 1 and 2 are both good sustain skills to invest into. Burst won’t be used often and is used for emergency heals or resurrection."
+            }, "overloads": {
+                "priority": "Low",
+                "priority_rank": 6,
+                "elemental_damage": {
+                    "priority": 1,
+                    "recommended": "0x",
+                    "notes": ""
+                },
+                "hit_rate": {
+                    "priority": 0,
+                    "recommended": "0x",
+                    "notes": ""
+                },
+                "max_ammo": {
+                    "priority": 4,
+                    "recommended": "2-4x",
+                    "notes": "Less reload time = more healing"
+                },
+                "atk": {
+                    "priority": 3,
+                    "recommended": "0x",
+                    "notes": ""
+                },
+                "charge_damage": {
+                    "priority": 1,
+                    "recommended": "0x",
+                    "notes": ""
+                },
+                "charge_speed": {
+                    "priority": 5,
+                    "recommended": "4x",
+                    "notes": "Very important for her healing. Note: Get at least 2-3 Max Ammo lines first/ Don’t Prioritize or replace a Max ammo Line for Charge speed"
+                },
+                "crit_damage": {
+                    "priority": 0,
+                    "recommended": "0x",
+                    "notes": ""
+                },
+                "crit_rate": {
+                    "priority": 0,
+                    "recommended": "0x",
+                    "notes": ""
+                },
+                "def": {
+                    "priority": 1,
+                    "recommended": "0x",
+                    "notes": ""
+                },
+                "notes": "A good healer that is used in PvP and PvE."
+            }, "cube": {
+                "cube": ["vigor", "resilience"],
+                "notes": "Vigor Increases her Healing"
+            }
+        }, "prydwen": {
+            "ratings": {
+                "story_low_deficit": "SS",
+                "story_high_deficit": "SS",
+                "boss_solo": "S",
+                "boss_adds": "S",
+                "pvp": "SS"
+            }, "skills": {
+                "priority": "Low (PVP)",
+                "pve": "1/1/1 → 4/4/4",
+                "pvp": "1/1/1 → 4/4/4 (→ 7/4/4)"
+            }, "overloads": {
+                "priority": "High (PVP)",
+                "essential": [],
+                "ideal": ["4× Charge Speed", "2-4× Ammo", "4× Elemental Damage"],
+                "passable": ["4× ATK"],
+                "notes": "CP Padding + Small Boost in Survivability + Heals. Elemental damage is highly appreciated on PvP Iron Units."
+            }, "cube": {
+                "pre_overload": ["healing"],
+                "post_overload": ["healing"],
+                "notes": "Healing Cube is the go-to cube for her currently."
+            }
+        }, "skyfall": {
+            "priority": "Low",
+            "collection_item_priority": "pvp",
+            "skills": ["4-7", "4", "4"],
+            "overloads": {
+                "ideal": ["0-4× Charge Speed", "0-4× Max Ammo"],
+                "good": [],
+                "fine": [],
+                "passable": ["0-4× ATK", "0-4X DEF", "0-4× Elemental Damage"],
+                "no": []
+            }, "cube": {
+                "cube": ["vigor", "quantum", "resilience"],
+                "notes": ""
+            }, "notes": "Ammo and Charge Speed for less gap between heals. Don't need a lot of investment for heals. If you end up needing more heals, it's usually a level problem. OL is useful for Campaign pushing or PVP."
+        }
+    }, "red_hood": {
+        "nikke_gg": {
+            "ratings": {
+                "story": 10,
+                "pvp": 9.2,
+                "boss": 10,
+                "notes": "Top tier DPS in every content. Versatile, Easy to build, can be used as a buffer, Red hood has it all."
+            }, "skills": {
+                "priority": "Highest",
+                "budget": "5/7/7",
+                "recommended": "7/10/10",
+                "notes": "Skill 1 Gives more charge speed, which is then converted to charge damage during her burst. Can be raised to level 10 last, around a level behind skill 2 when upgrading. Skill 2 is mostly notable as a buffer to her burst damage, which does insane damage. Burst increases her team buffing and Burst III damage capability."
+            }, "overloads": {
+                "priority": "High",
+                "priority_rank": 1,
+                "elemental_damage": {
+                    "priority": 4,
+                    "recommended": "4x",
+                    "notes": "wanted for Union raids and Solo raid content."
+                },
+                "hit_rate": {
+                    "priority": 0,
+                    "recommended": "0x",
+                    "notes": ""
+                },
+                "max_ammo": {
+                    "priority": 2,
+                    "recommended": "1x",
+                    "notes": "She gets unlimited ammo during her burst. However one roll is still wanted because of her off-burst damage and burst generation abilities."
+                },
+                "atk": {
+                    "priority": 5,
+                    "recommended": "4x",
+                    "notes": "Simply more damage."
+                },
+                "charge_damage": {
+                    "priority": 2,
+                    "recommended": "0x",
+                    "notes": "Good to have, can be replaced with better options"
+                },
+                "charge_speed": {
+                    "priority": 4,
+                    "recommended": "3-4x",
+                    "notes": "Red hood has pretty high innate charge speed, putting even more rolls would make her fire rather fast off-burst. Excess charge speed is converted into charge damage anyways during burst."
+                },
+                "crit_damage": {
+                    "priority": 2,
+                    "recommended": "0x",
+                    "notes": ""
+                },
+                "crit_rate": {
+                    "priority": 2,
+                    "recommended": "0x",
+                    "notes": ""
+                },
+                "def": {
+                    "priority": 0,
+                    "recommended": "0x",
+                    "notes": ""
+                },
+                "notes": "A much more friendly version of Alice while dealing similar damage. Not only that, she is also easier to build because of less restrictive rolls that are required when compared to other Meta DPS Nikkes. Amazing Nikke to overload first."
+            }, "cube": {
+                "cube": ["adjutant", "resilience"],
+                "notes": "Adjutant increases her burst damage, HOWEVER. Use adjutant only if it is of the similar level of your resilience and bastion cubes. Otherwise use Resilience/bastion because of the level stat difference."
+            }
+        }, "prydwen": {
+            "ratings": {
+                "story_low_deficit": "SSS",
+                "story_high_deficit": "SSS",
+                "boss_solo": "A",
+                "boss_adds": "S",
+                "pvp": "S"
+            }, "skills": {
+                "priority": "Meta",
+                "pve": "4/4/4 → 4/7/7 → 10/10/10 ",
+                "pvp": "4/4/4 → 4/7/7 → 10/10/10 "
+            }, "overloads": {
+                "priority": "Meta",
+                "essential": [],
+                "ideal": ["4× Elemental Damage", "1× Max Ammo", "4× ATK"],
+                "passable": ["3× Charge Speed", "3× Charge Damage"],
+                "notes": "Red Hood is the best unit for PvE, and is one of the top choices to use in PvP as well. 1 Ammo is needed for Burst Generation purposes in PvE content. Since she is Iron Element, Elemental Damage is highly appreciated in PvP as well."
+            }, "cube": {
+                "pre_overload": ["resilience", "bastion", "adjutant"],
+                "post_overload": ["resilience", "bastion", "adjutant"],
+                "notes": "Red doesn't actually need any cube, so a generic DPS cube like Bastion/Resilience is okay. You can actually put Adjutant if it's the same level as your highest lvl cube to increase her overall DPS by a small margin! Or using Vigor (Hp) Cube to manipulate Blanc's Indomitable in PVP too."
+            }
+        }, "skyfall": {
+            "priority": "Highest",
+            "collection_item_priority": "highest",
+            "skills": ["10", "10", "10"],
+            "overloads": {
+                "ideal": ["4× ATK", "4x Elemental Damage", "0-4× Charge Speed"],
+                "good": ["1x Max Ammo"],
+                "fine": ["additional 0-3x Max Ammo", "0-4x Charge Damage"],
+                "passable": ["0-4x Crit Rate", "0-4x Crit Damage"],
+                "no": []
+            }, "cube": {
+                "cube": ["resilience", "bastion"],
+                "notes": ""
+            }, "notes": "Burst highest priority for most damage. Then Skill 1, and then Skill 2. More Charge Speed for more damage. Playstyle might change depending on number of charge speed vs ammo. With more Charge Speed, it's better to full charge shots rather than quick firing 1x Ammo is good quality of life for quick firing to help with burst generation when manual using her and she's the sole sniper/rocket launcher. Any more is nice but not extremely necessary."
+        }
+    }, "rei": {
+        "nikke_gg": {
+            "ratings": {
+                "story": 3,
+                "pvp": 2,
+                "boss": 4,
+                "notes": "N/A"
+            }, "skills": {
+                "priority": "Low",
+                "budget": "1/1/1",
+                "recommended": "1/1/1",
+                "notes": ""
+            }, "overloads": {
+            }, "cube": {
+                "cube": ["vigor", "resilience"],
+                "notes": "Vigor Increases Decoy HP"
+            }
+        }, "prydwen": {
+            "ratings": {
+                "story_low_deficit": "C",
+                "story_high_deficit": "D",
+                "boss_solo": "D",
+                "boss_adds": "D",
+                "pvp": "C"
+            }, "skills": {
+                "priority": "-",
+                "pve": "1/1/1",
+                "pvp": "1/1/1"
+            }, "overloads": {
+                "priority": "-",
+                "essential": [],
+                "ideal": [],
+                "passable": ["-"],
+                "notes": ""
+            }, "cube": {
+                "pre_overload": ["assault", "resilience"],
+                "post_overload": ["assault", "resilience"],
+                "notes": "Assault Cube helps SMG wielders to actually hit something past Near range. While the Resilience Cube is a generic DPS increase (but it's better in scenarios when you fight stuff only in Near range as there Hit Rate isn't that useful)."
+            }
+        }, "skyfall": {
+            "collection_item_priority": "ignore_for_now"
+        }
+    }, "rem": {
+        "nikke_gg": {
+            "ratings": {
+                "story": 8.4,
+                "pvp": 6,
+                "boss": 8.9,
+                "notes": "Great Solo b2. Has DPS similar to Scarlet, Healing and ATK buffs for RL's. Needs High investment for her healing to do its job though."
+            }, "skills": {
+                "priority": "High",
+                "budget": "7/4/4",
+                "recommended": "10/7/7",
+                "notes": "Skill 1 is where most of her damage is at, massive ATK increase, which directly transfers to healing. Skill 2 gives increased life steal, and the amount that is shared. Burst doesn’t increase her personal damage too much despite the high crit scaling, but has great RL ATK buffs. Can be increased higher if using/maining Rem specifically in RL teams"
+            }, "overloads": {
+            }, "cube": {
+                "cube": ["resilience", "bastion"],
+                "notes": "Resilience = Used in Reload teams / Any team that buffs reload. Bastion = Anywhere else"
+            }
+        }, "prydwen": {
+            "ratings": {
+                "story_low_deficit": "SS",
+                "story_high_deficit": "S",
+                "boss_solo": "SS",
+                "boss_adds": "SS",
+                "pvp": "D"
+            }, "skills": {
+                "priority": "High",
+                "pve": "4/4/4 → 7/4/4 → 10/4/7 (→ 10/7/10)",
+                "pvp": "4/4/4"
+            }, "overloads": {
+                "priority": "Medium (PVE)",
+                "essential": ["3× Max Ammo"],
+                "ideal": ["4× Elemental Damage", "4× ATK", "1× Max Ammo"],
+                "passable": ["4× Crit Damage"],
+                "notes": "MGs want ammo. A lot of it"
+            }, "cube": {
+                "pre_overload": ["bastion", "resilience"],
+                "post_overload": ["bastion", "resilience"],
+                "notes": "Bastion - The universal choice for all MGs as it offers the highest uptime extension without external help. Resilience - If paired with reload speed buffers like Privaty, Resilience (with some Max Ammo) may reduce downtime to the point that it is unfelt."
+            }
+        }, "skyfall": {
+            "priority": "Low",
+            "collection_item_priority": "element_advantage",
+            "skills": ["7-10", "4+ (low priority)", "4-10"],
+            "overloads": {
+                "ideal": ["2-4× Max Ammo", "4x Elemental Damage", "4× ATK"],
+                "good": ["0-4x Crit Damage"],
+                "fine": [],
+                "passable": ["0-4x Crit Rate"],
+                "no": []
+            }, "cube": {
+                "cube": ["bastion", "resilience"],
+                "notes": "Resilience if 0x ammo OL (with Privaty)"
+            }, "notes": "Strong DPS+Healer. Good to have DPS OL lines for her. Buff for rocket launcher is a bonus (currently). Aim for minimum of 2x Max Ammo. Ideally 3x. After 2x Max Ammo, you can balance out obtaining Max Ammo & Atk OL lines. Elemental Damage also to help out prioritizing Elemental Team choices for Union Raid. Max Ammo is extremely good for Machine guns. Max out skill 1 as high priority. Keeping burst at level 7 is a good middle ground while we wait for better & new rocket launcher units to buff. Upgrade skill 2 last (after maxing out skill 1 and burst and upgrading gears+getting optimal overload) if you see the healing is not enough."
+        }
+    }, "rosanna": {
+        "nikke_gg": {
+            "ratings": {
+                "story": 2.5,
+                "pvp": 9,
+                "boss": 2,
+                "notes": "Mostly used in a PvP setting to counter Jackal Teams. Even then, will not be guaranteed to do so. "
+            }, "skills": {
+                "priority": "Low",
+                "budget": "1/1/1",
+                "recommended": "4/1/7",
+                "notes": "Skill 1 at level 4 gives 3 buff dispells. Which can be useful in arena. Skill 2 Requires a Nikke to be taken out of action to benefit from skill. Which is obviously not wanted nor worth trying to build towards to. Only invest in Burst if PvP focused."
+            }, "overloads": {
+            }, "cube": {
+                "cube": ["bastion", "wingman"],
+                "notes": ""
+            }
+        }, "prydwen": {
+            "ratings": {
+                "story_low_deficit": "D",
+                "story_high_deficit": "D",
+                "boss_solo": "D",
+                "boss_adds": "D",
+                "pvp": "SS"
+            }, "skills": {
+                "priority": "PVP",
+                "pve": "1/1/1",
+                "pvp": "1/1/1 → 4/1/1 → 4/7/7 (→ 7/10/10)"
+            }, "overloads": {
+                "priority": "Medium (PVP)",
+                "essential": [],
+                "ideal": ["4× ATK", "4× Elemental Damage"],
+                "passable": [],
+                "notes": "Strengthens Nuke Damage"
+            }, "cube": {
+                "pre_overload": ["bastion", "wingman", "resilience"],
+                "post_overload": ["bastion", "wingman", "resilience"],
+                "notes": "MG goes brrr. Bastion Cube will allow her to shoot for longer, but if you don't have it upgraded, Resilience or Wingman Cubes are a better choice."
+            }
+        }, "skyfall": {
+            "collection_item_priority": "pvp"
+        }
+    }, "rosanna_chic_ocean": {
+        "nikke_gg": {
+            "ratings": {
+                "story": 9.3,
+                "pvp": 7,
+                "boss": 9,
+                "notes": ""
+            }, "skills": {
+                "priority": "High",
+                "budget": "4/4/7",
+                "recommended": "4+/7+/10",
+                "notes": "Skill 1 and Skill 2 are rather Niche, and is only good when there is tanky parts or respawning parts. Upgrade as needed. Burst is the meat of her kit, upgrade ASAP."
+            }, "overloads": {
+            }, "cube": {
+                "cube": [],
+                "notes": ""
+            }
+        }, "prydwen": {
+            "ratings": {
+                "story_low_deficit": "SS",
+                "story_high_deficit": "S",
+                "boss_solo": "S",
+                "boss_adds": "S",
+                "pvp": "B"
+            }, "skills": {
+                "priority": "Medium",
+                "pve": "1/1/1 → 4/4/4 → 4/7/10 (→ 7/10/10)",
+                "pvp": "1/1/1 → 1/1/7 → 1/4/10 (→ 1/7/10)"
+            }, "overloads": {
+                "priority": "Low",
+                "essential": [],
+                "ideal": [],
+                "passable": ["-"],
+                "notes": ""
+            }, "cube": {
+                "pre_overload": ["bastion"],
+                "post_overload": ["bastion"],
+                "notes": "Rosanna does not particularly require any cube. Any generic cube works on her, but Bastion will allow her to shoot more bullets over 3 minutes. Despite that, it is recommended to use the highest level cube available for the base stat bonuses to help with her caster's ATK buff. "
+            }
+        }, "skyfall": {
+            "priority": "Medium (w/ Liter), else Low to Medium",
+            "collection_item_priority": "not_rated",
+            "skills": ["4++", "4+", "10"],
+            "overloads": {
+                "ideal": ["0-4× ATK", "0-4x Elemental Damage"],
+                "good": [],
+                "fine": [],
+                "passable": ["0-4x Crit Rate", "0-4x Crit Damage", "0-4× Max Ammo"],
+                "no": []
+            }, "cube": {
+                "cube": ["resilience", "bastion", "quantum"],
+                "notes": "(highest ATK)"
+            }, "notes": "OL is not necessary due to low value scaling of skill 1 buff. Budget can stay at level 4 on both skill 1 and skill 2 to save materials. Skill 1 > Skill 2 if you have to select. Burst highest priority."
+        }
+    }, "rupee": {
+        "nikke_gg": {
+            "ratings": {
+                "story": 7.7,
+                "pvp": 6,
+                "boss": 7.9,
+                "notes": "Very high DPS with permanent self attack buff and strong team attack buff. Does not need Iron synergy to be strong."
+            }, "skills": {
+                "priority": "Medium",
+                "budget": "1/1/1",
+                "recommended": "1/7/5",
+                "notes": "Skill 2 has big influence on her personal DPS. Burst also gives a rather modest attack buff with a 20s CD."
+            }, "overloads": {
+            }, "cube": {
+                "cube": ["bastion", "resilience"],
+                "notes": ""
+            }
+        }, "prydwen": {
+            "ratings": {
+                "story_low_deficit": "A",
+                "story_high_deficit": "A",
+                "boss_solo": "B",
+                "boss_adds": "B",
+                "pvp": "D"
+            }, "skills": {
+                "priority": "Very Low",
+                "pve": "1/1/1 → 4/4/4",
+                "pvp": "1/1/1"
+            }, "overloads": {
+                "priority": "Very Low",
+                "essential": [],
+                "ideal": ["4× Elemental Damage", "4× ATK", "4× Max Ammo"],
+                "passable": [],
+                "notes": "Can act as a mid tier DPS"
+            }, "cube": {
+                "pre_overload": ["resilience", "wingman", "bastion"],
+                "post_overload": ["bastion", "resilience", "wingman"],
+                "notes": "Pre-overload you want to either increase Rupee mag size above 100 so she can trigger her S1 without reloading. If this isn't possible, just use the Resilience Cube on her so she reloads faster. Post-overload Bastion Cube overcomes both of the Cubes though."
+            }
+        }, "skyfall": {
+            "priority": "Zero",
+            "collection_item_priority": "maybe_someday",
+            "skills": ["4", "4-7", "4-10"],
+            "overloads": {
+                "ideal": ["4× ATK", "4x Elemental Damage", "2-4× Max Ammo"],
+                "good": [],
+                "fine": [],
+                "passable": ["0-4x Crit Rate", "0-4x Crit Damage", "0-4x Hit Rate"],
+                "no": []
+            }, "cube": {
+                "cube": ["resilience", "bastion"],
+                "notes": ""
+            }, "notes": "An outdated unit. Don't upgrade now in this day and age. Standard DPS OL lines. Her skill 1's crit scaling is bad so it's not enough to skew higher priority on crit rate and crit damage. Elemental Damage to flex her on Bosses and put her in a higher priority consideration when team building."
+        }
+    }, "rupee_winter_shopper": {
+        "nikke_gg": {
+            "ratings": {
+                "story": 3,
+                "pvp": 4,
+                "boss": 4,
+                "notes": "A reload support, but struggles to live through her taunt against waves and high damage bosses in more difficult content with CP deficit. There is a 1.5 second delay between her burst and the second B1, which makes her difficult to utilize in arena."
+            }, "skills": {
+                "priority": "Low",
+                "budget": "1/1/1",
+                "recommended": "1/1/5",
+                "notes": "Burst has very good reload speed scaling and self life leech, but due to the nature of how her re/enter burst 1 Internal cooldown works and how useless life leech is on a defender, score is brought down."
+            }, "overloads": {
+            }, "cube": {
+                "cube": ["bastion", "resilience"],
+                "notes": ""
+            }
+        }, "prydwen": {
+            "ratings": {
+                "story_low_deficit": "B",
+                "story_high_deficit": "B",
+                "boss_solo": "C",
+                "boss_adds": "C",
+                "pvp": "B"
+            }, "skills": {
+                "priority": "-",
+                "pve": "1/1/1",
+                "pvp": "1/1/1"
+            }, "overloads": {
+                "priority": "-",
+                "essential": [],
+                "ideal": [],
+                "passable": ["-"],
+                "notes": ""
+            }, "cube": {
+                "pre_overload": ["resilience"],
+                "post_overload": ["resilience"],
+                "notes": "Resilience Cube is the best choice for anyone with the last bullet mechanism."
+            }
+        }, "skyfall": {
+            "collection_item_priority": "ignore_for_now"
+        }
+    }, "sakura": {
+        "nikke_gg": {
+            "ratings": {
+                "story": 5.5,
+                "pvp": 8,
+                "boss": 7,
+                "notes": "Wind counter"
+            }, "skills": {
+                "priority": "Low",
+                "budget": "1/1/1",
+                "recommended": "1/7/5",
+                "notes": "Skill 1 and 2 are not very beneficial as defense has rather bad scaling and does not reduce much incoming damage, and small amount of CDR is not worth very high investments. Burst can be upgraded to higher levels if needed to make train clears more comfortable."
+            }, "overloads": {
+            }, "cube": {
+                "cube": ["resilience", "bastion"],
+                "notes": ""
+            }
+        }, "prydwen": {
+            "ratings": {
+                "story_low_deficit": "A",
+                "story_high_deficit": "A",
+                "boss_solo": "A",
+                "boss_adds": "A",
+                "pvp": "B"
+            }, "skills": {
+                "priority": "Low",
+                "pve": "1/1/1 → 4/4/4 (→ 4/4/7)",
+                "pvp": "1/1/1 → 4/4/4 (→ 4/4/7)"
+            }, "overloads": {
+                "priority": "Low",
+                "essential": [],
+                "ideal": ["1× Max Ammo"],
+                "passable": [],
+                "notes": "1 Max Ammo Roll can help with Burst Generation in Raids, but not recommended to reroll this character."
+            }, "cube": {
+                "pre_overload": ["wingman", "resilience"],
+                "post_overload": ["wingman", "resilience"],
+                "notes": "Either increasing Sakura's Mag Size or increasing her Reload Speed is the way to go for her - you really want to stack the S1 buff as fast as possible."
+            }
+        }, "skyfall": {
+            "collection_item_priority": "maybe_someday"
+        }
+    }, "sakura_bloom_in_summer": {
+        "nikke_gg": {
+            "ratings": {
+                "story": 7.9,
+                "pvp": 9,
+                "boss": 9,
+                "notes": ""
+            }, "skills": {
+                "priority": "Medium",
+                "budget": "4/7/7",
+                "recommended": "4+/10/10",
+                "notes": "Skill 1 is a bit niche, since it requires parts to be destroyed, and just increases skill uptime by a limited amount. Bosses that are tailor made for her will most likely have consistent/Respawning parts anyways. Skill 2 provides half uptime of strong DoT against bosses with no parts, also has better offensive buffs than what skill 1 provides. Burst is significant amount of where her damage will come from."
+            }, "overloads": {
+            }, "cube": {
+                "cube": [],
+                "notes": ""
+            }
+        }, "prydwen": {
+            "ratings": {
+                "story_low_deficit": "A",
+                "story_high_deficit": "B",
+                "boss_solo": "SS",
+                "boss_adds": "S",
+                "pvp": "SS"
+            }, "skills": {
+                "priority": "Medium",
+                "pve": "1/1/1 → 4/4/4 → 5/7/7 (→ 7/10/10)",
+                "pvp": "1/1/1 → 1/4/4 → 1/7/7 (→ 1/10/10)"
+            }, "overloads": {
+                "priority": "Medium",
+                "essential": [],
+                "ideal": ["4× Elemental DMG", "4× ATK"],
+                "passable": ["4× CRIT Rate", "4× CRIT DMG"],
+                "notes": ""
+            }, "cube": {
+                "pre_overload": ["bastion"],
+                "post_overload": ["bastion"],
+                "notes": "S. Sakura does not particularly require any cube. Any generic cube works on her, but Bastion will allow her to shoot more bullets over 3 minutes. Despite that, it is recommended to use the highest level cube available for the ATK (and Elemental DMG) bonus. "
+            }
+        }, "skyfall": {
+            "priority": "Medium",
+            "collection_item_priority": "not_rated",
+            "skills": ["4-5", "4-10", "7-10"],
+            "overloads": {
+                "ideal": ["4× ATK", "4x Elemental Damage"],
+                "good": [],
+                "fine": ["0-4x Crit Rate", "0-4x Crit Damage"],
+                "passable": ["0-4× Max Ammo"],
+                "no": []
+            }, "cube": {
+                "cube": ["resilience", "bastion", "quantum"],
+                "notes": "(highest ATK)"
+            }, "notes": "Can keep skill 1 to around level 4~5 for buff uptime (but requires 2 parts destruction every 30 seconds). Higher level for skill 1 is more for flexibility for other bosses. Burst gives most damage and skill 2 also give decent damage increase. ATK & Ele as highest priority for OL and 3rd line is extremely low priority."
+        }
+    }, "scarlet": {
+        "nikke_gg": {
+            "ratings": {
+                "story": 8.85,
+                "pvp": 9.5,
+                "boss": 8.8,
+                "notes": "Very high ST DPS and strong AoE Burst. Scales well with Max Ammo and Reload Speed buffs. Good in every situation."
+            }, "skills": {
+                "priority": "Highest",
+                "budget": "7/4/4",
+                "recommended": "10/5/7",
+                "notes": "Skill 1 has high level 1 base buffs but scaling is rather on the low side. However, it is still very worthwhile to invest into as she simply deals great ST damage and more attack makes her better. Skill 2 has a very minimal crit damage buff but her counter does well in Arena with the right team, invest if focused in Arena. Burst does a massively damaging AoE wipe, amplified by her Skill 1 stacks as well; also gives a nice critical rate buff when under 50% HP during cast."
+            }, "overloads": {
+                "priority": "High",
+                "priority_rank": 5,
+                "elemental_damage": {
+                    "priority": 4,
+                    "recommended": "2-4x",
+                    "notes": "Comes useful situationally. (UR raids such as Black smith, Thermite) "
+                },
+                "hit_rate": {
+                    "priority": 3,
+                    "recommended": "2-4x",
+                    "notes": "Able to hit Cores easier on bosses with small cores. "
+                },
+                "max_ammo": {
+                    "priority": 5,
+                    "recommended": "4x",
+                    "notes": "Wants all ammo possible. get ASAP"
+                },
+                "atk": {
+                    "priority": 3,
+                    "recommended": "2x",
+                    "notes": "More attack is never bad, however this stat gets bloated from her passive, giving so much attack already."
+                },
+                "charge_damage": {
+                    "priority": 0,
+                    "recommended": "0x",
+                    "notes": ""
+                },
+                "charge_speed": {
+                    "priority": 0,
+                    "recommended": "0x",
+                    "notes": ""
+                },
+                "crit_damage": {
+                    "priority": 2,
+                    "recommended": "0x",
+                    "notes": ""
+                },
+                "crit_rate": {
+                    "priority": 2,
+                    "recommended": "0x",
+                    "notes": ""
+                },
+                "def": {
+                    "priority": 0,
+                    "recommended": "0x",
+                    "notes": ""
+                },
+                "notes": "Pretty great unit from early – late game. OL’s grant her much needed max ammo capacity to off-set her innate low ammo count. One of the most beginner friendly DPS’s."
+            }, "cube": {
+                "cube": ["resilience", "bastion"],
+                "notes": "When overloaded with 2-3x+ lines of Max Ammo, Bastion Becomes best in slot."
+            }
+        }, "prydwen": {
+            "ratings": {
+                "story_low_deficit": "SSS",
+                "story_high_deficit": "SSS",
+                "boss_solo": "S",
+                "boss_adds": "SSS",
+                "pvp": "SSS"
+            }, "skills": {
+                "priority": "Meta",
+                "pve": "4/4/4 → 7/4/4 → 10/4/7 (→ 10/4/10)",
+                "pvp": "4/4/4 → 7/4/7 → 10/7/10 (→ 10/10/10)"
+            }, "overloads": {
+                "priority": "Meta",
+                "essential": ["3× Max Ammo"],
+                "ideal": ["4× Elemental Damage", "4× ATK", "1× Max Ammo"],
+                "passable": ["1-2× Hit Rate", "1-2× Crit Rate", "1-2× Crit Damage"],
+                "notes": "Scarlet is an excellent choice for PvE, but she is at the top of the meta for PvP, where ATK is better than Elemental Damage. She scales the best with Ammo, since she only has 20 ammo and a huge reload time. Scarlet is an AR who cannot hit core shots well against enemies who are far away, hence she benefits from Crit Rolls more than others, as well as Hit Rate."
+            }, "cube": {
+                "pre_overload": ["resilience", "bastion"],
+                "post_overload": ["bastion", "resilience"],
+                "notes": "Resilience Cube is the go-to choice for Scarlet pre-overload gear and when your Bastion Cube is still not upgraded to level 7. Post-overload though, Bastion Cube scales way better than Resilience because you can get Max Ammo as overload perk."
+            }
+        }, "skyfall": {
+            "priority": "Medium",
+            "collection_item_priority": "priority_rest",
+            "skills": ["10", "4+", "7-10"],
+            "overloads": {
+                "ideal": ["3-4× Max Ammo", "4x Elemental Damage", "0-4× ATK"],
+                "good": ["0-4x Crit Damage", "0-4x Crit Rate"],
+                "fine": ["0-4x Hit Rate"],
+                "passable": [],
+                "no": []
+            }, "cube": {
+                "cube": ["resilience", "bastion"],
+                "notes": "Resilience synregizes better with Summer Anis / Privaty and also makes you get caught off guard less during boss mechanics (QTE's)"
+            }, "notes": "Skill 2 can be higher if you're big on PVP. Max Ammo Capacity improves her damage the greatest. Having 2 lines of Ammo is OK if you run her with Summer Anis. More lines is good if you don't run with Summer Anis. Scarlet has high ATK multiplier from her skill, so it's not as necessary (it's still the third best in slot). Thus Elemental Damage is higher priority than ATK for her if you have to choose between the two. But both are still good for her. Crit Damage balances well with Scarlet having Crit Rate buff on herself Crit Rate is still a good line since Scarlet is not always in a low HP status so she may not have the self Crit Rate buff anyways Scarlet relies a lot on auto attack and thus having higher Hit Rate to be more likely to do core shots increases her damage."
+        }
+    }, "scarlet_black_shadow": {
+        "nikke_gg": {
+            "ratings": {
+                "story": 8.8,
+                "pvp": 9.2,
+                "boss": 9.7,
+                "notes": "Amazing All-Around Nikke. One of the Strongest Bossing Nikkes second only to piercing Nikkes. Strongest Wind Element Damage dealer as of right now. "
+            }, "skills": {
+                "priority": "Highest",
+                "budget": "7/4/7",
+                "recommended": "10/7/10",
+                "notes": ""
+            }, "overloads": {
+                "priority": "High",
+                "priority_rank": 3,
+                "elemental_damage": {
+                    "priority": 5,
+                    "recommended": "4x",
+                    "notes": "wanted for Union raids and Solo raid content. "
+                },
+                "hit_rate": {
+                    "priority": 0,
+                    "recommended": "0x",
+                    "notes": ""
+                },
+                "max_ammo": {
+                    "priority": 1,
+                    "recommended": "0-1x",
+                    "notes": "Her Main teams will supply her with enough ammo for her to have full uptime on her burst (where most of her damage is)."
+                },
+                "atk": {
+                    "priority": 4,
+                    "recommended": "4x",
+                    "notes": "Simply more damage"
+                },
+                "charge_damage": {
+                    "priority": 0,
+                    "recommended": "0x",
+                    "notes": ""
+                },
+                "charge_speed": {
+                    "priority": 2,
+                    "recommended": "1x",
+                    "notes": "Wants at least a 4.9% Charge speed roll so she can launch one more attack during burst. "
+                },
+                "crit_damage": {
+                    "priority": 3,
+                    "recommended": "3-4x",
+                    "notes": "Max Ammo rolls not wanted, can roll into here instead"
+                },
+                "crit_rate": {
+                    "priority": 3,
+                    "recommended": "3-4x",
+                    "notes": "Max Ammo rolls not wanted, can roll into here instead"
+                },
+                "def": {
+                    "priority": 0,
+                    "recommended": "0x",
+                    "notes": ""
+                },
+                "notes": "Very versatile Nikke that can be used in every game mode and excel at it. She isn’t Overload dependent but would still love to have them for the stat increases. Immense raw damage potential."
+            }, "cube": {
+                "cube": ["bastion"],
+                "notes": ""
+            }
+        }, "prydwen": {
+            "ratings": {
+                "story_low_deficit": "SSS",
+                "story_high_deficit": "SS",
+                "boss_solo": "SSS",
+                "boss_adds": "SSS",
+                "pvp": "SS"
+            }, "skills": {
+                "priority": "Meta",
+                "pve": "4/4/4 → 7/4/7 → 10/7/10 ",
+                "pvp": "4/4/4 → 7/4/7 → 10/7/10 "
+            }, "overloads": {
+                "priority": "Meta",
+                "essential": ["1x Max Ammo"],
+                "ideal": ["1× Charge Speed", "4× Elemental Damage", "4× ATK"],
+                "passable": ["2× Charge Speed"],
+                "notes": "1 Ammo definitely makes it more comfortable to use SBS. Getting charge speed can allow SBS to hit 1-2 extra shots during Full Burst, but 1 roll of >5% is enough. SBS is one of the best unit for PvE, and is one of the top choices to use in PvP as well."
+            }, "cube": {
+                "pre_overload": ["bastion", "onslaught"],
+                "post_overload": ["bastion", "onslaught"],
+                "notes": "The most economical option is Bastion. While Onslaught is theoretically the best cube for SBS when it comes to pure damage, it is very niché and does not pair well with most other units. Thus, you will be better off using Bastion for the increased stats and elemental damage bonus. Besides that, when coupled with Alice, SBS will shoot faster. In order for her to last until the next Full Burst without reloading even once, you usually need to rely on Bastion (and 1 or more Max Ammo OL lines). This should result in more damage provided versus Onslaught. Regardless, you may benefit from Adjutant more if you have a low charge speed roll and want to reach a certain breakpoint (as stated in Gear Investment). Note that the case above doesn't convert well for PvP as there she is bound to reload before entering Full Burst if she doesn't have Max Ammo OL, in which case Resilience is a better option than Bastion. Since she gains Max Ammo from Skill 2 (and reloads fully just as Full Burst begins), it is unnecessary to equip Bastion to make full use of her devastating Burst Skill. Bastion would only be a good choice if Alice were also in the team, but that's usually questionable in PvP to bring a low-regen Nikke just to boost damage slightly. "
+            }
+        }, "skyfall": {
+            "priority": "Highest",
+            "collection_item_priority": "highest",
+            "skills": ["10", "7", "10"],
+            "overloads": {
+                "ideal": ["4× ATK", "4x Elemental Damage", "1× Max Ammo", "1-3× Charge Speed"],
+                "good": ["0-4x Charge Damage", "0-4x Crit Rate"],
+                "fine": [],
+                "passable": ["0-4× Crit Damage"],
+                "no": []
+            }, "cube": {
+                "cube": ["bastion", "onslaught"],
+                "notes": "Bastion primarily, Onslaught ig you can handle infinite ammo"
+            }, "notes": "1x Max Ammo is good to be able to use SBS in variety of teams but if you're just using her with bunnies, then having 0 Max Ammo is fine. More Charge Speed allows more hits during full burst which allows more skill 1 proc. With Alice, you can get 17 shots (with high probability) and getting 1 Charge Speed line can get it to 18 shots (more consistently). Charge Damage and Crit Rate are roughly the same. Crit is not bad because her skill 1 procs don't get core damage bonus and doesn't get diluted with the formula in the multiplier."
+        }
+    }, "signal": {
+        "nikke_gg": {
+            "ratings": {
+                "story": 2.5,
+                "pvp": 3,
+                "boss": 4,
+                "notes": "Decent personal damage with defence and attack down. Outclassed by attack buffers for offensive support and shielders for defensive support."
+            }, "skills": {
+                "priority": "Low",
+                "budget": "1/1/1",
+                "recommended": "1/1/1",
+                "notes": "Skill 2 has big life steal but due to the nature of how her kit works; life leech is kinda useless without soaking damage via taunt skills which she does not have. Burst has decent def shred."
+            }, "overloads": {
+            }, "cube": {
+                "cube": ["bastion", "resilience"],
+                "notes": ""
+            }
+        }, "prydwen": {
+            "ratings": {
+                "story_low_deficit": "D",
+                "story_high_deficit": "D",
+                "boss_solo": "D",
+                "boss_adds": "D",
+                "pvp": "D"
+            }, "skills": {
+                "priority": "-",
+                "pve": "1/1/1",
+                "pvp": "1/1/1"
+            }, "overloads": {
+                "priority": "-",
+                "essential": [],
+                "ideal": [],
+                "passable": ["-"],
+                "notes": ""
+            }, "cube": {
+                "pre_overload": ["bastion", "resilience"],
+                "post_overload": ["bastion", "resilience"],
+                "notes": "Bastion Cube will give her a higher uptime on her S1 debuff while Resilience Cube will be a general improvement to her performance."
+            }
+        }, "skyfall": {
+            "collection_item_priority": "ignore_for_now"
+        }
+    }, "sin": {
+        "nikke_gg": {
+            "ratings": {
+                "story": 2,
+                "pvp": 6.5,
+                "boss": 6.5,
+                "notes": "An actual Tank unit with good taunt uptime and good self sustain against bosses if survivability is needed. However she is useless against story stages in high deficit as mobs deal massive damage in high deficit stages."
+            }, "skills": {
+                "priority": "Low",
+                "budget": "1/1/1",
+                "recommended": "4/5/5",
+                "notes": "Skill 1 and 2 are her main survivability tools, with Skill 1 being more important as it provides constant healing. Burst does not need consideration as the damage dealt is miniscule, and damage taken debuff will never proc in stages she’d often be used in."
+            }, "overloads": {
+            }, "cube": {
+                "cube": ["vigor", "resilience"],
+                "notes": "Has last bullet mechanic, avoid ammo-increasing cubes."
+            }
+        }, "prydwen": {
+            "ratings": {
+                "story_low_deficit": "C",
+                "story_high_deficit": "C",
+                "boss_solo": "C",
+                "boss_adds": "C",
+                "pvp": "C"
+            }, "skills": {
+                "priority": "Very Low",
+                "pve": "1/1/1 (→ 4/4/4)",
+                "pvp": "1/1/1"
+            }, "overloads": {
+                "priority": "-",
+                "essential": [],
+                "ideal": [],
+                "passable": ["-"],
+                "notes": ""
+            }, "cube": {
+                "pre_overload": ["resilience"],
+                "post_overload": ["resilience"],
+                "notes": "Resilience Cube is the best choice for anyone with the last bullet mechanism."
+            }
+        }, "skyfall": {
+            "collection_item_priority": "ignore_for_now"
+        }
+    }, "snow_white": {
+        "nikke_gg": {
+            "ratings": {
+                "story": 8.3,
+                "pvp": 8,
+                "boss": 9.2,
+                "notes": "Strong DPS with a very powerful burst that allows for great manual play skill expression. Weak in auto play."
+            }, "skills": {
+                "priority": "Highest",
+                "budget": "4/4/7",
+                "recommended": "4/7/10",
+                "notes": "Skill 2 synergizes with Burst with proper timing. Burst has insane scaling and insane damage when paired with the right team. She just needs high skill investments to plow through everything."
+            }, "overloads": {
+                "priority": "High",
+                "priority_rank": 7,
+                "elemental_damage": {
+                    "priority": 3,
+                    "recommended": "2x",
+                    "notes": "Situationally Useful"
+                },
+                "hit_rate": {
+                    "priority": 0,
+                    "recommended": "0x",
+                    "notes": ""
+                },
+                "max_ammo": {
+                    "priority": 0,
+                    "recommended": "0x",
+                    "notes": ""
+                },
+                "atk": {
+                    "priority": 5,
+                    "recommended": "4x",
+                    "notes": "NUUUUUKE"
+                },
+                "charge_damage": {
+                    "priority": 1,
+                    "recommended": "0x",
+                    "notes": "Simply adds too little Charge DMG% to her burst (Base 1000%), Charge damage increase is additive, not multiplicative."
+                },
+                "charge_speed": {
+                    "priority": 2,
+                    "recommended": "1-2x",
+                    "notes": "Increases the amount of charge SW can do when under Liter | Novel buffs, before expiring. "
+                },
+                "crit_damage": {
+                    "priority": 3,
+                    "recommended": "2x",
+                    "notes": "NUUUUUKE"
+                },
+                "crit_rate": {
+                    "priority": 3,
+                    "recommended": "2x",
+                    "notes": "NUUUUUKE"
+                },
+                "def": {
+                    "priority": 0,
+                    "recommended": "0x",
+                    "notes": ""
+                },
+                "notes": "Massive burst damage. Amazing Nikke when dealing against raptures with many parts/Regenerating parts. (Notably on Solo Raid and Union Raid). Also a solid campaign clearer with high investments. "
+            }, "cube": {
+                "cube": ["bastion", "resilience"],
+                "notes": "Use Adjutant when using her with Novel/Liter to fit in as much damage as possible on her burst, as their burst buffs lasts 5s, but SW takes longer than 5s to fully charge."
+            }
+        }, "prydwen": {
+            "ratings": {
+                "story_low_deficit": "S",
+                "story_high_deficit": "S",
+                "boss_solo": "SS",
+                "boss_adds": "S",
+                "pvp": "B"
+            }, "skills": {
+                "priority": "High (Late Game)",
+                "pve": "1/1/1 → 4/4/10 (→ 4/7/10)",
+                "pvp": "1/1/1"
+            }, "overloads": {
+                "priority": "Meta",
+                "essential": [],
+                "ideal": ["4× Elemental Damage", "4× ATK"],
+                "passable": ["4× Crit Rate", "4× Crit Damage", "2-4× Charge Speed"],
+                "notes": ""
+            }, "cube": {
+                "pre_overload": ["resilience", "adjutant", "wingman"],
+                "post_overload": ["resilience", "adjutant", "wingman"],
+                "notes": "If you're using SW one-shot team then you can equip Onslaught Cube on her, but in any other scenario, you're better with Resilience/Bastion/Wingman. Adjutant Cube is also an option to squeeze in the 5s damage window."
+            }
+        }, "skyfall": {
+            "priority": "Low to Med",
+            "collection_item_priority": "priority_solo_raid",
+            "skills": ["4", "4-10", "10"],
+            "overloads": {
+                "ideal": ["4× ATK", "4x Elemental Damage"],
+                "good": ["0-4x Crit Rate", "0-3x Charge Speed"],
+                "fine": [],
+                "passable": ["0-2× Max Ammo", "0-4x Crit Damage", "0-4x Charge Damage"],
+                "no": []
+            }, "cube": {
+                "cube": ["resilience", "bastion", "adjutant"],
+                "notes": "Any works. Highest level for ATK stat stick or Elemental Damage Bonus sub skills. Resilience/Bastion to help with Energy Generation and shooting and skill uptime. Adjutant if you plan to use her with Liter and have no Charge Speed on her overloads."
+            }, "notes": "ATK and Elemental Damage are the main targets. Aim at least one or both on each OL gear piece. The rest are secondary. Crit Rate is a huge Quality of Life stat for Snow White; while you can just keep retrying for crit bursts to happen, it overall saves you time and more consistency on your runs. Charge Speed is primarily important when use Snow White with Liter, otherwise not necessary. You need about 2 Charge Speed lines + Maxwell with extremely fast activation between Liter and Snow White Burst to reach 1000%. About 3-4 if you want it to be comfy. Each 1% Charge Speed adds about 10% charge on SW Burst speed. Charge Damage sucks for her but I wouldn't sweat it as a 3rd line (it's additive to the 1000% charge bar of her burst). Max Ammo helps with Energy Generation and boss mechanics quality of life but overall not the biggest necessity."
+        }
+    }, "snow_white_innocent_days": {
+        "nikke_gg": {
+            "ratings": {
+                "story": 7.6,
+                "pvp": 6,
+                "boss": 7.8,
+                "notes": "Good Welfare Nikke that has decent personal damage and solid AoE capabilities."
+            }, "skills": {
+                "priority": "Medium",
+                "budget": "4/7/7",
+                "recommended": "4/10/10",
+                "notes": ""
+            }, "overloads": {
+            }, "cube": {
+                "cube": ["bastion", "resilience"],
+                "notes": ""
+            }
+        }, "prydwen": {
+            "ratings": {
+                "story_low_deficit": "S",
+                "story_high_deficit": "A",
+                "boss_solo": "B",
+                "boss_adds": "A",
+                "pvp": "C"
+            }, "skills": {
+                "priority": "Low",
+                "pve": "1/1/1 → 4/4/4",
+                "pvp": "1/1/1"
+            }, "overloads": {
+                "priority": "Very Low",
+                "essential": [],
+                "ideal": ["4× Elemental Damage", "4× ATK"],
+                "passable": [],
+                "notes": "Can act as a mid tier DPS"
+            }, "cube": {
+                "pre_overload": ["resilience", "bastion"],
+                "post_overload": ["bastion", "resilience"],
+                "notes": "Resilience and Bastion Cubes work best on most AR wielders and she isn't an exception."
+            }
+        }, "skyfall": {
+            "collection_item_priority": "maybe_someday"
+        }
+    }, "soda": {
+        "nikke_gg": {
+            "ratings": {
+                "story": 5.5,
+                "pvp": 6,
+                "boss": 6,
+                "notes": "A good healer that comes with a 20s cooldown, and has good self sustain as well."
+            }, "skills": {
+                "priority": "Medium",
+                "budget": "1/1/1",
+                "recommended": "4/5/4",
+                "notes": "Skill 1 and 2 Synergize with each other; both need to be raised to get optimal healing from her. Soda’s skills scale rather well but high investments are not recommended unless she is your only healer. Soda’s burst is not even worth considering upgrading."
+            }, "overloads": {
+            }, "cube": {
+                "cube": ["vigor", "bastion"],
+                "notes": "Vigor Increases her Healing."
+            }
+        }, "prydwen": {
+            "ratings": {
+                "story_low_deficit": "C",
+                "story_high_deficit": "B",
+                "boss_solo": "C",
+                "boss_adds": "C",
+                "pvp": "D"
+            }, "skills": {
+                "priority": "Very Low",
+                "pve": "1/1/1 → 4/4/4",
+                "pvp": "1/1/1"
+            }, "overloads": {
+                "priority": "-",
+                "essential": [],
+                "ideal": [],
+                "passable": ["-"],
+                "notes": ""
+            }, "cube": {
+                "pre_overload": ["bastion", "resilience", "wingman"],
+                "post_overload": ["bastion", "resilience", "wingman"],
+                "notes": "MG goes brrr. Bastion Cube will allow her to shoot for longer, but if you don't have it upgraded, Resilience or Wingman Cubes are a better choice."
+            }
+        }, "skyfall": {
+            "collection_item_priority": "ignore_for_now"
+        }
+    }, "soda_twinkling_bunny": {
+        "nikke_gg": {
+            "ratings": {
+                "story": 8.3,
+                "pvp": 8.7,
+                "boss": 8.7,
+                "notes": "Strong niche unit, Soda: Twinkling bunny is used in Shotgun teams, paired with Tove and Leona. She does rather bad in other teams due to unconditional full burst timer"
+            }, "skills": {
+                "priority": "",
+                "budget": "",
+                "recommended": "",
+                "notes": ""
+            }, "overloads": {
+            }, "cube": {
+                "cube": [],
+                "notes": ""
+            }
+        }, "prydwen": {
+            "ratings": {
+                "story_low_deficit": "A",
+                "story_high_deficit": "A",
+                "boss_solo": "SS",
+                "boss_adds": "S",
+                "pvp": "S"
+            }, "skills": {
+                "priority": "High (Late Game)",
+                "pve": "4/4/4 → 4/7/7 → 4/10/7 (→ 7/10/10)",
+                "pvp": "4/4/4 → 7/4/7 → 7/4/10 (→ 7/10/10)"
+            }, "overloads": {
+                "priority": "High",
+                "essential": ["1-2× Max Ammo"],
+                "ideal": ["4× Elemental Damage", "4× ATK"],
+                "passable": ["1-2× Hit Rate", "1-2× Crit Rate", "1-2× Crit Damage"],
+                "notes": "Ammo is important to shoot for 15s straight of Burst and to make sure she reloads only once every 20s. It is very important for Soda to consistently shoot during Burst in order to stack her Skill 1. Soda is also used in PvP. Since she is Iron, Elemental Damage is appreciated on her. Only OL if you plan to build Meta SG Team or for PvP"
+            }, "cube": {
+                "pre_overload": ["bastion", "resilience"],
+                "post_overload": ["bastion", "resilience"],
+                "notes": "Due to the extra reloading animation imposed on B. Soda, we want to avoid reloading as much as possible. Bastion remains the best cube and is miles better than the other options. Resilience is second best. No questions asked. Technically, you can also use Quantum for PvP (if that extra juice is needed)."
+            }
+        }, "skyfall": {
+            "priority": "Med (w/ Tove)",
+            "collection_item_priority": "priority_solo_raid",
+            "skills": ["(4 or 7)-10", "7-10", "(4 or 7)-10"],
+            "overloads": {
+                "ideal": ["1-2× Max Ammo", "4x Elemental Damage", "4× ATK"],
+                "good": ["0-3x Crit Rate", "0-3x Hit Rate", "0-3x Crit Damage"],
+                "fine": [],
+                "passable": [],
+                "no": []
+            }, "cube": {
+                "cube": ["bastion"],
+                "notes": ""
+            }, "notes": "for budget, keeping skill 1 and burst at level 4 is okay if you have Tove. Without Tove, it's recommended to get skill 1 and burst at level 7. Highest Priority is Skill 2 and biggest damage increase."
+        }
+    }, "soline": {
+        "nikke_gg": {
+            "ratings": {
+                "story": 6.5,
+                "pvp": 4,
+                "boss": 7.9,
+                "notes": "Can rival scarlet when bossing, but is a very niche unit because she needs to be full hp at all times."
+            }, "skills": {
+                "priority": "Medium",
+                "budget": "1/1/1",
+                "recommended": "1/7/7",
+                "notes": "Skill 1 is broken. Doesn’t give Fire rate at all. Skill 2 post Soline buff actually gives her a big dps boost when max HP Burst Additional proc hits 3 times instead of once (max hp), making it a hard hitting burst. Unknown if bug will be fixed anytime soon."
+            }, "overloads": {
+            }, "cube": {
+                "cube": ["bastion", "resilience"],
+                "notes": ""
+            }
+        }, "prydwen": {
+            "ratings": {
+                "story_low_deficit": "C",
+                "story_high_deficit": "C",
+                "boss_solo": "C",
+                "boss_adds": "C",
+                "pvp": "D"
+            }, "skills": {
+                "priority": "-",
+                "pve": "1/1/1",
+                "pvp": "1/1/1"
+            }, "overloads": {
+                "priority": "Very Low",
+                "essential": [],
+                "ideal": ["4× Elemental Damage!", "4× ATK"],
+                "passable": [],
+                "notes": "Can act as a mid tier DPS"
+            }, "cube": {
+                "pre_overload": ["assault", "resilience"],
+                "post_overload": ["assault", "resilience"],
+                "notes": "Assault Cube helps SMG wielders to actually hit something past Near range. While the Resilience Cube is a generic DPS increase (but it's better in scenarios when you fight stuff only in Near range as there Hit Rate isn't that useful)."
+            }
+        }, "skyfall": {
+            "collection_item_priority": "element_advantage"
+        }
+    }, "sugar": {
+        "nikke_gg": {
+            "ratings": {
+                "story": 6.5,
+                "pvp": 8.6,
+                "boss": 7.9,
+                "notes": "Strong shotgun DPS. Provides useful max ammo buff to other shotguns, making her a staple in shotgun teams."
+            }, "skills": {
+                "priority": "Medium",
+                "budget": "1/1/1",
+                "recommended": "1/5/7",
+                "notes": "Skill 1 required getting hit to get ok buffs. Skill 2 and Burst synergize well with each other. Higher skill investments would greatly benefit Shotgun teams."
+            }, "overloads": {
+            }, "cube": {
+                "cube": ["resilience", "bastion"],
+                "notes": "Bastion can actually be used because of max ammo increase on burst. Wingman holds less value."
+            }
+        }, "prydwen": {
+            "ratings": {
+                "story_low_deficit": "C",
+                "story_high_deficit": "C",
+                "boss_solo": "A",
+                "boss_adds": "C",
+                "pvp": "S"
+            }, "skills": {
+                "priority": "Very Low",
+                "pve": "1/1/1 → 1/5/5",
+                "pvp": "1/1/1 → 4/5/5"
+            }, "overloads": {
+                "priority": "Low",
+                "essential": ["2-3× Max Ammo"],
+                "ideal": ["4× Elemental Damage", "4× ATK"],
+                "passable": [],
+                "notes": "Extreme Niche for Iron Weak Bosses in Solo Raids. Also used in PvP, but OLing her is more or less for CP Padding."
+            }, "cube": {
+                "pre_overload": ["resilience", "bastion", "wingman"],
+                "post_overload": ["resilience", "bastion", "wingman"],
+                "notes": "You want to shoot as many as you can during her AS buff, then Bastion/Resi in here will be better. But if you don't have enough space and are lazy to swap cube around, a Wingman is okay"
+            }
+        }, "skyfall": {
+            "priority": "Low",
+            "collection_item_priority": "element_advantage",
+            "skills": ["4", "4-10", "7-10"],
+            "overloads": {
+                "ideal": ["4× ATK", "4x Elemental Damage", "1-3× Max Ammo", "0-4x Hit Rate"],
+                "good": ["0-4x Crit Damage", "0-4x Crit Rate"],
+                "fine": [],
+                "passable": [],
+                "no": []
+            }, "cube": {
+                "cube": ["bastion", "resilience"],
+                "notes": "Bastion > Resilience, With enough Ammo or Manual Play, Bastion can allow you to last the entire duration of Full Burst without reloading"
+            }, "notes": "Max Ammo so that you don't reload during her burst. Hit Rate takes advantage of synergy with her burst and allows you to reach a high enough hit rate to do core shots as a shotgun with synergy on other support units. Crit Damage synergizes with her skill 2 self crit buff. Crit Rate is there for the off chance of skill 1 triggering, but more so due to you likely rolling Crit Damage also on other overload lines."
+        }
+    }, "tia": {
+        "nikke_gg": {
+            "ratings": {
+                "story": 9.4,
+                "pvp": 8.6,
+                "boss": 9.8,
+                "notes": "Can be Great in low deficit clearing, however her taunt mechanics greatly reduce her late game clearing capabilities"
+            }, "skills": {
+                "priority": "Highest",
+                "budget": "7/4/4",
+                "recommended": "10/5/4",
+                "notes": "Skill 1 Is the meat of her offensive support capabilities. Extremely good buff, level asap for solo raid and union raid usage. Skill 2 Improves her cover survivability, but usually this won’t be an issue as she provides enough at low levels. Burst simply gives shields, no investment really needed."
+            }, "overloads": {
+            }, "cube": {
+                "cube": ["vigor", "resilience"],
+                "notes": "Vigor increases her cover indirectly and increases cover recovery."
+            }
+        }, "prydwen": {
+            "ratings": {
+                "story_low_deficit": "SSS",
+                "story_high_deficit": "SSS",
+                "boss_solo": "SSS",
+                "boss_adds": "SSS",
+                "pvp": "S"
+            }, "skills": {
+                "priority": "Meta",
+                "pve": "4/1/1 → 7/4/4 → 10/4/4",
+                "pvp": "4/1/1 → 7/4/4 → 10/4/4"
+            }, "overloads": {
+                "priority": "Medium",
+                "essential": [],
+                "ideal": [],
+                "passable": ["-"],
+                "notes": "CP Padding"
+            }, "cube": {
+                "pre_overload": ["vigor", "resilience", "bastion"],
+                "post_overload": ["vigor", "resilience", "bastion"],
+                "notes": "You can use Resilience/Bastion for CP padding in campaign, although Tia has a mechanic relied on attack, you actually don't want it to trigger more often. Either she will die, or your cover die. In both cases, you are pretty much guaranteed a retry. Just make sure she stays alive with Vigor. "
+            }
+        }, "skyfall": {
+            "priority": "High (w/Naga)",
+            "collection_item_priority": "useful_but_not_priority",
+            "skills": ["10", "4", "4"],
+            "overloads": {
+                "ideal": ["0-4× ATK", "0-4x Elemental Damage", "0-4× Max Ammo", "0-4x DEF"],
+                "good": ["0-4x Charge Speed"],
+                "fine": [],
+                "passable": ["0-4x Crit Rate", "0-4x Crit Damage"],
+                "no": []
+            }, "cube": {
+                "cube": ["resilience", "quantum"],
+                "notes": ""
+            }, "notes": "Not necessary to OL but worth considering for campaign pushing CP Padding. Just roll gears once and call it a day. Other units better off using rocks. All the lines are optional if we're being very specific about it. ATK for more personal heal. DEF could be argued it's not necessary at high end campaign, Max Ammo or Charge Speed could be argued that she will taunt more often and causing herself to heal. But you could also use the Max Ammo for better energy generation."
+        }
+    }, "tove": {
+        "nikke_gg": {
+            "ratings": {
+                "story": 6,
+                "pvp": 5.5,
+                "boss": 8.4,
+                "notes": "Great Shotgun Team Buffer, however most shotgun Nikkes are phased out of the meta as of right now. Useless outside Shotgun teams"
+            }, "skills": {
+                "priority": "Medium",
+                "budget": "9/4/4",
+                "recommended": "9/7/7",
+                "notes": "Skill 1 Gives more consistency towards her stack gain and gives more ammo. One can stop at level 6 as she’s not a meta defining character as of right now. But it is recommended to level up this skill to level 9 for stacking consistency. Skill 2 gives more attack speed and skill level 6 is a breakthrough on increased ATK spd. Anymore than level 6 is not worth the skill books. Burst provides a simple yet big ATK buff for shotgun Nikkes."
+            }, "overloads": {
+            }, "cube": {
+                "cube": ["bastion"],
+                "notes": "Bastion = Increased Ammo Count"
+            }
+        }, "prydwen": {
+            "ratings": {
+                "story_low_deficit": "B",
+                "story_high_deficit": "B",
+                "boss_solo": "SS",
+                "boss_adds": "S",
+                "pvp": "B"
+            }, "skills": {
+                "priority": "High (Late Game)",
+                "pve": "1/1/1 → 9/4/4 → 9/7/7 (→ 9/10/10)",
+                "pvp": "1/1/1"
+            }, "overloads": {
+                "priority": "High (PVE)",
+                "essential": [],
+                "ideal": ["1-4× Max Ammo"],
+                "passable": [],
+                "notes": "Ammo OL increases uptime/consistency of Tove's S1 Only OL if you plan to build Meta SG Team."
+            }, "cube": {
+                "pre_overload": ["resilience"],
+                "post_overload": ["resilience"],
+                "notes": "Base Tove (no Max Ammo) reloads every 6s. This means she will be hitting minimum probability in almost every 5s window. Because of this, we recommend Resilience, but Bastion 7+ is also not a bad pick as it will make accruing 3 stacks within 1 clip easier. If she has high base ammo, you should get Bastion instead, as maintaining stacks is much easier if Tove keeps firing. It also synergizes well with her Emergency Bullet (Skill 1)"
+            }
+        }, "skyfall": {
+            "priority": "Medium (w/ Bunny Soda)",
+            "collection_item_priority": "useful_but_not_priority",
+            "skills": ["9", "4 or 7 or 10", "4-10"],
+            "overloads": {
+                "ideal": ["2-4× Max Ammo", "0-4× ATK", "0-4x Elemental Damage"],
+                "good": ["0-4x Hit Rate"],
+                "fine": [],
+                "passable": ["0-4x Crit Rate", "0-4x Crit Damage"],
+                "no": []
+            }, "cube": {
+                "cube": ["bastion"],
+                "notes": ""
+            }, "notes": "SG Comps Support. She outperforms Liter in an SG team even without CDR. For Skill 2, breakpoints for attack speed for SGs are level 4, level 7 or level 10. Don't keep the skills in between. More Ammo is more likelihood of uptime of buffs. With about 200% Ammo (3 lines of Tier 11 Max Ammo), you roughly reload once per minute. At around 275% ammo, you could do a full 3 minute run without reloading. I would at least aim for 100% ammo. Upgrade burst as high as wanted. Higher level for more damage."
+        }
+    }, "trony": {
+        "nikke_gg": {
+            "ratings": {
+                "story": 6.8,
+                "pvp": 4,
+                "boss": 7.8,
+                "notes": "Does pretty good single target damage when played manually and with her preferred teams. Nothing too impressive however, bad in all other forms of content."
+            }, "skills": {
+                "priority": "Medium",
+                "budget": "1/1/5",
+                "recommended": "4/4/7",
+                "notes": "Skill 1 and Skill 2 reduces the amount of full charge shoots during full burst cycles when spamming shots on manual. Burst is where most of her damage will come from, needs rather heavy investment for her to deal respectable damage "
+            }, "overloads": {
+            }, "cube": {
+                "cube": ["resilience", "bastion"],
+                "notes": "Resilience – Any team that has reload speed buffers. Bastion – If no more resilience cube slots"
+            }
+        }, "prydwen": {
+            "ratings": {
+                "story_low_deficit": "C",
+                "story_high_deficit": "C",
+                "boss_solo": "B",
+                "boss_adds": "B",
+                "pvp": "C"
+            }, "skills": {
+                "priority": "Very Low",
+                "pve": "1/1/1 → 4/4/4 → 4/4/7 (→ 4/4/10)",
+                "pvp": "1/1/1"
+            }, "overloads": {
+                "priority": "Very Low",
+                "essential": [],
+                "ideal": ["4× Elemental Damage", "4× ATK", "2× Max Ammo"],
+                "passable": ["2× Charge Speed"],
+                "notes": "Can act as a mid tier DPS"
+            }, "cube": {
+                "pre_overload": ["resilience", "bastion"],
+                "post_overload": ["resilience", "bastion"],
+                "notes": "Resilience or Bastion would do fine. We recommend Bastion Lv 7+ if you have exactly 1x Max Ammo, as the extra 3 shots will help with charging Burst Energy after Full Burst(s). Otherwise, we prefer Resilience because their uptime/downtime balance is more consistent, especially if you're running her with other Reload buffers like Crown or Privaty."
+            }
+        }, "skyfall": {
+            "collection_item_priority": "not_rated"
+        }
+    }, "vesti": {
+        "nikke_gg": {
+            "ratings": {
+                "story": 5.5,
+                "pvp": 7,
+                "boss": 6.5,
+                "notes": "Lowers full burst duration, allowing for faster rotations with CDR. Notable for having high splash radius (can hit many boss parts if they are close to eachother, like chatterbox, thermite etc)"
+            }, "skills": {
+                "priority": "Low",
+                "budget": "1/1/1",
+                "recommended": "4/7/7",
+                "notes": "Skill 1 simply increases explosion radius. Skill 2 does increase crit damage and crit rate modestly, but the ATK buff is miniscule. Burst simply takes too long to stack to be useful in stages but still does okay."
+            }, "overloads": {
+            }, "cube": {
+                "cube": ["resilience", "bastion"],
+                "notes": ""
+            }
+        }, "prydwen": {
+            "ratings": {
+                "story_low_deficit": "C",
+                "story_high_deficit": "C",
+                "boss_solo": "C",
+                "boss_adds": "B",
+                "pvp": "A"
+            }, "skills": {
+                "priority": "Very Low",
+                "pve": "1/1/1 → 4/4/4",
+                "pvp": "1/1/1"
+            }, "overloads": {
+                "priority": "Very Low",
+                "essential": [],
+                "ideal": ["4× Elemental Damage", "4× ATK"],
+                "passable": ["4× Charge Speed"],
+                "notes": "Burst Gen for Elysion Tribe Tower / CP Padding"
+            }, "cube": {
+                "pre_overload": ["onslaught", "resilience", "adjutant"],
+                "post_overload": ["onslaught", "resilience", "adjutant"],
+                "notes": "All three Cubes work really well on her and what you use is up to you."
+            }
+        }, "skyfall": {
+            "collection_item_priority": "maybe_someday"
+        }
+    }, "viper": {
+        "nikke_gg": {
+            "ratings": {
+                "story": 6.8,
+                "pvp": 8.5,
+                "boss": 6.9,
+                "notes": "Decent b2 Offensive option, Competes against guilty regarding utility via better burst gen, but weaker personal damage."
+            }, "skills": {
+                "priority": "Medium",
+                "budget": "1/1/1",
+                "recommended": "4/1/4",
+                "notes": "Skill 1 is slightly useful in campaign, but uses are simply too limited in a fight to be investing at high levels. Burst deals decent ST nuke with good defense shred."
+            }, "overloads": {
+            }, "cube": {
+                "cube": ["resilience", "wingman"],
+                "notes": ""
+            }
+        }, "prydwen": {
+            "ratings": {
+                "story_low_deficit": "C",
+                "story_high_deficit": "C",
+                "boss_solo": "C",
+                "boss_adds": "C",
+                "pvp": "S"
+            }, "skills": {
+                "priority": "PVP",
+                "pve": "1/1/1",
+                "pvp": "1/1/1 (→ 4/4/4)"
+            }, "overloads": {
+                "priority": "Low (PVP)",
+                "essential": [],
+                "ideal": ["4× ATK", "1-2× Max Ammo"],
+                "passable": ["4× Elemental Damage"],
+                "notes": "CP Padding"
+            }, "cube": {
+                "pre_overload": ["assault", "resilience"],
+                "post_overload": ["assault", "resilience"],
+                "notes": "Assault Cube helps Shotgun wielders to actually hit something past Near range. While the Resilience Cube is a generic DPS increase (but it's better in scenarios when you fight stuff only in Near range as there Hit Rate isn't that useful)."
+            }
+        }, "skyfall": {
+            "collection_item_priority": "treasure"
+        }
+    }, "volume": {
+        "nikke_gg": {
+            "ratings": {
+                "story": 8.4,
+                "pvp": 5,
+                "boss": 8.7,
+                "notes": "Strong CDR and crit buffs for the whole team, but still outclassed by Liter. Used in union raid teams that dont have liter or dolla in them."
+            }, "skills": {
+                "priority": "Medium",
+                "budget": "1/1/1",
+                "recommended": "1/5/5",
+                "notes": "Skill 1 simply never procs and the attack buff affects her minimally anyway. Skill 2 buffs are not good and CDR is fixed on skill level 1. Burst is decent for crit focused teams such as Julia and Maiden."
+            }, "overloads": {
+            }, "cube": {
+                "cube": ["bastion", "resilience"],
+                "notes": ""
+            }
+        }, "prydwen": {
+            "ratings": {
+                "story_low_deficit": "S",
+                "story_high_deficit": "S",
+                "boss_solo": "S",
+                "boss_adds": "S",
+                "pvp": "D"
+            }, "skills": {
+                "priority": "Low",
+                "pve": "1/1/1 → 1/1/4 → 1/4/4 (→ 1/7/7)",
+                "pvp": "1/1/1"
+            }, "overloads": {
+                "priority": "Very Low",
+                "essential": [],
+                "ideal": [],
+                "passable": ["-"],
+                "notes": "For Tribe Tower CP Padding"
+            }, "cube": {
+                "pre_overload": ["assault", "resilience"],
+                "post_overload": ["assault", "resilience"],
+                "notes": "Assault Cube helps SMG wielders to actually hit something past Near range. While the Resilience Cube is a generic DPS increase (but it's better in scenarios when you fight stuff only in Near range as there Hit Rate isn't that useful)."
+            }
+        }, "skyfall": {
+            "priority": "Medium",
+            "collection_item_priority": "useful_but_not_priority",
+            "skills": ["1-4", "4-7-10", "4-7-10"],
+            "overloads": {
+                "ideal": ["4× ATK", "4x Elemental Damage", "0-4x Crit Rate", "4x Crit Damage"],
+                "good": ["0-4x Max Ammo"],
+                "fine": [],
+                "passable": ["0-4x Hit Rate"],
+                "no": []
+            }, "cube": {
+                "cube": ["quantum"],
+                "notes": ""
+            }, "notes": "Not Recommended to OL. Primarily here for skill suggestion. Can push s2 and burst to level 10 for top 50 Solo Raid Rankers. If nothing else to spend on and want to minmax, more competitive people stop at level 7. Otherwise works just fine at 1/4/4 and is mainly used for her cooldown reduction."
+        }
+    }, "yan": {
+        "nikke_gg": {
+            "ratings": {
+                "story": 3.5,
+                "pvp": 1.5,
+                "boss": 3.5,
+                "notes": "Decent charge buffer, but Liter is better. Unique enemy grouping CC."
+            }, "skills": {
+                "priority": "Low",
+                "budget": "1/1/1",
+                "recommended": "1/1/1",
+                "notes": "Skill 1 works okay only in RL teams, which are used against Obelisk in Union Raid. Burst is used for relocating raptures which is fixed; not for her damage."
+            }, "overloads": {
+            }, "cube": {
+                "cube": ["resilience", "bastion"],
+                "notes": ""
+            }
+        }, "prydwen": {
+            "ratings": {
+                "story_low_deficit": "B",
+                "story_high_deficit": "B",
+                "boss_solo": "C",
+                "boss_adds": "C",
+                "pvp": "C"
+            }, "skills": {
+                "priority": "-",
+                "pve": "1/1/1",
+                "pvp": "1/1/1"
+            }, "overloads": {
+                "priority": "-",
+                "essential": [],
+                "ideal": [],
+                "passable": ["-"],
+                "notes": ""
+            }, "cube": {
+                "pre_overload": ["adjutant"],
+                "post_overload": ["adjutant"],
+                "notes": "Adjutant Cube is the clear winner for her as she will reach Full Charge faster."
+            }
+        }, "skyfall": {
+            "collection_item_priority": "ignore_for_now"
+        }
+    }, "yulha": {
+        "nikke_gg": {
+            "ratings": {
+                "story": 6,
+                "pvp": 4,
+                "boss": 7.5,
+                "notes": "The strongest attack buff in the game, but can be difficult to utilize around her 30s cooldown."
+            }, "skills": {
+                "priority": "Medium",
+                "budget": "1/1/1",
+                "recommended": "4/7/4",
+                "notes": "Skill 1 has a horrible condition to proc, getting hit 30 times. Skill 2 is great for SW and MX teams with proper timing."
+            }, "overloads": {
+            }, "cube": {
+                "cube": ["resilience", "bastion"],
+                "notes": ""
+            }
+        }, "prydwen": {
+            "ratings": {
+                "story_low_deficit": "C",
+                "story_high_deficit": "C",
+                "boss_solo": "A",
+                "boss_adds": "B",
+                "pvp": "C"
+            }, "skills": {
+                "priority": "High (Late Game)",
+                "pve": "1/1/1 → 1/4/1 → 1/7/1 (→ 1/10/1)",
+                "pvp": "1/1/1"
+            }, "overloads": {
+                "priority": "Low (PVE)",
+                "essential": [],
+                "ideal": ["1× Max Ammo"],
+                "passable": [],
+                "notes": "1 Max Ammo Roll can help with Burst Generation in Raids, but not recommended to reroll this character."
+            }, "cube": {
+                "pre_overload": ["onslaught", "resilience", "wingman"],
+                "post_overload": ["onslaught", "resilience", "wingman"],
+                "notes": "Onslaught and Resilience Cube both work really well on Yulha, while Wingman is trailing behind them, but still being a viable option."
+            }
+        }, "skyfall": {
+            "priority": "Low to Medium",
+            "collection_item_priority": "useful_but_not_priority",
+            "skills": ["1", "10", "1"],
+            "overloads": {
+                "ideal": [],
+                "good": [],
+                "fine": [],
+                "passable": ["1× Max Ammo"],
+                "no": []
+            }, "cube": {
+                "cube": ["resilience", "quantum"],
+                "notes": "Resilience if manual, Quantum if auto"
+            }, "notes": "Skill recommendation for snow white support for solo or union raid. Max Ammo to help with fast charging in situations where she's the sole SR/RL in the team (e.g. No Dolla / Helm)"
+        }
+    }, "yuni": {
+        "nikke_gg": {
+            "ratings": {
+                "story": 5,
+                "pvp": 5.5,
+                "boss": 5.75,
+                "notes": "Good charge speed support for Alice. Can be used a sub."
+            }, "skills": {
+                "priority": "Low",
+                "budget": "1/1/1",
+                "recommended": "5/4/4",
+                "notes": "Skill 1 maybe be useful in RL based teams. Skill 2 simply provides too little to even matter."
+            }, "overloads": {
+            }, "cube": {
+                "cube": ["resilience", "bastion"],
+                "notes": ""
+            }
+        }, "prydwen": {
+            "ratings": {
+                "story_low_deficit": "C",
+                "story_high_deficit": "B",
+                "boss_solo": "D",
+                "boss_adds": "C",
+                "pvp": "C"
+            }, "skills": {
+                "priority": "-",
+                "pve": "1/1/1",
+                "pvp": "1/1/1"
+            }, "overloads": {
+                "priority": "-",
+                "essential": [],
+                "ideal": [],
+                "passable": ["-"],
+                "notes": ""
+            }, "cube": {
+                "pre_overload": ["adjutant"],
+                "post_overload": ["adjutant"],
+                "notes": "Adjutant Cube is the clear winner for her as she will reach Full Charge faster."
+            }
+        }, "skyfall": {
+            "collection_item_priority": "ignore_for_now"
+        }
+    }, "zwei": {
+        "nikke_gg": {
+            "ratings": {
+                "story": 0,
+                "pvp": 0,
+                "boss": 0,
+                "notes": ""
+            }, "skills": {
+                "priority": "",
+                "budget": "",
+                "recommended": "",
+                "notes": ""
+            }, "overloads": {
+            }, "cube": {
+                "cube": [],
+                "notes": ""
+            }
+        }, "prydwen": {
+            "ratings": {
+                "story_low_deficit": "",
+                "story_high_deficit": "",
+                "boss_solo": "",
+                "boss_adds": "",
+                "pvp": ""
+            }, "skills": {
+                "priority": "",
+                "pve": "",
+                "pvp": ""
+            }, "overloads": {
+                "priority": "",
+                "essential": [],
+                "ideal": [],
+                "passable": [],
+                "notes": ""
+            }, "cube": {
+                "pre_overload": [],
+                "post_overload": [],
+                "notes": ""
+            }
+        }, "skyfall": {
+            "priority": "",
+            "collection_item_priority": "not_rated",
+            "skills": ["", "", ""],
+            "overloads": {
+                "ideal": [],
+                "good": [],
+                "fine": [],
+                "passable": [],
+                "no": []
+            }, "cube": {
+                "cube": [],
+                "notes": ""
+            }, "notes": ""
+        }
+    }, "anis": {
+        "nikke_gg": {
+            "ratings": {
+                "story": 6.5,
+                "pvp": 9,
+                "boss": 3,
+                "notes": "Best SR B2 for auto play. Superb burst energy generarion. Good kit and strong burst. Falls off due to lower SR base stats."
+            }, "skills": {
+                "priority": "Lowest",
+                "budget": "1/1/1",
+                "recommended": "1/1/1",
+                "notes": ""
+            }, "overloads": {
+            }, "cube": {
+                "cube": ["resilience", "bastion"],
+                "notes": ""
+            }
+        }, "prydwen": {
+            "ratings": {
+                "story_low_deficit": "A",
+                "story_high_deficit": "A",
+                "boss_solo": "C",
+                "boss_adds": "B",
+                "pvp": "SS"
+            }, "skills": {
+                "priority": "Very Low",
+                "pve": "1/1/1 → 4/4/4",
+                "pvp": "1/1/1 → 4/4/4"
+            }, "overloads": {
+                "priority": "Low (PVP)",
+                "essential": [],
+                "ideal": ["4× Charge Speed"],
+                "passable": ["4× ATK", "4× Elemental Damage", "4× DEF"],
+                "notes": "CP Padding"
+            }, "cube": {
+                "pre_overload": ["quantum"],
+                "post_overload": ["quantum"],
+                "notes": "Anis's role is Burst Gen Battery, and Quantum on her is actually very important. It allows you to burst faster than enemy, leading to easier win in PVP. She's one of the Holy Trinity worth putting Quantum cube on."
+            }
+        }, "skyfall": {
+            "collection_item_priority": "pvp"
+        }
+    }, "product_08": {
+        "nikke_gg": {
+            "ratings": {
+                "story": 1,
+                "pvp": 1,
+                "boss": 1,
+                "notes": "No longer has any use after nerf, unless you don’t have Neon for Elysion Tower."
+            }, "skills": {
+                "priority": "Lowest",
+                "budget": "1/1/1",
+                "recommended": "1/1/1",
+                "notes": ""
+            }, "overloads": {
+            }, "cube": {
+                "cube": ["resilience", "bastion"],
+                "notes": ""
+            }
+        }, "prydwen": {
+            "ratings": {
+                "story_low_deficit": "E",
+                "story_high_deficit": "E",
+                "boss_solo": "E",
+                "boss_adds": "E",
+                "pvp": "E"
+            }, "skills": {
+                "priority": "-",
+                "pve": "1/1/1",
+                "pvp": "1/1/1"
+            }, "overloads": {
+                "priority": "-",
+                "essential": [],
+                "ideal": [],
+                "passable": ["-"],
+                "notes": ""
+            }, "cube": {
+                "pre_overload": ["resilience"],
+                "post_overload": ["resilience"],
+                "notes": "Her S1 wants you to never fully charge your shots and just spam - this is why Reload Speed is important on her."
+            }
+        }, "skyfall": {
+            "collection_item_priority": "dont_bother"
+        }
     }, "template": {
         "nikke_gg": {
             "ratings": {

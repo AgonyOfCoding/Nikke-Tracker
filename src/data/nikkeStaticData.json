@@ -5998,6 +5998,64 @@
                 }
             }
         }
+    }, "zwei": {
+        "id": "zwei",
+        "name": "Zwei",
+        "manufacturer": "Elysion",
+        "role": "Attacker",
+        "weapon_type": "SMG",
+        "rarity": "SSR",
+        "burst": "Burst III",
+        "element": "Electric",
+        "skills": {
+            "skill_1": {
+                "name": "",
+                "description": "",
+                "values": {
+                    "1": [],
+                    "2": [],
+                    "3": [],
+                    "4": [],
+                    "5": [],
+                    "6": [],
+                    "7": [],
+                    "8": [],
+                    "9": [],
+                    "10": []
+                }
+            }, "skill_2": {
+                "name": "",
+                "description": "",
+                "values": {
+                    "1": [],
+                    "2": [],
+                    "3": [],
+                    "4": [],
+                    "5": [],
+                    "6": [],
+                    "7": [],
+                    "8": [],
+                    "9": [],
+                    "10": []
+                }
+            }, "burst_skill": {
+                "cooldown": 40,
+                "name": "",
+                "description": "",
+                "values": {
+                    "1": [],
+                    "2": [],
+                    "3": [],
+                    "4": [],
+                    "5": [],
+                    "6": [],
+                    "7": [],
+                    "8": [],
+                    "9": [],
+                    "10": []
+                }
+            }
+        }
     }, "anis": {
         "id": "anis",
         "name": "Anis",
