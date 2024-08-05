@@ -23,9 +23,7 @@ function ratingSortPrydwen(nikke_static_a: NikkeStaticData, nikke_static_b: Nikk
     const rating_value_b = ratingOrderPrydwen[rating_b];
     if (rating_value_a < rating_value_b) return -1;
     if (rating_value_a > rating_value_b) return 1;
-    if (nikke_static_a.name < nikke_static_b.name) return -1;
-    if (nikke_static_a.name > nikke_static_b.name) return 1;
-    return 0;
+    return nikke_static_a.name.localeCompare(nikke_static_b.name);
 }
 
 const priorityOrder: {[key: string]: number} = {
@@ -69,25 +67,19 @@ function initialSorter(
             return list.sort((nikke_static_a, nikke_static_b) => {
                 if (rarityOrder[nikke_static_a.rarity] < rarityOrder[nikke_static_b.rarity]) return -1;
                 if (rarityOrder[nikke_static_a.rarity] > rarityOrder[nikke_static_b.rarity]) return 1;
-                if (nikke_static_a.name < nikke_static_b.name) return -1;
-                if (nikke_static_a.name > nikke_static_b.name) return 1;
-                return 0;
+                return nikke_static_a.name.localeCompare(nikke_static_b.name);
             })
         case "Name":
             return list.sort((nikke_static_a, nikke_static_b) => {
-                if (nikke_static_a.name < nikke_static_b.name) return -1;
-                if (nikke_static_a.name > nikke_static_b.name) return 1;
-                return 0;
+                return nikke_static_a.name.localeCompare(nikke_static_b.name);
             })
         case "Collection Item Priority":
             return list.sort((nikke_static_a, nikke_static_b) => {
                 if (collectionItemPriorityRanks[recommendation_data[nikke_static_a.id].skyfall.collection_item_priority] <
-                    collectionItemPriorityRanks[recommendation_data[nikke_static_b.id].skyfall.collection_item_priority]) return 1;
-                if (collectionItemPriorityRanks[recommendation_data[nikke_static_a.id].skyfall.collection_item_priority] >
                     collectionItemPriorityRanks[recommendation_data[nikke_static_b.id].skyfall.collection_item_priority]) return -1;
-                if (nikke_static_a.name < nikke_static_b.name) return -1;
-                if (nikke_static_a.name > nikke_static_b.name) return 1;
-                return 0;
+                if (collectionItemPriorityRanks[recommendation_data[nikke_static_a.id].skyfall.collection_item_priority] >
+                    collectionItemPriorityRanks[recommendation_data[nikke_static_b.id].skyfall.collection_item_priority]) return 1;
+                return nikke_static_a.name.localeCompare(nikke_static_b.name);
             })
         case "Rating (Story)[Nikke.gg]":
             return list.sort((nikke_static_a, nikke_static_b) => {
@@ -95,9 +87,7 @@ function initialSorter(
                 const rating_b = recommendation_data[nikke_static_b.id].nikke_gg.ratings.story;
                 if (rating_a < rating_b) return -1;
                 if (rating_a > rating_b) return 1;
-                if (nikke_static_a.name < nikke_static_b.name) return -1;
-                if (nikke_static_a.name > nikke_static_b.name) return 1;
-                return 0;
+                return nikke_static_a.name.localeCompare(nikke_static_b.name);
             })
         case "Rating (PVP)[Nikke.gg]":
             return list.sort((nikke_static_a, nikke_static_b) => {
@@ -105,9 +95,7 @@ function initialSorter(
                 const rating_b = recommendation_data[nikke_static_b.id].nikke_gg.ratings.pvp;
                 if (rating_a < rating_b) return -1;
                 if (rating_a > rating_b) return 1;
-                if (nikke_static_a.name < nikke_static_b.name) return -1;
-                if (nikke_static_a.name > nikke_static_b.name) return 1;
-                return 0;
+                return nikke_static_a.name.localeCompare(nikke_static_b.name);
             })
         case "Rating (Boss)[Nikke.gg]":
             return list.sort((nikke_static_a, nikke_static_b) => {
@@ -115,9 +103,7 @@ function initialSorter(
                 const rating_b = recommendation_data[nikke_static_b.id].nikke_gg.ratings.boss;
                 if (rating_a < rating_b) return -1;
                 if (rating_a > rating_b) return 1;
-                if (nikke_static_a.name < nikke_static_b.name) return -1;
-                if (nikke_static_a.name > nikke_static_b.name) return 1;
-                return 0;
+                return nikke_static_a.name.localeCompare(nikke_static_b.name);
             })
         case "Rating (Story, low deficit)[Prydwen]":
             return list.sort((nikke_static_a, nikke_static_b) => {
@@ -155,9 +141,7 @@ function initialSorter(
                 const priority_b = getPriorityValueSkyfall(recommendation_data[nikke_static_b.id].skyfall.priority);
                 if (priority_a < priority_b) return -1;
                 if (priority_a > priority_b) return 1;
-                if (nikke_static_a.name < nikke_static_b.name) return -1;
-                if (nikke_static_a.name > nikke_static_b.name) return 1;
-                return 0;
+                return nikke_static_a.name.localeCompare(nikke_static_b.name);
             })
     }
 }

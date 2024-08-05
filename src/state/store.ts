@@ -5,6 +5,7 @@ import searchReducer from './search'
 import investmentReducer from './investment'
 import recommendationReducer from './recommendationSources'
 import settingsReducer from './settings'
+import teamsReducer from './teamsState'
 
 export const store = configureStore({
   reducer: {
@@ -14,6 +15,7 @@ export const store = configureStore({
     investments: investmentReducer,
     recommendations: recommendationReducer,
     settings: settingsReducer,
+    teams: teamsReducer
   },
 })
 

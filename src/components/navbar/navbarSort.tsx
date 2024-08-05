@@ -47,19 +47,19 @@ const NavbarSort: React.FC = () => {
     const sortMenu = () => {
         return <Menu style={{ backgroundColor: color_scheme[0] }} >
             {sort_options.map(option => 
-<MenuItem
-    style={{ 
-        backgroundColor: option === sortState.sort_option ? color_scheme[3] : color_scheme[0],
-        color: option === sortState.sort_option ? color_scheme[0] : color_scheme[4]
-    }}
-    icon={option !== sortState.sort_option ?
-        null :
-        sortState.inverted ? "caret-up" : "caret-down"
-    }
-    key={option}
-    text={option}
-    onClick={() => dispatch(setSortOption(option))}
-/>
+                <MenuItem
+                    style={{ 
+                        backgroundColor: option === sortState.sort_option ? color_scheme[3] : color_scheme[0],
+                        color: option === sortState.sort_option ? color_scheme[0] : color_scheme[4]
+                    }}
+                    icon={option !== sortState.sort_option ?
+                        null :
+                        sortState.inverted ? "caret-up" : "caret-down"
+                    }
+                    key={option}
+                    text={option}
+                    onClick={() => dispatch(setSortOption(option))}
+                />
             )}
         </Menu>
     };

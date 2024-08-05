@@ -247,6 +247,28 @@ export interface CollectionItem {
     phase: number;
 }
 
+// Teams
+
+export interface TeamsData {
+    solo_raid: Team[];
+    pvp: Team[];
+    custom: Team[];
+}
+
+export interface Team {
+    name: string;
+    nikke_1: string | undefined;
+    cube_1: CubeName | undefined;
+    nikke_2: string | undefined;
+    cube_2: CubeName | undefined;
+    nikke_3: string | undefined;
+    cube_3: CubeName | undefined;
+    nikke_4: string | undefined;
+    cube_4: CubeName | undefined;
+    nikke_5: string | undefined;
+    cube_5: CubeName | undefined;
+}
+
 // Recommendations
 
 export interface RecommendationData {

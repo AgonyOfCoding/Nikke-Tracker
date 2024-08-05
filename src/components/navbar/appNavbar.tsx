@@ -9,6 +9,7 @@ import { getMiscIcon } from '../../utility/iconGetters';
 import NavbarSort from './navbarSort';
 import { RecommendationSource, RecommendationSourceState, setRecommendationSource } from '../../state/recommendationSources';
 import NavbarSettings from './navbarSettings';
+import TeamsMenu from './teamsMenu';
 
 const AppNavbar: React.FC = () => {
     const filterState: FilterOptions = useSelector((state: RootState) => state.filter)
@@ -30,6 +31,8 @@ const AppNavbar: React.FC = () => {
             <Navbar.Heading style={{ fontWeight: 'bold' }}>NIT</Navbar.Heading>
             <Navbar.Divider />
             <NavbarSettings />
+            <Navbar.Divider />
+            <TeamsMenu />
             <Navbar.Divider />
             <NavbarSort />
             <Navbar.Divider />
