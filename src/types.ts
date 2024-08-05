@@ -176,6 +176,7 @@ export enum RatingPrydwen {
 export interface Nikke {
     id: string;
     core: number;
+    bond: number;
     equipment: Equipment;
     skill_levels: number[];
     collection_item: CollectionItem | undefined;

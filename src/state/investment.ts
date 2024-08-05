@@ -27,9 +27,10 @@ export const investmentSlice = createSlice({
             state.investments = action.payload;
         },
         addNikke: (state, action: PayloadAction<string>) => {
-            state.investments.push({
+            const new_nikke: Nikke = {
                 id: action.payload,
                 core: 0,
+                bond: 0,
                 equipment: {
                     helm: undefined,
                     gloves: undefined,
@@ -38,7 +39,9 @@ export const investmentSlice = createSlice({
                 },
                 skill_levels: [1, 1, 1],
                 collection_item: undefined
-            })
+            };
+            state.investments.push(new_nikke);
+            saveInvestments(state.investments)
         },
         modifyInvestment: (state, action: PayloadAction<Nikke>) => {
             const new_investments: Nikke[] = state.investments.filter(nikke => nikke.id !== action.payload.id);

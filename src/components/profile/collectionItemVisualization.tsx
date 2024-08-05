@@ -102,7 +102,7 @@ const CollectionItemVisualization: React.FC<CollectionItemVisualizationProps> = 
         const new_collection_item: CollectionItem = {
             rarity: rarity,
             type: type,
-            phase: 1 
+            phase: 0 
         }
         const new_nikke: Nikke = {
             ...nikke,
@@ -145,7 +145,7 @@ const CollectionItemVisualization: React.FC<CollectionItemVisualizationProps> = 
                     <div style={{ gridColumn: '2 / 3', placeContent: 'center'   }} >
                         <NumericInput
                             value={collection_item.phase}
-                            min={1}
+                            min={0}
                             max={15}
                             stepSize={1}
                             majorStepSize={5}

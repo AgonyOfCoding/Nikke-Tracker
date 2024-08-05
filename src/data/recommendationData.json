@@ -735,7 +735,7 @@
                 "notes": "For PVE, Resilience Cube are the best on Biscuit because she tends to go with Privaty-Sanis team. For PVP, you really want the Adjutant Cube as there you race to use your Bursts before the enemy. Or it can even be a Vigor to stay alive from Scarlet's burst."
             }
         }, "skyfall": {
-            "priority": "Low to Med",
+            "priority": "Low to Medium",
             "collection_item_priority": "pvp",
             "skills": ["4+ (low priority)", "4", "4-10"],
             "overloads": {
@@ -789,7 +789,7 @@
                 "notes": "Vigor cube helps her healing ability. Both Ammo Refill and Reload Speed help her with Skill 1 uptime."
             }
         }, "skyfall": {
-            "priority": "High (w/Noir)",
+            "priority": "High (with Noir)",
             "collection_item_priority": "pvp",
             "skills": ["4-7", "4-7", "10"],
             "overloads": {
@@ -1364,7 +1364,7 @@
                 "notes": "Dolla doesn't really have anything in her kit that warrants the use of other than the generic damage increase cubes for an SR wielder."
             }
         }, "skyfall": {
-            "priority": "Med",
+            "priority": "Medium",
             "collection_item_priority": "useful_but_not_priority",
             "skills": ["4+", "4+", "1-4"],
             "overloads": {
@@ -1910,7 +1910,7 @@
                 "notes": "Resilience Cube helps her with the last bullet mechanic."
             }
         }, "skyfall": {
-            "priority": "Low to Med (w/ Treasure only)",
+            "priority": "Low to Medium (with Treasure)",
             "collection_item_priority": "treasure",
             "skills": ["4+", "7-10", "10"],
             "overloads": {
@@ -2006,7 +2006,7 @@
                 "notes": "Charge Speed increase helps with both S1 and S2."
             }
         }, "skyfall": {
-            "priority": "Low to Med (w/ Treasure only)",
+            "priority": "Low to Medium (with Treasure)",
             "collection_item_priority": "treasure",
             "skills": ["4+", "7-10", "10"],
             "overloads": {
@@ -2557,7 +2557,7 @@
                 }
             }
         }, "skyfall": {
-            "priority": "Low to Med (w/ Treasure only)",
+            "priority": "Low to Medium (with Treasure)",
             "collection_item_priority": "priority_treasure",
             "skills": ["1-4", "4-10", "4-10"],
             "overloads": {
@@ -2611,7 +2611,7 @@
                 "notes": "She needs to maintain her S1 stacks as long as she can, so a faster reload (Resilience) or longer shooting (Bastion) is welcome here."
             }
         }, "skyfall": {
-            "priority": "Low to Med (w/ Tove)",
+            "priority": "Low to Medium (with Tove)",
             "collection_item_priority": "useful_but_not_priority",
             "skills": ["4-10", "7", "4-10"],
             "overloads": {
@@ -3313,7 +3313,7 @@
                 "notes": "Bastion Cube will give her a higher uptime on her S1 buff while Resilience Cube will be a general improvement to her performance."
             }
         }, "skyfall": {
-            "priority": "Low to Med",
+            "priority": "Low to Medium",
             "collection_item_priority": "useful_but_not_priority",
             "skills": ["1-4", "4-10", "4-10"],
             "overloads": {
@@ -3841,7 +3841,7 @@
                 "notes": "Bastion allows here to shoot the most ammo, but you can use Resilience cube if bastion doesn't have any more slots remaining."
             }
         }, "skyfall": {
-            "priority": "High (w/Blanc)",
+            "priority": "High (with Blanc)",
             "collection_item_priority": "high",
             "skills": ["10", "5 or 9+*", "4-7"],
             "overloads": {
@@ -4255,7 +4255,7 @@
                 "notes": "Most of the time, you will want to use Bastion and reload before every Full Burst to guarantee no reload during the DPS window, in case Tove loses stacks immediately, and it's even better with 1 line Max Ammo Overload. But if you have enough reload speed (SAnis in team), you can use Resilience instead."
             }
         }, "skyfall": {
-            "priority": "Low to Med (w/ Tove)",
+            "priority": "Low to Medium (with Tove)",
             "collection_item_priority": "priority_solo_raid",
             "skills": ["7-10", "1-4* or 7-10", "7-10"],
             "overloads": {
@@ -4735,7 +4735,7 @@
                 "notes": "Rosanna does not particularly require any cube. Any generic cube works on her, but Bastion will allow her to shoot more bullets over 3 minutes. Despite that, it is recommended to use the highest level cube available for the base stat bonuses to help with her caster's ATK buff. "
             }
         }, "skyfall": {
-            "priority": "Medium (w/ Liter), else Low to Medium",
+            "priority": "Medium (with Liter)",
             "collection_item_priority": "not_rated",
             "skills": ["4++", "4+", "10"],
             "overloads": {
@@ -5317,7 +5317,7 @@
                 "notes": "If you're using SW one-shot team then you can equip Onslaught Cube on her, but in any other scenario, you're better with Resilience/Bastion/Wingman. Adjutant Cube is also an option to squeeze in the 5s damage window."
             }
         }, "skyfall": {
-            "priority": "Low to Med",
+            "priority": "Low to Medium",
             "collection_item_priority": "priority_solo_raid",
             "skills": ["4", "4-10", "10"],
             "overloads": {
@@ -5455,7 +5455,7 @@
                 "notes": "Due to the extra reloading animation imposed on B. Soda, we want to avoid reloading as much as possible. Bastion remains the best cube and is miles better than the other options. Resilience is second best. No questions asked. Technically, you can also use Quantum for PvP (if that extra juice is needed)."
             }
         }, "skyfall": {
-            "priority": "Med (w/ Tove)",
+            "priority": "Medium (with Tove)",
             "collection_item_priority": "priority_solo_raid",
             "skills": ["(4 or 7)-10", "7-10", "(4 or 7)-10"],
             "overloads": {
@@ -5605,7 +5605,7 @@
                 "notes": "You can use Resilience/Bastion for CP padding in campaign, although Tia has a mechanic relied on attack, you actually don't want it to trigger more often. Either she will die, or your cover die. In both cases, you are pretty much guaranteed a retry. Just make sure she stays alive with Vigor. "
             }
         }, "skyfall": {
-            "priority": "High (w/Naga)",
+            "priority": "High (with Naga)",
             "collection_item_priority": "useful_but_not_priority",
             "skills": ["10", "4", "4"],
             "overloads": {
@@ -5659,7 +5659,7 @@
                 "notes": "Base Tove (no Max Ammo) reloads every 6s. This means she will be hitting minimum probability in almost every 5s window. Because of this, we recommend Resilience, but Bastion 7+ is also not a bad pick as it will make accruing 3 stacks within 1 clip easier. If she has high base ammo, you should get Bastion instead, as maintaining stacks is much easier if Tove keeps firing. It also synergizes well with her Emergency Bullet (Skill 1)"
             }
         }, "skyfall": {
-            "priority": "Medium (w/ Bunny Soda)",
+            "priority": "Medium (with Bunny Soda)",
             "collection_item_priority": "useful_but_not_priority",
             "skills": ["9", "4 or 7 or 10", "4-10"],
             "overloads": {

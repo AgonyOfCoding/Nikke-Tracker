@@ -19,11 +19,8 @@ const CoreVisualization: React.FC<CoreVisualizationProps> = ({ nikke_data }) => 
             return;
         
         const new_nikke: Nikke = {
-            id: nikke_data.id,
-            core: new_core,
-            equipment: nikke_data.equipment,
-            skill_levels: nikke_data.skill_levels,
-            collection_item: nikke_data.collection_item
+            ...nikke_data,
+            core: new_core
         }
 
         dispatch(modifyInvestment(new_nikke));
@@ -31,11 +28,8 @@ const CoreVisualization: React.FC<CoreVisualizationProps> = ({ nikke_data }) => 
 
     const setCore = useCallback((core: number) => {
         const new_nikke: Nikke = {
-            id: nikke_data.id,
-            core: core,
-            equipment: nikke_data.equipment,
-            skill_levels: nikke_data.skill_levels,
-            collection_item: nikke_data.collection_item
+            ...nikke_data,
+            core: core
         }
 
         dispatch(modifyInvestment(new_nikke));

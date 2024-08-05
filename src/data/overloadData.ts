@@ -57,7 +57,7 @@ export const overload_data: OverloadValues[] = [
             12: 73.04,
             13: 77.15,
             14: 81.26,
-            15: 86.37
+            15: 85.37
         }
     },{
         attribute: OverloadAttribute.atk,
@@ -148,7 +148,7 @@ export const overload_data: OverloadValues[] = [
             8: 4.69,
             9: 5.03,
             10: 5.37,
-            11: 5.70,
+            11: 5.71,
             12: 6.05,
             13: 6.39,
             14: 6.73,
