@@ -1,5 +1,6 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { TeamsData } from "../types";
+import axios from "axios";
 
 export enum TeamSet {
     solo_raid = "Solo Raid",
@@ -19,6 +20,15 @@ const initialState: TeamsState = {
     teams_data: undefined
 }
 
+const saveTeamsData = async (teams_data: TeamsData) => {
+    try {
+        const response = await axios.post('/api/save-teams', teams_data);
+        console.log('Teams saved successfully:', response.data);
+    } catch (error) {
+        console.error('Error saving teams:', error);
+    }
+};
+
 export const teamsSlice = createSlice({
     name: "TeamsState",
     initialState,
@@ -33,8 +43,12 @@ export const teamsSlice = createSlice({
         setSelectedTeam: (state, action: PayloadAction<string>) => {
             state.selected_team = action.payload;
         },
-        setTeamsData: (state, action: PayloadAction<TeamsData>) => {
+        initializeTeamsData: (state, action: PayloadAction<TeamsData>) => {
             state.teams_data = action.payload;
+        },
+        changeTeamsData: (state, action: PayloadAction<TeamsData>) => {
+            state.teams_data = action.payload;
+            saveTeamsData(state.teams_data)
         },
     }
 })
@@ -42,7 +56,8 @@ export const teamsSlice = createSlice({
 export const {
     setSelectedTeamSet,
     setSelectedTeam,
-    setTeamsData
+    initializeTeamsData,
+    changeTeamsData
 } = teamsSlice.actions
 
 export default teamsSlice.reducer

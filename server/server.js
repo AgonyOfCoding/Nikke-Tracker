@@ -35,7 +35,7 @@ app.post('/api/save-investments', (req, res) => {
 });
 
 app.get('/api/teamData', (req, res) => {
-    const filePath = path.join(__dirname, 'data', 'teamData.json');
+    const filePath = path.join(__dirname, 'data', 'teamsData.json');
     fs.readFile(filePath, 'utf8', (err, data) => {
         if (err) {
             console.error('Error reading the file:', err);

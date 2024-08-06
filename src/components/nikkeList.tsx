@@ -10,7 +10,7 @@ import { setInvestments } from '../state/investment';
 import axios from 'axios';
 import { nikkeListSorter } from '../utility/listSorter';
 import { SortState } from '../state/sortOptions';
-import { setTeamsData, TeamSet, TeamsState } from '../state/teamsState';
+import { initializeTeamsData, TeamSet, TeamsState } from '../state/teamsState';
 import TeamsSummary from './teams/teamsSummary';
 
 const transformStaticData = ( data: { [key: string]: any }): { [key: string]: NikkeStaticData } => {
@@ -100,7 +100,7 @@ const NikkeList: React.FC = () => {
                 const response = await axios.get('/api/teamData');
                 const teams = transformTeamsData(response.data);
                 setNikkeTeamsData(teams);
-                dispatch(setTeamsData(teams));
+                dispatch(initializeTeamsData(teams));
             } catch (error) {
                 console.error('Error fetching investment data:', error);
             }

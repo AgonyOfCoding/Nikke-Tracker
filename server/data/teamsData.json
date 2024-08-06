@@ -1,0 +1,64 @@
+{
+  "solo_raid": [
+    {
+      "name": "Team 1",
+      "nikke_1": "crown",
+      "cube_1": "quantum",
+      "nikke_2": "volume",
+      "cube_2": "resilience",
+      "nikke_3": "ein",
+      "cube_3": "bastion",
+      "nikke_4": "anis_sparkling_summer",
+      "cube_4": "bastion",
+      "nikke_5": "rapunzel",
+      "cube_5": "resilience"
+    },
+    {
+      "name": "Team 2",
+      "nikke_1": "tia",
+      "nikke_2": "liter",
+      "nikke_3": "naga",
+      "nikke_4": "scarlet_black_shadow",
+      "nikke_5": "alice"
+    },
+    {
+      "name": "Team 3",
+      "nikke_1": "d_killer_wife",
+      "nikke_2": "blanc",
+      "nikke_3": "scarlet",
+      "nikke_4": "red_hood",
+      "nikke_5": "noir"
+    },
+    {
+      "name": "Team 4",
+      "nikke_1": "tove",
+      "nikke_2": "leona",
+      "nikke_3": "privaty_unkind_maid",
+      "nikke_4": "soda_twinkling_bunny",
+      "nikke_5": "alice_wonderland_bunny"
+    },
+    {
+      "name": "Team 5",
+      "nikke_1": "dorothy",
+      "nikke_2": "biscuit",
+      "nikke_3": "elegg",
+      "nikke_4": "anis_sparkling_summer",
+      "nikke_5": "privaty"
+    }
+  ],
+  "pvp": [
+    {
+      "name": "Rookie Arena"
+    },
+    {
+      "name": "SP Arena 1"
+    },
+    {
+      "name": "SP Arena 2"
+    },
+    {
+      "name": "SP Arena 3"
+    }
+  ],
+  "custom": []
+}

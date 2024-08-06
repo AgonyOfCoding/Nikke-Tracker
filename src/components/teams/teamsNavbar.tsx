@@ -1,17 +1,24 @@
 import { useDispatch, useSelector } from "react-redux";
 import { setSelectedTeam, TeamSet, TeamsState } from "../../state/teamsState";
 import { RootState } from "../../state/store";
-import { Alignment, Button, Navbar } from "@blueprintjs/core";
+import { Alignment, Button, Dialog, DialogBody, DialogFooter, Navbar } from "@blueprintjs/core";
 import { color_scheme } from "../../types";
+import { useState } from "react";
+import "../../customStyles/customDialogStyles.css"
+import TeamEdit from "./teamEdit";
 
 const TeamsNavbar: React.FC = () => {
     const teamsState: TeamsState = useSelector((state: RootState) => state.teams);
     const { selected_team_set, selected_team, teams_data } = teamsState;
     const dispatch = useDispatch();
+    const [edit_dialog_open, setEditDialogOpen] = useState(false);
     
     if (!selected_team_set || !teams_data) return null;
 
     const { solo_raid, pvp, custom } = teams_data;
+    const team_set = selected_team_set === TeamSet.solo_raid ?
+        solo_raid : selected_team_set === TeamSet.pvp ?
+        pvp : custom;
 
     return (
         <Navbar
@@ -35,43 +42,32 @@ const TeamsNavbar: React.FC = () => {
                 text={"Summary"}
                 onClick={() => dispatch(setSelectedTeam("summary"))}
             />
-            {selected_team_set === TeamSet.solo_raid && 
-                solo_raid.map(team =>
-                    <Button
-                        style={{ 
-                            backgroundColor: team.name === selected_team ? color_scheme[3] : color_scheme[1],
-                        }}
-                        key={team.name}
-                        className="bp5-minimal"
-                        text={team.name}
-                        onClick={() => dispatch(setSelectedTeam(team.name))}
-                    />
-                )
-            }
-            {selected_team_set === TeamSet.pvp && 
-                pvp.map(team =>
-                    <Button
-                        style={{ 
-                            backgroundColor: team.name === selected_team ? color_scheme[3] : color_scheme[1],
-                        }}
-                        key={team.name}
-                        className="bp5-minimal"
-                        text={team.name}
-                        onClick={() => dispatch(setSelectedTeam(team.name))}
-                    />
-                )
-            }
-            {selected_team_set === TeamSet.custom && 
-                custom.map(team =>
-                    <Button
-                        style={{ 
-                            backgroundColor: team.name === selected_team ? color_scheme[3] : color_scheme[1],
-                        }}
-                        key={team.name}
-                        className="bp5-minimal"
-                        text={team.name}
-                        onClick={() => dispatch(setSelectedTeam(team.name))}
-                    />
+            <Navbar.Divider />
+                {team_set.map(team =>
+                    <>   
+                        <Button
+                            style={{ 
+                                backgroundColor: team.name === selected_team ? color_scheme[3] : color_scheme[1],
+                            }}
+                            key={team.name}
+                            className="bp5-minimal"
+                            text={team.name}
+                            onClick={() => dispatch(setSelectedTeam(team.name))}
+                        />
+                        <Button
+                            style={{ 
+                                backgroundColor: color_scheme[1],
+                            }}
+                            key={team.name + "edit"}
+                            className="bp5-minimal"
+                            icon="edit"
+                            onClick={() => {
+                                setEditDialogOpen(true)
+                                dispatch(setSelectedTeam(team.name))
+                            }}
+                        />
+                        <Navbar.Divider />
+                    </>
                 )
             }
             {selected_team_set === TeamSet.custom && 
@@ -84,6 +80,20 @@ const TeamsNavbar: React.FC = () => {
                 />
             }
             </Navbar.Group>
+            <Dialog isOpen={edit_dialog_open} title='Set Skill Levels' onClose={() => setEditDialogOpen(false)} >
+                <DialogBody className="custom-dialog-body" >
+                    <TeamEdit team={team_set.find(team => team.name === selected_team)!} teams_state={teamsState} />
+                </DialogBody>
+                <DialogFooter
+                    className="custom-dialog-footer"
+                    actions={
+                        <Button
+                            style={{ backgroundColor: color_scheme[4], color: color_scheme[0] }}
+                            text="Close"
+                            onClick={() => setEditDialogOpen(false)} />
+                        }
+                />
+            </Dialog>
         </Navbar>
     )
 }
