@@ -146,83 +146,6 @@
     }
   },
   {
-    "id": "red_hood",
-    "core": 4,
-    "bond": 40,
-    "equipment": {
-      "helm": {
-        "type": "helm",
-        "manufacturer": "ol",
-        "level": 5,
-        "overload_line_1": {
-          "attribute": "Increase ATK",
-          "level": 5
-        },
-        "overload_line_2": {
-          "attribute": "Increase Charge Speed",
-          "level": 10
-        }
-      },
-      "gloves": {
-        "type": "gloves",
-        "manufacturer": "ol",
-        "level": 5,
-        "overload_line_1": {
-          "attribute": "Increase Max Ammunition Capacity",
-          "level": 8
-        },
-        "overload_line_2": {
-          "attribute": "Increase ATK",
-          "level": 2
-        },
-        "overload_line_3": {
-          "attribute": "Increase Hit Rate",
-          "level": 6
-        }
-      },
-      "chest": {
-        "type": "chest",
-        "manufacturer": "ol",
-        "level": 5,
-        "overload_line_1": {
-          "attribute": "Increase Charge Speed",
-          "level": 11
-        },
-        "overload_line_2": {
-          "attribute": "Increase Hit Rate",
-          "level": 11
-        },
-        "overload_line_3": {
-          "attribute": "Increase ATK",
-          "level": 11
-        }
-      },
-      "boots": {
-        "type": "boots",
-        "manufacturer": "ol",
-        "level": 5,
-        "overload_line_1": {
-          "attribute": "Increase ATK",
-          "level": 11
-        },
-        "overload_line_2": {
-          "attribute": "Increase Charge Speed",
-          "level": 11
-        }
-      }
-    },
-    "skill_levels": [
-      10,
-      10,
-      10
-    ],
-    "collection_item": {
-      "rarity": "SR",
-      "type": "SR",
-      "phase": 5
-    }
-  },
-  {
     "id": "scarlet_black_shadow",
     "core": 4,
     "bond": 40,
@@ -281,148 +204,6 @@
       "rarity": "SR",
       "type": "RL",
       "phase": 5
-    }
-  },
-  {
-    "id": "alice",
-    "core": 5,
-    "bond": 30,
-    "equipment": {
-      "helm": {
-        "type": "helm",
-        "manufacturer": "ol",
-        "level": 5,
-        "overload_line_1": {
-          "attribute": "Increase Hit Rate",
-          "level": 1
-        },
-        "overload_line_2": {
-          "attribute": "Increase Charge Damage",
-          "level": 4
-        },
-        "overload_line_3": {
-          "attribute": "Increase Charge Speed",
-          "level": 10
-        }
-      },
-      "gloves": {
-        "type": "gloves",
-        "manufacturer": "ol",
-        "level": 5,
-        "overload_line_1": {
-          "attribute": "Increase Element Damage Dealt",
-          "level": 15
-        },
-        "overload_line_2": {
-          "attribute": "Increase ATK",
-          "level": 3
-        },
-        "overload_line_3": {
-          "attribute": "Increase Charge Damage",
-          "level": 3
-        }
-      },
-      "chest": {
-        "type": "chest",
-        "manufacturer": "ol",
-        "level": 5,
-        "overload_line_1": {
-          "attribute": "Increase Charge Speed",
-          "level": 5
-        },
-        "overload_line_2": {
-          "attribute": "Increase Max Ammunition Capacity",
-          "level": 8
-        }
-      },
-      "boots": {
-        "type": "boots",
-        "manufacturer": "ol",
-        "level": 5,
-        "overload_line_1": {
-          "attribute": "Increase Charge Damage",
-          "level": 11
-        },
-        "overload_line_2": {
-          "attribute": "Increase Max Ammunition Capacity",
-          "level": 11
-        },
-        "overload_line_3": {
-          "attribute": "Increase ATK",
-          "level": 11
-        }
-      }
-    },
-    "skill_levels": [
-      10,
-      7,
-      10
-    ],
-    "collection_item": {
-      "rarity": "R",
-      "type": "SR",
-      "phase": 15
-    }
-  },
-  {
-    "id": "anis_sparkling_summer",
-    "core": 5,
-    "bond": 10,
-    "equipment": {
-      "helm": {
-        "type": "helm",
-        "manufacturer": "ol",
-        "level": 5,
-        "overload_line_1": {
-          "attribute": "Increase Element Damage Dealt",
-          "level": 4
-        }
-      },
-      "gloves": {
-        "type": "gloves",
-        "manufacturer": "ol",
-        "level": 3,
-        "overload_line_1": {
-          "attribute": "Increase ATK",
-          "level": 11
-        }
-      },
-      "chest": {
-        "type": "chest",
-        "manufacturer": "ol",
-        "level": 0,
-        "overload_line_1": {
-          "attribute": "Increase Element Damage Dealt",
-          "level": 7
-        },
-        "overload_line_3": {
-          "attribute": "Increase ATK",
-          "level": 2
-        }
-      },
-      "boots": {
-        "type": "boots",
-        "manufacturer": "ol",
-        "level": 0,
-        "overload_line_1": {
-          "attribute": "Increase Element Damage Dealt",
-          "level": 11
-        },
-        "overload_line_2": {
-          "attribute": "Increase Critical Damage",
-          "level": 11
-        }
-      }
-    },
-    "skill_levels": [
-      9,
-      8,
-      9
-    ],
-    "collection_item": {
-      "rarity": "R",
-      "type": "SG",
-      "phase": 0
     }
   },
   {
@@ -694,78 +475,6 @@
       "type": "MG",
       "phase": 0
     }
-  },
-  {
-    "id": "maxwell",
-    "core": 10,
-    "bond": 30,
-    "equipment": {
-      "helm": {
-        "type": "helm",
-        "manufacturer": "ol",
-        "level": 5,
-        "overload_line_1": {
-          "attribute": "Increase Hit Rate",
-          "level": 4
-        },
-        "overload_line_2": {
-          "attribute": "Increase Critical Rate",
-          "level": 1
-        },
-        "overload_line_3": {
-          "attribute": "Increase ATK",
-          "level": 3
-        }
-      },
-      "gloves": {
-        "type": "gloves",
-        "manufacturer": "ol",
-        "level": 3,
-        "overload_line_1": {
-          "attribute": "Increase Charge Speed",
-          "level": 5
-        },
-        "overload_line_2": {
-          "attribute": "Increase Critical Rate",
-          "level": 1
-        },
-        "overload_line_3": {
-          "attribute": "Increase Element Damage Dealt",
-          "level": 9
-        }
-      },
-      "chest": {
-        "type": "chest",
-        "manufacturer": "ol",
-        "level": 1,
-        "overload_line_1": {
-          "attribute": "Increase DEF",
-          "level": 11
-        },
-        "overload_line_2": {
-          "attribute": "Increase Critical Rate",
-          "level": 11
-        },
-        "overload_line_3": {
-          "attribute": "Increase Element Damage Dealt",
-          "level": 11
-        }
-      },
-      "boots": {
-        "type": "boots",
-        "manufacturer": "ol",
-        "level": 1,
-        "overload_line_1": {
-          "attribute": "Increase ATK",
-          "level": 11
-        }
-      }
-    },
-    "skill_levels": [
-      10,
-      4,
-      10
-    ]
   },
   {
     "id": "modernia",
@@ -1188,54 +897,6 @@
       "type": "AR",
       "phase": 0
     }
-  },
-  {
-    "id": "soda_twinkling_bunny",
-    "core": 1,
-    "bond": 11,
-    "equipment": {
-      "helm": {
-        "type": "helm",
-        "manufacturer": "ol",
-        "level": 0,
-        "overload_line_1": {
-          "attribute": "Increase Hit Rate",
-          "level": 9
-        },
-        "overload_line_2": {
-          "attribute": "Increase Max Ammunition Capacity",
-          "level": 7
-        }
-      },
-      "gloves": {
-        "type": "gloves",
-        "manufacturer": "ol",
-        "level": 0,
-        "overload_line_1": {
-          "attribute": "Increase Max Ammunition Capacity",
-          "level": 13
-        },
-        "overload_line_3": {
-          "attribute": "Increase ATK",
-          "level": 4
-        }
-      },
-      "chest": {
-        "type": "chest",
-        "manufacturer": "Tetra",
-        "level": 0
-      },
-      "boots": {
-        "type": "boots",
-        "manufacturer": "Tetra",
-        "level": 0
-      }
-    },
-    "skill_levels": [
-      7,
-      7,
-      7
-    ]
   },
   {
     "id": "scarlet",
@@ -1680,6 +1341,767 @@
       1,
       1,
       1
+    ]
+  },
+  {
+    "id": "volume",
+    "core": 6,
+    "bond": 30,
+    "equipment": {
+      "helm": {
+        "type": "helm",
+        "manufacturer": "Tetra",
+        "level": 0
+      },
+      "gloves": {
+        "type": "gloves",
+        "manufacturer": "Tetra",
+        "level": 0
+      },
+      "chest": {
+        "type": "chest",
+        "manufacturer": "Tetra",
+        "level": 0
+      },
+      "boots": {
+        "type": "boots",
+        "manufacturer": "Tetra",
+        "level": 0
+      }
+    },
+    "skill_levels": [
+      4,
+      5,
+      5
+    ]
+  },
+  {
+    "id": "rapunzel",
+    "core": 3,
+    "bond": 40,
+    "equipment": {
+      "helm": {
+        "type": "helm",
+        "manufacturer": "ol",
+        "level": 0,
+        "overload_line_1": {
+          "attribute": "Increase ATK",
+          "level": 11
+        },
+        "overload_line_3": {
+          "attribute": "Increase Critical Damage",
+          "level": 11
+        }
+      },
+      "gloves": {
+        "type": "gloves",
+        "manufacturer": "ol",
+        "level": 0,
+        "overload_line_1": {
+          "attribute": "Increase Critical Rate",
+          "level": 11
+        },
+        "overload_line_2": {
+          "attribute": "Increase Charge Speed",
+          "level": 11
+        }
+      },
+      "chest": {
+        "type": "chest",
+        "manufacturer": "ol",
+        "level": 3,
+        "overload_line_1": {
+          "attribute": "Increase Charge Speed",
+          "level": 11
+        },
+        "overload_line_3": {
+          "attribute": "Increase ATK",
+          "level": 11
+        }
+      },
+      "boots": {
+        "type": "boots",
+        "manufacturer": "ol",
+        "level": 0,
+        "overload_line_1": {
+          "attribute": "Increase Critical Damage",
+          "level": 11
+        },
+        "overload_line_3": {
+          "attribute": "Increase Charge Speed",
+          "level": 5
+        }
+      }
+    },
+    "skill_levels": [
+      7,
+      6,
+      4
+    ]
+  },
+  {
+    "id": "leona",
+    "core": 3,
+    "bond": 30,
+    "equipment": {
+      "helm": {
+        "type": "helm",
+        "manufacturer": "standard",
+        "level": 0
+      },
+      "gloves": {
+        "type": "gloves",
+        "manufacturer": "Tetra",
+        "level": 0
+      },
+      "chest": {
+        "type": "chest",
+        "manufacturer": "Tetra",
+        "level": 0
+      },
+      "boots": {
+        "type": "boots",
+        "manufacturer": "Tetra",
+        "level": 0
+      }
+    },
+    "skill_levels": [
+      4,
+      7,
+      4
+    ]
+  },
+  {
+    "id": "alice_wonderland_bunny",
+    "core": 1,
+    "bond": 10,
+    "equipment": {
+      "helm": {
+        "type": "helm",
+        "manufacturer": "Tetra",
+        "level": 0
+      },
+      "gloves": {
+        "type": "gloves",
+        "manufacturer": "Tetra",
+        "level": 0
+      },
+      "chest": {
+        "type": "chest",
+        "manufacturer": "Tetra",
+        "level": 0
+      },
+      "boots": {
+        "type": "boots",
+        "manufacturer": "Tetra",
+        "level": 0
+      }
+    },
+    "skill_levels": [
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "id": "rosanna_chic_ocean",
+    "core": 3,
+    "bond": 10,
+    "equipment": {
+      "helm": {
+        "type": "helm",
+        "manufacturer": "standard",
+        "level": 0
+      },
+      "gloves": {
+        "type": "gloves",
+        "manufacturer": "Tetra",
+        "level": 0
+      },
+      "chest": {
+        "type": "chest",
+        "manufacturer": "Tetra",
+        "level": 0
+      },
+      "boots": {
+        "type": "boots",
+        "manufacturer": "Tetra",
+        "level": 0
+      }
+    },
+    "skill_levels": [
+      4,
+      4,
+      7
+    ]
+  },
+  {
+    "id": "alice",
+    "core": 5,
+    "bond": 30,
+    "equipment": {
+      "helm": {
+        "type": "helm",
+        "manufacturer": "ol",
+        "level": 5,
+        "overload_line_1": {
+          "attribute": "Increase Hit Rate",
+          "level": 1
+        },
+        "overload_line_2": {
+          "attribute": "Increase Charge Damage",
+          "level": 4
+        },
+        "overload_line_3": {
+          "attribute": "Increase Charge Speed",
+          "level": 10
+        }
+      },
+      "gloves": {
+        "type": "gloves",
+        "manufacturer": "ol",
+        "level": 5,
+        "overload_line_1": {
+          "attribute": "Increase Element Damage Dealt",
+          "level": 15
+        },
+        "overload_line_2": {
+          "attribute": "Increase ATK",
+          "level": 3
+        },
+        "overload_line_3": {
+          "attribute": "Increase Charge Damage",
+          "level": 3
+        }
+      },
+      "chest": {
+        "type": "chest",
+        "manufacturer": "ol",
+        "level": 5,
+        "overload_line_1": {
+          "attribute": "Increase Charge Speed",
+          "level": 5
+        },
+        "overload_line_2": {
+          "attribute": "Increase Max Ammunition Capacity",
+          "level": 8
+        }
+      },
+      "boots": {
+        "type": "boots",
+        "manufacturer": "ol",
+        "level": 5,
+        "overload_line_1": {
+          "attribute": "Increase Charge Damage",
+          "level": 11
+        },
+        "overload_line_2": {
+          "attribute": "Increase Max Ammunition Capacity",
+          "level": 11
+        },
+        "overload_line_3": {
+          "attribute": "Increase ATK",
+          "level": 11
+        }
+      }
+    },
+    "skill_levels": [
+      10,
+      7,
+      10
+    ],
+    "collection_item": {
+      "rarity": "SR",
+      "type": "SR",
+      "phase": 5
+    }
+  },
+  {
+    "id": "marciana",
+    "core": 6,
+    "bond": 30,
+    "equipment": {
+      "helm": {
+        "type": "helm",
+        "manufacturer": "Elysion",
+        "level": 3
+      },
+      "gloves": {
+        "type": "gloves",
+        "manufacturer": "Elysion",
+        "level": 0
+      },
+      "chest": {
+        "type": "chest",
+        "manufacturer": "Elysion",
+        "level": 0
+      },
+      "boots": {
+        "type": "boots",
+        "manufacturer": "Elysion",
+        "level": 0
+      }
+    },
+    "skill_levels": [
+      5,
+      5,
+      5
+    ]
+  },
+  {
+    "id": "ein",
+    "core": 1,
+    "bond": 8,
+    "equipment": {
+      "helm": {
+        "type": "helm",
+        "manufacturer": "ol",
+        "level": 0,
+        "overload_line_1": {
+          "attribute": "Increase Charge Speed",
+          "level": 3
+        },
+        "overload_line_2": {
+          "attribute": "Increase ATK",
+          "level": 12
+        }
+      },
+      "gloves": {
+        "type": "gloves",
+        "manufacturer": "ol",
+        "level": 0,
+        "overload_line_1": {
+          "attribute": "Increase Element Damage Dealt",
+          "level": 10
+        },
+        "overload_line_2": {
+          "attribute": "Increase ATK",
+          "level": 8
+        }
+      },
+      "chest": {
+        "type": "chest",
+        "manufacturer": "ol",
+        "level": 0,
+        "overload_line_1": {
+          "attribute": "Increase Hit Rate",
+          "level": 4
+        },
+        "overload_line_2": {
+          "attribute": "Increase ATK",
+          "level": 5
+        },
+        "overload_line_3": {
+          "attribute": "Increase Charge Damage",
+          "level": 9
+        }
+      },
+      "boots": {
+        "type": "boots",
+        "manufacturer": "ol",
+        "level": 0,
+        "overload_line_1": {
+          "attribute": "Increase Max Ammunition Capacity",
+          "level": 11
+        },
+        "overload_line_2": {
+          "attribute": "Increase ATK",
+          "level": 11
+        },
+        "overload_line_3": {
+          "attribute": "Increase Critical Damage",
+          "level": 11
+        }
+      }
+    },
+    "skill_levels": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "id": "anis_sparkling_summer",
+    "core": 5,
+    "bond": 10,
+    "equipment": {
+      "helm": {
+        "type": "helm",
+        "manufacturer": "ol",
+        "level": 5,
+        "overload_line_1": {
+          "attribute": "Increase Element Damage Dealt",
+          "level": 4
+        }
+      },
+      "gloves": {
+        "type": "gloves",
+        "manufacturer": "ol",
+        "level": 3,
+        "overload_line_1": {
+          "attribute": "Increase ATK",
+          "level": 11
+        }
+      },
+      "chest": {
+        "type": "chest",
+        "manufacturer": "ol",
+        "level": 0,
+        "overload_line_1": {
+          "attribute": "Increase Element Damage Dealt",
+          "level": 7
+        },
+        "overload_line_3": {
+          "attribute": "Increase ATK",
+          "level": 5
+        }
+      },
+      "boots": {
+        "type": "boots",
+        "manufacturer": "ol",
+        "level": 0,
+        "overload_line_1": {
+          "attribute": "Increase Element Damage Dealt",
+          "level": 11
+        },
+        "overload_line_2": {
+          "attribute": "Increase Critical Damage",
+          "level": 11
+        }
+      }
+    },
+    "skill_levels": [
+      9,
+      8,
+      9
+    ],
+    "collection_item": {
+      "rarity": "R",
+      "type": "SG",
+      "phase": 0
+    }
+  },
+  {
+    "id": "red_hood",
+    "core": 4,
+    "bond": 40,
+    "equipment": {
+      "helm": {
+        "type": "helm",
+        "manufacturer": "ol",
+        "level": 5,
+        "overload_line_1": {
+          "attribute": "Increase ATK",
+          "level": 5
+        },
+        "overload_line_2": {
+          "attribute": "Increase Charge Speed",
+          "level": 10
+        }
+      },
+      "gloves": {
+        "type": "gloves",
+        "manufacturer": "ol",
+        "level": 5,
+        "overload_line_1": {
+          "attribute": "Increase Max Ammunition Capacity",
+          "level": 8
+        },
+        "overload_line_2": {
+          "attribute": "Increase ATK",
+          "level": 8
+        },
+        "overload_line_3": {
+          "attribute": "Increase Hit Rate",
+          "level": 6
+        }
+      },
+      "chest": {
+        "type": "chest",
+        "manufacturer": "ol",
+        "level": 5,
+        "overload_line_1": {
+          "attribute": "Increase Charge Speed",
+          "level": 11
+        },
+        "overload_line_2": {
+          "attribute": "Increase Hit Rate",
+          "level": 11
+        },
+        "overload_line_3": {
+          "attribute": "Increase ATK",
+          "level": 11
+        }
+      },
+      "boots": {
+        "type": "boots",
+        "manufacturer": "ol",
+        "level": 5,
+        "overload_line_1": {
+          "attribute": "Increase ATK",
+          "level": 11
+        },
+        "overload_line_2": {
+          "attribute": "Increase Charge Speed",
+          "level": 11
+        }
+      }
+    },
+    "skill_levels": [
+      10,
+      10,
+      10
+    ],
+    "collection_item": {
+      "rarity": "SR",
+      "type": "SR",
+      "phase": 5
+    }
+  },
+  {
+    "id": "tove",
+    "core": 4,
+    "bond": 30,
+    "equipment": {
+      "helm": {
+        "type": "helm",
+        "manufacturer": "ol",
+        "level": 0,
+        "overload_line_1": {
+          "attribute": "Increase Charge Damage",
+          "level": 5
+        },
+        "overload_line_2": {
+          "attribute": "Increase Max Ammunition Capacity",
+          "level": 9
+        }
+      },
+      "gloves": {
+        "type": "gloves",
+        "manufacturer": "ol",
+        "level": 0,
+        "overload_line_1": {
+          "attribute": "Increase Element Damage Dealt",
+          "level": 11
+        },
+        "overload_line_3": {
+          "attribute": "Increase Critical Rate",
+          "level": 11
+        }
+      },
+      "chest": {
+        "type": "chest",
+        "manufacturer": "ol",
+        "level": 0,
+        "overload_line_1": {
+          "attribute": "Increase Max Ammunition Capacity",
+          "level": 11
+        }
+      },
+      "boots": {
+        "type": "boots",
+        "manufacturer": "Missilis",
+        "level": 0
+      }
+    },
+    "skill_levels": [
+      9,
+      7,
+      5
+    ]
+  },
+  {
+    "id": "soda_twinkling_bunny",
+    "core": 1,
+    "bond": 12,
+    "equipment": {
+      "helm": {
+        "type": "helm",
+        "manufacturer": "ol",
+        "level": 0,
+        "overload_line_1": {
+          "attribute": "Increase Hit Rate",
+          "level": 9
+        },
+        "overload_line_2": {
+          "attribute": "Increase Max Ammunition Capacity",
+          "level": 7
+        }
+      },
+      "gloves": {
+        "type": "gloves",
+        "manufacturer": "ol",
+        "level": 0,
+        "overload_line_1": {
+          "attribute": "Increase Max Ammunition Capacity",
+          "level": 13
+        },
+        "overload_line_3": {
+          "attribute": "Increase ATK",
+          "level": 4
+        }
+      },
+      "chest": {
+        "type": "chest",
+        "manufacturer": "Tetra",
+        "level": 0
+      },
+      "boots": {
+        "type": "boots",
+        "manufacturer": "Tetra",
+        "level": 0
+      }
+    },
+    "skill_levels": [
+      7,
+      7,
+      7
+    ],
+    "collection_item": {
+      "rarity": "R",
+      "type": "SG",
+      "phase": 0
+    }
+  },
+  {
+    "id": "maiden",
+    "core": 9,
+    "bond": 17,
+    "equipment": {
+      "helm": {
+        "type": "helm",
+        "manufacturer": "Elysion",
+        "level": 0
+      },
+      "gloves": {
+        "type": "gloves",
+        "manufacturer": "Elysion",
+        "level": 0
+      },
+      "chest": {
+        "type": "chest",
+        "manufacturer": "Elysion",
+        "level": 0
+      },
+      "boots": {
+        "type": "boots",
+        "manufacturer": "Elysion",
+        "level": 0
+      }
+    },
+    "skill_levels": [
+      4,
+      4,
+      4
+    ]
+  },
+  {
+    "id": "maxwell",
+    "core": 10,
+    "bond": 30,
+    "equipment": {
+      "helm": {
+        "type": "helm",
+        "manufacturer": "ol",
+        "level": 5,
+        "overload_line_1": {
+          "attribute": "Increase Hit Rate",
+          "level": 4
+        },
+        "overload_line_2": {
+          "attribute": "Increase Critical Rate",
+          "level": 1
+        },
+        "overload_line_3": {
+          "attribute": "Increase ATK",
+          "level": 3
+        }
+      },
+      "gloves": {
+        "type": "gloves",
+        "manufacturer": "ol",
+        "level": 3,
+        "overload_line_1": {
+          "attribute": "Increase Charge Speed",
+          "level": 5
+        },
+        "overload_line_2": {
+          "attribute": "Increase Critical Rate",
+          "level": 1
+        },
+        "overload_line_3": {
+          "attribute": "Increase Element Damage Dealt",
+          "level": 9
+        }
+      },
+      "chest": {
+        "type": "chest",
+        "manufacturer": "ol",
+        "level": 1,
+        "overload_line_1": {
+          "attribute": "Increase DEF",
+          "level": 11
+        },
+        "overload_line_2": {
+          "attribute": "Increase Critical Rate",
+          "level": 11
+        },
+        "overload_line_3": {
+          "attribute": "Increase Element Damage Dealt",
+          "level": 11
+        }
+      },
+      "boots": {
+        "type": "boots",
+        "manufacturer": "ol",
+        "level": 1,
+        "overload_line_1": {
+          "attribute": "Increase ATK",
+          "level": 11
+        }
+      }
+    },
+    "skill_levels": [
+      10,
+      4,
+      10
+    ],
+    "collection_item": {
+      "rarity": "R",
+      "type": "SR",
+      "phase": 0
+    }
+  },
+  {
+    "id": "privaty",
+    "core": 7,
+    "bond": 30,
+    "equipment": {
+      "helm": {
+        "type": "helm",
+        "manufacturer": "Elysion",
+        "level": 0
+      },
+      "gloves": {
+        "type": "gloves",
+        "manufacturer": "Elysion",
+        "level": 3
+      },
+      "chest": {
+        "type": "chest",
+        "manufacturer": "Elysion",
+        "level": 3
+      },
+      "boots": {
+        "type": "boots",
+        "manufacturer": "Elysion",
+        "level": 0
+      }
+    },
+    "skill_levels": [
+      7,
+      4,
+      4
     ]
   }
 ]

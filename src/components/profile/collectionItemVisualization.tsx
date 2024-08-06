@@ -50,7 +50,6 @@ const CollectionItemVisualization: React.FC<CollectionItemVisualizationProps> = 
     const dispatch = useDispatch();
     const [popover_open, setPopoverOpen] = useState(false);
     const collection_item: CollectionItem | undefined = nikke.collection_item;
-    console.log(recommendations);
     const priority = collectionItemPriorityDescriptions[recommendations ? recommendations.skyfall.collection_item_priority : "not_rated"];
     const rank = collectionItemPriorityRanks[recommendations ? recommendations.skyfall.collection_item_priority : "not_rated"]
 

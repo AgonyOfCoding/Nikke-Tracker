@@ -1908,6 +1908,28 @@
                 "pre_overload": ["resilience"],
                 "post_overload": ["resilience"],
                 "notes": "Resilience Cube helps her with the last bullet mechanic."
+            }, "with_treasure": {
+                "ratings": {
+                    "story_low_deficit": "A",
+                    "story_high_deficit": "A",
+                    "boss_solo": "S",
+                    "boss_adds": "S",
+                    "pvp": "C"
+                }, "skills": {
+                    "priority": "Medium",
+                    "pve": "1/1/1 → 1/7/4 → 1/10/7 (→ 1/10/10)",
+                    "pvp": "1/1/1"
+                }, "overloads": {
+                    "priority": "Medium",
+                    "essential": ["MUST NOT HAVE MAX AMMO"],
+                    "ideal": ["4× Elemental Damage", "4× ATK"],
+                    "passable": ["4× Charge Speed"],
+                    "notes": "Elemental Damage and ATK better her DPS performance. Niche DPS+Support for Electric Weak Raids. Last bullet effect means she does not want Max Ammo effect on OL gear! If she has Max Ammo on her gear, you cannot Full Auto her. Charge Speed is a passable effect that helps her if you want to auto her."
+                }, "cube": {
+                    "pre_overload": ["resilience"],
+                    "post_overload": ["resilience"],
+                    "notes": "Resilience Cube helps her with the last bullet mechanic."
+                }
             }
         }, "skyfall": {
             "priority": "Low to Medium (with Treasure)",

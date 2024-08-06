@@ -94,7 +94,6 @@ const AppNavbar: React.FC = () => {
             <Navbar.Divider />
             <NavbarAdditionalFilters />
             <Navbar.Divider />
-            <Navbar.Heading style={{ fontWeight: 'bold' }} >Recommendations</Navbar.Heading>
             {Object.values(RecommendationSource).map((source) => (
                 <Button
                     style={{ 

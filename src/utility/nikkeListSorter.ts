@@ -37,7 +37,6 @@ const priorityOrder: {[key: string]: number} = {
 };
 
 const getPriorityValueSkyfall = (priority: string | undefined) => {
-    console.log(priority);
     if (!priority) return 999;
     const mainPriority: string | undefined = Object.keys(priorityOrder).find(p => priority.startsWith(p));
     return mainPriority ? priorityOrder[mainPriority] : 999;

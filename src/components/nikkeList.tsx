@@ -1,16 +1,14 @@
 import React, { useEffect, useState } from 'react';
-import { Burst, CollectionItem, Equipment, Nikke, NikkeElement, NikkeManufacturer, NikkeRarity, NikkeRole, NikkeSkills, NikkeStaticData, RecommendationData, RecommendationsNikkeGG, RecommendationsPrydwen, RecommendationsSkyfall, Team, TeamsData, WeaponType } from '../types';
+import { Burst, Nikke, NikkeElement, NikkeManufacturer, NikkeRarity, NikkeRole, NikkeSkills, NikkeStaticData, RecommendationData, RecommendationsNikkeGG, RecommendationsPrydwen, RecommendationsSkyfall,  WeaponType } from '../types';
 import NikkeEntry from './nikkeEntry';
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 import { RootState } from '../state/store';
 import { FilterOptions } from '../state/filterOptions';
 import nikkeStaticDataJson from '../data/nikkeStaticData.json'
 import recomendationDataJson from '../data/recommendationData.json'
-import { setInvestments } from '../state/investment';
-import axios from 'axios';
-import { nikkeListSorter } from '../utility/listSorter';
+import { nikkeListSorter } from '../utility/nikkeListSorter';
 import { SortState } from '../state/sortOptions';
-import { initializeTeamsData, TeamSet, TeamsState } from '../state/teamsState';
+import { TeamSet, TeamsState } from '../state/teamsState';
 import TeamsSummary from './teams/teamsSummary';
 
 const transformStaticData = ( data: { [key: string]: any }): { [key: string]: NikkeStaticData } => {
@@ -49,73 +47,28 @@ const transformRecommendationData = ( data: { [key: string]: any }): { [key: str
     return transformedData;
 };
 
-const transformInvestmentData = ( data: any[] ): Nikke[] => {
-    const transformedData: Nikke[] = [];
-
-    Object.values(data).forEach(nikke => {
-        transformedData.push({
-            id: nikke.id as string,
-            core: nikke.core as number,
-            bond: nikke.bond as number,
-            equipment: nikke.equipment as Equipment,
-            skill_levels: nikke.skill_levels as number[],
-            collection_item: nikke.collection_item as CollectionItem | undefined 
-        });
-    });
-
-    return transformedData;
-};
-
-const transformTeamsData = ( data: any ): TeamsData => {
-    const transformedData: TeamsData = data as TeamsData;
-
-    return transformedData;
-};
-
 const NikkeList: React.FC = () => {
     const [nikke_static_data, setNikkeStaticData] = useState<{ [key: string]: NikkeStaticData } | null>(null);
     const [recommendation_data, setRecommendationData] = useState<{ [key: string]: RecommendationData } | null>(null);
-    const [nikke_investment_data, setNikkeInvestmentData] = useState<Nikke[] | null>(null);
-    const [teams_data, setNikkeTeamsData] = useState<TeamsData | null>(null);
     const filterState: FilterOptions = useSelector((state: RootState) => state.filter);
     const sort_state: SortState = useSelector((state: RootState) => state.sort);
+    const nikke_investment_data: Nikke[] = useSelector((state: RootState) => state.investments.investments)
     const teams_state: TeamsState = useSelector((state: RootState) => state.teams);
-    const { selected_team_set, selected_team } = teams_state;
+    const { selected_team_set, selected_team, teams_data } = teams_state;
     const search = useSelector((state: RootState) => state.search).search
-    const dispatch = useDispatch();
     
     useEffect(() => {
-        const fetchInvestmentData = async () => {
-            try {
-                const response = await axios.get('/api/investmentData');
-                const inv = transformInvestmentData(response.data);
-                setNikkeInvestmentData(inv);
-                dispatch(setInvestments(inv));
-            } catch (error) {
-                console.error('Error fetching investment data:', error);
-            }
-        };
-        const fetchTeamsData = async () => {
-            try {
-                const response = await axios.get('/api/teamData');
-                const teams = transformTeamsData(response.data);
-                setNikkeTeamsData(teams);
-                dispatch(initializeTeamsData(teams));
-            } catch (error) {
-                console.error('Error fetching investment data:', error);
-            }
-        };
         const sta = transformStaticData(nikkeStaticDataJson);
         const rec = transformRecommendationData(recomendationDataJson);
         setNikkeStaticData(sta);
         setRecommendationData(rec);
-        fetchInvestmentData();
-        fetchTeamsData();
-    }, [dispatch]);
+    }, []);
 
-    if (!nikke_static_data || !recommendation_data || !nikke_investment_data || !teams_data) {
+    if (!nikke_static_data || !recommendation_data || !teams_data) {
         return <div style={{marginTop: 100}}>Loading...</div>;
     }
+
+    console.log(teams_data)
 
     var filtered_static_data: NikkeStaticData[] = Object.values(nikke_static_data).filter((nikke) =>
         nikke.id !== '' &&
@@ -151,11 +104,14 @@ const NikkeList: React.FC = () => {
         })
     }
     const list_data = selected_team_set ? team_nikke_list : sorted_static_data;
-    const teams: Team[] = selected_team_set === TeamSet.solo_raid ? teams_data.solo_raid :
-        selected_team_set === TeamSet.pvp ? teams_data.pvp : teams_data.custom;
 
     if (selected_team_set && selected_team === "summary") {
-        return <TeamsSummary teams={teams} />
+        const team_set_key = selected_team_set === TeamSet.campaign ?
+            "campaign" : selected_team_set === TeamSet.solo_raid ?
+            "solo_raid" : selected_team_set === TeamSet.tribe_tower ?
+            "tribe_tower": selected_team_set === TeamSet.pvp ?
+            "pvp" : "custom";
+        return <TeamsSummary teams={teams_data[team_set_key]} />
     }
     
     return (

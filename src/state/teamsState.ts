@@ -3,7 +3,9 @@ import { TeamsData } from "../types";
 import axios from "axios";
 
 export enum TeamSet {
+    campaign = "Campaign",
     solo_raid = "Solo Raid",
+    tribe_tower = "Tribe Tower",
     pvp = "PVP",
     custom = "Custom"
 }

@@ -66,8 +66,10 @@ const NikkeSelect: React.FC<NikkeSelectProps> = ({ pos, nikke, team, teams_state
         if (!selected_team_set || selected_team === "summary" || !teams_data)
             throw new Error("Selected team not found.");
 
-        const teamSetKey = selected_team_set === TeamSet.solo_raid ?
-            "solo_raid" : selected_team_set === TeamSet.pvp ?
+        const teamSetKey = selected_team_set === TeamSet.campaign ?
+            "campaign" : selected_team_set === TeamSet.solo_raid ?
+            "solo_raid" : selected_team_set === TeamSet.tribe_tower ?
+            "tribe_tower": selected_team_set === TeamSet.pvp ?
             "pvp" : "custom";
         const teams = teams_data[teamSetKey];
 
@@ -105,7 +107,7 @@ const NikkeSelect: React.FC<NikkeSelectProps> = ({ pos, nikke, team, teams_state
             [teamSetKey]: updatedTeams,
         };
         dispatch(changeTeamsData(new_teams_data))
-    }, [dispatch, team, selected_team_set, selected_team, teams_data]);
+    }, [dispatch, pos, selected_team_set, selected_team, teams_data]);
 
     const filterNikke: ItemPredicate<string> = (query, nikke, _index, exactMatch) => {
         const normalizednikke = nikke.toLowerCase();

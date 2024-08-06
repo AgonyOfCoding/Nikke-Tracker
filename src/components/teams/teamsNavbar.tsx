@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-import { setSelectedTeam, TeamSet, TeamsState } from "../../state/teamsState";
+import { setSelectedTeam, setSelectedTeamSet, TeamSet, TeamsState } from "../../state/teamsState";
 import { RootState } from "../../state/store";
 import { Alignment, Button, Dialog, DialogBody, DialogFooter, Navbar } from "@blueprintjs/core";
 import { color_scheme } from "../../types";
@@ -15,10 +15,12 @@ const TeamsNavbar: React.FC = () => {
     
     if (!selected_team_set || !teams_data) return null;
 
-    const { solo_raid, pvp, custom } = teams_data;
-    const team_set = selected_team_set === TeamSet.solo_raid ?
-        solo_raid : selected_team_set === TeamSet.pvp ?
-        pvp : custom;
+    const team_set_key = selected_team_set === TeamSet.campaign ?
+            "campaign" : selected_team_set === TeamSet.solo_raid ?
+            "solo_raid" : selected_team_set === TeamSet.tribe_tower ?
+            "tribe_tower": selected_team_set === TeamSet.pvp ?
+            "pvp" : "custom";
+    const team_set = teams_data[team_set_key];
 
     return (
         <Navbar
@@ -27,12 +29,13 @@ const TeamsNavbar: React.FC = () => {
                 position: 'fixed',
                 width: '100%',
                 zIndex: 10,
-                top: '50px',
+                top: 0,//'50px',
                 left: 0
             }}
         >
             <Navbar.Group align={Alignment.LEFT}>
             <Navbar.Heading style={{ fontWeight: 'bold' }}>Teams</Navbar.Heading>
+            <Button icon="cross" onClick={() => dispatch(setSelectedTeamSet(undefined))} />
             <Navbar.Divider />
             <Button
                 style={{ 

@@ -1,54 +1,105 @@
 {
+  "campaign": [
+    {
+      "name": "Team 1"
+    },
+    {
+      "name": "Team 2"
+    },
+    {
+      "name": "Team 3"
+    }
+  ],
   "solo_raid": [
     {
       "name": "Team 1",
       "nikke_1": "crown",
-      "cube_1": "quantum",
+      "cube_1": "resilience",
       "nikke_2": "volume",
-      "cube_2": "resilience",
+      "cube_2": "quantum",
       "nikke_3": "ein",
-      "cube_3": "bastion",
+      "cube_3": "resilience",
       "nikke_4": "anis_sparkling_summer",
-      "cube_4": "bastion",
+      "cube_4": "resilience",
       "nikke_5": "rapunzel",
-      "cube_5": "resilience"
+      "cube_5": "vigor"
     },
     {
       "name": "Team 2",
       "nikke_1": "tia",
-      "nikke_2": "liter",
-      "nikke_3": "naga",
-      "nikke_4": "scarlet_black_shadow",
-      "nikke_5": "alice"
+      "cube_1": "resilience",
+      "nikke_2": "scarlet_black_shadow",
+      "cube_2": "bastion",
+      "nikke_3": "alice",
+      "cube_3": "resilience",
+      "nikke_4": "liter",
+      "cube_4": "quantum",
+      "nikke_5": "naga",
+      "cube_5": "resilience"
     },
     {
       "name": "Team 3",
       "nikke_1": "d_killer_wife",
+      "cube_1": "resilience",
       "nikke_2": "blanc",
-      "nikke_3": "scarlet",
-      "nikke_4": "red_hood",
-      "nikke_5": "noir"
+      "cube_2": "quantum",
+      "nikke_3": "red_hood",
+      "cube_3": "resilience",
+      "nikke_4": "noir",
+      "cube_4": "bastion",
+      "nikke_5": "scarlet",
+      "cube_5": "resilience"
     },
     {
       "name": "Team 4",
-      "nikke_1": "tove",
-      "nikke_2": "leona",
+      "nikke_1": "alice_wonderland_bunny",
+      "cube_1": "bastion",
+      "nikke_2": "tove",
+      "cube_2": "bastion",
       "nikke_3": "privaty_unkind_maid",
+      "cube_3": "bastion",
       "nikke_4": "soda_twinkling_bunny",
-      "nikke_5": "alice_wonderland_bunny"
+      "cube_4": "bastion",
+      "nikke_5": "leona",
+      "cube_5": "resilience"
     },
     {
       "name": "Team 5",
       "nikke_1": "dorothy",
-      "nikke_2": "biscuit",
-      "nikke_3": "elegg",
-      "nikke_4": "anis_sparkling_summer",
-      "nikke_5": "privaty"
+      "cube_1": "resilience",
+      "nikke_2": "marciana",
+      "cube_2": "quantum",
+      "nikke_3": "maxwell",
+      "cube_3": "resilience",
+      "nikke_4": "maiden",
+      "cube_4": "resilience",
+      "nikke_5": "privaty",
+      "cube_5": "resilience"
+    }
+  ],
+  "tribe_tower": [
+    {
+      "name": "Elysion",
+      "nikke_1": "d_killer_wife"
+    },
+    {
+      "name": "Missilis"
+    },
+    {
+      "name": "Tetra"
+    },
+    {
+      "name": "Pilgrim"
     }
   ],
   "pvp": [
     {
-      "name": "Rookie Arena"
+      "name": "Rookie Arena",
+      "nikke_1": "noise",
+      "nikke_2": "scarlet",
+      "nikke_3": "rapunzel",
+      "nikke_4": "jackal",
+      "nikke_5": "noah"
     },
     {
       "name": "SP Arena 1"

@@ -250,7 +250,9 @@ export interface CollectionItem {
 // Teams
 
 export interface TeamsData {
+    campaign: Team[];
     solo_raid: Team[];
+    tribe_tower: Team[];
     pvp: Team[];
     custom: Team[];
 }
