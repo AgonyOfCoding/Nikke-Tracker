@@ -1,15 +1,16 @@
 import { useDispatch, useSelector } from "react-redux";
-import { setSelectedTeam, setSelectedTeamSet, TeamSet, TeamsState } from "../../state/teamsState";
+import { setHighlightedElement, setSelectedTeam, setSelectedTeamSet, TeamSet, TeamsState } from "../../state/teamsState";
 import { RootState } from "../../state/store";
 import { Alignment, Button, Dialog, DialogBody, DialogFooter, Navbar } from "@blueprintjs/core";
-import { color_scheme } from "../../types";
+import { color_scheme, NikkeElement } from "../../types";
 import { useState } from "react";
 import "../../customStyles/customDialogStyles.css"
 import TeamEdit from "./teamEdit";
+import { getMiscIcon } from "../../utility/iconGetters";
 
 const TeamsNavbar: React.FC = () => {
     const teamsState: TeamsState = useSelector((state: RootState) => state.teams);
-    const { selected_team_set, selected_team, teams_data } = teamsState;
+    const { selected_team_set, selected_team, teams_data, highlighted_element } = teamsState;
     const dispatch = useDispatch();
     const [edit_dialog_open, setEditDialogOpen] = useState(false);
     
@@ -29,13 +30,13 @@ const TeamsNavbar: React.FC = () => {
                 position: 'fixed',
                 width: '100%',
                 zIndex: 10,
-                top: 0,//'50px',
+                top: 0,
                 left: 0
             }}
         >
             <Navbar.Group align={Alignment.LEFT}>
-            <Navbar.Heading style={{ fontWeight: 'bold' }}>Teams</Navbar.Heading>
-            <Button icon="cross" onClick={() => dispatch(setSelectedTeamSet(undefined))} />
+            <Navbar.Heading style={{ fontWeight: 'bold' }}>{selected_team_set + " Teams"}</Navbar.Heading>
+            <Button icon="cross" intent="danger" onClick={() => dispatch(setSelectedTeamSet(undefined))} />
             <Navbar.Divider />
             <Button
                 style={{ 
@@ -82,6 +83,21 @@ const TeamsNavbar: React.FC = () => {
                     icon="plus"
                 />
             }
+            </Navbar.Group>
+            <Navbar.Group align={Alignment.RIGHT}>
+            <Navbar.Divider />
+            {Object.values(NikkeElement).map(element =>
+                <Button
+                    style={{ 
+                        backgroundColor: element === highlighted_element ? color_scheme[3] : color_scheme[1],
+                        color: element === highlighted_element ? color_scheme[0] : color_scheme[4]
+                    }}
+                    key={element}
+                    className="bp5-minimal"
+                    icon={<img src={getMiscIcon("element", element)} alt={element} style={{ height: 32 }} />}
+                    onClick={() => dispatch(setHighlightedElement(element))}
+                />
+            )}
             </Navbar.Group>
             <Dialog isOpen={edit_dialog_open} title='Set Skill Levels' onClose={() => setEditDialogOpen(false)} >
                 <DialogBody className="custom-dialog-body" >

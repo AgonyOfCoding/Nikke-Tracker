@@ -1,5 +1,5 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { TeamsData } from "../types";
+import { NikkeElement, TeamsData } from "../types";
 import axios from "axios";
 
 export enum TeamSet {
@@ -14,12 +14,14 @@ export interface TeamsState {
     selected_team_set: TeamSet | undefined;
     selected_team: string;
     teams_data: TeamsData | undefined;
+    highlighted_element: NikkeElement | undefined;
 }
 
 const initialState: TeamsState = {
     selected_team_set: undefined,
     selected_team: "summary",
-    teams_data: undefined
+    teams_data: undefined,
+    highlighted_element: undefined
 }
 
 const saveTeamsData = async (teams_data: TeamsData) => {
@@ -52,6 +54,13 @@ export const teamsSlice = createSlice({
             state.teams_data = action.payload;
             saveTeamsData(state.teams_data)
         },
+        setHighlightedElement: (state, action: PayloadAction<NikkeElement>) => {
+            if (state.highlighted_element === action.payload) {
+                state.highlighted_element = undefined;
+            } else {
+                state.highlighted_element = action.payload;
+            }
+        },
     }
 })
 
@@ -59,7 +68,8 @@ export const {
     setSelectedTeamSet,
     setSelectedTeam,
     initializeTeamsData,
-    changeTeamsData
+    changeTeamsData,
+    setHighlightedElement
 } = teamsSlice.actions
 
 export default teamsSlice.reducer

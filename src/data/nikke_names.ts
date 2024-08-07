@@ -113,7 +113,7 @@ export const nikke_names: Record<string, string> = {
     "snow_white": "Snow White",
     "snow_white_innocent_days": "Snow White: Innocent Days",
     "soda": "Soda",
-    "soda_twinkling_bunny": "Soda: Twinkling Bbunny",
+    "soda_twinkling_bunny": "Soda: Twinkling Bunny",
     "soldier_eg": "Soldier EG",
     "soldier_fa": "Soldier FA",
     "soldier_ow": "Soldier OW",

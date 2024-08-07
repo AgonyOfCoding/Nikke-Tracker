@@ -36,17 +36,7 @@ interface TeamEditRowProps {
 
 const TeamEditRow: React.FC<TeamEditRowProps> = ({ pos, nikke, cube, team, teams_state }) => {
     return (
-        <div
-            style={{
-                display: 'grid',
-                gridTemplateColumns: '1fr 1fr',
-                gridTemplateRows: 'repeat(2, auto)',
-                margin: '10px'
-            }}
-        >
-            <div style={{ gridColumn: '1 / 2' }} ><NikkeSelect pos={pos} nikke={nikke} team={team} teams_state={teams_state} /></div>
-            <div style={{ gridColumn: '2 / 3' }} >{cube}</div>
-        </div>
+        <NikkeSelect pos={pos} nikke={nikke} team={team} teams_state={teams_state} />
     )
 }
 
@@ -61,6 +51,7 @@ const NikkeSelect: React.FC<NikkeSelectProps> = ({ pos, nikke, team, teams_state
     const { selected_team_set, selected_team, teams_data } = teams_state;
     const select_items = Object.values(nikke_names);
     const dispatch = useDispatch();
+    const nikke_name = nikke ? nikke_names[nikke] : "(Select a Nikke)";
 
     const changeTeamNikke = useCallback((nikke_name: string) => {
         if (!selected_team_set || selected_team === "summary" || !teams_data)
@@ -83,18 +74,23 @@ const NikkeSelect: React.FC<NikkeSelectProps> = ({ pos, nikke, team, teams_state
         switch (pos) {
             case 1:
                 teamToUpdate.nikke_1 = getNikkeIDByName(nikke_name);
+                teamToUpdate.cube_1 = undefined;
                 break;
             case 2:
                 teamToUpdate.nikke_2 = getNikkeIDByName(nikke_name);
+                teamToUpdate.cube_2 = undefined;
                 break;
             case 3:
                 teamToUpdate.nikke_3 = getNikkeIDByName(nikke_name);
+                teamToUpdate.cube_3 = undefined;
                 break;
             case 4:
                 teamToUpdate.nikke_4 = getNikkeIDByName(nikke_name);
+                teamToUpdate.cube_4 = undefined;
                 break;
             case 5:
                 teamToUpdate.nikke_5 = getNikkeIDByName(nikke_name);
+                teamToUpdate.cube_5 = undefined;
                 break;
             default:
                 throw new Error("Invalid position");
@@ -146,7 +142,7 @@ const NikkeSelect: React.FC<NikkeSelectProps> = ({ pos, nikke, team, teams_state
             noResults={<MenuItem disabled={true} text="No results." roleStructure="listoption" />}
             onItemSelect={changeTeamNikke}
         >
-            <Button text={nikke} rightIcon="double-caret-vertical" aria-placeholder="Select a Nikke" />
+            <Button text={nikke_name} rightIcon="double-caret-vertical" style={{ width: "300px" }} />
         </Select>
     );
 };

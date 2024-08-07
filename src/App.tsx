@@ -1,13 +1,13 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import './App.css';
-import NikkeList from './components/nikkeList';
 import AppNavbar from './components/navbar/appNavbar';
 import TeamsNavbar from './components/teams/teamsNavbar';
 import { useDispatch } from 'react-redux';
 import { CollectionItem, Equipment, Nikke, TeamsData } from './types';
 import axios from 'axios';
-import { setInvestments } from './state/investment';
+import { initializeInvestments } from './state/investment';
 import { initializeTeamsData } from './state/teamsState';
+import NITContent from './components/nitContent';
 
 const transformInvestmentData = ( data: any[] ): Nikke[] => {
   const transformedData: Nikke[] = [];
@@ -40,9 +40,9 @@ function App() {
     const fetchInvestmentData = async () => {
         try {
             const response = await axios.get('/api/investmentData');
-            const inv = transformInvestmentData(response.data);
-            setNikkeInvestmentData(inv);
-            dispatch(setInvestments(inv));
+            const investments = transformInvestmentData(response.data);
+            setNikkeInvestmentData(investments);
+            dispatch(initializeInvestments(investments));
         } catch (error) {
             console.error('Error fetching investment data:', error);
         }
@@ -59,7 +59,7 @@ function App() {
     };
     fetchInvestmentData();
     fetchTeamsData();
-  }, []);
+  }, [dispatch]);
 
   if (!nikke_investment_data || !teams_data) {
     return <div style={{marginTop: 100}}>Loading...</div>;
@@ -68,9 +68,9 @@ function App() {
   return (
     <div className="App" >
       <AppNavbar />
+      <TeamsNavbar />
       <div className="content" >
-        <TeamsNavbar />
-        <NikkeList />
+        <NITContent />
       </div>
     </div>
   );

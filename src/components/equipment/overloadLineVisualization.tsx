@@ -98,7 +98,7 @@ const OverloadLineVisualization: React.FC<OverloadLineVisualizationProps> = ({ o
                         <span style={{ color: overload_line.level === 15 ? color_scheme[0] : 'black' }} >
                             {`${overload_value.attribute}:`}
                         </span>
-                        <span style={{ color: overload_line.level > 11 ? 'blue' : 'gray' }} >
+                        <span style={{ color: overload_line.level > 11 ? 'blue' : 'gray', fontWeight: 'bold' }} >
                             {`${overload_value.level_values[overload_line.level]}% `}
                         </span>
                         <span style={{ fontWeight: 'bold', color: overload_line.level === 15 ? color_scheme[0] : 'black' }} >

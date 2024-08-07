@@ -23,7 +23,7 @@ export const investmentSlice = createSlice({
     name: "nikkeInvestments",
     initialState,
     reducers: {
-        setInvestments: (state, action: PayloadAction<Nikke[]>) => {
+        initializeInvestments: (state, action: PayloadAction<Nikke[]>) => {
             state.investments = action.payload;
         },
         addNikke: (state, action: PayloadAction<string>) => {
@@ -52,5 +52,5 @@ export const investmentSlice = createSlice({
     }
 })
 
-export const { setInvestments, addNikke, modifyInvestment } = investmentSlice.actions
+export const { initializeInvestments, addNikke, modifyInvestment } = investmentSlice.actions
 export default investmentSlice.reducer

@@ -1,5 +1,5 @@
 import { Button, Dialog, DialogBody, DialogFooter } from "@blueprintjs/core";
-import { color_scheme, Nikke, NikkeStaticData, RecommendationData } from "../../types";
+import { color_scheme, Nikke, NikkeRarity, NikkeStaticData, RecommendationData } from "../../types";
 import { useState } from "react";
 import SkillDialogSkill from "./skillDialogSkill";
 import "../../customStyles/customDialogStyles.css"
@@ -32,17 +32,17 @@ const Profile: React.FC<ProfileProps> = ({ nikke_static, nikke_data, recommendat
     
     return (
         <div>
-            <h2 style={{ margin:0 }}>{nikke_static.name}</h2>
+            <h3 style={{ margin:0 }}>{nikke_static.name}</h3>
             <img 
                 src={getNikkeIcon(nikke_static.id)}
                 alt="Icon not found"
                 style={{ width: '128px', height: '128px', backgroundColor: rarityColors[nikke_static.rarity] }}
             />
             <NikkeIconRow nikke_static={nikke_static} />
-            {nikke_data &&
+            {nikke_data && nikke_static.rarity === NikkeRarity.SSR &&
                 <CoreVisualization nikke_data={nikke_data} />
             }
-            {nikke_data &&
+            {nikke_data && nikke_static.rarity !== NikkeRarity.R &&
                 <BondVisualization nikke_data={nikke_data} nikke_static={nikke_static} />
             }
             {nikke_data && 

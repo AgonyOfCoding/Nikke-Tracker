@@ -51,6 +51,23 @@ const EquipmentColumn: React.FC<EquipmentColumnProps> = ({ equipment_type, nikke
         equipment_data?.overload_line_3
     ]);
 
+    const removeEquipment = useCallback(() => {
+        const new_equipment: Equipment = {
+            ...nikke.equipment,
+            [equipment_type]: undefined
+        }
+        const new_nikke: Nikke = {
+            ...nikke,
+            equipment: new_equipment
+        };
+        dispatch(modifyInvestment(new_nikke));
+        setPopoverOpen(false)
+    }, [
+        dispatch,
+        nikke,
+        equipment_type
+    ]);
+
     const equipmentSelector = () => {
     return (
         <div style={{ backgroundColor: color_scheme[0] }}>
@@ -65,6 +82,14 @@ const EquipmentColumn: React.FC<EquipmentColumnProps> = ({ equipment_type, nikke
                     />
                 )
             ))}
+            {equipment_data &&
+                <img
+                    src={getEmptyEquipmentIcon(equipment_type)}
+                    alt="Icon not found"
+                    style={{ width: '100px', height: '100px' }}
+                    onClick={() => removeEquipment()}
+                />
+            }
         </div>
     );
 };

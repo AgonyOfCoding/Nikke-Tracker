@@ -86,17 +86,17 @@ export enum OverloadAttribute {
 // Harmony Cubes
 
 export enum CubeName {
-    Adjutant = "Adjutant",
-    Assault = "Assault",
-    Bastion = "Bastion",
-    Endurance = "Endurance",
-    Healing = "Healing",
-    Onslaught = "Onslaught",
-    Quantum = "Quantum",
-    Resilience = "Resilience",
-    Tempering = "Tempering",
-    Vigor = "Vigor",
-    Wingman = "Wingman"
+    Adjutant = "adjutant",
+    Assault = "assault",
+    Bastion = "bastion",
+    Endurance = "endurance",
+    Healing = "healing",
+    Onslaught = "onslaught",
+    Quantum = "quantum",
+    Resilience = "resilience",
+    Tempering = "tempering",
+    Vigor = "vigor",
+    Wingman = "wingman"
 }
 
 // Collection Items

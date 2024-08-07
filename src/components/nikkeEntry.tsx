@@ -25,7 +25,6 @@ const NikkeEntry: React.FC<NikkeEntryProps> = ({ nikke_static, recommendation_da
             elevation={Elevation.TWO}
             style={{
                 backgroundColor: index % 2 === 0 ? color_scheme[1] : color_scheme[2],
-                color: color_scheme[4],
                 display: 'grid',
                 gridTemplateColumns: wide_layout ? '1fr 1fr 2fr 2fr 2fr 2fr 2fr' : '1fr 2fr 2fr 2fr 2fr 2fr',
                 gridTemplateRows: wide_layout ? 'repeat(7, auto)' : 'repeat(7, auto)'
