@@ -1043,23 +1043,6 @@
     ]
   },
   {
-    "id": "viper",
-    "core": 5,
-    "bond": 29,
-    "equipment": {
-      "gloves": {
-        "type": "gloves",
-        "manufacturer": "Tetra",
-        "level": 0
-      }
-    },
-    "skill_levels": [
-      1,
-      1,
-      1
-    ]
-  },
-  {
     "id": "2b",
     "core": 3,
     "bond": 30,
@@ -2102,6 +2085,23 @@
       7,
       4,
       4
+    ]
+  },
+  {
+    "id": "viper",
+    "core": 5,
+    "bond": 30,
+    "equipment": {
+      "gloves": {
+        "type": "gloves",
+        "manufacturer": "Tetra",
+        "level": 0
+      }
+    },
+    "skill_levels": [
+      1,
+      1,
+      1
     ]
   }
 ]
