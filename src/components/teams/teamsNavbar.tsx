@@ -36,7 +36,14 @@ const TeamsNavbar: React.FC = () => {
         >
             <Navbar.Group align={Alignment.LEFT}>
             <Navbar.Heading style={{ fontWeight: 'bold' }}>{selected_team_set + " Teams"}</Navbar.Heading>
-            <Button icon="cross" intent="danger" onClick={() => dispatch(setSelectedTeamSet(undefined))} />
+            <Button
+                icon="cross"
+                intent="danger"
+                onClick={() => {
+                    dispatch(setSelectedTeamSet(undefined))
+                    dispatch(setSelectedTeam("summary"))
+                }}
+            />
             <Navbar.Divider />
             <Button
                 style={{ 

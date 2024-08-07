@@ -5,8 +5,8 @@ import { TeamSet } from "../state/teamsState";
 import { Burst, NikkeElement, NikkeManufacturer, NikkeRarity, NikkeRole, NikkeSkills, NikkeStaticData, RecommendationData, RecommendationsNikkeGG, RecommendationsPrydwen, RecommendationsSkyfall, WeaponType } from "../types";
 import nikkeStaticDataJson from '../data/nikkeStaticData.json'
 import recomendationDataJson from '../data/recommendationData.json'
-import NikkeList from "./nikkeList";
 import TeamsView from "./teams/teamsView";
+import NikkeList from "./list/nikkeList";
 
 const transformStaticData = ( data: { [key: string]: any }): { [key: string]: NikkeStaticData } => {
     const transformedData: { [key: string]: NikkeStaticData } = {};

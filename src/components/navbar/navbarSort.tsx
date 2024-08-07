@@ -1,4 +1,4 @@
-import { Button, Menu, MenuItem, Popover } from "@blueprintjs/core"
+import { Button, Menu, MenuItem, Popover, Tooltip } from "@blueprintjs/core"
 import { color_scheme } from "../../types"
 import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "../../state/store";
@@ -33,6 +33,10 @@ const sort_options_sky: string[] = [
     "Priority[Skyfall]"
 ]
 
+function removeBrackets(str: string) {
+    return str.replace(/\[.*?\]/g, '');
+}
+
 const NavbarSort: React.FC = () => {
     const sortState: SortState = useSelector((state: RootState) => state.sort);
     const recommendations_source: RecommendationSource  = useSelector((state: RootState) => state.recommendations.source);
@@ -49,15 +53,14 @@ const NavbarSort: React.FC = () => {
             {sort_options.map(option => 
                 <MenuItem
                     style={{ 
-                        backgroundColor: option === sortState.sort_option ? color_scheme[3] : color_scheme[0],
-                        color: option === sortState.sort_option ? color_scheme[0] : color_scheme[4]
+                        backgroundColor: option === sortState.sort_option ? color_scheme[3] : color_scheme[0]
                     }}
                     icon={option !== sortState.sort_option ?
                         null :
                         sortState.inverted ? "caret-up" : "caret-down"
                     }
                     key={option}
-                    text={option}
+                    text={removeBrackets(option)}
                     onClick={() => dispatch(setSortOption(option))}
                 />
             )}
@@ -66,11 +69,13 @@ const NavbarSort: React.FC = () => {
 
     return (
         <Popover minimal content={sortMenu()} >
-            <Button
-                style={{ color: color_scheme[4] }}
-                className="bp5-minimal"
-                text='Sort'
-            />
+            <Tooltip position="bottom" content="Sort" >
+                <Button
+                    style={{ color: color_scheme[4] }}
+                    className="bp5-minimal"
+                    icon='sort'
+                />
+            </Tooltip>
         </Popover>
     )
 }

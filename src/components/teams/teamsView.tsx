@@ -3,7 +3,7 @@ import { RootState } from "../../state/store";
 import { TeamSet, TeamsState } from "../../state/teamsState";
 import { NikkeStaticData, RecommendationData } from "../../types";
 import TeamsSummary from "./teamsSummary";
-import NikkeEntry from "../nikkeEntry";
+import NikkeEntry from "../list/nikkeEntry";
 
 interface TeamsViewProps {
     nikke_static_data: { [key: string]: NikkeStaticData };

@@ -1,4 +1,4 @@
-import { Button, Menu, MenuDivider, MenuItem, Popover } from "@blueprintjs/core"
+import { Button, Menu, MenuDivider, MenuItem, Popover, Tooltip } from "@blueprintjs/core"
 import { CollectionItemRarity, color_scheme, NikkeElement, NikkeManufacturer, NikkeRarity } from "../../types"
 import { useDispatch, useSelector } from "react-redux";
 import { FilterOptions, setCollectionItemRarityFilter, setElementFilter, setManufacturerFilter, setNikkeRarityFilter } from "../../state/filterOptions";
@@ -81,11 +81,13 @@ const NavbarAdditionalFilters: React.FC = () => {
 
     return (
         <Popover minimal content={additionalFiltersdMenu()} >
-            <Button
-                style={{ backgroundColor: color_scheme[1], color: color_scheme[4] }}
-                className="bp5-minimal"
-                text='Additional Filters'
-            />
+            <Tooltip position="bottom" content="Additional filters" >
+                <Button
+                    style={{ backgroundColor: color_scheme[1], color: color_scheme[4] }}
+                    className="bp5-minimal"
+                    icon='filter'
+                />
+            </Tooltip>
         </Popover>
     )
 }

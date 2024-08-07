@@ -1,11 +1,9 @@
-import { Button, Menu, MenuItem, Popover } from "@blueprintjs/core";
+import { Button, Menu, MenuItem, Popover, Tooltip } from "@blueprintjs/core";
 import { color_scheme } from "../../types";
 import { setSelectedTeamSet, TeamSet } from "../../state/teamsState";
-import { useDispatch, useSelector } from "react-redux";
-import { RootState } from "../../state/store";
+import { useDispatch } from "react-redux";
 
 const TeamsMenu: React.FC = () => {
-    const selected_team_set: TeamSet | undefined  = useSelector((state: RootState) => state.teams.selected_team_set);
     const dispatch = useDispatch();
 
     const content = () => {
@@ -13,8 +11,7 @@ const TeamsMenu: React.FC = () => {
             {Object.values(TeamSet).map(team_set => 
                 <MenuItem
                     style={{ 
-                        backgroundColor: team_set === selected_team_set ? color_scheme[3] : color_scheme[0],
-                        color: team_set === selected_team_set ? color_scheme[0] : color_scheme[4]
+                        backgroundColor: color_scheme[0]
                     }}
                     key={team_set}
                     text={team_set}
@@ -26,11 +23,13 @@ const TeamsMenu: React.FC = () => {
 
     return (
         <Popover minimal content={content()} >
-            <Button
-                style={{ color: color_scheme[4] }}
-                className="bp5-minimal"
-                text='Teams'
-            />
+            <Tooltip position="bottom" content="Teams" >
+                <Button
+                    style={{ color: color_scheme[4] }}
+                    className="bp5-minimal"
+                    icon='team'
+                />
+            </Tooltip>
         </Popover>
     )
 }

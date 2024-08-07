@@ -426,79 +426,6 @@
     }
   },
   {
-    "id": "naga",
-    "core": 5,
-    "bond": 30,
-    "equipment": {
-      "helm": {
-        "type": "helm",
-        "manufacturer": "ol",
-        "level": 5,
-        "overload_line_1": {
-          "attribute": "Increase Hit Rate",
-          "level": 11
-        },
-        "overload_line_2": {
-          "attribute": "Increase ATK",
-          "level": 11
-        }
-      },
-      "gloves": {
-        "type": "gloves",
-        "manufacturer": "ol",
-        "level": 5,
-        "overload_line_1": {
-          "attribute": "Increase Element Damage Dealt",
-          "level": 11
-        },
-        "overload_line_2": {
-          "attribute": "Increase Hit Rate",
-          "level": 11
-        },
-        "overload_line_3": {
-          "attribute": "Increase ATK",
-          "level": 11
-        }
-      },
-      "chest": {
-        "type": "chest",
-        "manufacturer": "ol",
-        "level": 5,
-        "overload_line_1": {
-          "attribute": "Increase Max Ammunition Capacity",
-          "level": 3
-        },
-        "overload_line_2": {
-          "attribute": "Increase Element Damage Dealt",
-          "level": 10
-        }
-      },
-      "boots": {
-        "type": "boots",
-        "manufacturer": "ol",
-        "level": 5,
-        "overload_line_1": {
-          "attribute": "Increase Critical Rate",
-          "level": 1
-        },
-        "overload_line_3": {
-          "attribute": "Increase Max Ammunition Capacity",
-          "level": 8
-        }
-      }
-    },
-    "skill_levels": [
-      10,
-      7,
-      10
-    ],
-    "collection_item": {
-      "rarity": "R",
-      "type": "SG",
-      "phase": 15
-    }
-  },
-  {
     "id": "noir",
     "core": 8,
     "bond": 30,
@@ -2807,70 +2734,6 @@
     }
   },
   {
-    "id": "noise",
-    "core": 9,
-    "bond": 30,
-    "equipment": {
-      "helm": {
-        "type": "helm",
-        "manufacturer": "ol",
-        "level": 0,
-        "overload_line_1": {
-          "attribute": "Increase Critical Rate",
-          "level": 4
-        },
-        "overload_line_2": {
-          "attribute": "Increase Hit Rate",
-          "level": 5
-        }
-      },
-      "gloves": {
-        "type": "gloves",
-        "manufacturer": "ol",
-        "level": 0,
-        "overload_line_1": {
-          "attribute": "Increase Element Damage Dealt",
-          "level": 11
-        },
-        "overload_line_2": {
-          "attribute": "Increase Critical Rate",
-          "level": 11
-        }
-      },
-      "chest": {
-        "type": "chest",
-        "manufacturer": "ol",
-        "level": 3,
-        "overload_line_1": {
-          "attribute": "Increase Hit Rate",
-          "level": 4
-        },
-        "overload_line_2": {
-          "attribute": "Increase Critical Damage",
-          "level": 2
-        }
-      },
-      "boots": {
-        "type": "boots",
-        "manufacturer": "ol",
-        "level": 0,
-        "overload_line_1": {
-          "attribute": "Increase Charge Damage",
-          "level": 11
-        },
-        "overload_line_2": {
-          "attribute": "Increase Charge Speed",
-          "level": 11
-        }
-      }
-    },
-    "skill_levels": [
-      7,
-      7,
-      7
-    ]
-  },
-  {
     "id": "novel",
     "core": 4,
     "bond": 30,
@@ -4045,6 +3908,148 @@
       "rarity": "R",
       "type": "RL",
       "phase": 0
+    }
+  },
+  {
+    "id": "noise",
+    "core": 9,
+    "bond": 30,
+    "equipment": {
+      "helm": {
+        "type": "helm",
+        "manufacturer": "ol",
+        "level": 0,
+        "overload_line_1": {
+          "attribute": "Increase Critical Rate",
+          "level": 4
+        },
+        "overload_line_2": {
+          "attribute": "Increase Hit Rate",
+          "level": 5
+        }
+      },
+      "gloves": {
+        "type": "gloves",
+        "manufacturer": "ol",
+        "level": 0,
+        "overload_line_1": {
+          "attribute": "Increase Element Damage Dealt",
+          "level": 11
+        },
+        "overload_line_2": {
+          "attribute": "Increase Critical Rate",
+          "level": 11
+        }
+      },
+      "chest": {
+        "type": "chest",
+        "manufacturer": "ol",
+        "level": 3,
+        "overload_line_1": {
+          "attribute": "Increase Hit Rate",
+          "level": 4
+        },
+        "overload_line_2": {
+          "attribute": "Increase Critical Damage",
+          "level": 2
+        }
+      },
+      "boots": {
+        "type": "boots",
+        "manufacturer": "ol",
+        "level": 0,
+        "overload_line_1": {
+          "attribute": "Increase Charge Damage",
+          "level": 11
+        },
+        "overload_line_2": {
+          "attribute": "Increase Charge Speed",
+          "level": 11
+        }
+      }
+    },
+    "skill_levels": [
+      7,
+      7,
+      7
+    ],
+    "collection_item": {
+      "rarity": "R",
+      "type": "RL",
+      "phase": 0
+    }
+  },
+  {
+    "id": "naga",
+    "core": 5,
+    "bond": 30,
+    "equipment": {
+      "helm": {
+        "type": "helm",
+        "manufacturer": "ol",
+        "level": 5,
+        "overload_line_1": {
+          "attribute": "Increase Hit Rate",
+          "level": 11
+        },
+        "overload_line_2": {
+          "attribute": "Increase ATK",
+          "level": 11
+        }
+      },
+      "gloves": {
+        "type": "gloves",
+        "manufacturer": "ol",
+        "level": 5,
+        "overload_line_1": {
+          "attribute": "Increase Element Damage Dealt",
+          "level": 11
+        },
+        "overload_line_2": {
+          "attribute": "Increase Hit Rate",
+          "level": 11
+        },
+        "overload_line_3": {
+          "attribute": "Increase ATK",
+          "level": 11
+        }
+      },
+      "chest": {
+        "type": "chest",
+        "manufacturer": "ol",
+        "level": 5,
+        "overload_line_1": {
+          "attribute": "Increase Max Ammunition Capacity",
+          "level": 3
+        },
+        "overload_line_2": {
+          "attribute": "Increase Element Damage Dealt",
+          "level": 10
+        }
+      },
+      "boots": {
+        "type": "boots",
+        "manufacturer": "ol",
+        "level": 5,
+        "overload_line_1": {
+          "attribute": "Increase Critical Rate",
+          "level": 1
+        },
+        "overload_line_3": {
+          "attribute": "Increase Max Ammunition Capacity",
+          "level": 8
+        }
+      }
+    },
+    "skill_levels": [
+      10,
+      7,
+      10
+    ],
+    "collection_item": {
+      "rarity": "SR",
+      "type": "SG",
+      "phase": 5
     }
   }
 ]

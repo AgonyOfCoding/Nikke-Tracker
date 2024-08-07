@@ -1,12 +1,12 @@
 import { Card, Elevation } from "@blueprintjs/core";
-import { color_scheme, EquipmentType, Nikke, NikkeStaticData, OverloadAttribute, RecommendationData } from "../types";
-import EquipmentColumn from "./equipment/equipmentColumn";
-import OverloadRecommendationsList from "./recommendations/recommendationsColumn";
-import Profile from "./profile/profile";
-import OverloadTotal from "./equipment/overloadTotal";
+import { color_scheme, EquipmentType, Nikke, NikkeStaticData, OverloadAttribute, RecommendationData } from "../../types";
+import EquipmentColumn from "../equipment/equipmentColumn";
+import OverloadRecommendationsList from "../recommendations/recommendationsColumn";
+import Profile from "../profile/profile";
+import OverloadTotal from "../equipment/overloadTotal";
 import { useSelector } from "react-redux";
-import { RootState } from "../state/store";
-import CollectionItemVisualization from "./profile/collectionItemVisualization";
+import { RootState } from "../../state/store";
+import CollectionItemVisualization from "../profile/collectionItemVisualization";
 
 interface NikkeEntryProps {
     nikke_static: NikkeStaticData;
@@ -24,7 +24,8 @@ const NikkeEntry: React.FC<NikkeEntryProps> = ({ nikke_static, recommendation_da
         <Card
             elevation={Elevation.TWO}
             style={{
-                backgroundColor: index % 2 === 0 ? color_scheme[1] : color_scheme[2],
+                height: 350,
+                backgroundColor: index % 2 === 0 ? color_scheme[2] : color_scheme[1],
                 display: 'grid',
                 gridTemplateColumns: wide_layout ? '1fr 1fr 2fr 2fr 2fr 2fr 2fr' : '1fr 2fr 2fr 2fr 2fr 2fr',
                 gridTemplateRows: wide_layout ? 'repeat(7, auto)' : 'repeat(7, auto)'

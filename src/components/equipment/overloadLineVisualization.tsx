@@ -78,14 +78,16 @@ const OverloadLineVisualization: React.FC<OverloadLineVisualizationProps> = ({ o
             {!overload_value || !overload_line ? 
                 <Button
                     fill
-                    style={{ backgroundColor: color_scheme[0] }}
+                    style={{ backgroundColor: color_scheme[0], fontSize: 12, width: 280 }}
                 >
                     Effect not obtained
                 </Button> :
                 <Button
                     fill
                     style={{
-                        backgroundColor: overload_line.level === 15 ? 'black' : color_scheme[0]
+                        backgroundColor: overload_line.level === 15 ? 'black' : color_scheme[0],
+                        fontSize: 12,
+                        width: 280
                     }}
                 >
                     <div 
