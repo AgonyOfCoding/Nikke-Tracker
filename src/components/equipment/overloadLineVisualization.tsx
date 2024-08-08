@@ -1,5 +1,5 @@
 import React, { useCallback } from "react"
-import { color_scheme, Equipment, EquipmentData, EquipmentType, Nikke, OverloadAttribute, OverloadLine, OverloadValues } from "../../types";
+import { Equipment, EquipmentData, EquipmentType, Nikke, OverloadAttribute, OverloadLine, OverloadValues } from "../../types";
 import { overload_data } from "../../data/overloadData";
 import { Button, Menu, MenuItem, Popover } from "@blueprintjs/core";
 import { useDispatch } from "react-redux";
@@ -78,14 +78,14 @@ const OverloadLineVisualization: React.FC<OverloadLineVisualizationProps> = ({ o
             {!overload_value || !overload_line ? 
                 <Button
                     fill
-                    style={{ backgroundColor: color_scheme[0], fontSize: 12, width: 280 }}
+                    style={{ backgroundColor: "#eaeaea", fontSize: 12, width: 280 }}
                 >
                     Effect not obtained
                 </Button> :
                 <Button
                     fill
                     style={{
-                        backgroundColor: overload_line.level === 15 ? 'black' : color_scheme[0],
+                        backgroundColor: overload_line.level === 15 ? "#232323" : "#eaeaea",
                         fontSize: 12,
                         width: 280
                     }}
@@ -97,13 +97,13 @@ const OverloadLineVisualization: React.FC<OverloadLineVisualizationProps> = ({ o
                             width: '100%'
                         }}
                     >
-                        <span style={{ color: overload_line.level === 15 ? color_scheme[0] : 'black' }} >
+                        <span style={{ color: overload_line.level === 15 ? "#eaeaea" : "#232323" }} >
                             {`${overload_value.attribute}:`}
                         </span>
-                        <span style={{ color: overload_line.level > 11 ? 'blue' : 'gray', fontWeight: 'bold' }} >
+                        <span style={{ color: overload_line.level > 11 ? "#00aeff" : "#617480", fontWeight: 'bold', marginLeft: '7px', marginRight: '7px' }} >
                             {`${overload_value.level_values[overload_line.level]}% `}
                         </span>
-                        <span style={{ fontWeight: 'bold', color: overload_line.level === 15 ? color_scheme[0] : 'black' }} >
+                        <span style={{ fontWeight: 'bold', color: overload_line.level === 15 ? "#eaeaea" : "#232323" }} >
                             {overload_line.level}
                         </span>
                     </div>

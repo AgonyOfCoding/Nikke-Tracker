@@ -2,6 +2,7 @@ import { Button, Menu, MenuItem, Popover, Tooltip } from "@blueprintjs/core";
 import { color_scheme } from "../../types";
 import { setSelectedTeamSet, TeamSet } from "../../state/teamsState";
 import { useDispatch } from "react-redux";
+import { setSearch } from "../../state/search";
 
 const TeamsMenu: React.FC = () => {
     const dispatch = useDispatch();
@@ -15,7 +16,11 @@ const TeamsMenu: React.FC = () => {
                     }}
                     key={team_set}
                     text={team_set}
-                    onClick={() => dispatch(setSelectedTeamSet(team_set))}
+                    onClick={() => {
+                        dispatch(setSelectedTeamSet(team_set))
+                        dispatch(setSearch(""))
+                    }}
+
                 />
             )}
         </Menu>

@@ -30,7 +30,7 @@ const BondVisualization: React.FC<BondVisualizationProps> = ({ nikke_data, nikke
         <div  
             style={{
                 display: 'grid',
-                gridTemplateColumns: '1fr 5fr',
+                gridTemplateColumns: '1fr 3fr',
                 gridTemplateRows: 'repeat(2, auto)',
                 margin: "5px"
             }}
@@ -40,6 +40,7 @@ const BondVisualization: React.FC<BondVisualizationProps> = ({ nikke_data, nikke
             </div>
             <div style={{ gridColumn: '2 / 3' }} >
                 <NumericInput
+                    small
                     value={nikke_data.bond}
                     min={0}
                     max={max_bond}

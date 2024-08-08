@@ -1,5 +1,5 @@
 import { useDispatch } from "react-redux";
-import { CollectionItem, CollectionItemRarity, color_scheme, Nikke, NikkeStaticData, RecommendationData, WeaponType } from "../../types";
+import { CollectionItem, CollectionItemRarity, Nikke, NikkeStaticData, RecommendationData, WeaponType } from "../../types";
 import { NumericInput, Popover } from "@blueprintjs/core";
 import { useCallback, useState } from "react";
 import { getCollectionItemIcon } from "../../utility/iconGetters";
@@ -51,11 +51,14 @@ const CollectionItemVisualization: React.FC<CollectionItemVisualizationProps> = 
     const [popover_open, setPopoverOpen] = useState(false);
     const collection_item: CollectionItem | undefined = nikke.collection_item;
     const priority = collectionItemPriorityDescriptions[recommendations ? recommendations.skyfall.collection_item_priority : "not_rated"];
-    const rank = collectionItemPriorityRanks[recommendations ? recommendations.skyfall.collection_item_priority : "not_rated"]
+    const rank = collectionItemPriorityRanks[recommendations ? recommendations.skyfall.collection_item_priority : "not_rated"];
+    const [isHovered, setIsHovered] = useState(false);
+    const handleMouseEnter = () => setIsHovered(true);
+    const handleMouseLeave = () => setIsHovered(false);
 
     const collectionItemSelector = () => {
         return (
-            <div style={{ backgroundColor: color_scheme[0] }} >
+            <div>
                 {collection_item?.rarity !== CollectionItemRarity.R &&
                     <img src={getCollectionItemIcon("R", nikke_static.weapon_type)}
                         alt="Icon not found"
@@ -115,7 +118,6 @@ const CollectionItemVisualization: React.FC<CollectionItemVisualizationProps> = 
         <div>
             <div>Collection Item Priority: {priority} ({rank})</div>
             <Popover
-                minimal
                 interactionKind='click'
                 isOpen={popover_open}
                 onInteraction={(state) => setPopoverOpen(state)}
@@ -127,15 +129,20 @@ const CollectionItemVisualization: React.FC<CollectionItemVisualizationProps> = 
                         getCollectionItemIcon("empty")
                     }
                     alt="Icon not found"
-                    style={{ width: collection_item ? '128px' : '64px' }}
+                    style={{
+                        ...styles.image,
+                        ...(collection_item ? styles.image : styles.smallImage),
+                        transform: isHovered ? 'scale(1.1)' : 'scale(1)',
+                    }}
+                    onMouseEnter={handleMouseEnter}
+                    onMouseLeave={handleMouseLeave}
                 />
             </Popover>
             {collection_item && 
                 <div
                     style={{
                         display: 'grid',
-                        gridTemplateColumns: '1fr 1fr',
-                        gridTemplateRows: 'repeat(2, auto)'
+                        gridTemplateColumns: '1fr 1fr'
                     }}
                 >
                     <div style={{ gridColumn: '1 / 2', placeContent: 'center'   }}  >
@@ -143,6 +150,7 @@ const CollectionItemVisualization: React.FC<CollectionItemVisualizationProps> = 
                     </div>
                     <div style={{ gridColumn: '2 / 3', placeContent: 'center'   }} >
                         <NumericInput
+                            small
                             value={collection_item.phase}
                             min={0}
                             max={15}
@@ -158,5 +166,21 @@ const CollectionItemVisualization: React.FC<CollectionItemVisualizationProps> = 
         </div>
     )
 }
+
+const styles = {
+    image: {
+        width: '128px',
+        transition: 'transform 0.3s ease-in-out',
+        marginTop: '30px',
+        marginBottom: '30px',
+    },
+    hover: {
+        transform: 'scale(1.1)',
+    },
+    smallImage: {
+        width: '64px',
+        transition: 'transform 0.3s ease-in-out',
+    },
+};
 
 export default CollectionItemVisualization;

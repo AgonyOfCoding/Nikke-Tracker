@@ -117,29 +117,6 @@ export enum PriorityNikkeGG {
     no = "-"
 }
 
-export const priorityColorsSkillsPrydwen: { [priority: string]: string } = {
-    Meta: "#e76ee5",
-    Meta_Late_Game: "#dc4247",
-    High: "#de4347",
-    Medium: "#db5d47",
-    Low: "#d6904f",
-    Very_Low: "#fbdc80",
-    Very_Low_PVP: "#e4c466",
-    PVP: "#61d1f1",
-    no: color_scheme[0]
-}
-
-export const priorityColorsOverloadsPrydwen: { [priority: string]: string } = {
-    Meta: "#ea6fea",
-    High: "#da4044",
-    Medium: "#dc954d",
-    Medium_PVP: "#d6904f",
-    Low: "#efcd72",
-    Very_Low: "#6fdefd",
-    Low_PVP: "#edce72",
-    no: color_scheme[0]
-}
-
 export enum PriorityPrydwen {
     Meta = "Meta",
     Meta_Late_Game = "Meta (Late Game)",

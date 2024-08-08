@@ -61,6 +61,18 @@ const NavbarAdditionalFilters: React.FC = () => {
                 />
             )}
             <MenuDivider />
+            <MenuItem
+                style={{ 
+                    backgroundColor: filterState.collection_item_rarity === "no_collection_item" ? color_scheme[3] : color_scheme[0],
+                    color: filterState.collection_item_rarity === "no_collection_item" ? color_scheme[0] : color_scheme[4]
+                }}
+                text={"No Collection Item"}
+                icon={<img src={getMiscIcon("collection_item_rarity", "no_collection_item")} alt={"Icon not found"} style={{ height: 24 }} />}
+                onClick={filterState.collection_item_rarity === "no_collection_item" ?
+                    () => dispatch(setCollectionItemRarityFilter(undefined)) :
+                    () => dispatch(setCollectionItemRarityFilter("no_collection_item"))
+                }
+            />
             {Object.values(CollectionItemRarity).map(collection_item_rarity =>
                 <MenuItem
                     style={{ 

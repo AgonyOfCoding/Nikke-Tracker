@@ -80,28 +80,36 @@ function initialSorter(
                     collectionItemPriorityRanks[recommendation_data[nikke_static_b.id].skyfall.collection_item_priority]) return 1;
                 return nikke_static_a.name.localeCompare(nikke_static_b.name);
             })
+        case "Collection Item Phase":
+            return list.sort((nikke_static_a, nikke_static_b) => {
+                const phase_a: number = nikke_investment_data.find(nikke => nikke.id === nikke_static_a.id)?.collection_item?.phase || -1;
+                const phase_b: number = nikke_investment_data.find(nikke => nikke.id === nikke_static_b.id)?.collection_item?.phase || -1;
+                if (phase_a < phase_b) return 1;
+                if (phase_a > phase_b) return -1;
+                return nikke_static_a.name.localeCompare(nikke_static_b.name);
+            })
         case "Rating (Story)[Nikke.gg]":
             return list.sort((nikke_static_a, nikke_static_b) => {
                 const rating_a = recommendation_data[nikke_static_a.id].nikke_gg.ratings.story;
                 const rating_b = recommendation_data[nikke_static_b.id].nikke_gg.ratings.story;
-                if (rating_a < rating_b) return -1;
-                if (rating_a > rating_b) return 1;
+                if (rating_a < rating_b) return 1;
+                if (rating_a > rating_b) return -1;
                 return nikke_static_a.name.localeCompare(nikke_static_b.name);
             })
         case "Rating (PVP)[Nikke.gg]":
             return list.sort((nikke_static_a, nikke_static_b) => {
                 const rating_a = recommendation_data[nikke_static_a.id].nikke_gg.ratings.pvp;
                 const rating_b = recommendation_data[nikke_static_b.id].nikke_gg.ratings.pvp;
-                if (rating_a < rating_b) return -1;
-                if (rating_a > rating_b) return 1;
+                if (rating_a < rating_b) return 1;
+                if (rating_a > rating_b) return -1;
                 return nikke_static_a.name.localeCompare(nikke_static_b.name);
             })
         case "Rating (Boss)[Nikke.gg]":
             return list.sort((nikke_static_a, nikke_static_b) => {
                 const rating_a = recommendation_data[nikke_static_a.id].nikke_gg.ratings.boss;
                 const rating_b = recommendation_data[nikke_static_b.id].nikke_gg.ratings.boss;
-                if (rating_a < rating_b) return -1;
-                if (rating_a > rating_b) return 1;
+                if (rating_a < rating_b) return 1;
+                if (rating_a > rating_b) return -1;
                 return nikke_static_a.name.localeCompare(nikke_static_b.name);
             })
         case "Rating (Story, low deficit)[Prydwen]":

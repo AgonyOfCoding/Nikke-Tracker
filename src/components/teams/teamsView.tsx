@@ -3,7 +3,7 @@ import { RootState } from "../../state/store";
 import { TeamSet, TeamsState } from "../../state/teamsState";
 import { NikkeStaticData, RecommendationData } from "../../types";
 import TeamsSummary from "./teamsSummary";
-import NikkeEntry from "../list/nikkeEntry";
+import NikkeList from "../list/nikkeList";
 
 interface TeamsViewProps {
     nikke_static_data: { [key: string]: NikkeStaticData };
@@ -41,11 +41,7 @@ const TeamsView: React.FC<TeamsViewProps> = ({ nikke_static_data, recommendation
     })
 
     return (
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr', rowGap: '0px', paddingTop: '30px' }} >
-            {team_nikke_list.map((nikke, index) => (
-                <NikkeEntry key={nikke.id} nikke_static={nikke} index={index} recommendation_data={recommendation_data[nikke.id]} />
-            ))}
-        </div>
+        <NikkeList nikke_static_data={nikke_static_data} recommendation_data={recommendation_data} team_nikke_list={team_nikke_list} />
     )
 }
 

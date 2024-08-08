@@ -1,16 +1,12 @@
-import { Button, Dialog, DialogBody, DialogFooter } from "@blueprintjs/core";
+import { Button } from "@blueprintjs/core";
 import { color_scheme, Nikke, NikkeRarity, NikkeStaticData, RecommendationData } from "../../types";
-import { useState } from "react";
-import SkillDialogSkill from "./skillDialogSkill";
-import "../../customStyles/customDialogStyles.css"
 import NikkeIconRow from "./nikkeIconRow";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { addNikke } from "../../state/investment";
 import { getNikkeIcon } from "../../utility/iconGetters";
 import CoreVisualization from "./coreVisualization";
-import CollectionItemVisualization from "./collectionItemVisualization";
-import { RootState } from "../../state/store";
 import BondVisualization from "./BondVisualization";
+import SkillDialog from "./SkillDialog";
 
 interface ProfileProps {
     nikke_static: NikkeStaticData;
@@ -19,25 +15,29 @@ interface ProfileProps {
 }
 
 
-const Profile: React.FC<ProfileProps> = ({ nikke_static, nikke_data, recommendations }) => {
-    const wide_layout: boolean = useSelector((state: RootState) => state.settings.wide_layout)
+const Profile: React.FC<ProfileProps> = ({ nikke_static, nikke_data }) => {
     const dispatch = useDispatch();
-    const [skill_dialog_open, setSkillDialogOpen] = useState(false);
 
-    const rarityColors: { [rarity: string]: string } = {
-        SSR: "#f18031", //#f5a763
-        SR: "#883af8", //#a665eb
-        R: "#3b81eb" //#68a3ea
-    }
+    const getGradientColors = (rarity: NikkeRarity) => {
+        switch (rarity) {
+            case NikkeRarity.SSR:
+                return 'linear-gradient(to top, #c9a36a, #895650)';
+            case NikkeRarity.SR:
+                return 'linear-gradient(to top, #8a5fcc, #35365a)';
+            case NikkeRarity.R:
+            default:
+                return 'linear-gradient(to top, #4273ba, #34375a)';
+        }
+    };
     
     return (
-        <div>
+        <div style={{ alignItems: 'center' }} >
             <h3 style={{ margin:0 }}>{nikke_static.name}</h3>
-            <img 
-                src={getNikkeIcon(nikke_static.id)}
-                alt="Icon not found"
-                style={{ width: '128px', height: '128px', backgroundColor: rarityColors[nikke_static.rarity] }}
-            />
+            <div style={styles.container}>
+                <div style={{ ...styles.background, background: getGradientColors(nikke_static.rarity) }}>
+                    <img src={getNikkeIcon(nikke_static.id)} alt="Icon not found" style={styles.image} />
+                </div>
+            </div>
             <NikkeIconRow nikke_static={nikke_static} />
             {nikke_data && nikke_static.rarity === NikkeRarity.SSR &&
                 <CoreVisualization nikke_data={nikke_data} />
@@ -46,37 +46,12 @@ const Profile: React.FC<ProfileProps> = ({ nikke_static, nikke_data, recommendat
                 <BondVisualization nikke_data={nikke_data} nikke_static={nikke_static} />
             }
             {nikke_data && 
-                <div>
-                    <Button
-                        style={{ backgroundColor: color_scheme[3], color: color_scheme[0] }}
-                        onClick={() => setSkillDialogOpen(true)}
-                    >
-                        {nikke_data.skill_levels[0]}/{nikke_data.skill_levels[1]}/{nikke_data.skill_levels[2]}
-                    </Button>
-                    <Dialog isOpen={skill_dialog_open} title='Set Skill Levels' onClose={() => setSkillDialogOpen(false)} >
-                        <DialogBody className="custom-dialog-body" >
-                            <SkillDialogSkill nikke={nikke_data} nikke_static={nikke_static} skill_type={'Skill 1'} />
-                            <SkillDialogSkill nikke={nikke_data} nikke_static={nikke_static} skill_type={'Skill 2'} />
-                            <SkillDialogSkill nikke={nikke_data} nikke_static={nikke_static} skill_type={'Burst Skill'} />
-                        </DialogBody>
-                        <DialogFooter
-                            className="custom-dialog-footer"
-                            actions={
-                                <Button
-                                    style={{ backgroundColor: color_scheme[4], color: color_scheme[0] }}
-                                    text="Close"
-                                    onClick={() => setSkillDialogOpen(false)} />
-                                }
-                        />
-                    </Dialog>
-                    {nikke_data && !wide_layout &&
-                        <CollectionItemVisualization nikke={nikke_data} nikke_static={nikke_static} recommendations={recommendations} />
-                    }
-                </div>
+                <SkillDialog nikke={nikke_data} nikke_static={nikke_static} />
             }
             {!nikke_data &&
                 <Button
                     style={{ backgroundColor: color_scheme[3], color: color_scheme[0] }}
+                    intent="success"
                     text="Add Investment"
                     onClick={() => dispatch(addNikke(nikke_static.id))}
                 />
@@ -84,5 +59,28 @@ const Profile: React.FC<ProfileProps> = ({ nikke_static, nikke_data, recommendat
         </div>
     )
 }
+
+const styles = {
+    container: {
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center' as const, // Ensure TypeScript understands this as a valid flex property
+    },
+    background: {
+        width: '128px',
+        height: '128px',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'flex-start' as const, // Aligns the image at the top
+    },
+    image: {
+        width: '128px',
+        height: '128px',
+        objectFit: 'cover' as const,
+        position: 'relative' as const,
+        zIndex: 1,
+        top: 0,
+    },
+};
 
 export default Profile;

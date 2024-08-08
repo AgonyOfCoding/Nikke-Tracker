@@ -1,4 +1,4 @@
-import { Navbar, Button, Alignment, InputGroup, Tooltip } from '@blueprintjs/core';
+import { Navbar, Button, Alignment, InputGroup, Tooltip, Colors } from '@blueprintjs/core';
 import { Burst, color_scheme, NikkeRole, WeaponType } from '../../types';
 import { useDispatch, useSelector } from 'react-redux';
 import { RootState } from '../../state/store';
@@ -10,10 +10,13 @@ import NavbarSort from './navbarSort';
 import NavbarSettings from './navbarSettings';
 import TeamsMenu from './teamsMenu';
 import NavbarRecommendations from './navbarRecommendations';
+import NavbarAbout from './about';
 
 const AppNavbar: React.FC = () => {
     const filterState: FilterOptions = useSelector((state: RootState) => state.filter)
     const dispatch = useDispatch();
+
+    const any_filters_on = !Object.values(filterState).every(value => value === undefined);
 
     return (
         <Navbar
@@ -37,7 +40,7 @@ const AppNavbar: React.FC = () => {
             {Object.values(Burst).filter(burst => burst !== Burst.Burst_Lambda).map(burst => 
                 <Button
                     style={{ 
-                        backgroundColor: burst === filterState.burst ? color_scheme[3] : color_scheme[1]
+                        backgroundColor: burst === filterState.burst ? Colors.GREEN3 : color_scheme[1]
                     }}
                     key={burst}
                     className="bp5-minimal"
@@ -85,6 +88,7 @@ const AppNavbar: React.FC = () => {
                 <Button 
                     icon='reset'
                     className="bp5-minimal"
+                    style={{ backgroundColor: any_filters_on ? Colors.RED3 : color_scheme[1] }}
                     onClick={() => dispatch(clearFilters())}
                 />
             </Tooltip>
@@ -103,7 +107,7 @@ const AppNavbar: React.FC = () => {
             </Navbar.Group>
             <Navbar.Group align={Alignment.RIGHT}>
             <Navbar.Divider />
-            <Button className="bp5-minimal" text="Help" />
+            <NavbarAbout />
             </Navbar.Group>
         </Navbar>
     );

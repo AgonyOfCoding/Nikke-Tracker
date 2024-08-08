@@ -8,7 +8,7 @@ export interface FilterOptions {
     manufacturer: NikkeManufacturer | undefined;
     element: NikkeElement | undefined;
     nikke_rarity: NikkeRarity | undefined;
-    collection_item_rarity: CollectionItemRarity | undefined;
+    collection_item_rarity: CollectionItemRarity | "no_collection_item" | undefined;
 }
 
 const initialState: FilterOptions = {
@@ -43,7 +43,7 @@ export const filterSlice = createSlice({
         setNikkeRarityFilter(state, action: PayloadAction<NikkeRarity | undefined>) {
             state.nikke_rarity = action.payload;
         },
-        setCollectionItemRarityFilter(state, action: PayloadAction<CollectionItemRarity | undefined>) {
+        setCollectionItemRarityFilter(state, action: PayloadAction<CollectionItemRarity | "no_collection_item" |  undefined>) {
             state.collection_item_rarity = action.payload;
         },
         clearFilters(state) {

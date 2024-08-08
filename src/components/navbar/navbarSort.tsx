@@ -8,7 +8,8 @@ import { RecommendationSource } from "../../state/recommendationSources";
 const sort_options_common: string[] = [
     "Rarity",
     "Name",
-    "Collection Item Priority"
+    "Collection Item Priority",
+    "Collection Item Phase"
 ];
 
 const sort_options_nikkegg: string[] = [

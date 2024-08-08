@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-import { color_scheme, priorityColorsOverloadsPrydwen, priorityColorsSkillsPrydwen, RecommendationsPrydwen } from "../../types";
+import { color_scheme, RecommendationsPrydwen } from "../../types";
 import { Button, Tooltip } from "@blueprintjs/core";
 import { RootState } from "../../state/store";
 import { getMiscIcon } from "../../utility/iconGetters";
@@ -87,13 +87,13 @@ const RecommendationVisualizationPrydwen: React.FC<RecommendationVisualizationPr
                 </div>
             </div>
             <div style={{ marginTop: '10px' }} >
-                <div style={{ color: priorityColorsSkillsPrydwen[recommendations.skills.priority] }} >Skill investment priority: {recommendations.skills.priority}</div>
+                <div>Skill investment priority: {recommendations.skills.priority}</div>
                 <div>PVE: {recommendations.skills.pve}</div>
                 <div>PVP: {recommendations.skills.pvp}</div>
             </div>
             {recommendations.overloads.ideal &&
                 <div style={{ marginTop: '10px' }} >
-                    <div style={{ color: priorityColorsOverloadsPrydwen[recommendations.overloads.priority] }} >Overload investment priority: {recommendations.overloads.priority}</div>
+                    <div>Overload investment priority: {recommendations.overloads.priority}</div>
                     <div
                         style={{
                             display: 'grid',

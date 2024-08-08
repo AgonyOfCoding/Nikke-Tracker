@@ -17,7 +17,8 @@ const NikkeGGOverloadLine: React.FC<NikkeGGOverloadLineProps> = ({ attribute, ov
                 display: 'grid',
                 gridTemplateColumns: '6fr 1fr 2fr 1fr',
                 gridTemplateRows: 'repeat(4, auto)',
-                columnGap: '5px'
+                columnGap: '5px',
+                fontSize: 12,
             }}
         >
             <div style={{ gridColumn: '1 / 2', textAlign: 'right' }} >
@@ -46,13 +47,11 @@ const NikkeGGOverloadLine: React.FC<NikkeGGOverloadLineProps> = ({ attribute, ov
                     <div>NO</div>
                 }
             </div>
-            {notes !== "" &&
-                <div style={{ gridColumn: '4 / 5', placeContent: 'center' }} >
-                    <Tooltip content={notes} >
-                        <Button small minimal text="?" style={{ color: color_scheme[0], fontWeight: 'bold' }} />
-                    </Tooltip>
-                </div>
-            }
+            <div style={{ gridColumn: '4 / 5', placeContent: 'center' }} >
+                <Tooltip content={notes} >
+                    {/* <Button small minimal text="?" style={{ color: color_scheme[0], fontWeight: 'bold' }} /> */}
+                </Tooltip>
+            </div>
         </div>
         
     );

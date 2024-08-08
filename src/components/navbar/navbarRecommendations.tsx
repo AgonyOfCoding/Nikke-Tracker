@@ -3,10 +3,12 @@ import { RecommendationSource, setRecommendationSource } from "../../state/recom
 import { RootState } from "../../state/store";
 import { Button, Menu, MenuItem, Popover, Tooltip } from "@blueprintjs/core";
 import { color_scheme } from "../../types";
+import { setSortOption } from "../../state/sortOptions";
 
 
 const NavbarRecommendations: React.FC = () => {
     const recommendations_source: RecommendationSource = useSelector((state: RootState) => state.recommendations.source);
+    const sort_option: string = useSelector((state: RootState) => state.sort.sort_option);
     const dispatch = useDispatch();
 
     const content = (
@@ -16,7 +18,11 @@ const NavbarRecommendations: React.FC = () => {
                     style={{ backgroundColor: source === recommendations_source ? color_scheme[3] : color_scheme[0] }}
                     key={source}
                     text={source}
-                    onClick={() => dispatch(setRecommendationSource(source))}
+                    onClick={() => {
+                        dispatch(setRecommendationSource(source))
+                        if (sort_option !== "Rarity")
+                            dispatch(setSortOption("Rarity"))
+                    }}
                 />
             ))}
         </Menu>

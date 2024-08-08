@@ -12,6 +12,9 @@ interface CoreVisualizationProps {
 const CoreVisualization: React.FC<CoreVisualizationProps> = ({ nikke_data }) => {
     const dispatch = useDispatch();
     const [popover_open, setPopoverOpen] = useState(false);
+    const [isHovered, setIsHovered] = useState(false);
+    const handleMouseEnter = () => setIsHovered(true);
+    const handleMouseLeave = () => setIsHovered(false);
 
     const modifyCore = useCallback((change: number) => {
         const new_core = nikke_data.core + change;
@@ -38,9 +41,9 @@ const CoreVisualization: React.FC<CoreVisualizationProps> = ({ nikke_data }) => 
 
     const coreSelector = () => {
         return (
-            <div style={{ backgroundColor: color_scheme[0] }} >
+            <div>
                 {Array.from({ length: 11 }, (_, core) => (
-                    <div key={core} >
+                    <div>
                         <img
                             src={getMiscIcon("core", String(core))}
                             alt="Icon not found"
@@ -71,7 +74,6 @@ const CoreVisualization: React.FC<CoreVisualizationProps> = ({ nikke_data }) => 
             </div>
             <div style={{ gridColumn: '2 / 3' }} >
                 <Popover
-                    minimal
                     interactionKind='click'
                     isOpen={popover_open}
                     onInteraction={(state) => setPopoverOpen(state)}
@@ -80,7 +82,12 @@ const CoreVisualization: React.FC<CoreVisualizationProps> = ({ nikke_data }) => 
                     <img 
                         src={getMiscIcon("core", String(nikke_data.core))}
                         alt="Icon not found"
-                        style={{ width: '80px' }}
+                        style={{
+                            ...styles.image,
+                            transform: isHovered ? 'scale(1.1)' : 'scale(1)',
+                        }}
+                        onMouseEnter={handleMouseEnter}
+                        onMouseLeave={handleMouseLeave}
                     />
                 </Popover>
             </div>
@@ -95,5 +102,15 @@ const CoreVisualization: React.FC<CoreVisualizationProps> = ({ nikke_data }) => 
         </div>
     )
 }
+
+const styles = {
+    image: {
+        width: '80px',
+        transition: 'transform 0.3s ease-in-out',
+    },
+    hover: {
+        transform: 'scale(1.1)',
+    }
+};
 
 export default CoreVisualization;
