@@ -1,82 +1,5 @@
 [
   {
-    "id": "crown",
-    "core": 1,
-    "bond": 20,
-    "equipment": {
-      "helm": {
-        "type": "helm",
-        "manufacturer": "ol",
-        "level": 5,
-        "overload_line_1": {
-          "attribute": "Increase Critical Rate",
-          "level": 11
-        },
-        "overload_line_2": {
-          "attribute": "Increase DEF",
-          "level": 11
-        },
-        "overload_line_3": {
-          "attribute": "Increase Max Ammunition Capacity",
-          "level": 11
-        }
-      },
-      "gloves": {
-        "type": "gloves",
-        "manufacturer": "ol",
-        "level": 5,
-        "overload_line_1": {
-          "attribute": "Increase DEF",
-          "level": 11
-        },
-        "overload_line_2": {
-          "attribute": "Increase Critical Damage",
-          "level": 11
-        },
-        "overload_line_3": {
-          "attribute": "Increase Charge Speed",
-          "level": 11
-        }
-      },
-      "chest": {
-        "type": "chest",
-        "manufacturer": "ol",
-        "level": 5,
-        "overload_line_1": {
-          "attribute": "Increase Critical Damage",
-          "level": 11
-        },
-        "overload_line_2": {
-          "attribute": "Increase Hit Rate",
-          "level": 11
-        }
-      },
-      "boots": {
-        "type": "boots",
-        "manufacturer": "ol",
-        "level": 5,
-        "overload_line_1": {
-          "attribute": "Increase Max Ammunition Capacity",
-          "level": 11
-        },
-        "overload_line_2": {
-          "attribute": "Increase Hit Rate",
-          "level": 11
-        }
-      }
-    },
-    "skill_levels": [
-      10,
-      10,
-      10
-    ],
-    "collection_item": {
-      "rarity": "R",
-      "type": "MG",
-      "phase": 15
-    }
-  },
-  {
     "id": "liter",
     "core": 10,
     "bond": 30,
@@ -1297,59 +1220,6 @@
     ]
   },
   {
-    "id": "soda_twinkling_bunny",
-    "core": 1,
-    "bond": 12,
-    "equipment": {
-      "helm": {
-        "type": "helm",
-        "manufacturer": "ol",
-        "level": 0,
-        "overload_line_1": {
-          "attribute": "Increase Hit Rate",
-          "level": 9
-        },
-        "overload_line_2": {
-          "attribute": "Increase Max Ammunition Capacity",
-          "level": 7
-        }
-      },
-      "gloves": {
-        "type": "gloves",
-        "manufacturer": "ol",
-        "level": 0,
-        "overload_line_1": {
-          "attribute": "Increase Max Ammunition Capacity",
-          "level": 13
-        },
-        "overload_line_3": {
-          "attribute": "Increase ATK",
-          "level": 4
-        }
-      },
-      "chest": {
-        "type": "chest",
-        "manufacturer": "Tetra",
-        "level": 0
-      },
-      "boots": {
-        "type": "boots",
-        "manufacturer": "Tetra",
-        "level": 0
-      }
-    },
-    "skill_levels": [
-      7,
-      7,
-      7
-    ],
-    "collection_item": {
-      "rarity": "R",
-      "type": "SG",
-      "phase": 0
-    }
-  },
-  {
     "id": "maiden",
     "core": 9,
     "bond": 17,
@@ -2410,38 +2280,6 @@
       "boots": {
         "type": "boots",
         "manufacturer": "Tetra",
-        "level": 0
-      }
-    },
-    "skill_levels": [
-      1,
-      1,
-      1
-    ]
-  },
-  {
-    "id": "pepper",
-    "core": 7,
-    "bond": 30,
-    "equipment": {
-      "helm": {
-        "type": "helm",
-        "manufacturer": "Missilis",
-        "level": 0
-      },
-      "gloves": {
-        "type": "gloves",
-        "manufacturer": "Missilis",
-        "level": 0
-      },
-      "chest": {
-        "type": "chest",
-        "manufacturer": "Missilis",
-        "level": 0
-      },
-      "boots": {
-        "type": "boots",
-        "manufacturer": "standard",
         "level": 0
       }
     },
@@ -3817,67 +3655,6 @@
     }
   },
   {
-    "id": "anis_sparkling_summer",
-    "core": 5,
-    "bond": 10,
-    "equipment": {
-      "helm": {
-        "type": "helm",
-        "manufacturer": "ol",
-        "level": 5,
-        "overload_line_1": {
-          "attribute": "Increase Element Damage Dealt",
-          "level": 4
-        }
-      },
-      "gloves": {
-        "type": "gloves",
-        "manufacturer": "ol",
-        "level": 3,
-        "overload_line_1": {
-          "attribute": "Increase ATK",
-          "level": 11
-        }
-      },
-      "chest": {
-        "type": "chest",
-        "manufacturer": "ol",
-        "level": 0,
-        "overload_line_1": {
-          "attribute": "Increase Element Damage Dealt",
-          "level": 7
-        },
-        "overload_line_3": {
-          "attribute": "Increase ATK",
-          "level": 5
-        }
-      },
-      "boots": {
-        "type": "boots",
-        "manufacturer": "ol",
-        "level": 0,
-        "overload_line_1": {
-          "attribute": "Increase Element Damage Dealt",
-          "level": 11
-        },
-        "overload_line_2": {
-          "attribute": "Increase Critical Damage",
-          "level": 11
-        }
-      }
-    },
-    "skill_levels": [
-      9,
-      8,
-      9
-    ],
-    "collection_item": {
-      "rarity": "R",
-      "type": "SG",
-      "phase": 0
-    }
-  },
-  {
     "id": "anne_miracle_fairy",
     "core": 1,
     "bond": 20,
@@ -4047,6 +3824,229 @@
       },
       "chest": {
         "type": "chest",
+        "manufacturer": "Missilis",
+        "level": 0
+      }
+    },
+    "skill_levels": [
+      1,
+      1,
+      1
+    ]
+  },
+  {
+    "id": "anis_sparkling_summer",
+    "core": 5,
+    "bond": 13,
+    "equipment": {
+      "helm": {
+        "type": "helm",
+        "manufacturer": "ol",
+        "level": 5,
+        "overload_line_1": {
+          "attribute": "Increase Element Damage Dealt",
+          "level": 4
+        }
+      },
+      "gloves": {
+        "type": "gloves",
+        "manufacturer": "ol",
+        "level": 3,
+        "overload_line_1": {
+          "attribute": "Increase ATK",
+          "level": 11
+        }
+      },
+      "chest": {
+        "type": "chest",
+        "manufacturer": "ol",
+        "level": 0,
+        "overload_line_1": {
+          "attribute": "Increase Element Damage Dealt",
+          "level": 7
+        },
+        "overload_line_3": {
+          "attribute": "Increase ATK",
+          "level": 5
+        }
+      },
+      "boots": {
+        "type": "boots",
+        "manufacturer": "ol",
+        "level": 0,
+        "overload_line_1": {
+          "attribute": "Increase Element Damage Dealt",
+          "level": 11
+        },
+        "overload_line_2": {
+          "attribute": "Increase Critical Damage",
+          "level": 11
+        }
+      }
+    },
+    "skill_levels": [
+      9,
+      8,
+      9
+    ],
+    "collection_item": {
+      "rarity": "R",
+      "type": "SG",
+      "phase": 0
+    }
+  },
+  {
+    "id": "crown",
+    "core": 2,
+    "bond": 20,
+    "equipment": {
+      "helm": {
+        "type": "helm",
+        "manufacturer": "ol",
+        "level": 5,
+        "overload_line_1": {
+          "attribute": "Increase Critical Rate",
+          "level": 11
+        },
+        "overload_line_2": {
+          "attribute": "Increase DEF",
+          "level": 11
+        },
+        "overload_line_3": {
+          "attribute": "Increase Max Ammunition Capacity",
+          "level": 11
+        }
+      },
+      "gloves": {
+        "type": "gloves",
+        "manufacturer": "ol",
+        "level": 5,
+        "overload_line_1": {
+          "attribute": "Increase DEF",
+          "level": 11
+        },
+        "overload_line_2": {
+          "attribute": "Increase Critical Damage",
+          "level": 11
+        },
+        "overload_line_3": {
+          "attribute": "Increase Charge Speed",
+          "level": 11
+        }
+      },
+      "chest": {
+        "type": "chest",
+        "manufacturer": "ol",
+        "level": 5,
+        "overload_line_1": {
+          "attribute": "Increase Critical Damage",
+          "level": 11
+        },
+        "overload_line_2": {
+          "attribute": "Increase Hit Rate",
+          "level": 11
+        }
+      },
+      "boots": {
+        "type": "boots",
+        "manufacturer": "ol",
+        "level": 5,
+        "overload_line_1": {
+          "attribute": "Increase Max Ammunition Capacity",
+          "level": 11
+        },
+        "overload_line_2": {
+          "attribute": "Increase Hit Rate",
+          "level": 11
+        }
+      }
+    },
+    "skill_levels": [
+      10,
+      10,
+      10
+    ],
+    "collection_item": {
+      "rarity": "R",
+      "type": "MG",
+      "phase": 15
+    }
+  },
+  {
+    "id": "soda_twinkling_bunny",
+    "core": 2,
+    "bond": 12,
+    "equipment": {
+      "helm": {
+        "type": "helm",
+        "manufacturer": "ol",
+        "level": 0,
+        "overload_line_1": {
+          "attribute": "Increase Hit Rate",
+          "level": 9
+        },
+        "overload_line_2": {
+          "attribute": "Increase Max Ammunition Capacity",
+          "level": 7
+        }
+      },
+      "gloves": {
+        "type": "gloves",
+        "manufacturer": "ol",
+        "level": 0,
+        "overload_line_1": {
+          "attribute": "Increase Max Ammunition Capacity",
+          "level": 13
+        },
+        "overload_line_3": {
+          "attribute": "Increase ATK",
+          "level": 4
+        }
+      },
+      "chest": {
+        "type": "chest",
+        "manufacturer": "Tetra",
+        "level": 0
+      },
+      "boots": {
+        "type": "boots",
+        "manufacturer": "Tetra",
+        "level": 0
+      }
+    },
+    "skill_levels": [
+      7,
+      7,
+      7
+    ],
+    "collection_item": {
+      "rarity": "R",
+      "type": "SG",
+      "phase": 0
+    }
+  },
+  {
+    "id": "pepper",
+    "core": 7,
+    "bond": 30,
+    "equipment": {
+      "helm": {
+        "type": "helm",
+        "manufacturer": "Missilis",
+        "level": 0
+      },
+      "gloves": {
+        "type": "gloves",
+        "manufacturer": "Missilis",
+        "level": 0
+      },
+      "chest": {
+        "type": "chest",
+        "manufacturer": "Missilis",
+        "level": 0
+      },
+      "boots": {
+        "type": "boots",
         "manufacturer": "Missilis",
         "level": 0
       }

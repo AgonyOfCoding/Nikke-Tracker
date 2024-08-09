@@ -171,8 +171,8 @@ const styles = {
     image: {
         width: '128px',
         transition: 'transform 0.3s ease-in-out',
-        marginTop: '30px',
-        marginBottom: '30px',
+        marginTop: '15px',
+        marginBottom: '15px',
     },
     hover: {
         transform: 'scale(1.1)',

@@ -25,6 +25,7 @@ const NikkeList: React.FC<NikkeListProps> = ({ nikke_static_data, recommendation
     const nikke_investment_data: Nikke[] = useSelector((state: RootState) => state.investments.investments);
     const search = useSelector((state: RootState) => state.search).search;
     const recommendation_source: RecommendationSource = useSelector((state: RootState) => state.recommendations.source);
+    const wide_layout: boolean = useSelector((state: RootState) => state.settings.wide_layout);
 
     const list = Object.values(nikke_static_data);
     
@@ -44,24 +45,29 @@ const NikkeList: React.FC<NikkeListProps> = ({ nikke_static_data, recommendation
 
     const listRef = useRef<List>(null);
 
+    const item_size_nikkegg = wide_layout ? 500 : 600;
+    const item_size_prydwen = wide_layout ? 400 : 600;
+    const item_size_prydwen_treasure = 710;
+    const item_size_skyfall = wide_layout ? 350 : 600;
+
     const getItemSize = useCallback((index: number): number => {
         const nikke = final_list[index];
         switch (recommendation_source) {
             case RecommendationSource.nikke_gg:
-                return 500;
+                return item_size_nikkegg;
             case RecommendationSource.prydwen:
-                return nikkes_with_treasure.includes(nikke.id) ? 700 : 400;
+                return nikkes_with_treasure.includes(nikke.id) ? item_size_prydwen_treasure : item_size_prydwen
             case RecommendationSource.skyfall:
             default:
-                return 350;
+                return item_size_skyfall;
         }
-    }, [final_list, recommendation_source]);
+    }, [final_list, recommendation_source, wide_layout]);
 
     useEffect(() => {
         if (listRef.current) {
             listRef.current.resetAfterIndex(0);
         }
-    },[recommendation_source])
+    },[recommendation_source, wide_layout])
 
     const Row: React.FC<ListChildComponentProps> = ({ index, style }) => {
         const nikke = final_list[index];

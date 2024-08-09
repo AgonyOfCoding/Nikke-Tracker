@@ -1,4 +1,6 @@
+import { useSelector } from "react-redux";
 import { overload_data } from "../../data/overloadData";
+import { RootState } from "../../state/store";
 import { color_scheme, Equipment, EquipmentManufacturer, Nikke, OverloadAttribute, OverloadLine, OverloadValues } from "../../types";
 
 function arrayToString(arr: number[]): string {
@@ -31,38 +33,63 @@ const calculateTotals = (nikke: Nikke, attribute: OverloadAttribute): [OverloadA
     return [overload_value.attribute, count, totalValue, arrayToString(levels)];
 };
 
-interface AttributeTotalsProps {
-    nikke: Nikke;
-    attribute: OverloadAttribute;
-}
-
-const getGridStyles = (attribute: OverloadAttribute): { grid_column: number; grid_row: number; background_color: string } => {
-    switch (attribute) {
-        case OverloadAttribute.atk:
+const getGridStyles = (attribute: OverloadAttribute, wide: boolean): { grid_column: number; grid_row: number; } => {
+    if (wide) {
+        switch (attribute) {
+            case OverloadAttribute.atk:
             default:
-            return { grid_column: 1, grid_row: 1, background_color: color_scheme[3] };
-        case OverloadAttribute.elemental_damage:
-            return { grid_column: 1, grid_row: 2, background_color: color_scheme[4] };
-        case OverloadAttribute.max_ammo:
-            return { grid_column: 1, grid_row: 3, background_color: color_scheme[3] };
-        case OverloadAttribute.crit_rate:
-            return { grid_column: 2, grid_row: 1, background_color: color_scheme[4] };
-        case OverloadAttribute.crit_damage:
-            return { grid_column: 2, grid_row: 2, background_color: color_scheme[3] };
-        case OverloadAttribute.hit_rate:
-            return { grid_column: 2, grid_row: 3, background_color: color_scheme[4] };
-        case OverloadAttribute.charge_speed:
-            return { grid_column: 3, grid_row: 1, background_color: color_scheme[3] };
-        case OverloadAttribute.charge_damage:
-            return { grid_column: 3, grid_row: 2, background_color: color_scheme[4] };
-        case OverloadAttribute.def:
-            return { grid_column: 3, grid_row: 3, background_color: color_scheme[3] };
+                return { grid_column: 1, grid_row: 1 };
+            case OverloadAttribute.elemental_damage:
+                return { grid_column: 1, grid_row: 2 };
+            case OverloadAttribute.max_ammo:
+                return { grid_column: 1, grid_row: 3 };
+            case OverloadAttribute.crit_rate:
+                return { grid_column: 2, grid_row: 1 };
+            case OverloadAttribute.crit_damage:
+                return { grid_column: 2, grid_row: 2 };
+            case OverloadAttribute.hit_rate:
+                return { grid_column: 2, grid_row: 3 };
+            case OverloadAttribute.charge_speed:
+                return { grid_column: 3, grid_row: 1 };
+            case OverloadAttribute.charge_damage:
+                return { grid_column: 3, grid_row: 2 };
+            case OverloadAttribute.def:
+                return { grid_column: 3, grid_row: 3 };
+        }
+    } else {
+        switch (attribute) {
+            case OverloadAttribute.atk:
+            default:
+                return { grid_column: 1, grid_row: 1 };
+            case OverloadAttribute.elemental_damage:
+                return { grid_column: 1, grid_row: 2 };
+            case OverloadAttribute.max_ammo:
+                return { grid_column: 1, grid_row: 3 };
+            case OverloadAttribute.crit_rate:
+                return { grid_column: 2, grid_row: 1 };
+            case OverloadAttribute.crit_damage:
+                return { grid_column: 2, grid_row: 2 };
+            case OverloadAttribute.hit_rate:
+                return { grid_column: 1, grid_row: 4 };
+            case OverloadAttribute.charge_speed:
+                return { grid_column: 2, grid_row: 3 };
+            case OverloadAttribute.charge_damage:
+                return { grid_column: 2, grid_row: 4 };
+            case OverloadAttribute.def:
+                return { grid_column: 1, grid_row: 5 };
+        }
     }
 };
 
-const AttributeTotals: React.FC<AttributeTotalsProps> = ({ nikke, attribute }) => {
+interface AttributeTotalsProps {
+    nikke: Nikke;
+    attribute: OverloadAttribute;
+    wide: boolean;
+}
+
+const AttributeTotals: React.FC<AttributeTotalsProps> = ({ nikke, attribute, wide }) => {
     const attributeTotals: [OverloadAttribute, number, number, string] | undefined = calculateTotals(nikke, attribute);
-    const {grid_column, grid_row} = getGridStyles(attribute);
+    const {grid_column, grid_row} = getGridStyles(attribute, wide);
 
     return (
         <div
@@ -89,6 +116,8 @@ interface OverloadTotalsProps {
 }
 
 const OverloadTotals: React.FC<OverloadTotalsProps> = ({ nikke }) => {
+    const wide_layout: boolean = useSelector((state: RootState) => state.settings.wide_layout);
+
     if (nikke.equipment.boots?.manufacturer !== EquipmentManufacturer.ol && nikke.equipment.gloves?.manufacturer !== EquipmentManufacturer.ol &&
         nikke.equipment.chest?.manufacturer !== EquipmentManufacturer.ol && nikke.equipment.helm?.manufacturer !== EquipmentManufacturer.ol
     ) return null;
@@ -97,16 +126,28 @@ const OverloadTotals: React.FC<OverloadTotalsProps> = ({ nikke }) => {
         <div 
             style={{
                 display: 'grid',
-                gridTemplateColumns: 'repeat(3, 370px)',
-                gridTemplateRows: '1fr 1fr 1fr',
+                gridTemplateColumns: wide_layout ? "repeat(3, 370px)" : "repeat(2, 370px)",
+                gridTemplateRows: wide_layout ? "1fr 1fr 1fr" : "1fr 1fr 1fr 1fr",
                 gap: '0',
                 justifyContent: 'center',
                 margin: '0 auto',
             }}
         >
             {Object.values(OverloadAttribute).map(attribute =>
-                <AttributeTotals nikke={nikke} attribute={attribute} />
+                <AttributeTotals nikke={nikke} attribute={attribute} wide={wide_layout} />
             )}
+            {!wide_layout && 
+                <div
+                    style={{
+                        gridColumn: "2 / 3",
+                        gridRow: "5 / 6",
+                        backgroundColor: color_scheme[0],
+                        color: color_scheme[0],
+                        border: '1px solid black',
+                        fontSize: 12
+                    }}
+                >Mary is best waifu</div>
+            }
         </div>
     )
 }

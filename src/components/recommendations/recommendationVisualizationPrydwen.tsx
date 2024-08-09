@@ -87,18 +87,19 @@ const RecommendationVisualizationPrydwen: React.FC<RecommendationVisualizationPr
                 </div>
             </div>
             <div style={{ marginTop: '10px' }} >
-                <div>Skill investment priority: {recommendations.skills.priority}</div>
+                <div>Skill investment priority: <b>{recommendations.skills.priority}</b></div>
                 <div>PVE: {recommendations.skills.pve}</div>
                 <div>PVP: {recommendations.skills.pvp}</div>
             </div>
             {recommendations.overloads.ideal &&
                 <div style={{ marginTop: '10px' }} >
-                    <div>Overload investment priority: {recommendations.overloads.priority}</div>
+                    <div>Overload investment priority: <b>{recommendations.overloads.priority}</b></div>
                     <div
                         style={{
                             display: 'grid',
                             gridTemplateColumns: '9fr 1fr',
                             gridTemplateRows: 'repeat(2, auto)',
+                            fontWeight: 'bold'
                         }}
                     >
                         <div style={{ gridColumn: '1 / 2' }} >

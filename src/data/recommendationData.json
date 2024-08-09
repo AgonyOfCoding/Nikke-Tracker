@@ -6021,10 +6021,10 @@
                 "boss": 0,
                 "notes": ""
             }, "skills": {
-                "priority": "",
-                "budget": "",
-                "recommended": "",
-                "notes": ""
+                "priority": "Medium",
+                "budget": "7/4/4",
+                "recommended": "10/7/7+",
+                "notes": "Skill 1 Is strong when paired with Maxwell/Snow white, as their bursts are massive, one shot hits. Less effective with Alice and Red hood due to the limit of one of the buffs only lasting a hit. Skill 2 can be upgraded as needed for survivability. Burst mats are scarce, so only upgrade beyond 7 if needed, the values are not high enough to warrant spending gold books."
             }, "overloads": {
             }, "cube": {
                 "cube": [],
