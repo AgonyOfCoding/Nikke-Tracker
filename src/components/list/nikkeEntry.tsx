@@ -5,7 +5,7 @@ import OverloadRecommendationsList from "../recommendations/recommendationsColum
 import Profile from "../profile/profile";
 import { useSelector } from "react-redux";
 import { RootState } from "../../state/store";
-import CollectionItemVisualization from "../profile/collectionItemVisualization";
+import CollectionItemVisualization from "../collectionItem/collectionItemVisualization";
 import OverloadTotals from "../equipment/overloadTotals";
 
 interface NikkeEntryProps {

@@ -9,7 +9,7 @@ const TeamsMenu: React.FC = () => {
 
     const content = () => {
         return <Menu style={{ backgroundColor: color_scheme[0] }} >
-            {Object.values(TeamSet).map(team_set => 
+            {Object.values(TeamSet).filter(ts => ts !== TeamSet.custom).map(team_set => 
                 <MenuItem
                     style={{ 
                         backgroundColor: color_scheme[0]

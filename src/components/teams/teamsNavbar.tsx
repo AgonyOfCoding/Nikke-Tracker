@@ -4,9 +4,9 @@ import { RootState } from "../../state/store";
 import { Alignment, Button, Dialog, DialogBody, DialogFooter, Navbar } from "@blueprintjs/core";
 import { color_scheme, NikkeElement } from "../../types";
 import { useState } from "react";
-import "../../customStyles/customDialogStyles.css"
 import TeamEdit from "./teamEdit";
 import { getMiscIcon } from "../../utility/iconGetters";
+import NavbarRecommendations from "../navbar/navbarRecommendations";
 
 const TeamsNavbar: React.FC = () => {
     const teamsState: TeamsState = useSelector((state: RootState) => state.teams);
@@ -93,7 +93,10 @@ const TeamsNavbar: React.FC = () => {
             </Navbar.Group>
             <Navbar.Group align={Alignment.RIGHT}>
             <Navbar.Divider />
-            {Object.values(NikkeElement).map(element =>
+            {selected_team !== "summary" &&
+                <NavbarRecommendations />
+            }
+            {selected_team === "summary" && Object.values(NikkeElement).map(element =>
                 <Button
                     style={{ 
                         backgroundColor: element === highlighted_element ? color_scheme[3] : color_scheme[1],
@@ -106,12 +109,11 @@ const TeamsNavbar: React.FC = () => {
                 />
             )}
             </Navbar.Group>
-            <Dialog isOpen={edit_dialog_open} title='Set Skill Levels' onClose={() => setEditDialogOpen(false)} >
-                <DialogBody className="custom-dialog-body" >
+            <Dialog isOpen={edit_dialog_open} title="Edit Team" onClose={() => setEditDialogOpen(false)} >
+                <DialogBody>
                     <TeamEdit team={team_set.find(team => team.name === selected_team)!} teams_state={teamsState} />
                 </DialogBody>
                 <DialogFooter
-                    className="custom-dialog-footer"
                     actions={
                         <Button
                             style={{ backgroundColor: color_scheme[4], color: color_scheme[0] }}

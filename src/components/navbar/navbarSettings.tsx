@@ -22,7 +22,7 @@ const NavbarSort: React.FC = () => {
                     </Tooltip>
                 </div>
                 <div>
-                    <Tooltip position="bottom" content="Changes the position of the collection item">
+                    <Tooltip position="bottom" content="Disable if your resolution can't handle the default layout">
                         <Switch
                             alignIndicator="left"
                             checked={settings.wide_layout}

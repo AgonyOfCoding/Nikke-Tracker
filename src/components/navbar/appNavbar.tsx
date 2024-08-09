@@ -1,16 +1,16 @@
-import { Navbar, Button, Alignment, InputGroup, Tooltip, Colors } from '@blueprintjs/core';
-import { Burst, color_scheme, NikkeRole, WeaponType } from '../../types';
+import { Navbar, Button, Alignment, InputGroup, Tooltip } from '@blueprintjs/core';
+import { color_scheme } from '../../types';
 import { useDispatch, useSelector } from 'react-redux';
 import { RootState } from '../../state/store';
-import { clearFilters, FilterOptions, setBurstFilter, setRoleFilter, setWeaponFilter } from '../../state/filterOptions';
+import { clearFilters, FilterOptions } from '../../state/filterOptions';
 import { setSearch } from '../../state/search';
 import NavbarAdditionalFilters from './navbarAdditionalFilters';
-import { getMiscIcon } from '../../utility/iconGetters';
 import NavbarSort from './navbarSort';
 import NavbarSettings from './navbarSettings';
 import TeamsMenu from './teamsMenu';
 import NavbarRecommendations from './navbarRecommendations';
 import NavbarAbout from './about';
+import NavbarFilters from './navbarFilters';
 
 const AppNavbar: React.FC = () => {
     const filterState: FilterOptions = useSelector((state: RootState) => state.filter)
@@ -37,58 +37,14 @@ const AppNavbar: React.FC = () => {
             <Navbar.Divider />
             <NavbarSort />
             <Navbar.Divider />
-            {Object.values(Burst).filter(burst => burst !== Burst.Burst_Lambda).map(burst => 
-                <Button
-                    style={{ 
-                        backgroundColor: burst === filterState.burst ? Colors.GREEN3 : color_scheme[1]
-                    }}
-                    key={burst}
-                    className="bp5-minimal"
-                    icon={<img src={getMiscIcon("burst", burst)} alt={burst} style={{ height: 32 }} />}
-                    onClick={
-                        burst === filterState.burst ?
-                        () => dispatch(setBurstFilter(undefined)) :
-                        () => dispatch(setBurstFilter(burst))
-                    }
-                />
-            )}
-            <Navbar.Divider />
-            {Object.values(NikkeRole).map(role =>
-                <Button
-                    style={{ 
-                        backgroundColor: role === filterState.role ? color_scheme[3] : color_scheme[1]
-                    }}
-                    key={role}
-                    className="bp5-minimal"
-                    icon={<img src={getMiscIcon("role", role)} alt={role} style={{ height: 32 }} />}
-                    onClick={role === filterState.role ?
-                        () => dispatch(setRoleFilter(undefined)) :
-                        () => dispatch(setRoleFilter(role))
-                    }
-                />
-            )}
-            <Navbar.Divider />
-            {Object.values(WeaponType).map(weapon =>
-                <Button
-                    style={{ 
-                        backgroundColor: weapon === filterState.weapon ? color_scheme[3] : color_scheme[1]
-                    }}
-                    key={weapon}
-                    className="bp5-minimal"
-                    icon={<img src={getMiscIcon("weapon", weapon)} alt={weapon} style={{ height: 32 }} />}
-                    onClick={weapon === filterState.weapon ?
-                        () => dispatch(setWeaponFilter(undefined)) :
-                        () => dispatch(setWeaponFilter(weapon))
-                    }
-                />
-            )}
+            <NavbarFilters />
             <Navbar.Divider />
             <NavbarAdditionalFilters />
             <Tooltip position="bottom" content="Clear filters" >
                 <Button 
                     icon='reset'
                     className="bp5-minimal"
-                    style={{ backgroundColor: any_filters_on ? Colors.RED3 : color_scheme[1] }}
+                    intent={any_filters_on ? "warning" : "none"}
                     onClick={() => dispatch(clearFilters())}
                 />
             </Tooltip>

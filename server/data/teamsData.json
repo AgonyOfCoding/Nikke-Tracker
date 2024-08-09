@@ -27,17 +27,7 @@
       "cube_5": "resilience"
     },
     {
-      "name": "Boss",
-      "nikke_1": "crown",
-      "nikke_2": "liter",
-      "nikke_3": "red_hood",
-      "nikke_4": "scarlet_black_shadow",
-      "nikke_5": "naga",
-      "cube_1": "resilience",
-      "cube_2": "quantum",
-      "cube_3": "resilience",
-      "cube_4": "bastion",
-      "cube_5": "resilience"
+      "name": "Boss"
     }
   ],
   "solo_raid": [

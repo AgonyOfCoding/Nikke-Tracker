@@ -69,7 +69,7 @@ function App() {
     <div className="App" >
       <AppNavbar />
       <TeamsNavbar />
-      <div className="content" >
+      <div>
         <NITContent />
       </div>
     </div>

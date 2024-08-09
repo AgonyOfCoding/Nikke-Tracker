@@ -48,7 +48,7 @@ const NikkeList: React.FC<NikkeListProps> = ({ nikke_static_data, recommendation
     const item_size_nikkegg = wide_layout ? 500 : 600;
     const item_size_prydwen = wide_layout ? 400 : 600;
     const item_size_prydwen_treasure = 710;
-    const item_size_skyfall = wide_layout ? 350 : 600;
+    const item_size_skyfall = wide_layout ? 360 : 600;
 
     const getItemSize = useCallback((index: number): number => {
         const nikke = final_list[index];
@@ -61,7 +61,7 @@ const NikkeList: React.FC<NikkeListProps> = ({ nikke_static_data, recommendation
             default:
                 return item_size_skyfall;
         }
-    }, [final_list, recommendation_source, wide_layout]);
+    }, [final_list, recommendation_source, item_size_nikkegg, item_size_prydwen_treasure, item_size_prydwen, item_size_skyfall]);
 
     useEffect(() => {
         if (listRef.current) {
@@ -84,15 +84,16 @@ const NikkeList: React.FC<NikkeListProps> = ({ nikke_static_data, recommendation
         );
     };
     
+    const navbar_height = 50;
     
     return (
         <List
             ref={listRef}
-            height={windowHeight - 70} // Set the height of the container
+            height={windowHeight - navbar_height}
             itemCount={final_list.length}
-            itemSize={getItemSize} // Adjust based on the height of your items
-            width={'100%'} // Adjust based on the width of your container
-            style={{marginTop: 50}}
+            itemSize={getItemSize}
+            width={'100%'}
+            style={{marginTop: navbar_height}}
         >
             {Row}
         </List>

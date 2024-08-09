@@ -2055,8 +2055,8 @@
                 "recommended": "1/7/5",
                 "notes": "Skill 1 crit buff is a pretty welcome addition. Skill 2 is her main dps gain, It is a big ATK boost but with a rather bothersome condition. Burst is an uncontrollable hard hitting ST nuke with a not so hard condition to fulfill."
             }, "overloads": {
-                "priority": "High",
-                "priority_rank": 4,
+                "priority": "Low",
+                "priority_rank": 3,
                 "elemental_damage": {
                     "priority": 5,
                     "recommended": "4x",
@@ -4634,6 +4634,54 @@
                 "recommended": "10/7/7",
                 "notes": "Skill 1 is where most of her damage is at, massive ATK increase, which directly transfers to healing. Skill 2 gives increased life steal, and the amount that is shared. Burst doesn’t increase her personal damage too much despite the high crit scaling, but has great RL ATK buffs. Can be increased higher if using/maining Rem specifically in RL teams"
             }, "overloads": {
+                "priority": "Medium",
+                "priority_rank": 4,
+                "elemental_damage": {
+                    "priority": 5,
+                    "recommended": "4x",
+                    "notes": "wanted for Union raids and Solo raid content. Can open up a more risky team for her in Solo Raid"
+                },
+                "hit_rate": {
+                    "priority": 0,
+                    "recommended": "0x",
+                    "notes": ""
+                },
+                "max_ammo": {
+                    "priority": 4,
+                    "recommended": "3-4x",
+                    "notes": "Rem is absolutely hungry for max ammo."
+                },
+                "atk": {
+                    "priority": 5,
+                    "recommended": "4x",
+                    "notes": "Simply more damage."
+                },
+                "charge_damage": {
+                    "priority": 0,
+                    "recommended": "0x",
+                    "notes": ""
+                },
+                "charge_speed": {
+                    "priority": 0,
+                    "recommended": "0x",
+                    "notes": ""
+                },
+                "crit_damage": {
+                    "priority": 3,
+                    "recommended": "3-4x",
+                    "notes": "High Base Crit rate from burst, making critical damage rolls wanted."
+                },
+                "crit_rate": {
+                    "priority": 2,
+                    "recommended": "0x",
+                    "notes": ""
+                },
+                "def": {
+                    "priority": 0,
+                    "recommended": "0x",
+                    "notes": ""
+                },
+                "notes": "Needs heavy investment for her to start healing well, which includes overloaded gear and good equipment rolls. She also has good personal damage"
             }, "cube": {
                 "cube": ["resilience", "bastion"],
                 "notes": "Resilience = Used in Reload teams / Any team that buffs reload. Bastion = Anywhere else"
