@@ -6005,54 +6005,54 @@
         "role": "Supporter",
         "weapon_type": "SG",
         "rarity": "SSR",
-        "burst": "Burst III",
+        "burst": "Burst I",
         "element": "Electric",
         "skills": {
             "skill_1": {
-                "name": "",
-                "description": "",
+                "name": "Pierce Equation",
+                "description": "■ Activates when entering Full Burst. Affects all allies. Pierce Damage ▲ __% for 1 shot(s). Pierce Damage ▲ __% for 10 sec.",
                 "values": {
-                    "1": [],
-                    "2": [],
-                    "3": [],
-                    "4": [],
-                    "5": [],
-                    "6": [],
-                    "7": [],
-                    "8": [],
-                    "9": [],
-                    "10": []
+                    "1": [11.89, 5.94],
+                    "2": [12.81, 6.4],
+                    "3": [13.72, 6.86],
+                    "4": [14.64, 7.32],
+                    "5": [15.55, 7.77],
+                    "6": [16.47, 8.23],
+                    "7": [17.38, 8.69],
+                    "8": [18.3, 9.15],
+                    "9": [19.21, 9.6],
+                    "10": [20.13, 10.06]
                 }
             }, "skill_2": {
-                "name": "",
-                "description": "",
+                "name": "Frame Analysis",
+                "description": "■ Activates after landing 5 normal attack(s). Affects all allies. Recovers __% of Cover's HP. ■ Activates when entering Full Burst. Affects all allies. Critical Rate ▲ __% for 5 sec.",
                 "values": {
-                    "1": [],
-                    "2": [],
-                    "3": [],
-                    "4": [],
-                    "5": [],
-                    "6": [],
-                    "7": [],
-                    "8": [],
-                    "9": [],
-                    "10": []
+                    "1": [4.38, 11.01],
+                    "2": [4.73, 11.86],
+                    "3": [5.08, 12.7],
+                    "4": [5.43, 13.55],
+                    "5": [5.78, 14.4],
+                    "6": [6.13, 15.25],
+                    "7": [6.48, 16.09],
+                    "8": [6.83, 16.94],
+                    "9": [7.17, 17.79],
+                    "10": [7.52, 18.63]
                 }
             }, "burst_skill": {
-                "cooldown": 40,
-                "name": "",
-                "description": "",
+                "cooldown": 20,
+                "name": "Overcharge Formula",
+                "description": "■ Affects self. Change the Weapon in use: Charge Time: 1.5 sec Damage: __% of final ATK Full Charge Damage: 300% of damage Max Ammunition Capacity: 1 round(s) Additional Effect: Pierce ■ Affects all allies. Pierce Damage ▲ __% for 10 sec.",
                 "values": {
-                    "1": [],
-                    "2": [],
-                    "3": [],
-                    "4": [],
-                    "5": [],
-                    "6": [],
-                    "7": [],
-                    "8": [],
-                    "9": [],
-                    "10": []
+                    "1": [29.95, 9.15],
+                    "2": [32.26, 9.85],
+                    "3": [34.56, 10.56],
+                    "4": [36.86, 11.26],
+                    "5": [39.17, 11.96],
+                    "6": [41.47, 12.67],
+                    "7": [43.78, 13.37],
+                    "8": [46.08, 14.08],
+                    "9": [48.38, 14.78],
+                    "10": [50.69, 15.48]
                 }
             }
         }

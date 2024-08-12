@@ -107,45 +107,6 @@ export enum CollectionItemRarity {
     SSR = "SSR"
 }
 
-// Recommendations
-
-export enum PriorityNikkeGG {
-    Highest = "Highest",
-    High = "High",
-    Medium = "Medium",
-    Low = "Low",
-    no = "-"
-}
-
-export enum PriorityPrydwen {
-    Meta = "Meta",
-    Meta_Late_Game = "Meta (Late Game)",
-    High = "High",
-    Medium = "Medium",
-    Medium_PVP = "Medium (PVP)",
-    Low = "Low",
-    Very_Low = "Very Low",
-    PVP = "PVP",
-    Low_PVP = "Low (PVP)",
-    no = "-"
-}
-
-export enum PrioritySkyfall {
-    Low_to_Med = "Low to Med",
-    Low = "Low"
-}
-
-export enum RatingPrydwen {
-    SSS = "SSS",
-    SS = "SS",
-    S = "S",
-    A = "A",
-    B = "B",
-    C = "C",
-    D = "D",
-    E = "E"
-}
-
 //// Interfaces
 
 // Nikke Investment
@@ -157,6 +118,7 @@ export interface Nikke {
     equipment: Equipment;
     skill_levels: number[];
     collection_item: CollectionItem | undefined;
+    favorite: boolean;
 }
 
 // Nikke static data
@@ -259,7 +221,7 @@ export interface RecommendationData {
 export interface RecommendationsNikkeGG {
     ratings: RatingsNikkeGG;
     skills: SkillsNikkeGG;
-    overloads: OverloadsNikkeGG;
+    overloads: OverloadsNikkeGG | undefined;
     cube: CubeNikkeGG;
 }
 
@@ -271,14 +233,14 @@ export interface RatingsNikkeGG {
 }
 
 export interface SkillsNikkeGG {
-    priority: PriorityNikkeGG;
+    priority: string;
     budget: string;
     recommended: string;
-    notes: string;
+    notes: string[];
 }
 
 export interface OverloadsNikkeGG {
-    priority: PriorityNikkeGG,
+    priority: string,
     priority_rank: number;
     elemental_damage: OverloadLineNikkeGG,
     hit_rate: OverloadLineNikkeGG,
@@ -312,21 +274,21 @@ export interface RecommendationsPrydwen {
 }
 
 export interface RatingsPrydwen {
-    story_low_deficit: RatingPrydwen;
-    story_high_deficit: RatingPrydwen;
-    boss_solo: RatingPrydwen;
-    boss_adds: RatingPrydwen;
-    pvp: RatingPrydwen;
+    story_low_deficit: string;
+    story_high_deficit: string;
+    boss_solo: string;
+    boss_adds: string;
+    pvp: string;
 }
 
 export interface SkillsPrydwen {
-    priority: PriorityPrydwen;
+    priority: string;
     pve: string;
     pvp: string;
 }
 
 export interface OverloadsPrydwen {
-    priority: PriorityPrydwen,
+    priority: string,
     essential: string[];
     ideal: string[];
     passable: string[];
@@ -340,12 +302,12 @@ export interface CubePrydwen {
 }
 
 export interface RecommendationsSkyfall {
-    priority: PrioritySkyfall;
+    priority: string;
     collection_item_priority: string;
     skills: string[];
     overloads: OverloadsSkyfall;
     cube: CubeSkyfall;
-    notes: string;
+    notes: string[];
 }
 
 export interface OverloadsSkyfall {
@@ -354,7 +316,6 @@ export interface OverloadsSkyfall {
     fine: string[];
     passable: string[];
     no: string[];
-    notes: string;
 }
 
 export interface CubeSkyfall {

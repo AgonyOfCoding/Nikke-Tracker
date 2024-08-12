@@ -44,11 +44,13 @@ const RecommendationVisualizationNikkeGG: React.FC<RecommendationVisualizationNi
                     <b>Boss</b>
                     <div style={{ backgroundColor: ratingColor(recommendations.ratings.boss) }}>{recommendations.ratings.boss}</div>
                 </div>
-                <div style={{ gridColumn: '4 / 5', placeContent: 'center' }} >
-                    <Tooltip content={recommendations.ratings.notes} disabled={recommendations.ratings.notes === ""} >
-                        <Button small minimal text="?" style={{ color: color_scheme[0], fontWeight: 'bold' }} />
-                    </Tooltip>
-                </div>
+                {recommendations.ratings.notes !== "" &&
+                    <div style={{ gridColumn: '4 / 5', placeContent: 'center' }} >
+                        <Tooltip content={recommendations.ratings.notes} disabled={recommendations.ratings.notes === ""} >
+                            <Button small minimal text="?" style={{ color: color_scheme[0], fontWeight: 'bold' }} />
+                        </Tooltip>
+                    </div>
+                }
             </div>
             {recommendations.skills.budget &&
                 <div
@@ -60,14 +62,16 @@ const RecommendationVisualizationNikkeGG: React.FC<RecommendationVisualizationNi
                     }}
                 >
                     <div style={{ gridColumn: '1 / 2' }} >
-                        <div>Skill investment priority: {recommendations.skills.priority}</div>
+                        <div>Skill investment priority: <b>{recommendations.skills.priority}</b></div>
                         <div>{recommendations.skills.budget} → {recommendations.skills.recommended}</div>
                     </div>
-                    <div style={{ gridColumn: '2 / 3', placeContent: 'center' }} >
-                        <Tooltip content={recommendations.skills.notes} disabled={recommendations.skills.notes === ""} >
-                            <Button small minimal text="?" style={{ color: color_scheme[0], fontWeight: 'bold' }} />
-                        </Tooltip>
-                    </div>
+                    {recommendations.skills.notes !== "" &&
+                        <div style={{ gridColumn: '2 / 3', placeContent: 'center' }} >
+                            <Tooltip content={recommendations.skills.notes} >
+                                <Button small minimal text="?" style={{ color: color_scheme[0], fontWeight: 'bold' }} />
+                            </Tooltip>
+                        </div>
+                    }
                 </div>
             }
             
@@ -82,13 +86,15 @@ const RecommendationVisualizationNikkeGG: React.FC<RecommendationVisualizationNi
                         }}
                     >
                         <div style={{ gridColumn: '1 / 2' }} >
-                        <div>Overload investment priority: {recommendations.overloads.priority} [{recommendations.overloads.priority_rank}]</div>
+                        <div>Overload investment priority: <b>{recommendations.overloads.priority} [{recommendations.overloads.priority_rank}]</b></div>
                         </div>
-                        <div style={{ gridColumn: '2 / 3' }} >
-                            <Tooltip content={recommendations.overloads.notes} >
-                                <Button small minimal text="?" style={{ color: color_scheme[0], fontWeight: 'bold' }} />
-                            </Tooltip>
-                        </div>
+                        {recommendations.overloads.notes !== "" &&
+                            <div style={{ gridColumn: '2 / 3' }} >
+                                <Tooltip content={recommendations.overloads.notes} >
+                                    <Button small minimal text="?" style={{ color: color_scheme[0], fontWeight: 'bold' }} />
+                                </Tooltip>
+                            </div>
+                        }
                     </div>
                     
                 }
@@ -122,11 +128,13 @@ const RecommendationVisualizationNikkeGG: React.FC<RecommendationVisualizationNi
                                 </div>
                             </Tooltip>
                         )}
-                        <div style={{ gridColumn: '4 / 5', placeContent: 'center' }} >
-                            <Tooltip content={recommendations.cube.notes} disabled={recommendations.cube.notes === ""} >
-                                <Button small minimal text="?" style={{ color: color_scheme[0], fontWeight: 'bold' }} />
-                            </Tooltip>
-                        </div>
+                        {recommendations.cube.notes !== "" &&
+                            <div style={{ gridColumn: '4 / 5', placeContent: 'center' }} >
+                                <Tooltip content={recommendations.cube.notes} disabled={recommendations.cube.notes === ""} >
+                                    <Button small minimal text="?" style={{ color: color_scheme[0], fontWeight: 'bold' }} />
+                                </Tooltip>
+                            </div>
+                        }
                     </div>
                 </div>
             }

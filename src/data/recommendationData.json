@@ -430,7 +430,7 @@
                 "pve": "1/1/1 → 4/4/4 → 7/7/4 (→ 7/10/4)",
                 "pvp": "1/1/1 → 4/4/4"
             }, "overloads": {
-                "priority": "Medium (PvE)",
+                "priority": "Medium (PVE)",
                 "essential": [],
                 "ideal": ["1-3× Max Ammo"],
                 "passable": [],
@@ -874,7 +874,7 @@
                 "pve": "1/1/1 → 4/4/4",
                 "pvp": "1/1/1 → 4/4/4"
             }, "overloads": {
-                "priority": "Medium (PvP)",
+                "priority": "Medium (PVP)",
                 "essential": [],
                 "ideal": ["4× Charge Speed", "4× Elemental Damage", "4× ATK"],
                 "passable": ["4× DEF"],
@@ -954,7 +954,7 @@
                 "boss_adds": "C",
                 "pvp": "C"
             }, "skills": {
-                "priority": "Very_Low",
+                "priority": "Very Low",
                 "pve": "1/1/1 → 4/4/4",
                 "pvp": "1/1/1"
             }, "overloads": {
@@ -1509,7 +1509,7 @@
                 "pve": "1/1/1 → 4/4/4",
                 "pvp": "1/1/1 → 4/4/4"
             }, "overloads": {
-                "priority": "Medium (PvP)",
+                "priority": "Medium (PVP)",
                 "essential": [],
                 "ideal": ["4× ATK"],
                 "passable": ["4× Elemental Damage"],
@@ -1715,11 +1715,11 @@
                 "boss_adds": "S",
                 "pvp": "SSS"
             }, "skills": {
-                "priority": "Medium (PvP)",
+                "priority": "Medium (PVP)",
                 "pve": "1/1/1 → 4/4/7 → 4/7/7 (→ 7/10/7)",
                 "pvp": "1/1/1 → 4/4/7 → 4/7/7 (→ 7/10/10)"
             }, "overloads": {
-                "priority": "",
+                "priority": "High (PVP)",
                 "essential": [],
                 "ideal": ["2-4× Charge Speed", "4× ATK", "4× Elemental Damage"],
                 "passable": ["2-4× Max Ammo"],
@@ -3278,7 +3278,7 @@
                 "boss_adds": "C",
                 "pvp": "D"
             }, "skills": {
-                "priority": ".",
+                "priority": "-",
                 "pve": "1/1/1",
                 "pvp": "1/1/1"
             }, "overloads": {
@@ -6080,25 +6080,25 @@
             }
         }, "prydwen": {
             "ratings": {
-                "story_low_deficit": "",
-                "story_high_deficit": "",
-                "boss_solo": "",
-                "boss_adds": "",
-                "pvp": ""
+                "story_low_deficit": "A",
+                "story_high_deficit": "B",
+                "boss_solo": "A",
+                "boss_adds": "B",
+                "pvp": "B"
             }, "skills": {
-                "priority": "",
-                "pve": "",
-                "pvp": ""
+                "priority": "Low",
+                "pve": "1/1/1 → 4/1/4 → 7/4/7 (→ 10/7/10)",
+                "pvp": "1/1/1"
             }, "overloads": {
-                "priority": "",
+                "priority": "-",
                 "essential": [],
                 "ideal": [],
-                "passable": [],
+                "passable": ["-"],
                 "notes": ""
             }, "cube": {
-                "pre_overload": [],
-                "post_overload": [],
-                "notes": ""
+                "pre_overload": ["bastion"],
+                "post_overload": ["bastion"],
+                "notes": "Any cube works on Zwei. Zwei is not a good damage dealer herself, but to maximise the number of bullets shot, the best cubes are either Bastion or Resilience Cubes."
             }
         }, "skyfall": {
             "priority": "",

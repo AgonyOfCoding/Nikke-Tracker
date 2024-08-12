@@ -121,8 +121,8 @@ const EquipmentColumn: React.FC<EquipmentColumnProps> = ({ equipment_type, nikke
                         onInteraction={(state) => setPopoverOpen(state)}
                         content={equipmentSelector()}
                     >
-                        {equipment_data && 
-                            <img src={getEquipmentIcon(equipment_data.manufacturer, nikke_static.role, equipment_type, equipment_data.level)}
+                        {equipment_data ? 
+                            (<img src={getEquipmentIcon(equipment_data.manufacturer, nikke_static.role, equipment_type, equipment_data.level)}
                                 alt={"Icon not found"} 
                                 style={{
                                     ...styles.image,
@@ -130,10 +130,8 @@ const EquipmentColumn: React.FC<EquipmentColumnProps> = ({ equipment_type, nikke
                                 }}
                                 onMouseEnter={handleMouseEnter}
                                 onMouseLeave={handleMouseLeave}
-                            />
-                        }
-                        {!equipment_data && 
-                            <img src={getEmptyEquipmentIcon(equipment_type)}
+                            />) :
+                            (<img src={getEmptyEquipmentIcon(equipment_type)}
                                 alt={"Icon not found"} 
                                 style={{
                                     ...styles.image,
@@ -141,7 +139,7 @@ const EquipmentColumn: React.FC<EquipmentColumnProps> = ({ equipment_type, nikke
                                 }}
                                 onMouseEnter={handleMouseEnter}
                                 onMouseLeave={handleMouseLeave}
-                            />
+                            />)
                         }
                     </Popover>
                 </div>

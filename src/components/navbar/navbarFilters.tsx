@@ -1,6 +1,6 @@
-import { Button, Navbar } from "@blueprintjs/core";
+import { Button, Icon, Navbar, Tooltip } from "@blueprintjs/core";
 import { useSelector, useDispatch } from "react-redux";
-import { FilterOptions, setBurstFilter, setRoleFilter, setWeaponFilter } from "../../state/filterOptions";
+import { FilterOptions, setBurstFilter, setRoleFilter, setWeaponFilter, toggleFavoriteFilter } from "../../state/filterOptions";
 import { RootState } from "../../state/store";
 import { Burst, color_scheme, NikkeRole, WeaponType } from "../../types";
 import { getMiscIcon } from "../../utility/iconGetters";
@@ -11,6 +11,19 @@ const NavbarFilters: React.FC = () => {
 
     return (
         <>
+            <Tooltip position="bottom" content="Favorites" >
+                <Button
+                    style={{ 
+                        backgroundColor: filterState.favorite ? color_scheme[4] : color_scheme[1],
+                        marginLeft: '2px',
+                        marginRight: '2px'
+                    }}
+                    className="bp5-minimal"
+                    icon={<Icon icon="star" color="gold" size={24}/>}
+                    onClick={() => dispatch(toggleFavoriteFilter())}
+                />
+            </Tooltip>
+            <Navbar.Divider />
             {Object.values(Burst).filter(burst => burst !== Burst.Burst_Lambda).map(burst => 
                 <Button
                     style={{ 

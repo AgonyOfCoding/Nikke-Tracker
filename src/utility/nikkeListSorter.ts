@@ -1,5 +1,6 @@
-import { Nikke, NikkeStaticData, RatingPrydwen, RecommendationData } from "../types";
+import { CollectionItemRarity, Nikke, NikkeStaticData, RecommendationData } from "../types";
 import { collectionItemPriorityRanks } from "../components/collectionItem/collectionItemVisualization";
+import { recommendation_data_skyfall } from "../data/recommendationsSkyfall";
 
 const rarityOrder: {[key: string]: number} = {
     SSR: 0,
@@ -7,7 +8,7 @@ const rarityOrder: {[key: string]: number} = {
     R: 2
 };
 
-const ratingOrderPrydwen: {[key: string]: number} = {
+const ratingOrder: {[key: string]: number} = {
     SSS: 0,
     SS: 1,
     S: 2,
@@ -18,9 +19,15 @@ const ratingOrderPrydwen: {[key: string]: number} = {
     E: 7
 };
 
-function ratingSortPrydwen(nikke_static_a: NikkeStaticData, nikke_static_b: NikkeStaticData, rating_a: RatingPrydwen, rating_b: RatingPrydwen): number {
-    const rating_value_a = ratingOrderPrydwen[rating_a];
-    const rating_value_b = ratingOrderPrydwen[rating_b];
+function ratingSortNikkGG(nikke_static_a: NikkeStaticData, nikke_static_b: NikkeStaticData, rating_a: number, rating_b: number): number {
+    if (rating_a < rating_b) return 1;
+    if (rating_a > rating_b) return -1;
+    return nikke_static_a.name.localeCompare(nikke_static_b.name);
+}
+
+function ratingSortPrydwen(nikke_static_a: NikkeStaticData, nikke_static_b: NikkeStaticData, rating_a: string, rating_b: string): number {
+    const rating_value_a = ratingOrder[rating_a];
+    const rating_value_b = ratingOrder[rating_b];
     if (rating_value_a < rating_value_b) return -1;
     if (rating_value_a > rating_value_b) return 1;
     return nikke_static_a.name.localeCompare(nikke_static_b.name);
@@ -28,12 +35,17 @@ function ratingSortPrydwen(nikke_static_a: NikkeStaticData, nikke_static_b: Nikk
 
 const priorityOrder: {[key: string]: number} = {
     "Highest": 0,
+    "Meta": 0,
     "High": 1,
     "Medium": 2,
+    "PVP": 3,
     "Low to Medium": 3,
+    "Lowest": 5,
     "Low": 4,
     "Zero to Low": 5,
-    "Zero": 6
+    "Very Low": 5,
+    "Zero": 6,
+    "-": 7
 };
 
 const getPriorityValue = (priority: string | undefined) => {
@@ -64,8 +76,10 @@ function initialSorter(
         case "Rarity":
         default:
             return list.sort((nikke_static_a, nikke_static_b) => {
-                if (rarityOrder[nikke_static_a.rarity] < rarityOrder[nikke_static_b.rarity]) return -1;
-                if (rarityOrder[nikke_static_a.rarity] > rarityOrder[nikke_static_b.rarity]) return 1;
+                const rarity_order_a = rarityOrder[nikke_static_a.rarity];
+                const rarity_order_b = rarityOrder[nikke_static_b.rarity];
+                if (rarity_order_a < rarity_order_b) return -1;
+                if (rarity_order_a > rarity_order_b) return 1;
                 return nikke_static_a.name.localeCompare(nikke_static_b.name);
             })
         case "Name":
@@ -74,10 +88,10 @@ function initialSorter(
             })
         case "Collection Item Priority":
             return list.sort((nikke_static_a, nikke_static_b) => {
-                if (collectionItemPriorityRanks[recommendation_data[nikke_static_a.id].skyfall.collection_item_priority] <
-                    collectionItemPriorityRanks[recommendation_data[nikke_static_b.id].skyfall.collection_item_priority]) return -1;
-                if (collectionItemPriorityRanks[recommendation_data[nikke_static_a.id].skyfall.collection_item_priority] >
-                    collectionItemPriorityRanks[recommendation_data[nikke_static_b.id].skyfall.collection_item_priority]) return 1;
+                const rank_a =collectionItemPriorityRanks[recommendation_data_skyfall[nikke_static_a.id].collection_item_priority];
+                const rank_b =collectionItemPriorityRanks[recommendation_data_skyfall[nikke_static_b.id].collection_item_priority];
+                if (rank_a < rank_b) return -1;
+                if (rank_a > rank_b) return 1;
                 return nikke_static_a.name.localeCompare(nikke_static_b.name);
             })
         case "Collection Item Phase":
@@ -86,40 +100,51 @@ function initialSorter(
                 const phase_b: number = nikke_investment_data.find(nikke => nikke.id === nikke_static_b.id)?.collection_item?.phase || -1;
                 if (phase_a < phase_b) return 1;
                 if (phase_a > phase_b) return -1;
+                const rarity_a: CollectionItemRarity | undefined = nikke_investment_data.find(nikke => nikke.id === nikke_static_a.id)?.collection_item?.rarity;
+                const rarity_b: CollectionItemRarity | undefined = nikke_investment_data.find(nikke => nikke.id === nikke_static_b.id)?.collection_item?.rarity;
+                const rarity_value_a = rarity_a ? rarityOrder[rarity_a] : 999;
+                const rarity_value_b = rarity_b ? rarityOrder[rarity_b] : 999;
+                if (rarity_value_a < rarity_value_b) return -1;
+                if (rarity_value_a > rarity_value_b) return 1;
                 return nikke_static_a.name.localeCompare(nikke_static_b.name);
             })
         case "Rating (Story)[Nikke.gg]":
             return list.sort((nikke_static_a, nikke_static_b) => {
-                const rating_a = recommendation_data[nikke_static_a.id].nikke_gg.ratings.story;
-                const rating_b = recommendation_data[nikke_static_b.id].nikke_gg.ratings.story;
-                if (rating_a < rating_b) return 1;
-                if (rating_a > rating_b) return -1;
-                return nikke_static_a.name.localeCompare(nikke_static_b.name);
+                return ratingSortNikkGG(nikke_static_a, nikke_static_b,
+                    recommendation_data[nikke_static_a.id].nikke_gg.ratings.story,
+                    recommendation_data[nikke_static_b.id].nikke_gg.ratings.story
+                )
             })
         case "Rating (PVP)[Nikke.gg]":
             return list.sort((nikke_static_a, nikke_static_b) => {
-                const rating_a = recommendation_data[nikke_static_a.id].nikke_gg.ratings.pvp;
-                const rating_b = recommendation_data[nikke_static_b.id].nikke_gg.ratings.pvp;
-                if (rating_a < rating_b) return 1;
-                if (rating_a > rating_b) return -1;
-                return nikke_static_a.name.localeCompare(nikke_static_b.name);
+                return ratingSortNikkGG(nikke_static_a, nikke_static_b,
+                    recommendation_data[nikke_static_a.id].nikke_gg.ratings.pvp,
+                    recommendation_data[nikke_static_b.id].nikke_gg.ratings.pvp
+                )
             })
         case "Rating (Boss)[Nikke.gg]":
             return list.sort((nikke_static_a, nikke_static_b) => {
-                const rating_a = recommendation_data[nikke_static_a.id].nikke_gg.ratings.boss;
-                const rating_b = recommendation_data[nikke_static_b.id].nikke_gg.ratings.boss;
-                if (rating_a < rating_b) return 1;
-                if (rating_a > rating_b) return -1;
+                return ratingSortNikkGG(nikke_static_a, nikke_static_b,
+                    recommendation_data[nikke_static_a.id].nikke_gg.ratings.boss,
+                    recommendation_data[nikke_static_b.id].nikke_gg.ratings.boss
+                )
+            })
+        case "Skill Investment Priority[Nikke.gg]":
+            return list.sort((nikke_static_a, nikke_static_b) => {
+                const priority_a = getPriorityValue(recommendation_data[nikke_static_a.id].nikke_gg.skills.priority);
+                const priority_b = getPriorityValue(recommendation_data[nikke_static_b.id].nikke_gg.skills.priority);
+                if (priority_a < priority_b) return -1;
+                if (priority_a > priority_b) return 1;
                 return nikke_static_a.name.localeCompare(nikke_static_b.name);
             })
         case "Overload Investment Priority[Nikke.gg]":
             return list.sort((nikke_static_a, nikke_static_b) => {
                 const priority_a = getPriorityValue(recommendation_data[nikke_static_a.id].nikke_gg.overloads.priority);
-                const priority_rank_a = recommendation_data[nikke_static_a.id].nikke_gg.overloads.priority_rank;
                 const priority_b = getPriorityValue(recommendation_data[nikke_static_b.id].nikke_gg.overloads.priority);
-                const priority_rank_b = recommendation_data[nikke_static_b.id].nikke_gg.overloads.priority_rank;
                 if (priority_a < priority_b) return -1;
                 if (priority_a > priority_b) return 1;
+                const priority_rank_a = recommendation_data[nikke_static_a.id].nikke_gg.overloads.priority_rank;
+                const priority_rank_b = recommendation_data[nikke_static_b.id].nikke_gg.overloads.priority_rank;
                 if (priority_rank_a < priority_rank_b) return -1;
                 if (priority_rank_a > priority_rank_b) return 1;
                 return nikke_static_a.name.localeCompare(nikke_static_b.name);
@@ -154,10 +179,26 @@ function initialSorter(
                     recommendation_data[nikke_static_a.id].prydwen.ratings.pvp,
                     recommendation_data[nikke_static_b.id].prydwen.ratings.pvp);
             })
+        case "Skill Investment Priority[Prydwen]":
+            return list.sort((nikke_static_a, nikke_static_b) => {
+                const priority_a = getPriorityValue(recommendation_data[nikke_static_a.id].prydwen.skills.priority);
+                const priority_b = getPriorityValue(recommendation_data[nikke_static_b.id].prydwen.skills.priority);
+                if (priority_a < priority_b) return -1;
+                if (priority_a > priority_b) return 1;
+                return nikke_static_a.name.localeCompare(nikke_static_b.name);
+            })
+        case "Overload Investment Priority[Prydwen]":
+            return list.sort((nikke_static_a, nikke_static_b) => {
+                const priority_a = getPriorityValue(recommendation_data[nikke_static_a.id].prydwen.overloads.priority);
+                const priority_b = getPriorityValue(recommendation_data[nikke_static_b.id].prydwen.overloads.priority);
+                if (priority_a < priority_b) return -1;
+                if (priority_a > priority_b) return 1;
+                return nikke_static_a.name.localeCompare(nikke_static_b.name);
+            })
         case "Priority[Skyfall]":
             return list.sort((nikke_static_a, nikke_static_b) => {
-                const priority_a = getPriorityValue(recommendation_data[nikke_static_a.id].skyfall.priority);
-                const priority_b = getPriorityValue(recommendation_data[nikke_static_b.id].skyfall.priority);
+                const priority_a = getPriorityValue(recommendation_data_skyfall[nikke_static_a.id].priority);
+                const priority_b = getPriorityValue(recommendation_data_skyfall[nikke_static_b.id].priority);
                 if (priority_a < priority_b) return -1;
                 if (priority_a > priority_b) return 1;
                 return nikke_static_a.name.localeCompare(nikke_static_b.name);

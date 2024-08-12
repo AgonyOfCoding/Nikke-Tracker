@@ -1,14 +1,16 @@
 import { color_scheme, RecommendationsSkyfall } from "../../types";
 import { Button, Tooltip } from "@blueprintjs/core";
 import { getMiscIcon } from "../../utility/iconGetters";
+import { recommendation_data_skyfall } from "../../data/recommendationsSkyfall";
 
 export interface RecommendationVisualizationSkyfallProps {
-    recommendations: RecommendationsSkyfall;
+    nikke_id: string;
 }
 
-const RecommendationVisualizationSkyfall: React.FC<RecommendationVisualizationSkyfallProps> = ({ recommendations }) => {
-    if (recommendations.notes === undefined) {
-        return <p>No recommendations</p>
+const RecommendationVisualizationSkyfall: React.FC<RecommendationVisualizationSkyfallProps> = ({ nikke_id }) => {
+    const recommendations: RecommendationsSkyfall = recommendation_data_skyfall[nikke_id];
+    if (recommendations.priority === "") {
+        return <h3>No recommendations</h3>
     }
     
     const priorityColors: { [key: string]: string } = {
@@ -32,7 +34,7 @@ const RecommendationVisualizationSkyfall: React.FC<RecommendationVisualizationSk
                     <b>{recommendations.priority} priority</b>
                 </div>
                 <div style={{ gridColumn: '2 / 3', placeContent: 'center' }} >
-                    <Tooltip content={recommendations.notes} >
+                    <Tooltip content={<div>{recommendations.notes.map(line => <p>{line}</p>)}</div>} >
                         <Button small minimal text="?" style={{ color: color_scheme[0], fontWeight: 'bold' }} />
                     </Tooltip>
                 </div>

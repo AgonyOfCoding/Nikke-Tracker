@@ -43,7 +43,7 @@ const CoreVisualization: React.FC<CoreVisualizationProps> = ({ nikke_data }) => 
         return (
             <div>
                 {Array.from({ length: 11 }, (_, core) => (
-                    <div>
+                    <div key={core} >
                         <img
                             src={getMiscIcon("core", String(core))}
                             alt="Icon not found"

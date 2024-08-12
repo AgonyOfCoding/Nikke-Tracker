@@ -19,7 +19,8 @@ const transformInvestmentData = ( data: any[] ): Nikke[] => {
           bond: nikke.bond as number,
           equipment: nikke.equipment as Equipment,
           skill_levels: nikke.skill_levels as number[],
-          collection_item: nikke.collection_item as CollectionItem | undefined 
+          collection_item: nikke.collection_item as CollectionItem | undefined,
+          favorite: nikke.favorite as boolean
       });
   });
 

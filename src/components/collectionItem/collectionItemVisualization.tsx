@@ -1,6 +1,6 @@
 import { useDispatch } from "react-redux";
 import { CollectionItem, CollectionItemRarity, Nikke, NikkeStaticData, RecommendationData, WeaponType } from "../../types";
-import { NumericInput, Popover } from "@blueprintjs/core";
+import { Button, NumericInput, Popover } from "@blueprintjs/core";
 import { useCallback, useState } from "react";
 import { getCollectionItemIcon } from "../../utility/iconGetters";
 import { modifyInvestment } from "../../state/investment";
@@ -80,6 +80,9 @@ const CollectionItemVisualization: React.FC<CollectionItemVisualizationProps> = 
                         onClick={() => setCollectionItemRarity(CollectionItemRarity.SSR, nikke_static.id)}
                     />
                 }
+                {collection_item && 
+                    <Button icon="reset" intent="danger" onClick={clearCollectionItem} />
+                }
             </div>
         )
     };
@@ -112,6 +115,14 @@ const CollectionItemVisualization: React.FC<CollectionItemVisualizationProps> = 
         };
         dispatch(modifyInvestment(new_nikke));
         setPopoverOpen(false)
+    }, [dispatch, nikke]);
+
+    const clearCollectionItem = useCallback(() => {
+        const new_nikke: Nikke = {
+            ...nikke,
+            collection_item: undefined
+        };
+        dispatch(modifyInvestment(new_nikke));
     }, [dispatch, nikke]);
 
     return (

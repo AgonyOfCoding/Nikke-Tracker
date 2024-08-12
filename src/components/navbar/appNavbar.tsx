@@ -16,7 +16,7 @@ const AppNavbar: React.FC = () => {
     const filterState: FilterOptions = useSelector((state: RootState) => state.filter)
     const dispatch = useDispatch();
 
-    const any_filters_on = !Object.values(filterState).every(value => value === undefined);
+    const any_filters_on = !Object.values(filterState).every(value => value === undefined || value === false);
 
     return (
         <Navbar

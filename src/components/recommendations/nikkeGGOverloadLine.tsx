@@ -15,10 +15,9 @@ const NikkeGGOverloadLine: React.FC<NikkeGGOverloadLineProps> = ({ attribute, ov
             key={attribute}
             style={{
                 display: 'grid',
-                gridTemplateColumns: '6fr 1fr 2fr 1fr',
-                gridTemplateRows: 'repeat(4, auto)',
-                columnGap: '5px',
+                gridTemplateColumns: '200px 30px 90px 20px',
                 fontSize: 12,
+                height: '20px'
             }}
         >
             <div style={{ gridColumn: '1 / 2', textAlign: 'right' }} >
@@ -27,8 +26,8 @@ const NikkeGGOverloadLine: React.FC<NikkeGGOverloadLineProps> = ({ attribute, ov
             <div style={{ gridColumn: '2 / 3', textAlign: 'right' }} >
                 {recommended}
             </div>
-            <div style={{ gridColumn: '3 / 4', placeContent: 'center' }} >
-                {overload_line.priority !== -1 &&
+            <div style={{ gridColumn: '3 / 4', placeContent: 'center', display: 'flex', justifyContent: 'center' }}>
+                {overload_line.priority !== -1 ? (
                     <div
                         style={{
                             display: "grid",
@@ -42,18 +41,20 @@ const NikkeGGOverloadLine: React.FC<NikkeGGOverloadLineProps> = ({ attribute, ov
                         <Icon icon={priority > 3 ? "star" : "star-empty"} />
                         <Icon icon={priority > 4 ? "star" : "star-empty"} />
                     </div>
-                }
-                {overload_line.priority === -1 &&
-                    <div>NO</div>
-                }
+                ) : (
+                    <div style={{ gridColumn: '3 / 4', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                        NO
+                    </div>
+                )}
             </div>
-            <div style={{ gridColumn: '4 / 5', placeContent: 'center' }} >
-                <Tooltip content={notes} >
-                    {/* <Button small minimal text="?" style={{ color: color_scheme[0], fontWeight: 'bold' }} /> */}
-                </Tooltip>
-            </div>
-        </div>
-        
+            {notes !== "" &&
+                <div style={{ gridColumn: '4 / 5', placeContent: 'center' }} >
+                    <Tooltip content={notes} position='left' >
+                        <Button small minimal text="?" style={{ color: color_scheme[0], fontWeight: 'bold' }} />
+                    </Tooltip>
+                </div>
+            }
+        </div>        
     );
 };
 

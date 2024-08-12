@@ -134,7 +134,7 @@ const OverloadTotals: React.FC<OverloadTotalsProps> = ({ nikke }) => {
             }}
         >
             {Object.values(OverloadAttribute).map(attribute =>
-                <AttributeTotals nikke={nikke} attribute={attribute} wide={wide_layout} />
+                <AttributeTotals key={attribute} nikke={nikke} attribute={attribute} wide={wide_layout} />
             )}
             {!wide_layout && 
                 <div

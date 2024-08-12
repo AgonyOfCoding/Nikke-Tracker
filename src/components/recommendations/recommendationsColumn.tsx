@@ -8,10 +8,11 @@ import RecommendationVisualizationSkyfall from "./recommendationVisualizationSky
 
 interface RecommendationsColumnProps {
     recommendation_data: RecommendationData;
+    nikke_id: string
     weapon_type: WeaponType;
 }
 
-const RecommendationsColumn: React.FC<RecommendationsColumnProps> = ({ recommendation_data, weapon_type }) => {
+const RecommendationsColumn: React.FC<RecommendationsColumnProps> = ({ recommendation_data, nikke_id, weapon_type }) => {
     const recommendationSourceState: RecommendationSourceState = useSelector((state: RootState) => state.recommendations);
 
     return (
@@ -29,7 +30,7 @@ const RecommendationsColumn: React.FC<RecommendationsColumnProps> = ({ recommend
                 </div>
             }
             {recommendationSourceState.source === RecommendationSource.skyfall &&
-                <RecommendationVisualizationSkyfall recommendations={recommendation_data.skyfall} />
+                <RecommendationVisualizationSkyfall nikke_id={nikke_id} />
             }
         </div>
     )

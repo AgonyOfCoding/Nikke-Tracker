@@ -38,7 +38,8 @@ export const investmentSlice = createSlice({
                     boots: undefined
                 },
                 skill_levels: [1, 1, 1],
-                collection_item: undefined
+                collection_item: undefined,
+                favorite: false
             };
             state.investments.push(new_nikke);
             saveInvestments(state.investments)

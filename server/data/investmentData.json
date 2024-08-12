@@ -66,7 +66,8 @@
       "rarity": "SR",
       "type": "SMG",
       "phase": 5
-    }
+    },
+    "favorite": false
   },
   {
     "id": "scarlet_black_shadow",
@@ -127,7 +128,8 @@
       "rarity": "SR",
       "type": "RL",
       "phase": 5
-    }
+    },
+    "favorite": false
   },
   {
     "id": "blanc",
@@ -192,7 +194,8 @@
       "rarity": "R",
       "type": "AR",
       "phase": 0
-    }
+    },
+    "favorite": false
   },
   {
     "id": "ludmilla_winter_owner",
@@ -269,7 +272,8 @@
       "rarity": "R",
       "type": "MG",
       "phase": 0
-    }
+    },
+    "favorite": false
   },
   {
     "id": "modernia",
@@ -346,7 +350,8 @@
       "rarity": "SR",
       "type": "MG",
       "phase": 5
-    }
+    },
+    "favorite": false
   },
   {
     "id": "noir",
@@ -411,7 +416,8 @@
       "rarity": "R",
       "type": "SG",
       "phase": 0
-    }
+    },
+    "favorite": false
   },
   {
     "id": "tia",
@@ -463,7 +469,8 @@
       10,
       7,
       7
-    ]
+    ],
+    "favorite": false
   },
   {
     "id": "privaty_unkind_maid",
@@ -532,7 +539,8 @@
       "rarity": "R",
       "type": "SG",
       "phase": 0
-    }
+    },
+    "favorite": false
   },
   {
     "id": "snow_white",
@@ -581,142 +589,8 @@
       "rarity": "R",
       "type": "AR",
       "phase": 0
-    }
-  },
-  {
-    "id": "diesel",
-    "core": 6,
-    "bond": 27,
-    "equipment": {
-      "helm": {
-        "type": "helm",
-        "manufacturer": "Elysion",
-        "level": 0
-      },
-      "gloves": {
-        "type": "gloves",
-        "manufacturer": "Elysion",
-        "level": 0
-      },
-      "chest": {
-        "type": "chest",
-        "manufacturer": "Elysion",
-        "level": 0
-      },
-      "boots": {
-        "type": "boots",
-        "manufacturer": "Elysion",
-        "level": 0
-      }
     },
-    "skill_levels": [
-      4,
-      4,
-      4
-    ],
-    "collection_item": {
-      "rarity": "R",
-      "type": "MG",
-      "phase": 0
-    }
-  },
-  {
-    "id": "frima",
-    "core": 3,
-    "bond": 27,
-    "equipment": {
-      "gloves": {
-        "type": "gloves",
-        "manufacturer": "Tetra",
-        "level": 0
-      }
-    },
-    "skill_levels": [
-      1,
-      1,
-      1
-    ]
-  },
-  {
-    "id": "2b",
-    "core": 3,
-    "bond": 30,
-    "equipment": {
-      "helm": {
-        "type": "helm",
-        "manufacturer": "ol",
-        "level": 5,
-        "overload_line_1": {
-          "attribute": "Increase Critical Damage",
-          "level": 11
-        }
-      },
-      "gloves": {
-        "type": "gloves",
-        "manufacturer": "ol",
-        "level": 5,
-        "overload_line_1": {
-          "attribute": "Increase Charge Speed",
-          "level": 11
-        },
-        "overload_line_2": {
-          "attribute": "Increase Hit Rate",
-          "level": 11
-        }
-      },
-      "chest": {
-        "type": "chest",
-        "manufacturer": "ol",
-        "level": 5,
-        "overload_line_1": {
-          "attribute": "Increase Max Ammunition Capacity",
-          "level": 11
-        },
-        "overload_line_2": {
-          "attribute": "Increase Critical Rate",
-          "level": 11
-        },
-        "overload_line_3": {
-          "attribute": "Increase ATK",
-          "level": 11
-        }
-      },
-      "boots": {
-        "type": "boots",
-        "manufacturer": "ol",
-        "level": 5,
-        "overload_line_1": {
-          "attribute": "Increase Charge Speed",
-          "level": 11
-        },
-        "overload_line_3": {
-          "attribute": "Increase Hit Rate",
-          "level": 11
-        }
-      }
-    },
-    "skill_levels": [
-      1,
-      1,
-      1
-    ]
-  },
-  {
-    "id": "brid",
-    "core": 7,
-    "bond": 10,
-    "equipment": {
-      "boots": {
-        "type": "boots",
-        "manufacturer": "Elysion",
-        "level": 0
-      }
-    },
-    "skill_levels": [
-      1,
-      1,
-      1
-    ]
+    "favorite": false
   },
   {
     "id": "d",
@@ -748,7 +622,8 @@
       1,
       1,
       1
-    ]
+    ],
+    "favorite": false
   },
   {
     "id": "guilty",
@@ -775,7 +650,8 @@
       1,
       1,
       1
-    ]
+    ],
+    "favorite": false
   },
   {
     "id": "rem",
@@ -847,7 +723,8 @@
       1,
       1,
       1
-    ]
+    ],
+    "favorite": false
   },
   {
     "id": "rapunzel",
@@ -911,7 +788,8 @@
       7,
       6,
       4
-    ]
+    ],
+    "favorite": false
   },
   {
     "id": "leona",
@@ -943,39 +821,8 @@
       4,
       7,
       4
-    ]
-  },
-  {
-    "id": "rosanna_chic_ocean",
-    "core": 3,
-    "bond": 10,
-    "equipment": {
-      "helm": {
-        "type": "helm",
-        "manufacturer": "standard",
-        "level": 0
-      },
-      "gloves": {
-        "type": "gloves",
-        "manufacturer": "Tetra",
-        "level": 0
-      },
-      "chest": {
-        "type": "chest",
-        "manufacturer": "Tetra",
-        "level": 0
-      },
-      "boots": {
-        "type": "boots",
-        "manufacturer": "Tetra",
-        "level": 0
-      }
-    },
-    "skill_levels": [
-      4,
-      4,
-      7
-    ]
+    ],
+    "favorite": false
   },
   {
     "id": "alice",
@@ -1056,7 +903,8 @@
       "rarity": "SR",
       "type": "SR",
       "phase": 5
-    }
+    },
+    "favorite": false
   },
   {
     "id": "marciana",
@@ -1088,7 +936,8 @@
       5,
       5,
       5
-    ]
+    ],
+    "favorite": false
   },
   {
     "id": "red_hood",
@@ -1165,7 +1014,8 @@
       "rarity": "SR",
       "type": "SR",
       "phase": 5
-    }
+    },
+    "favorite": false
   },
   {
     "id": "tove",
@@ -1217,7 +1067,8 @@
       9,
       7,
       5
-    ]
+    ],
+    "favorite": false
   },
   {
     "id": "maiden",
@@ -1249,7 +1100,8 @@
       4,
       4,
       4
-    ]
+    ],
+    "favorite": false
   },
   {
     "id": "maxwell",
@@ -1326,39 +1178,8 @@
       "rarity": "R",
       "type": "SR",
       "phase": 0
-    }
-  },
-  {
-    "id": "privaty",
-    "core": 7,
-    "bond": 30,
-    "equipment": {
-      "helm": {
-        "type": "helm",
-        "manufacturer": "Elysion",
-        "level": 0
-      },
-      "gloves": {
-        "type": "gloves",
-        "manufacturer": "Elysion",
-        "level": 3
-      },
-      "chest": {
-        "type": "chest",
-        "manufacturer": "Elysion",
-        "level": 3
-      },
-      "boots": {
-        "type": "boots",
-        "manufacturer": "Elysion",
-        "level": 0
-      }
     },
-    "skill_levels": [
-      7,
-      4,
-      4
-    ]
+    "favorite": false
   },
   {
     "id": "viper",
@@ -1375,7 +1196,8 @@
       1,
       1,
       1
-    ]
+    ],
+    "favorite": false
   },
   {
     "id": "bay",
@@ -1402,7 +1224,8 @@
       1,
       1,
       1
-    ]
+    ],
+    "favorite": false
   },
   {
     "id": "clay",
@@ -1413,7 +1236,8 @@
       1,
       1,
       1
-    ]
+    ],
+    "favorite": false
   },
   {
     "id": "cocoa",
@@ -1424,7 +1248,8 @@
       4,
       1,
       1
-    ]
+    ],
+    "favorite": false
   },
   {
     "id": "crow",
@@ -1451,7 +1276,8 @@
       1,
       1,
       1
-    ]
+    ],
+    "favorite": false
   },
   {
     "id": "dolla",
@@ -1483,7 +1309,8 @@
       4,
       4,
       4
-    ]
+    ],
+    "favorite": false
   },
   {
     "id": "drake",
@@ -1515,7 +1342,8 @@
       4,
       4,
       4
-    ]
+    ],
+    "favorite": false
   },
   {
     "id": "elegg",
@@ -1542,7 +1370,8 @@
       1,
       1,
       1
-    ]
+    ],
+    "favorite": false
   },
   {
     "id": "emilia",
@@ -1611,7 +1440,8 @@
       "rarity": "R",
       "type": "RL",
       "phase": 0
-    }
+    },
+    "favorite": false
   },
   {
     "id": "emma",
@@ -1638,7 +1468,8 @@
       4,
       4,
       4
-    ]
+    ],
+    "favorite": false
   },
   {
     "id": "eunhwa",
@@ -1649,7 +1480,8 @@
       1,
       1,
       1
-    ]
+    ],
+    "favorite": false
   },
   {
     "id": "folkwang",
@@ -1671,39 +1503,8 @@
       1,
       1,
       1
-    ]
-  },
-  {
-    "id": "guillotine",
-    "core": 8,
-    "bond": 30,
-    "equipment": {
-      "helm": {
-        "type": "helm",
-        "manufacturer": "Elysion",
-        "level": 2
-      },
-      "gloves": {
-        "type": "gloves",
-        "manufacturer": "Elysion",
-        "level": 0
-      },
-      "chest": {
-        "type": "chest",
-        "manufacturer": "Elysion",
-        "level": 3
-      },
-      "boots": {
-        "type": "boots",
-        "manufacturer": "Elysion",
-        "level": 0
-      }
-    },
-    "skill_levels": [
-      4,
-      4,
-      4
-    ]
+    ],
+    "favorite": false
   },
   {
     "id": "harran",
@@ -1725,39 +1526,8 @@
       1,
       1,
       1
-    ]
-  },
-  {
-    "id": "helm",
-    "core": 6,
-    "bond": 30,
-    "equipment": {
-      "helm": {
-        "type": "helm",
-        "manufacturer": "Elysion",
-        "level": 0
-      },
-      "gloves": {
-        "type": "gloves",
-        "manufacturer": "Elysion",
-        "level": 0
-      },
-      "chest": {
-        "type": "chest",
-        "manufacturer": "Elysion",
-        "level": 0
-      },
-      "boots": {
-        "type": "boots",
-        "manufacturer": "Elysion",
-        "level": 0
-      }
-    },
-    "skill_levels": [
-      5,
-      7,
-      5
-    ]
+    ],
+    "favorite": false
   },
   {
     "id": "helm_aquamarine",
@@ -1789,7 +1559,8 @@
       4,
       4,
       4
-    ]
+    ],
+    "favorite": false
   },
   {
     "id": "isabel",
@@ -1816,7 +1587,8 @@
       4,
       4,
       4
-    ]
+    ],
+    "favorite": false
   },
   {
     "id": "jackal",
@@ -1885,7 +1657,8 @@
       "rarity": "R",
       "type": "RL",
       "phase": 0
-    }
+    },
+    "favorite": false
   },
   {
     "id": "julia",
@@ -1912,7 +1685,8 @@
       1,
       1,
       1
-    ]
+    ],
+    "favorite": false
   },
   {
     "id": "kilo",
@@ -1944,7 +1718,8 @@
       1,
       1,
       1
-    ]
+    ],
+    "favorite": false
   },
   {
     "id": "ludmilla",
@@ -1971,50 +1746,8 @@
       4,
       4,
       4
-    ]
-  },
-  {
-    "id": "mary",
-    "core": 5,
-    "bond": 20,
-    "equipment": {},
-    "skill_levels": [
-      1,
-      1,
-      1
-    ]
-  },
-  {
-    "id": "mary_bay_goddess",
-    "core": 3,
-    "bond": 30,
-    "equipment": {
-      "helm": {
-        "type": "helm",
-        "manufacturer": "standard",
-        "level": 0
-      },
-      "gloves": {
-        "type": "gloves",
-        "manufacturer": "Tetra",
-        "level": 0
-      },
-      "chest": {
-        "type": "chest",
-        "manufacturer": "Tetra",
-        "level": 0
-      },
-      "boots": {
-        "type": "boots",
-        "manufacturer": "Tetra",
-        "level": 0
-      }
-    },
-    "skill_levels": [
-      4,
-      4,
-      4
-    ]
+    ],
+    "favorite": false
   },
   {
     "id": "mast",
@@ -2046,7 +1779,8 @@
       4,
       4,
       4
-    ]
+    ],
+    "favorite": false
   },
   {
     "id": "mica_snow_buddy",
@@ -2063,7 +1797,8 @@
       4,
       4,
       4
-    ]
+    ],
+    "favorite": false
   },
   {
     "id": "milk",
@@ -2074,7 +1809,8 @@
       1,
       1,
       1
-    ]
+    ],
+    "favorite": false
   },
   {
     "id": "miranda",
@@ -2106,7 +1842,8 @@
       4,
       4,
       4
-    ]
+    ],
+    "favorite": false
   },
   {
     "id": "neon_blue_ocean",
@@ -2133,7 +1870,8 @@
       1,
       1,
       1
-    ]
+    ],
+    "favorite": false
   },
   {
     "id": "nero",
@@ -2160,7 +1898,8 @@
       1,
       1,
       1
-    ]
+    ],
+    "favorite": false
   },
   {
     "id": "nihilister",
@@ -2182,7 +1921,8 @@
       4,
       4,
       4
-    ]
+    ],
+    "favorite": false
   },
   {
     "id": "noah",
@@ -2255,7 +1995,8 @@
       "rarity": "R",
       "type": "RL",
       "phase": 0
-    }
+    },
+    "favorite": false
   },
   {
     "id": "novel",
@@ -2287,7 +2028,8 @@
       1,
       1,
       1
-    ]
+    ],
+    "favorite": false
   },
   {
     "id": "poli",
@@ -2319,7 +2061,8 @@
       1,
       1,
       1
-    ]
+    ],
+    "favorite": false
   },
   {
     "id": "power",
@@ -2351,7 +2094,8 @@
       4,
       4,
       4
-    ]
+    ],
+    "favorite": false
   },
   {
     "id": "quency",
@@ -2378,7 +2122,8 @@
       1,
       1,
       1
-    ]
+    ],
+    "favorite": false
   },
   {
     "id": "quiry",
@@ -2410,7 +2155,8 @@
       1,
       1,
       1
-    ]
+    ],
+    "favorite": false
   },
   {
     "id": "rei",
@@ -2432,7 +2178,8 @@
       1,
       1,
       1
-    ]
+    ],
+    "favorite": false
   },
   {
     "id": "rosanna",
@@ -2464,7 +2211,8 @@
       4,
       1,
       5
-    ]
+    ],
+    "favorite": false
   },
   {
     "id": "rupee",
@@ -2475,7 +2223,8 @@
       4,
       4,
       4
-    ]
+    ],
+    "favorite": false
   },
   {
     "id": "rupee_winter_shopper",
@@ -2497,7 +2246,8 @@
       1,
       1,
       1
-    ]
+    ],
+    "favorite": false
   },
   {
     "id": "sakura",
@@ -2519,7 +2269,8 @@
       1,
       1,
       1
-    ]
+    ],
+    "favorite": false
   },
   {
     "id": "signal",
@@ -2536,7 +2287,8 @@
       1,
       1,
       1
-    ]
+    ],
+    "favorite": false
   },
   {
     "id": "sin",
@@ -2568,7 +2320,8 @@
       1,
       1,
       1
-    ]
+    ],
+    "favorite": false
   },
   {
     "id": "snow_white_innocent_days",
@@ -2595,7 +2348,8 @@
       1,
       1,
       1
-    ]
+    ],
+    "favorite": false
   },
   {
     "id": "soda",
@@ -2612,7 +2366,8 @@
       1,
       1,
       1
-    ]
+    ],
+    "favorite": false
   },
   {
     "id": "soline",
@@ -2644,39 +2399,8 @@
       1,
       1,
       1
-    ]
-  },
-  {
-    "id": "trony",
-    "core": 2,
-    "bond": 23,
-    "equipment": {
-      "helm": {
-        "type": "helm",
-        "manufacturer": "Missilis",
-        "level": 0
-      },
-      "gloves": {
-        "type": "gloves",
-        "manufacturer": "Missilis",
-        "level": 0
-      },
-      "chest": {
-        "type": "chest",
-        "manufacturer": "Missilis",
-        "level": 0
-      },
-      "boots": {
-        "type": "boots",
-        "manufacturer": "Missilis",
-        "level": 0
-      }
-    },
-    "skill_levels": [
-      1,
-      1,
-      1
-    ]
+    ],
+    "favorite": false
   },
   {
     "id": "yan",
@@ -2687,7 +2411,8 @@
       1,
       1,
       1
-    ]
+    ],
+    "favorite": false
   },
   {
     "id": "vesti",
@@ -2719,7 +2444,8 @@
       4,
       4,
       4
-    ]
+    ],
+    "favorite": false
   },
   {
     "id": "yulha",
@@ -2751,7 +2477,8 @@
       4,
       4,
       4
-    ]
+    ],
+    "favorite": false
   },
   {
     "id": "yuni",
@@ -2783,7 +2510,8 @@
       1,
       1,
       1
-    ]
+    ],
+    "favorite": false
   },
   {
     "id": "anis",
@@ -2815,7 +2543,8 @@
       4,
       4,
       4
-    ]
+    ],
+    "favorite": false
   },
   {
     "id": "product_08",
@@ -2832,7 +2561,8 @@
       1,
       1,
       1
-    ]
+    ],
+    "favorite": false
   },
   {
     "id": "dorothy",
@@ -2901,7 +2631,8 @@
       "rarity": "R",
       "type": "AR",
       "phase": 0
-    }
+    },
+    "favorite": false
   },
   {
     "id": "moran",
@@ -2938,7 +2669,8 @@
       "rarity": "R",
       "type": "AR",
       "phase": 0
-    }
+    },
+    "favorite": false
   },
   {
     "id": "alice_wonderland_bunny",
@@ -2975,7 +2707,8 @@
       "rarity": "R",
       "type": "SMG",
       "phase": 0
-    }
+    },
+    "favorite": false
   },
   {
     "id": "volume",
@@ -3012,7 +2745,8 @@
       "rarity": "R",
       "type": "SMG",
       "phase": 0
-    }
+    },
+    "favorite": false
   },
   {
     "id": "centi",
@@ -3077,7 +2811,8 @@
       "rarity": "R",
       "type": "RL",
       "phase": 0
-    }
+    },
+    "favorite": false
   },
   {
     "id": "biscuit",
@@ -3146,7 +2881,8 @@
       "rarity": "R",
       "type": "RL",
       "phase": 0
-    }
+    },
+    "favorite": false
   },
   {
     "id": "noise",
@@ -3215,7 +2951,8 @@
       "rarity": "R",
       "type": "RL",
       "phase": 0
-    }
+    },
+    "favorite": false
   },
   {
     "id": "sugar",
@@ -3232,244 +2969,8 @@
       1,
       1,
       1
-    ]
-  },
-  {
-    "id": "exia",
-    "core": 5,
-    "bond": 30,
-    "equipment": {
-      "gloves": {
-        "type": "gloves",
-        "manufacturer": "Tetra",
-        "level": 0
-      }
-    },
-    "skill_levels": [
-      4,
-      4,
-      4
     ],
-    "collection_item": {
-      "rarity": "R",
-      "type": "SR",
-      "phase": 0
-    }
-  },
-  {
-    "id": "ein",
-    "core": 1,
-    "bond": 9,
-    "equipment": {
-      "helm": {
-        "type": "helm",
-        "manufacturer": "ol",
-        "level": 0,
-        "overload_line_1": {
-          "attribute": "Increase Charge Speed",
-          "level": 3
-        },
-        "overload_line_2": {
-          "attribute": "Increase ATK",
-          "level": 12
-        }
-      },
-      "gloves": {
-        "type": "gloves",
-        "manufacturer": "ol",
-        "level": 0,
-        "overload_line_1": {
-          "attribute": "Increase Element Damage Dealt",
-          "level": 10
-        },
-        "overload_line_2": {
-          "attribute": "Increase ATK",
-          "level": 8
-        }
-      },
-      "chest": {
-        "type": "chest",
-        "manufacturer": "ol",
-        "level": 0,
-        "overload_line_1": {
-          "attribute": "Increase Hit Rate",
-          "level": 4
-        },
-        "overload_line_2": {
-          "attribute": "Increase ATK",
-          "level": 5
-        },
-        "overload_line_3": {
-          "attribute": "Increase Charge Damage",
-          "level": 9
-        }
-      },
-      "boots": {
-        "type": "boots",
-        "manufacturer": "ol",
-        "level": 0,
-        "overload_line_1": {
-          "attribute": "Increase Max Ammunition Capacity",
-          "level": 11
-        },
-        "overload_line_2": {
-          "attribute": "Increase ATK",
-          "level": 11
-        },
-        "overload_line_3": {
-          "attribute": "Increase Critical Damage",
-          "level": 11
-        }
-      }
-    },
-    "skill_levels": [
-      1,
-      1,
-      1
-    ],
-    "collection_item": {
-      "rarity": "R",
-      "type": "SR",
-      "phase": 0
-    }
-  },
-  {
-    "id": "d_killer_wife",
-    "core": 1,
-    "bond": 13,
-    "equipment": {
-      "helm": {
-        "type": "helm",
-        "manufacturer": "ol",
-        "level": 0,
-        "overload_line_1": {
-          "attribute": "Increase Charge Speed",
-          "level": 11
-        },
-        "overload_line_2": {
-          "attribute": "Increase ATK",
-          "level": 11
-        },
-        "overload_line_3": {
-          "attribute": "Increase Hit Rate",
-          "level": 11
-        }
-      },
-      "gloves": {
-        "type": "gloves",
-        "manufacturer": "ol",
-        "level": 0,
-        "overload_line_1": {
-          "attribute": "Increase Charge Damage",
-          "level": 11
-        }
-      },
-      "chest": {
-        "type": "chest",
-        "manufacturer": "ol",
-        "level": 0,
-        "overload_line_1": {
-          "attribute": "Increase Charge Speed",
-          "level": 2
-        },
-        "overload_line_2": {
-          "attribute": "Increase Max Ammunition Capacity",
-          "level": 9
-        }
-      },
-      "boots": {
-        "type": "boots",
-        "manufacturer": "ol",
-        "level": 0,
-        "overload_line_1": {
-          "attribute": "Increase Charge Damage",
-          "level": 9
-        },
-        "overload_line_2": {
-          "attribute": "Increase Max Ammunition Capacity",
-          "level": 15
-        }
-      }
-    },
-    "skill_levels": [
-      7,
-      7,
-      7
-    ],
-    "collection_item": {
-      "rarity": "R",
-      "type": "SR",
-      "phase": 0
-    }
-  },
-  {
-    "id": "sakura_bloom_in_summer",
-    "core": 3,
-    "bond": 18,
-    "equipment": {
-      "helm": {
-        "type": "helm",
-        "manufacturer": "ol",
-        "level": 0,
-        "overload_line_1": {
-          "attribute": "Increase Element Damage Dealt",
-          "level": 6
-        }
-      },
-      "gloves": {
-        "type": "gloves",
-        "manufacturer": "ol",
-        "level": 0,
-        "overload_line_1": {
-          "attribute": "Increase Max Ammunition Capacity",
-          "level": 11
-        },
-        "overload_line_2": {
-          "attribute": "Increase Element Damage Dealt",
-          "level": 11
-        }
-      },
-      "chest": {
-        "type": "chest",
-        "manufacturer": "ol",
-        "level": 0,
-        "overload_line_1": {
-          "attribute": "Increase Hit Rate",
-          "level": 1
-        },
-        "overload_line_2": {
-          "attribute": "Increase Charge Speed",
-          "level": 10
-        },
-        "overload_line_3": {
-          "attribute": "Increase ATK",
-          "level": 8
-        }
-      },
-      "boots": {
-        "type": "boots",
-        "manufacturer": "ol",
-        "level": 0,
-        "overload_line_1": {
-          "attribute": "Increase Critical Rate",
-          "level": 11
-        },
-        "overload_line_2": {
-          "attribute": "Increase ATK",
-          "level": 11
-        }
-      }
-    },
-    "skill_levels": [
-      5,
-      7,
-      7
-    ],
-    "collection_item": {
-      "rarity": "R",
-      "type": "AR",
-      "phase": 0
-    }
+    "favorite": false
   },
   {
     "id": "naga",
@@ -3542,44 +3043,8 @@
       "rarity": "SR",
       "type": "SG",
       "phase": 5
-    }
-  },
-  {
-    "id": "laplace",
-    "core": 5,
-    "bond": 30,
-    "equipment": {
-      "helm": {
-        "type": "helm",
-        "manufacturer": "Missilis",
-        "level": 0
-      },
-      "gloves": {
-        "type": "gloves",
-        "manufacturer": "Missilis",
-        "level": 0
-      },
-      "chest": {
-        "type": "chest",
-        "manufacturer": "Missilis",
-        "level": 0
-      },
-      "boots": {
-        "type": "boots",
-        "manufacturer": "Missilis",
-        "level": 0
-      }
     },
-    "skill_levels": [
-      4,
-      4,
-      4
-    ],
-    "collection_item": {
-      "rarity": "SR",
-      "type": "RL",
-      "phase": 11
-    }
+    "favorite": false
   },
   {
     "id": "scarlet",
@@ -3652,7 +3117,8 @@
       "rarity": "R",
       "type": "AR",
       "phase": 5
-    }
+    },
+    "favorite": false
   },
   {
     "id": "anne_miracle_fairy",
@@ -3684,7 +3150,8 @@
       4,
       4,
       4
-    ]
+    ],
+    "favorite": false
   },
   {
     "id": "aria",
@@ -3695,7 +3162,8 @@
       1,
       1,
       1
-    ]
+    ],
+    "favorite": false
   },
   {
     "id": "a2",
@@ -3767,7 +3235,8 @@
       1,
       1,
       1
-    ]
+    ],
+    "favorite": false
   },
   {
     "id": "epinel",
@@ -3794,7 +3263,8 @@
       3,
       3,
       3
-    ]
+    ],
+    "favorite": false
   },
   {
     "id": "ade",
@@ -3805,7 +3275,8 @@
       1,
       1,
       1
-    ]
+    ],
+    "favorite": false
   },
   {
     "id": "admi",
@@ -3832,7 +3303,8 @@
       1,
       1,
       1
-    ]
+    ],
+    "favorite": false
   },
   {
     "id": "anis_sparkling_summer",
@@ -3893,7 +3365,8 @@
       "rarity": "R",
       "type": "SG",
       "phase": 0
-    }
+    },
+    "favorite": false
   },
   {
     "id": "crown",
@@ -3970,12 +3443,97 @@
       "rarity": "R",
       "type": "MG",
       "phase": 15
-    }
+    },
+    "favorite": false
+  },
+  {
+    "id": "pepper",
+    "core": 7,
+    "bond": 30,
+    "equipment": {
+      "helm": {
+        "type": "helm",
+        "manufacturer": "Missilis",
+        "level": 0
+      },
+      "gloves": {
+        "type": "gloves",
+        "manufacturer": "Missilis",
+        "level": 0
+      },
+      "chest": {
+        "type": "chest",
+        "manufacturer": "Missilis",
+        "level": 0
+      },
+      "boots": {
+        "type": "boots",
+        "manufacturer": "Missilis",
+        "level": 0
+      }
+    },
+    "skill_levels": [
+      1,
+      1,
+      1
+    ],
+    "favorite": false
+  },
+  {
+    "id": "frima",
+    "core": 3,
+    "bond": 28,
+    "equipment": {
+      "gloves": {
+        "type": "gloves",
+        "manufacturer": "Tetra",
+        "level": 0
+      }
+    },
+    "skill_levels": [
+      1,
+      1,
+      1
+    ],
+    "favorite": false
+  },
+  {
+    "id": "trony",
+    "core": 2,
+    "bond": 24,
+    "equipment": {
+      "helm": {
+        "type": "helm",
+        "manufacturer": "Missilis",
+        "level": 0
+      },
+      "gloves": {
+        "type": "gloves",
+        "manufacturer": "Missilis",
+        "level": 0
+      },
+      "chest": {
+        "type": "chest",
+        "manufacturer": "Missilis",
+        "level": 0
+      },
+      "boots": {
+        "type": "boots",
+        "manufacturer": "Missilis",
+        "level": 0
+      }
+    },
+    "skill_levels": [
+      1,
+      1,
+      1
+    ],
+    "favorite": false
   },
   {
     "id": "soda_twinkling_bunny",
     "core": 2,
-    "bond": 12,
+    "bond": 13,
     "equipment": {
       "helm": {
         "type": "helm",
@@ -4023,11 +3581,336 @@
       "rarity": "R",
       "type": "SG",
       "phase": 0
-    }
+    },
+    "favorite": false
   },
   {
-    "id": "pepper",
-    "core": 7,
+    "id": "mary",
+    "core": 5,
+    "bond": 20,
+    "equipment": {},
+    "skill_levels": [
+      1,
+      1,
+      1
+    ],
+    "favorite": true
+  },
+  {
+    "id": "mary_bay_goddess",
+    "core": 3,
+    "bond": 30,
+    "equipment": {
+      "helm": {
+        "type": "helm",
+        "manufacturer": "standard",
+        "level": 0
+      },
+      "gloves": {
+        "type": "gloves",
+        "manufacturer": "Tetra",
+        "level": 0
+      },
+      "chest": {
+        "type": "chest",
+        "manufacturer": "Tetra",
+        "level": 0
+      },
+      "boots": {
+        "type": "boots",
+        "manufacturer": "Tetra",
+        "level": 0
+      }
+    },
+    "skill_levels": [
+      4,
+      4,
+      4
+    ],
+    "favorite": true
+  },
+  {
+    "id": "2b",
+    "core": 3,
+    "bond": 30,
+    "equipment": {
+      "helm": {
+        "type": "helm",
+        "manufacturer": "ol",
+        "level": 5,
+        "overload_line_1": {
+          "attribute": "Increase Critical Damage",
+          "level": 11
+        }
+      },
+      "gloves": {
+        "type": "gloves",
+        "manufacturer": "ol",
+        "level": 5,
+        "overload_line_1": {
+          "attribute": "Increase Charge Speed",
+          "level": 11
+        },
+        "overload_line_2": {
+          "attribute": "Increase Hit Rate",
+          "level": 11
+        }
+      },
+      "chest": {
+        "type": "chest",
+        "manufacturer": "ol",
+        "level": 5,
+        "overload_line_1": {
+          "attribute": "Increase Max Ammunition Capacity",
+          "level": 11
+        },
+        "overload_line_2": {
+          "attribute": "Increase Critical Rate",
+          "level": 11
+        },
+        "overload_line_3": {
+          "attribute": "Increase ATK",
+          "level": 11
+        }
+      },
+      "boots": {
+        "type": "boots",
+        "manufacturer": "ol",
+        "level": 5,
+        "overload_line_1": {
+          "attribute": "Increase Charge Speed",
+          "level": 11
+        },
+        "overload_line_3": {
+          "attribute": "Increase Hit Rate",
+          "level": 11
+        }
+      }
+    },
+    "skill_levels": [
+      1,
+      1,
+      1
+    ],
+    "favorite": false
+  },
+  {
+    "id": "diesel",
+    "core": 6,
+    "bond": 28,
+    "equipment": {
+      "helm": {
+        "type": "helm",
+        "manufacturer": "Elysion",
+        "level": 0
+      },
+      "gloves": {
+        "type": "gloves",
+        "manufacturer": "Elysion",
+        "level": 0
+      },
+      "chest": {
+        "type": "chest",
+        "manufacturer": "Elysion",
+        "level": 0
+      },
+      "boots": {
+        "type": "boots",
+        "manufacturer": "Elysion",
+        "level": 0
+      }
+    },
+    "skill_levels": [
+      4,
+      4,
+      4
+    ],
+    "collection_item": {
+      "rarity": "R",
+      "type": "MG",
+      "phase": 0
+    },
+    "favorite": false
+  },
+  {
+    "id": "ein",
+    "core": 1,
+    "bond": 10,
+    "equipment": {
+      "helm": {
+        "type": "helm",
+        "manufacturer": "ol",
+        "level": 0,
+        "overload_line_1": {
+          "attribute": "Increase Charge Speed",
+          "level": 3
+        },
+        "overload_line_2": {
+          "attribute": "Increase ATK",
+          "level": 12
+        }
+      },
+      "gloves": {
+        "type": "gloves",
+        "manufacturer": "ol",
+        "level": 0,
+        "overload_line_1": {
+          "attribute": "Increase Element Damage Dealt",
+          "level": 10
+        },
+        "overload_line_2": {
+          "attribute": "Increase ATK",
+          "level": 8
+        }
+      },
+      "chest": {
+        "type": "chest",
+        "manufacturer": "ol",
+        "level": 0,
+        "overload_line_1": {
+          "attribute": "Increase Hit Rate",
+          "level": 4
+        },
+        "overload_line_2": {
+          "attribute": "Increase ATK",
+          "level": 5
+        },
+        "overload_line_3": {
+          "attribute": "Increase Charge Damage",
+          "level": 9
+        }
+      },
+      "boots": {
+        "type": "boots",
+        "manufacturer": "ol",
+        "level": 0,
+        "overload_line_1": {
+          "attribute": "Increase Max Ammunition Capacity",
+          "level": 11
+        },
+        "overload_line_2": {
+          "attribute": "Increase ATK",
+          "level": 11
+        },
+        "overload_line_3": {
+          "attribute": "Increase Critical Damage",
+          "level": 11
+        }
+      }
+    },
+    "skill_levels": [
+      1,
+      1,
+      1
+    ],
+    "collection_item": {
+      "rarity": "R",
+      "type": "SR",
+      "phase": 0
+    },
+    "favorite": false
+  },
+  {
+    "id": "d_killer_wife",
+    "core": 1,
+    "bond": 14,
+    "equipment": {
+      "helm": {
+        "type": "helm",
+        "manufacturer": "ol",
+        "level": 0,
+        "overload_line_1": {
+          "attribute": "Increase Charge Speed",
+          "level": 11
+        },
+        "overload_line_2": {
+          "attribute": "Increase ATK",
+          "level": 11
+        },
+        "overload_line_3": {
+          "attribute": "Increase Hit Rate",
+          "level": 11
+        }
+      },
+      "gloves": {
+        "type": "gloves",
+        "manufacturer": "ol",
+        "level": 0,
+        "overload_line_1": {
+          "attribute": "Increase Charge Damage",
+          "level": 11
+        }
+      },
+      "chest": {
+        "type": "chest",
+        "manufacturer": "ol",
+        "level": 0,
+        "overload_line_1": {
+          "attribute": "Increase Charge Speed",
+          "level": 2
+        },
+        "overload_line_2": {
+          "attribute": "Increase Max Ammunition Capacity",
+          "level": 9
+        }
+      },
+      "boots": {
+        "type": "boots",
+        "manufacturer": "ol",
+        "level": 0,
+        "overload_line_1": {
+          "attribute": "Increase Charge Damage",
+          "level": 9
+        },
+        "overload_line_2": {
+          "attribute": "Increase Max Ammunition Capacity",
+          "level": 15
+        }
+      }
+    },
+    "skill_levels": [
+      7,
+      7,
+      7
+    ],
+    "collection_item": {
+      "rarity": "R",
+      "type": "SR",
+      "phase": 0
+    },
+    "favorite": false
+  },
+  {
+    "id": "exia",
+    "core": 5,
+    "bond": 30,
+    "equipment": {
+      "gloves": {
+        "type": "gloves",
+        "manufacturer": "Tetra",
+        "level": 0
+      },
+      "boots": {
+        "type": "boots",
+        "manufacturer": "Tetra",
+        "level": 0
+      }
+    },
+    "skill_levels": [
+      4,
+      4,
+      4
+    ],
+    "collection_item": {
+      "rarity": "R",
+      "type": "SR",
+      "phase": 0
+    },
+    "favorite": false
+  },
+  {
+    "id": "laplace",
+    "core": 5,
     "bond": 30,
     "equipment": {
       "helm": {
@@ -4052,9 +3935,245 @@
       }
     },
     "skill_levels": [
+      4,
+      4,
+      4
+    ],
+    "collection_item": {
+      "rarity": "SR",
+      "type": "RL",
+      "phase": 12
+    },
+    "favorite": false
+  },
+  {
+    "id": "privaty",
+    "core": 7,
+    "bond": 30,
+    "equipment": {
+      "helm": {
+        "type": "helm",
+        "manufacturer": "Elysion",
+        "level": 0
+      },
+      "gloves": {
+        "type": "gloves",
+        "manufacturer": "Elysion",
+        "level": 3
+      },
+      "chest": {
+        "type": "chest",
+        "manufacturer": "Elysion",
+        "level": 3
+      },
+      "boots": {
+        "type": "boots",
+        "manufacturer": "Elysion",
+        "level": 0
+      }
+    },
+    "skill_levels": [
+      7,
+      4,
+      4
+    ],
+    "collection_item": {
+      "rarity": "R",
+      "type": "AR",
+      "phase": 0
+    },
+    "favorite": false
+  },
+  {
+    "id": "rosanna_chic_ocean",
+    "core": 3,
+    "bond": 11,
+    "equipment": {
+      "helm": {
+        "type": "helm",
+        "manufacturer": "standard",
+        "level": 0
+      },
+      "gloves": {
+        "type": "gloves",
+        "manufacturer": "Tetra",
+        "level": 0
+      },
+      "chest": {
+        "type": "chest",
+        "manufacturer": "Tetra",
+        "level": 0
+      },
+      "boots": {
+        "type": "boots",
+        "manufacturer": "Tetra",
+        "level": 0
+      }
+    },
+    "skill_levels": [
+      4,
+      4,
+      7
+    ],
+    "favorite": false
+  },
+  {
+    "id": "sakura_bloom_in_summer",
+    "core": 3,
+    "bond": 19,
+    "equipment": {
+      "helm": {
+        "type": "helm",
+        "manufacturer": "ol",
+        "level": 0,
+        "overload_line_1": {
+          "attribute": "Increase Element Damage Dealt",
+          "level": 6
+        }
+      },
+      "gloves": {
+        "type": "gloves",
+        "manufacturer": "ol",
+        "level": 0,
+        "overload_line_1": {
+          "attribute": "Increase Max Ammunition Capacity",
+          "level": 11
+        },
+        "overload_line_2": {
+          "attribute": "Increase Element Damage Dealt",
+          "level": 11
+        }
+      },
+      "chest": {
+        "type": "chest",
+        "manufacturer": "ol",
+        "level": 0,
+        "overload_line_1": {
+          "attribute": "Increase Hit Rate",
+          "level": 1
+        },
+        "overload_line_2": {
+          "attribute": "Increase Charge Speed",
+          "level": 10
+        },
+        "overload_line_3": {
+          "attribute": "Increase ATK",
+          "level": 8
+        }
+      },
+      "boots": {
+        "type": "boots",
+        "manufacturer": "ol",
+        "level": 0,
+        "overload_line_1": {
+          "attribute": "Increase Critical Rate",
+          "level": 11
+        },
+        "overload_line_2": {
+          "attribute": "Increase ATK",
+          "level": 11
+        }
+      }
+    },
+    "skill_levels": [
+      5,
+      7,
+      7
+    ],
+    "collection_item": {
+      "rarity": "R",
+      "type": "AR",
+      "phase": 0
+    },
+    "favorite": false
+  },
+  {
+    "id": "brid",
+    "core": 7,
+    "bond": 10,
+    "equipment": {
+      "boots": {
+        "type": "boots",
+        "manufacturer": "Elysion",
+        "level": 0
+      },
+      "chest": {
+        "type": "chest",
+        "manufacturer": "Elysion",
+        "level": 0
+      }
+    },
+    "skill_levels": [
       1,
       1,
       1
-    ]
+    ],
+    "favorite": false
+  },
+  {
+    "id": "guillotine",
+    "core": 8,
+    "bond": 30,
+    "equipment": {
+      "helm": {
+        "type": "helm",
+        "manufacturer": "Elysion",
+        "level": 0
+      },
+      "gloves": {
+        "type": "gloves",
+        "manufacturer": "Elysion",
+        "level": 0
+      },
+      "chest": {
+        "type": "chest",
+        "manufacturer": "Elysion",
+        "level": 0
+      },
+      "boots": {
+        "type": "boots",
+        "manufacturer": "Elysion",
+        "level": 0
+      }
+    },
+    "skill_levels": [
+      4,
+      4,
+      4
+    ],
+    "favorite": false
+  },
+  {
+    "id": "helm",
+    "core": 6,
+    "bond": 30,
+    "equipment": {
+      "helm": {
+        "type": "helm",
+        "manufacturer": "Elysion",
+        "level": 2
+      },
+      "gloves": {
+        "type": "gloves",
+        "manufacturer": "Elysion",
+        "level": 0
+      },
+      "chest": {
+        "type": "chest",
+        "manufacturer": "Elysion",
+        "level": 3
+      },
+      "boots": {
+        "type": "boots",
+        "manufacturer": "Elysion",
+        "level": 0
+      }
+    },
+    "skill_levels": [
+      5,
+      7,
+      5
+    ],
+    "favorite": false
   }
 ]

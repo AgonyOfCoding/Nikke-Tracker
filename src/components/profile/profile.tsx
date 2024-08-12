@@ -1,5 +1,5 @@
 import { Button } from "@blueprintjs/core";
-import { color_scheme, Nikke, NikkeRarity, NikkeStaticData, RecommendationData } from "../../types";
+import { Nikke, NikkeRarity, NikkeStaticData, RecommendationData } from "../../types";
 import NikkeIconRow from "./nikkeIconRow";
 import { useDispatch } from "react-redux";
 import { addNikke } from "../../state/investment";
@@ -7,6 +7,7 @@ import { getNikkeIcon } from "../../utility/iconGetters";
 import CoreVisualization from "./coreVisualization";
 import BondVisualization from "./BondVisualization";
 import SkillDialog from "./SkillDialog";
+import FavoriteIcon from "./favoriteIcon";
 
 interface ProfileProps {
     nikke_static: NikkeStaticData;
@@ -32,6 +33,7 @@ const Profile: React.FC<ProfileProps> = ({ nikke_static, nikke_data }) => {
     
     return (
         <div style={{ alignItems: 'center' }} >
+            {nikke_data && <FavoriteIcon nikke={nikke_data} />}
             <h3 style={{ margin:0 }}>{nikke_static.name}</h3>
             <div style={styles.container}>
                 <div style={{ ...styles.background, background: getGradientColors(nikke_static.rarity) }}>
@@ -50,7 +52,7 @@ const Profile: React.FC<ProfileProps> = ({ nikke_static, nikke_data }) => {
             }
             {!nikke_data &&
                 <Button
-                    style={{ backgroundColor: color_scheme[3], color: color_scheme[0] }}
+                    style={{ margin: '10px' }}
                     intent="success"
                     text="Add Investment"
                     onClick={() => dispatch(addNikke(nikke_static.id))}

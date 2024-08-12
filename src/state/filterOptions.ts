@@ -2,6 +2,7 @@ import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { Burst, CollectionItemRarity, NikkeElement, NikkeManufacturer, NikkeRarity, NikkeRole, WeaponType } from "../types";
 
 export interface FilterOptions {
+    favorite: boolean;
     burst: Burst | undefined;
     role: NikkeRole | undefined;
     weapon: WeaponType | undefined;
@@ -12,6 +13,7 @@ export interface FilterOptions {
 }
 
 const initialState: FilterOptions = {
+    favorite: false,
     burst: undefined,
     role: undefined,
     weapon: undefined,
@@ -25,6 +27,9 @@ export const filterSlice = createSlice({
     name: "FilterOptions",
     initialState,
     reducers: {
+        toggleFavoriteFilter: (state, action: PayloadAction) => {
+            state.favorite = !state.favorite;
+        },
         setBurstFilter: (state, action: PayloadAction<Burst | undefined>) => {
             state.burst = action.payload;
         },
@@ -47,6 +52,7 @@ export const filterSlice = createSlice({
             state.collection_item_rarity = action.payload;
         },
         clearFilters(state) {
+            state.favorite = false;
             state.burst = undefined;
             state.role = undefined;
             state.weapon = undefined;
@@ -59,6 +65,7 @@ export const filterSlice = createSlice({
 })
 
 export const {
+    toggleFavoriteFilter,
     setBurstFilter,
     setRoleFilter,
     setWeaponFilter,

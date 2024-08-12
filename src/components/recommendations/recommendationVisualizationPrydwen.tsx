@@ -119,11 +119,13 @@ const RecommendationVisualizationPrydwen: React.FC<RecommendationVisualizationPr
                                 </div>
                             )}
                         </div>
-                        <div style={{ gridColumn: '2 / 3', placeContent: 'center' }} >
-                            <Tooltip content={recommendations.overloads.notes} disabled={recommendations.overloads.notes === ""} >
-                                <Button small minimal text="?" style={{ color: color_scheme[0], fontWeight: 'bold' }} />
-                            </Tooltip>
-                        </div>
+                        {recommendations.overloads.notes !== "" &&
+                            <div style={{ gridColumn: '2 / 3', placeContent: 'center' }} >
+                                <Tooltip content={recommendations.overloads.notes} >
+                                    <Button small minimal text="?" style={{ color: color_scheme[0], fontWeight: 'bold' }} />
+                                </Tooltip>
+                            </div>
+                        }
                     </div>
                 </div>
             }
@@ -154,11 +156,13 @@ const RecommendationVisualizationPrydwen: React.FC<RecommendationVisualizationPr
                             </Tooltip>
                         ))
                     }
-                    <div style={{ gridColumn: '4 / 5', placeContent: 'center' }} >
-                        <Tooltip content={recommendations.cube.notes} disabled={recommendations.cube.notes === ""} >
-                            <Button small minimal text="?" style={{ color: color_scheme[0], fontWeight: 'bold' }} />
-                        </Tooltip>
-                    </div>
+                    {recommendations.cube.notes !== "" &&
+                        <div style={{ gridColumn: '4 / 5', placeContent: 'center' }} >
+                            <Tooltip content={recommendations.cube.notes} >
+                                <Button small minimal text="?" style={{ color: color_scheme[0], fontWeight: 'bold' }} />
+                            </Tooltip>
+                        </div>
+                    }
                 </div>
             </div>
         </div>
