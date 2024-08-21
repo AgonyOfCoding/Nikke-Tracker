@@ -1,13 +1,16 @@
-{
+import { Burst, NikkeElement, NikkeManufacturer, NikkeRarity, NikkeRole, NikkeStaticData, WeaponType } from "../types";
+
+export const nikke_static_data: { [id: string]: NikkeStaticData } = {
     "2b": {
         "id": "2b",
         "name": "2B",
-        "manufacturer": "Abnormal",
-        "role": "Defender",
-        "weapon_type": "AR",
-        "rarity": "SSR",
-        "burst": "Burst III",
-        "element": "Fire",
+        "manufacturer": NikkeManufacturer.Abnormal,
+        "role": NikkeRole.Defender,
+        "weapon_type": WeaponType.AR,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_III,
+        "element": NikkeElement.Fire,
+        has_treasure: false,
         "skills": {
                 "skill_1": {
                     "name": "Survival",
@@ -60,12 +63,13 @@
     }, "a2": {
         "id": "a2",
         "name": "A2",
-        "manufacturer": "Abnormal",
-        "role": "Attacker",
-        "weapon_type": "RL",
-        "rarity": "SSR",
-        "burst": "Burst III",
-        "element": "Fire",
+        "manufacturer": NikkeManufacturer.Abnormal,
+        "role": NikkeRole.Attacker,
+        "weapon_type": WeaponType.RL,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_III,
+        "element": NikkeElement.Fire,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "name": "Output Increased",
@@ -118,12 +122,13 @@
     }, "ade": {
         "id": "ade",
         "name": "Ade",
-        "manufacturer": "Tetra",
-        "role": "Supporter",
-        "weapon_type": "AR",
-        "rarity": "SSR",
-        "burst": "Burst II",
-        "element": "Wind",
+        "manufacturer": NikkeManufacturer.Tetra,
+        "role": NikkeRole.Supporter,
+        "weapon_type": WeaponType.AR,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_II,
+        "element": NikkeElement.Wind,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "name": "Cleaning Time",
@@ -176,12 +181,13 @@
     }, "admi": {
         "id": "admi",
         "name": "Admi",
-        "manufacturer": "Missilis",
-        "role": "Supporter",
-        "weapon_type": "SR",
-        "rarity": "SSR",
-        "burst": "Burst II",
-        "element": "Wind",
+        "manufacturer": NikkeManufacturer.Missilis,
+        "role": NikkeRole.Supporter,
+        "weapon_type": WeaponType.SR,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_II,
+        "element": NikkeElement.Wind,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "name": "Helping Hand",
@@ -235,12 +241,13 @@
     }, "alice": {
         "id": "alice",
         "name": "Alice",
-        "manufacturer": "Tetra",
-        "role": "Attacker",
-        "weapon_type": "SR",
-        "rarity": "SSR",
-        "burst": "Burst III",
-        "element": "Fire",
+        "manufacturer": NikkeManufacturer.Tetra,
+        "role": NikkeRole.Attacker,
+        "weapon_type": WeaponType.SR,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_III,
+        "element": NikkeElement.Fire,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "name": "Energizing Carrot",
@@ -293,12 +300,13 @@
     }, "alice_wonderland_bunny": {
         "id": "alice_wonderland_bunny",
         "name": "Alice: Wonderland Bunny",
-        "manufacturer": "Tetra",
-        "role": "Supporter",
-        "weapon_type": "SMG",
-        "rarity": "SSR",
-        "burst": "Burst I",
-        "element": "Water",
+        "manufacturer": NikkeManufacturer.Tetra,
+        "role": NikkeRole.Supporter,
+        "weapon_type": WeaponType.SMG,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_I,
+        "element": NikkeElement.Water,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "name": "Carrot and Bunny Party",
@@ -351,12 +359,13 @@
     }, "anis_sparkling_summer": {
         "id": "anis_sparkling_summer",
         "name": "Anis: Sparkling Summer",
-        "manufacturer": "Tetra",
-        "role": "Supporter",
-        "weapon_type": "SG",
-        "rarity": "SSR",
-        "burst": "Burst III",
-        "element": "Electric",
+        "manufacturer": NikkeManufacturer.Tetra,
+        "role": NikkeRole.Supporter,
+        "weapon_type": WeaponType.SG,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_III,
+        "element": NikkeElement.Electric,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "name": "Sparkling Boost",
@@ -409,12 +418,13 @@
     }, "anne_miracle_fairy": {
         "id": "anne_miracle_fairy",
         "name": "Anne: Miracle Fairy",
-        "manufacturer": "Missilis",
-        "role": "Supporter",
-        "weapon_type": "RL",
-        "rarity": "SSR",
-        "burst": "Burst II",
-        "element": "Wind",
+        "manufacturer": NikkeManufacturer.Missilis,
+        "role": NikkeRole.Supporter,
+        "weapon_type": WeaponType.RL,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_II,
+        "element": NikkeElement.Wind,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "name": "Fairy Dance",
@@ -467,12 +477,13 @@
     }, "aria": {
         "id": "aria",
         "name": "Aria",
-        "manufacturer": "Tetra",
-        "role": "Attacker",
-        "weapon_type": "MG",
-        "rarity": "SSR",
-        "burst": "Burst II",
-        "element": "Water",
+        "manufacturer": NikkeManufacturer.Tetra,
+        "role": NikkeRole.Attacker,
+        "weapon_type": WeaponType.MG,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_II,
+        "element": NikkeElement.Water,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "name": "Allegro",
@@ -522,15 +533,75 @@
                 }
             }
         }
+    }, "asuka_shikinami_langley": {
+        id: "asuka_shikinami_langley",
+        name: "Asuka Shikinami Langley",
+        manufacturer: NikkeManufacturer.Abnormal,
+        role: NikkeRole.Attacker,
+        weapon_type: WeaponType.AR,
+        rarity: NikkeRarity.SSR,
+        burst: Burst.Burst_III,
+        element: NikkeElement.Fire,
+        has_treasure: false,
+        skills: {
+            skill_1: {
+                name: "",
+                description: "",
+                values: {
+                    1: [],
+                    2: [],
+                    3: [],
+                    4: [],
+                    5: [],
+                    6: [],
+                    7: [],
+                    8: [],
+                    9: [],
+                    10: []
+                }
+            }, skill_2: {
+                name: "",
+                description: "",
+                values: {
+                    1: [],
+                    2: [],
+                    3: [],
+                    4: [],
+                    5: [],
+                    6: [],
+                    7: [],
+                    8: [],
+                    9: [],
+                    10: []
+                }
+            }, burst_skill: {
+                cooldown: 40,
+                name: "",
+                description: "",
+                values: {
+                    1: [],
+                    2: [],
+                    3: [],
+                    4: [],
+                    5: [],
+                    6: [],
+                    7: [],
+                    8: [],
+                    9: [],
+                    10: []
+                }
+            }
+        }
     }, "bay": {
         "id": "bay",
         "name": "Bay",
-        "manufacturer": "Tetra",
-        "role": "Defender",
-        "weapon_type": "RL",
-        "rarity": "SSR",
-        "burst": "Burst II",
-        "element": "Fire",
+        "manufacturer": NikkeManufacturer.Tetra,
+        "role": NikkeRole.Defender,
+        "weapon_type": WeaponType.RL,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_II,
+        "element": NikkeElement.Fire,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "name": "You Can Do It",
@@ -583,12 +654,13 @@
     }, "biscuit": {
         "id": "biscuit",
         "name": "Biscuit",
-        "manufacturer": "Tetra",
-        "role": "Supporter",
-        "weapon_type": "RL",
-        "rarity": "SSR",
-        "burst": "Burst II",
-        "element": "Electric",
+        "manufacturer": NikkeManufacturer.Tetra,
+        "role": NikkeRole.Supporter,
+        "weapon_type": WeaponType.RL,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_II,
+        "element": NikkeElement.Electric,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "name": "Happy Puppy",
@@ -641,12 +713,13 @@
     }, "blanc": {
         "id": "blanc",
         "name": "Blanc",
-        "manufacturer": "Tetra",
-        "role": "Defender",
-        "weapon_type": "AR",
-        "rarity": "SSR",
-        "burst": "Burst II",
-        "element": "Wind",
+        "manufacturer": NikkeManufacturer.Tetra,
+        "role": NikkeRole.Defender,
+        "weapon_type": WeaponType.AR,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_II,
+        "element": NikkeElement.Wind,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "name": "Lucky Guard",
@@ -699,12 +772,13 @@
     }, "brid": {
         "id": "brid",
         "name": "Brid",
-        "manufacturer": "Elysion",
-        "role": "Attacker",
-        "weapon_type": "AR",
-        "rarity": "SSR",
-        "burst": "Burst III",
-        "element": "Water",
+        "manufacturer": NikkeManufacturer.Elysion,
+        "role": NikkeRole.Attacker,
+        "weapon_type": WeaponType.AR,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_III,
+        "element": NikkeElement.Water,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "name": "Acceleration",
@@ -758,12 +832,13 @@
     }, "centi": {
         "id": "centi",
         "name": "Centi",
-        "manufacturer": "Missilis",
-        "role": "Defender",
-        "weapon_type": "RL",
-        "rarity": "SSR",
-        "burst": "Burst II",
-        "element": "Iron",
+        "manufacturer": NikkeManufacturer.Missilis,
+        "role": NikkeRole.Defender,
+        "weapon_type": WeaponType.RL,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_II,
+        "element": NikkeElement.Iron,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "name": "Maintain Fortification",
@@ -817,12 +892,13 @@
     }, "clay": {
         "id": "clay",
         "name": "Clay",
-        "manufacturer": "Tetra",
-        "role": "Supporter",
-        "weapon_type": "SMG",
-        "rarity": "SSR",
-        "burst": "Burst II",
-        "element": "Electric",
+        "manufacturer": NikkeManufacturer.Tetra,
+        "role": NikkeRole.Supporter,
+        "weapon_type": WeaponType.SMG,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_II,
+        "element": NikkeElement.Electric,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "name": "DON'T MISS!",
@@ -875,12 +951,13 @@
     }, "cocoa": {
         "id": "cocoa",
         "name": "Cocoa",
-        "manufacturer": "Tetra",
-        "role": "Supporter",
-        "weapon_type": "SR",
-        "rarity": "SSR",
-        "burst": "Burst I",
-        "element": "Fire",
+        "manufacturer": NikkeManufacturer.Tetra,
+        "role": NikkeRole.Supporter,
+        "weapon_type": WeaponType.SR,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_I,
+        "element": NikkeElement.Fire,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "cooldown": 15,
@@ -934,12 +1011,13 @@
     }, "crow": {
         "id": "crow",
         "name": "Crow",
-        "manufacturer": "Missilis",
-        "role": "Defender",
-        "weapon_type": "SMG",
-        "rarity": "SSR",
-        "burst": "Burst III",
-        "element": "Fire",
+        "manufacturer": NikkeManufacturer.Missilis,
+        "role": NikkeRole.Defender,
+        "weapon_type": WeaponType.SMG,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_III,
+        "element": NikkeElement.Fire,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "name": "Killing Time",
@@ -992,12 +1070,13 @@
     }, "crown": {
         "id": "crown",
         "name": "Crown",
-        "manufacturer": "Pilgrim",
-        "role": "Defender",
-        "weapon_type": "MG",
-        "rarity": "SSR",
-        "burst": "Burst II",
-        "element": "Iron",
+        "manufacturer": NikkeManufacturer.Pilgrim,
+        "role": NikkeRole.Defender,
+        "weapon_type": WeaponType.MG,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_II,
+        "element": NikkeElement.Iron,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "name": "One for All",
@@ -1050,12 +1129,13 @@
     }, "d": {
         "id": "d",
         "name": "D",
-        "manufacturer": "Elysion",
-        "role": "Attacker",
-        "weapon_type": "SMG",
-        "rarity": "SSR",
-        "burst": "Burst III",
-        "element": "Wind",
+        "manufacturer": NikkeManufacturer.Elysion,
+        "role": NikkeRole.Attacker,
+        "weapon_type": WeaponType.SMG,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_II,
+        "element": NikkeElement.Wind,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "name": "Vigorous Waves",
@@ -1108,12 +1188,13 @@
     }, "d_killer_wife": {
         "id": "d_killer_wife",
         "name": "D: Killer Wife",
-        "manufacturer": "Elysion",
-        "role": "Supporter",
-        "weapon_type": "SR",
-        "rarity": "SSR",
-        "burst": "Burst I",
-        "element": "Fire",
+        "manufacturer": NikkeManufacturer.Elysion,
+        "role": NikkeRole.Supporter,
+        "weapon_type": WeaponType.SR,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_I,
+        "element": NikkeElement.Fire,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "name": "Calm Sniping",
@@ -1166,12 +1247,13 @@
     }, "diesel": {
         "id": "diesel",
         "name": "Diesel",
-        "manufacturer": "Elysion",
-        "role": "Defender",
-        "weapon_type": "MG",
-        "rarity": "SSR",
-        "burst": "Burst II",
-        "element": "Wind",
+        "manufacturer": NikkeManufacturer.Elysion,
+        "role": NikkeRole.Defender,
+        "weapon_type": WeaponType.MG,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_II,
+        "element": NikkeElement.Wind,
+        has_treasure: true,
         "skills": {
             "skill_1": {
                 "name": "Strawberry Fields",
@@ -1224,12 +1306,13 @@
     }, "dolla": {
         "id": "dolla",
         "name": "Dolla",
-        "manufacturer": "Tetra",
-        "role": "Supporter",
-        "weapon_type": "SR",
-        "rarity": "SSR",
-        "burst": "Burst II",
-        "element": "Wind",
+        "manufacturer": NikkeManufacturer.Tetra,
+        "role": NikkeRole.Supporter,
+        "weapon_type": WeaponType.SR,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_II,
+        "element": NikkeElement.Wind,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "cooldown": 10,
@@ -1283,12 +1366,13 @@
     }, "dorothy": {
         "id": "dorothy",
         "name": "Dorothy",
-        "manufacturer": "Pilgrim",
-        "role": "Supporter",
-        "weapon_type": "AR",
-        "rarity": "SSR",
-        "burst": "Burst I",
-        "element": "Water",
+        "manufacturer": NikkeManufacturer.Pilgrim,
+        "role": NikkeRole.Supporter,
+        "weapon_type": WeaponType.AR,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_I,
+        "element": NikkeElement.Water,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "name": "Holy Fire",
@@ -1342,12 +1426,13 @@
     }, "drake": {
         "id": "drake",
         "name": "Drake",
-        "manufacturer": "Missilis",
-        "role": "Attacker",
-        "weapon_type": "SG",
-        "rarity": "SSR",
-        "burst": "Burst III",
-        "element": "Fire",
+        "manufacturer": NikkeManufacturer.Missilis,
+        "role": NikkeRole.Attacker,
+        "weapon_type": WeaponType.SG,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_III,
+        "element": NikkeElement.Fire,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "name": "Overcharge",
@@ -1400,12 +1485,13 @@
     }, "ein": {
         "id": "ein",
         "name": "Ein",
-        "manufacturer": "Missilis",
-        "role": "Attacker",
-        "weapon_type": "SR",
-        "rarity": "SSR",
-        "burst": "Burst III",
-        "element": "Electric",
+        "manufacturer": NikkeManufacturer.Missilis,
+        "role": NikkeRole.Attacker,
+        "weapon_type": WeaponType.SR,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_III,
+        "element": NikkeElement.Electric,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "name": "Feather Standby",
@@ -1458,12 +1544,13 @@
     }, "elegg": {
         "id": "elegg",
         "name": "Elegg",
-        "manufacturer": "Missilis",
-        "role": "Supporter",
-        "weapon_type": "MG",
-        "rarity": "SSR",
-        "burst": "Burst II",
-        "element": "Electric",
+        "manufacturer": NikkeManufacturer.Missilis,
+        "role": NikkeRole.Supporter,
+        "weapon_type": WeaponType.MG,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_II,
+        "element": NikkeElement.Electric,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "name": "Short Circuit",
@@ -1516,12 +1603,13 @@
     }, "emilia": {
         "id": "emilia",
         "name": "Emilia",
-        "manufacturer": "Abnormal",
-        "role": "Attacker",
-        "weapon_type": "RL",
-        "rarity": "SSR",
-        "burst": "Burst III",
-        "element": "Water",
+        "manufacturer": NikkeManufacturer.Abnormal,
+        "role": NikkeRole.Attacker,
+        "weapon_type": WeaponType.RL,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_III,
+        "element": NikkeElement.Water,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "name": "Lesser Spirit's Blessing",
@@ -1574,12 +1662,13 @@
     }, "emma": {
         "id": "emma",
         "name": "Emma",
-        "manufacturer": "Elysion",
-        "role": "Supporter",
-        "weapon_type": "MG",
-        "rarity": "SSR",
-        "burst": "Burst I",
-        "element": "Fire",
+        "manufacturer": NikkeManufacturer.Elysion,
+        "role": NikkeRole.Supporter,
+        "weapon_type": WeaponType.MG,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_I,
+        "element": NikkeElement.Fire,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "name": "Cheerleading",
@@ -1632,12 +1721,13 @@
     }, "epinel": {
         "id": "epinel",
         "name": "Epinel",
-        "manufacturer": "Missilis",
-        "role": "Attacker",
-        "weapon_type": "SMG",
-        "rarity": "SSR",
-        "burst": "Burst III",
-        "element": "Wind",
+        "manufacturer": NikkeManufacturer.Missilis,
+        "role": NikkeRole.Attacker,
+        "weapon_type": WeaponType.SMG,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_III,
+        "element": NikkeElement.Wind,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "name": "Total Noob",
@@ -1690,12 +1780,13 @@
     }, "eunhwa": {
         "id": "eunhwa",
         "name": "Eunhwa",
-        "manufacturer": "Elysion",
-        "role": "Attacker",
-        "weapon_type": "SR",
-        "rarity": "SSR",
-        "burst": "Burst II",
-        "element": "Fire",
+        "manufacturer": NikkeManufacturer.Elysion,
+        "role": NikkeRole.Attacker,
+        "weapon_type": WeaponType.SR,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_II,
+        "element": NikkeElement.Fire,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "name": "Ready and Able",
@@ -1748,12 +1839,13 @@
     }, "exia": {
         "id": "exia",
         "name": "Exia",
-        "manufacturer": "Tetra",
-        "role": "Supporter",
-        "weapon_type": "SR",
-        "rarity": "SSR",
-        "burst": "Burst I",
-        "element": "Electric",
+        "manufacturer": NikkeManufacturer.Tetra,
+        "role": NikkeRole.Supporter,
+        "weapon_type": WeaponType.SR,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_I,
+        "element": NikkeElement.Electric,
+        has_treasure: true,
         "skills": {
             "skill_1": {
                 "name": "Invasion",
@@ -1806,12 +1898,13 @@
     }, "folkwang": {
         "id": "folkwang",
         "name": "Folkwang",
-        "manufacturer": "Tetra",
-        "role": "Defender",
-        "weapon_type": "AR",
-        "rarity": "SSR",
-        "burst": "Burst II",
-        "element": "Water",
+        "manufacturer": NikkeManufacturer.Tetra,
+        "role": NikkeRole.Defender,
+        "weapon_type": WeaponType.AR,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_II,
+        "element": NikkeElement.Water,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "cooldown": 30,
@@ -1866,12 +1959,13 @@
     }, "frima": {
         "id": "frima",
         "name": "Frima",
-        "manufacturer": "Tetra",
-        "role": "Supporter",
-        "weapon_type": "SR",
-        "rarity": "SSR",
-        "burst": "Burst I",
-        "element": "Iron",
+        "manufacturer": NikkeManufacturer.Tetra,
+        "role": NikkeRole.Supporter,
+        "weapon_type": WeaponType.SR,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_I,
+        "element": NikkeElement.Iron,
+        has_treasure: true,
         "skills": {
             "skill_1": {
                 "name": "... I want to sleep",
@@ -1924,12 +2018,13 @@
     }, "guillotine": {
         "id": "guillotine",
         "name": "Guillotine",
-        "manufacturer": "Elysion",
-        "role": "Attacker",
-        "weapon_type": "MG",
-        "rarity": "SSR",
-        "burst": "Burst III",
-        "element": "Electric",
+        "manufacturer": NikkeManufacturer.Elysion,
+        "role": NikkeRole.Attacker,
+        "weapon_type": WeaponType.MG,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_III,
+        "element": NikkeElement.Electric,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "name": "Residual Heat",
@@ -1982,12 +2077,13 @@
     }, "guilty": {
         "id": "guilty",
         "name": "Guilty",
-        "manufacturer": "Missilis",
-        "role": "Attacker",
-        "weapon_type": "SG",
-        "rarity": "SSR",
-        "burst": "Burst II",
-        "element": "Wind",
+        "manufacturer": NikkeManufacturer.Missilis,
+        "role": NikkeRole.Attacker,
+        "weapon_type": WeaponType.SG,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_II,
+        "element": NikkeElement.Wind,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "name": "Mind If I Borrow This?",
@@ -2040,12 +2136,13 @@
     }, "harran": {
         "id": "harran",
         "name": "Harran",
-        "manufacturer": "Pilgrim",
-        "role": "Attacker",
-        "weapon_type": "SR",
-        "rarity": "SSR",
-        "burst": "Burst III",
-        "element": "Electric",
+        "manufacturer": NikkeManufacturer.Pilgrim,
+        "role": NikkeRole.Attacker,
+        "weapon_type": WeaponType.SR,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_III,
+        "element": NikkeElement.Electric,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "name": "Plague Transfer",
@@ -2098,12 +2195,13 @@
     }, "helm": {
         "id": "helm",
         "name": "Helm",
-        "manufacturer": "Elysion",
-        "role": "Attacker",
-        "weapon_type": "SR",
-        "rarity": "SSR",
-        "burst": "Burst III",
-        "element": "Water",
+        "manufacturer": NikkeManufacturer.Elysion,
+        "role": NikkeRole.Attacker,
+        "weapon_type": WeaponType.SR,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_III,
+        "element": NikkeElement.Water,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "name": "Frontline Command",
@@ -2156,12 +2254,13 @@
     }, "helm_aquamarine": {
         "id": "helm_aquamarine",
         "name": "Helm: Aquamarine",
-        "manufacturer": "Elysion",
-        "role": "Attacker",
-        "weapon_type": "AR",
-        "rarity": "SSR",
-        "burst": "Burst II",
-        "element": "Iron",
+        "manufacturer": NikkeManufacturer.Elysion,
+        "role": NikkeRole.Attacker,
+        "weapon_type": WeaponType.AR,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_II,
+        "element": NikkeElement.Iron,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "name": "Admire Accompaniment",
@@ -2215,12 +2314,13 @@
     }, "isabel": {
         "id": "isabel",
         "name": "Isabel",
-        "manufacturer": "Pilgrim",
-        "role": "Attacker",
-        "weapon_type": "SG",
-        "rarity": "SSR",
-        "burst": "Burst III",
-        "element": "Electric",
+        "manufacturer": NikkeManufacturer.Pilgrim,
+        "role": NikkeRole.Attacker,
+        "weapon_type": WeaponType.SG,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_III,
+        "element": NikkeElement.Electric,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "name": "Marked Target",
@@ -2274,12 +2374,13 @@
     }, "jackal": {
         "id": "jackal",
         "name": "Jackal",
-        "manufacturer": "Missilis",
-        "role": "Defender",
-        "weapon_type": "RL",
-        "rarity": "SSR",
-        "burst": "Burst I",
-        "element": "Iron",
+        "manufacturer": NikkeManufacturer.Missilis,
+        "role": NikkeRole.Defender,
+        "weapon_type": WeaponType.RL,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_I,
+        "element": NikkeElement.Iron,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "name": "Happy Jackal",
@@ -2332,12 +2433,13 @@
     }, "julia": {
         "id": "julia",
         "name": "Julia",
-        "manufacturer": "Missilis",
-        "role": "Attacker",
-        "weapon_type": "AR",
-        "rarity": "SSR",
-        "burst": "Burst III",
-        "element": "Iron",
+        "manufacturer": NikkeManufacturer.Missilis,
+        "role": NikkeRole.Attacker,
+        "weapon_type": WeaponType.AR,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_III,
+        "element": NikkeElement.Iron,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "cooldown": 20,
@@ -2391,12 +2493,13 @@
     }, "kilo": {
         "id": "kilo",
         "name": "Kilo",
-        "manufacturer": "Missilis",
-        "role": "Defender",
-        "weapon_type": "MG",
-        "rarity": "SSR",
-        "burst": "Burst III",
-        "element": "Fire",
+        "manufacturer": NikkeManufacturer.Missilis,
+        "role": NikkeRole.Defender,
+        "weapon_type": WeaponType.MG,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_III,
+        "element": NikkeElement.Fire,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "name": "Nano Coating",
@@ -2449,12 +2552,13 @@
     }, "laplace": {
         "id": "laplace",
         "name": "Laplace",
-        "manufacturer": "Missilis",
-        "role": "Attacker",
-        "weapon_type": "RL",
-        "rarity": "SSR",
-        "burst": "Burst III",
-        "element": "Iron",
+        "manufacturer": NikkeManufacturer.Missilis,
+        "role": NikkeRole.Attacker,
+        "weapon_type": WeaponType.RL,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_III,
+        "element": NikkeElement.Iron,
+        has_treasure: true,
         "skills": {
             "skill_1": {
                 "name": "Hero Vision",
@@ -2507,12 +2611,13 @@
     }, "leona": {
         "id": "leona",
         "name": "Leona",
-        "manufacturer": "Tetra",
-        "role": "Supporter",
-        "weapon_type": "SG",
-        "rarity": "SSR",
-        "burst": "Burst II",
-        "element": "Water",
+        "manufacturer": NikkeManufacturer.Tetra,
+        "role": NikkeRole.Supporter,
+        "weapon_type": WeaponType.SG,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_II,
+        "element": NikkeElement.Water,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "name": "Thunderous Roar",
@@ -2565,12 +2670,13 @@
     }, "liter": {
         "id": "liter",
         "name": "Liter",
-        "manufacturer": "Missilis",
-        "role": "Supporter",
-        "weapon_type": "SMG",
-        "rarity": "SSR",
-        "burst": "Burst I",
-        "element": "Iron",
+        "manufacturer": NikkeManufacturer.Missilis,
+        "role": NikkeRole.Supporter,
+        "weapon_type": WeaponType.SMG,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_I,
+        "element": NikkeElement.Iron,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "name": "Liter Boost",
@@ -2624,12 +2730,13 @@
     }, "ludmilla": {
         "id": "ludmilla",
         "name": "Ludmilla",
-        "manufacturer": "Tetra",
-        "role": "Defender",
-        "weapon_type": "SMG",
-        "rarity": "SSR",
-        "burst": "Burst I",
-        "element": "Water",
+        "manufacturer": NikkeManufacturer.Tetra,
+        "role": NikkeRole.Defender,
+        "weapon_type": WeaponType.SMG,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_I,
+        "element": NikkeElement.Water,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "name": "Noblesse Oblige",
@@ -2682,12 +2789,13 @@
     }, "ludmilla_winter_owner": {
         "id": "ludmilla_winter_owner",
         "name": "Ludmilla: Winter Owner",
-        "manufacturer": "Tetra",
-        "role": "Attacker",
-        "weapon_type": "MG",
-        "rarity": "SSR",
-        "burst": "Burst III",
-        "element": "Water",
+        "manufacturer": NikkeManufacturer.Tetra,
+        "role": NikkeRole.Attacker,
+        "weapon_type": WeaponType.MG,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_III,
+        "element": NikkeElement.Water,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "name": "The Queen's Gaze",
@@ -2740,12 +2848,13 @@
     }, "maiden": {
         "id": "maiden",
         "name": "Maiden",
-        "manufacturer": "Elysion",
-        "role": "Attacker",
-        "weapon_type": "SG",
-        "rarity": "SSR",
-        "burst": "Burst III",
-        "element": "Electric",
+        "manufacturer": NikkeManufacturer.Elysion,
+        "role": NikkeRole.Attacker,
+        "weapon_type": WeaponType.SG,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_III,
+        "element": NikkeElement.Electric,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "name": "Kotodama: Words of Skill",
@@ -2799,12 +2908,13 @@
     }, "makima": {
         "id": "makima",
         "name": "Makima",
-        "manufacturer": "Abnormal",
-        "role": "Defender",
-        "weapon_type": "SMG",
-        "rarity": "SSR",
-        "burst": "Burst II",
-        "element": "Water",
+        "manufacturer": NikkeManufacturer.Abnormal,
+        "role": NikkeRole.Defender,
+        "weapon_type": WeaponType.SMG,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_II,
+        "element": NikkeElement.Water,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "name": "Show Me What You Got",
@@ -2857,12 +2967,13 @@
     }, "marciana": {
         "id": "marciana",
         "name": "Marciana",
-        "manufacturer": "Elysion",
-        "role": "Supporter",
-        "weapon_type": "SG",
-        "rarity": "SSR",
-        "burst": "Burst II",
-        "element": "Iron",
+        "manufacturer": NikkeManufacturer.Elysion,
+        "role": NikkeRole.Supporter,
+        "weapon_type": WeaponType.SG,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_II,
+        "element": NikkeElement.Iron,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "name": "Drone Supporter",
@@ -2912,15 +3023,75 @@
                 }
             }
         }
+    }, "mari_makinami_illustrious": {
+        id: "mari_makinami_illustrious",
+        name: "Mari Makinami Illustrious",
+        manufacturer: NikkeManufacturer.Abnormal,
+        role: NikkeRole.Supporter,
+        weapon_type: WeaponType.SR,
+        rarity: NikkeRarity.SSR,
+        burst: Burst.Burst_II,
+        element: NikkeElement.Electric,
+        has_treasure: false,
+        skills: {
+            skill_1: {
+                name: "",
+                description: "",
+                values: {
+                    1: [],
+                    2: [],
+                    3: [],
+                    4: [],
+                    5: [],
+                    6: [],
+                    7: [],
+                    8: [],
+                    9: [],
+                    10: []
+                }
+            }, skill_2: {
+                name: "",
+                description: "",
+                values: {
+                    1: [],
+                    2: [],
+                    3: [],
+                    4: [],
+                    5: [],
+                    6: [],
+                    7: [],
+                    8: [],
+                    9: [],
+                    10: []
+                }
+            }, burst_skill: {
+                cooldown: 40,
+                name: "",
+                description: "",
+                values: {
+                    1: [],
+                    2: [],
+                    3: [],
+                    4: [],
+                    5: [],
+                    6: [],
+                    7: [],
+                    8: [],
+                    9: [],
+                    10: []
+                }
+            }
+        }
     }, "mary": {
         "id": "mary",
         "name": "Mary",
-        "manufacturer": "Tetra",
-        "role": "Supporter",
-        "weapon_type": "SG",
-        "rarity": "SSR",
-        "burst": "Burst I",
-        "element": "Water",
+        "manufacturer": NikkeManufacturer.Tetra,
+        "role": NikkeRole.Supporter,
+        "weapon_type": WeaponType.SG,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_I,
+        "element": NikkeElement.Water,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "name": "CPR",
@@ -2973,12 +3144,13 @@
     }, "mary_bay_goddess": {
         "id": "mary_bay_goddess",
         "name": "Mary: Bay Goddess",
-        "manufacturer": "Tetra",
-        "role": "Supporter",
-        "weapon_type": "SR",
-        "rarity": "SSR",
-        "burst": "Burst I",
-        "element": "Water",
+        "manufacturer": NikkeManufacturer.Tetra,
+        "role": NikkeRole.Supporter,
+        "weapon_type": WeaponType.SR,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_I,
+        "element": NikkeElement.Water,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "name": "Seaside Sunshine",
@@ -3031,12 +3203,13 @@
     }, "mast": {
         "id": "mast",
         "name": "Mast",
-        "manufacturer": "Elysion",
-        "role": "Supporter",
-        "weapon_type": "SMG",
-        "rarity": "SSR",
-        "burst": "Burst II",
-        "element": "Electric",
+        "manufacturer": NikkeManufacturer.Elysion,
+        "role": NikkeRole.Supporter,
+        "weapon_type": WeaponType.SMG,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_II,
+        "element": NikkeElement.Electric,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "name": "Pirate's Grit",
@@ -3089,12 +3262,13 @@
     }, "maxwell": {
         "id": "maxwell",
         "name": "Maxwell",
-        "manufacturer": "Missilis",
-        "role": "Attacker",
-        "weapon_type": "SR",
-        "rarity": "SSR",
-        "burst": "Burst III",
-        "element": "Iron",
+        "manufacturer": NikkeManufacturer.Missilis,
+        "role": NikkeRole.Attacker,
+        "weapon_type": WeaponType.SR,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_III,
+        "element": NikkeElement.Iron,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "name": "Straight Shot",
@@ -3147,12 +3321,13 @@
     }, "mica_snow_buddy": {
         "id": "mica_snow_buddy",
         "name": "Mica: Snow Buddy",
-        "manufacturer": "Tetra",
-        "role": "Supporter",
-        "weapon_type": "SMG",
-        "rarity": "SSR",
-        "burst": "Burst I",
-        "element": "Iron",
+        "manufacturer": NikkeManufacturer.Tetra,
+        "role": NikkeRole.Supporter,
+        "weapon_type": WeaponType.SMG,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_I,
+        "element": NikkeElement.Iron,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "name": "Tidying Up",
@@ -3205,12 +3380,13 @@
     }, "milk": {
         "id": "milk",
         "name": "Milk",
-        "manufacturer": "Tetra",
-        "role": "Attacker",
-        "weapon_type": "SR",
-        "rarity": "SSR",
-        "burst": "Burst I",
-        "element": "Water",
+        "manufacturer": NikkeManufacturer.Tetra,
+        "role": NikkeRole.Attacker,
+        "weapon_type": WeaponType.SR,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_I,
+        "element": NikkeElement.Water,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "cooldown": 20,
@@ -3264,12 +3440,13 @@
     }, "miranda": {
         "id": "miranda",
         "name": "Miranda",
-        "manufacturer": "Elysion",
-        "role": "Supporter",
-        "weapon_type": "SMG",
-        "rarity": "SSR",
-        "burst": "Burst I",
-        "element": "Fire",
+        "manufacturer": NikkeManufacturer.Elysion,
+        "role": NikkeRole.Supporter,
+        "weapon_type": WeaponType.SMG,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_I,
+        "element": NikkeElement.Fire,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "name": "Health up!",
@@ -3322,12 +3499,13 @@
     }, "modernia": {
         "id": "modernia",
         "name": "Modernia",
-        "manufacturer": "Pilgrim",
-        "role": "Attacker",
-        "weapon_type": "MG",
-        "rarity": "SSR",
-        "burst": "Burst III",
-        "element": "Fire",
+        "manufacturer": NikkeManufacturer.Pilgrim,
+        "role": NikkeRole.Attacker,
+        "weapon_type": WeaponType.MG,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_III,
+        "element": NikkeElement.Fire,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "name": "High-Speed Evolution",
@@ -3380,12 +3558,13 @@
     }, "moran": {
         "id": "moran",
         "name": "Moran",
-        "manufacturer": "Tetra",
-        "role": "Defender",
-        "weapon_type": "AR",
-        "rarity": "SSR",
-        "burst": "Burst I",
-        "element": "Electric",
+        "manufacturer": NikkeManufacturer.Tetra,
+        "role": NikkeRole.Defender,
+        "weapon_type": WeaponType.AR,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_I,
+        "element": NikkeElement.Electric,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "name": "Bring It On!",
@@ -3438,12 +3617,13 @@
     }, "naga": {
         "id": "naga",
         "name": "Naga",
-        "manufacturer": "Missilis",
-        "role": "Supporter",
-        "weapon_type": "SG",
-        "rarity": "SSR",
-        "burst": "Burst II",
-        "element": "Electric",
+        "manufacturer": NikkeManufacturer.Missilis,
+        "role": NikkeRole.Supporter,
+        "weapon_type": WeaponType.SG,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_II,
+        "element": NikkeElement.Electric,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "name": "Guardian of Friendship",
@@ -3496,12 +3676,13 @@
     }, "neon_blue_ocean": {
         "id": "neon_blue_ocean",
         "name": "Neon: Blue Ocean",
-        "manufacturer": "Elysion",
-        "role": "Attacker",
-        "weapon_type": "MG",
-        "rarity": "SSR",
-        "burst": "Burst III",
-        "element": "Water",
+        "manufacturer": NikkeManufacturer.Elysion,
+        "role": NikkeRole.Attacker,
+        "weapon_type": WeaponType.MG,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_III,
+        "element": NikkeElement.Water,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "name": "Upper Wave",
@@ -3554,12 +3735,13 @@
     }, "nero": {
         "id": "nero",
         "name": "Nero",
-        "manufacturer": "Tetra",
-        "role": "Defender",
-        "weapon_type": "SMG",
-        "rarity": "SSR",
-        "burst": "Burst II",
-        "element": "Fire",
+        "manufacturer": NikkeManufacturer.Tetra,
+        "role": NikkeRole.Defender,
+        "weapon_type": WeaponType.SMG,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_II,
+        "element": NikkeElement.Fire,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "name": "Cat's Repayment",
@@ -3612,12 +3794,13 @@
     }, "nihilister": {
         "id": "nihilister",
         "name": "Nihilister",
-        "manufacturer": "Pilgrim",
-        "role": "Attacker",
-        "weapon_type": "SR",
-        "rarity": "SSR",
-        "burst": "Burst II",
-        "element": "Fire",
+        "manufacturer": NikkeManufacturer.Pilgrim,
+        "role": NikkeRole.Attacker,
+        "weapon_type": WeaponType.SR,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_II,
+        "element": NikkeElement.Fire,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "name": "Burning Shot",
@@ -3671,12 +3854,13 @@
     }, "noah": {
         "id": "noah",
         "name": "Noah",
-        "manufacturer": "Pilgrim",
-        "role": "Defender",
-        "weapon_type": "RL",
-        "rarity": "SSR",
-        "burst": "Burst II",
-        "element": "Wind",
+        "manufacturer": NikkeManufacturer.Pilgrim,
+        "role": NikkeRole.Defender,
+        "weapon_type": WeaponType.RL,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_II,
+        "element": NikkeElement.Wind,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "name": "This is Gonna Hurt",
@@ -3729,12 +3913,13 @@
     }, "noir": {
         "id": "noir",
         "name": "Noir",
-        "manufacturer": "Tetra",
-        "role": "Attacker",
-        "weapon_type": "SG",
-        "rarity": "SSR",
-        "burst": "Burst III",
-        "element": "Wind",
+        "manufacturer": NikkeManufacturer.Tetra,
+        "role": NikkeRole.Attacker,
+        "weapon_type": WeaponType.SG,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_III,
+        "element": NikkeElement.Wind,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "name": "Lucky Charm",
@@ -3787,12 +3972,13 @@
     }, "noise": {
         "id": "noise",
         "name": "Noise",
-        "manufacturer": "Tetra",
-        "role": "Supporter",
-        "weapon_type": "RL",
-        "rarity": "SSR",
-        "burst": "Burst I",
-        "element": "Electric",
+        "manufacturer": NikkeManufacturer.Tetra,
+        "role": NikkeRole.Supporter,
+        "weapon_type": WeaponType.RL,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_I,
+        "element": NikkeElement.Electric,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "name": "Chorus",
@@ -3845,12 +4031,13 @@
     }, "novel": {
         "id": "novel",
         "name": "Novel",
-        "manufacturer": "Tetra",
-        "role": "Defender",
-        "weapon_type": "SMG",
-        "rarity": "SSR",
-        "burst": "Burst II",
-        "element": "Iron",
+        "manufacturer": NikkeManufacturer.Tetra,
+        "role": NikkeRole.Defender,
+        "weapon_type": WeaponType.SMG,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_II,
+        "element": NikkeElement.Iron,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "cooldown": 10,
@@ -3904,12 +4091,13 @@
     }, "pepper": {
         "id": "pepper",
         "name": "Pepper",
-        "manufacturer": "Missilis",
-        "role": "Supporter",
-        "weapon_type": "SG",
-        "rarity": "SSR",
-        "burst": "Burst I",
-        "element": "Wind",
+        "manufacturer": NikkeManufacturer.Missilis,
+        "role": NikkeRole.Supporter,
+        "weapon_type": WeaponType.SG,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_I,
+        "element": NikkeElement.Wind,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "name": "Refresh Heart",
@@ -3963,12 +4151,13 @@
     }, "poli": {
         "id": "poli",
         "name": "Poli",
-        "manufacturer": "Elysion",
-        "role": "Defender",
-        "weapon_type": "SG",
-        "rarity": "SSR",
-        "burst": "Burst II",
-        "element": "Water",
+        "manufacturer": NikkeManufacturer.Elysion,
+        "role": NikkeRole.Defender,
+        "weapon_type": WeaponType.SG,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_II,
+        "element": NikkeElement.Water,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "name": "Brave Call",
@@ -4022,12 +4211,13 @@
     }, "power": {
         "id": "power",
         "name": "Power",
-        "manufacturer": "Abnormal",
-        "role": "Attacker",
-        "weapon_type": "RL",
-        "rarity": "SSR",
-        "burst": "Burst III",
-        "element": "Fire",
+        "manufacturer": NikkeManufacturer.Abnormal,
+        "role": NikkeRole.Attacker,
+        "weapon_type": WeaponType.RL,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_III,
+        "element": NikkeElement.Fire,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "name": "Blood Fiend",
@@ -4080,12 +4270,13 @@
     }, "privaty": {
         "id": "privaty",
         "name": "Privaty",
-        "manufacturer": "Elysion",
-        "role": "Attacker",
-        "weapon_type": "AR",
-        "rarity": "SSR",
-        "burst": "Burst III",
-        "element": "Water",
+        "manufacturer": NikkeManufacturer.Elysion,
+        "role": NikkeRole.Attacker,
+        "weapon_type": WeaponType.AR,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_III,
+        "element": NikkeElement.Water,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "name": "EX magazine",
@@ -4138,12 +4329,13 @@
     }, "privaty_unkind_maid": {
         "id": "privaty_unkind_maid",
         "name": "Privaty: Unkind Maid",
-        "manufacturer": "Elysion",
-        "role": "Attacker",
-        "weapon_type": "SG",
-        "rarity": "SSR",
-        "burst": "Burst III",
-        "element": "Electric",
+        "manufacturer": NikkeManufacturer.Elysion,
+        "role": NikkeRole.Attacker,
+        "weapon_type": WeaponType.SG,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_III,
+        "element": NikkeElement.Electric,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "name": "Passionate Maid",
@@ -4196,12 +4388,13 @@
     }, "quency": {
         "id": "quency",
         "name": "Quency",
-        "manufacturer": "Missilis",
-        "role": "Supporter",
-        "weapon_type": "SMG",
-        "rarity": "SSR",
-        "burst": "Burst II",
-        "element": "Electric",
+        "manufacturer": NikkeManufacturer.Missilis,
+        "role": NikkeRole.Supporter,
+        "weapon_type": WeaponType.SMG,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_II,
+        "element": NikkeElement.Electric,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "name": "New Route",
@@ -4255,12 +4448,13 @@
     }, "quiry": {
         "id": "quiry",
         "name": "Quiry",
-        "manufacturer": "Elysion",
-        "role": "Supporter",
-        "weapon_type": "RL",
-        "rarity": "SSR",
-        "burst": "Burst III",
-        "element": "Wind",
+        "manufacturer": NikkeManufacturer.Elysion,
+        "role": NikkeRole.Supporter,
+        "weapon_type": WeaponType.RL,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_III,
+        "element": NikkeElement.Wind,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "name": "Glance",
@@ -4313,12 +4507,13 @@
     }, "rapunzel": {
         "id": "rapunzel",
         "name": "Rapunzel",
-        "manufacturer": "Pilgrim",
-        "role": "Supporter",
-        "weapon_type": "RL",
-        "rarity": "SSR",
-        "burst": "Burst I",
-        "element": "Iron",
+        "manufacturer": NikkeManufacturer.Pilgrim,
+        "role": NikkeRole.Supporter,
+        "weapon_type": WeaponType.RL,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_I,
+        "element": NikkeElement.Iron,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "name": "Sacrifice",
@@ -4372,12 +4567,13 @@
     }, "red_hood": {
         "id": "red_hood",
         "name": "Red Hood",
-        "manufacturer": "Pilgrim",
-        "role": "Attacker",
-        "weapon_type": "SR",
-        "rarity": "SSR",
-        "burst": "Burst Lambda",
-        "element": "Iron",
+        "manufacturer": NikkeManufacturer.Pilgrim,
+        "role": NikkeRole.Attacker,
+        "weapon_type": WeaponType.SR,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_Lambda,
+        "element": NikkeElement.Iron,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "name": "Glaring Eyes",
@@ -4430,12 +4626,13 @@
     }, "rei": {
         "id": "rei",
         "name": "Rei",
-        "manufacturer": "Tetra",
-        "role": "Defender",
-        "weapon_type": "SMG",
-        "rarity": "SSR",
-        "burst": "Burst I",
-        "element": "Water",
+        "manufacturer": NikkeManufacturer.Tetra,
+        "role": NikkeRole.Defender,
+        "weapon_type": WeaponType.SMG,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_I,
+        "element": NikkeElement.Water,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "name": "Senior Support",
@@ -4485,15 +4682,75 @@
                 }
             }
         }
+    }, "rei_ayanami": {
+        id: "rei_ayanami",
+        name: "Rei Ayanami",
+        manufacturer: NikkeManufacturer.Abnormal,
+        role: NikkeRole.Attacker,
+        weapon_type: WeaponType.MG,
+        rarity: NikkeRarity.SSR,
+        burst: Burst.Burst_III,
+        element: NikkeElement.Fire,
+        has_treasure: false,
+        skills: {
+            skill_1: {
+                name: "",
+                description: "",
+                values: {
+                    1: [],
+                    2: [],
+                    3: [],
+                    4: [],
+                    5: [],
+                    6: [],
+                    7: [],
+                    8: [],
+                    9: [],
+                    10: []
+                }
+            }, skill_2: {
+                name: "",
+                description: "",
+                values: {
+                    1: [],
+                    2: [],
+                    3: [],
+                    4: [],
+                    5: [],
+                    6: [],
+                    7: [],
+                    8: [],
+                    9: [],
+                    10: []
+                }
+            }, burst_skill: {
+                cooldown: 40,
+                name: "",
+                description: "",
+                values: {
+                    1: [],
+                    2: [],
+                    3: [],
+                    4: [],
+                    5: [],
+                    6: [],
+                    7: [],
+                    8: [],
+                    9: [],
+                    10: []
+                }
+            }
+        }
     }, "rem": {
         "id": "rem",
         "name": "Rem",
-        "manufacturer": "Abnormal",
-        "role": "Supporter",
-        "weapon_type": "MG",
-        "rarity": "SSR",
-        "burst": "Burst II",
-        "element": "Water",
+        "manufacturer": NikkeManufacturer.Abnormal,
+        "role": NikkeRole.Supporter,
+        "weapon_type": WeaponType.MG,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_II,
+        "element": NikkeElement.Water,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "name": "Leave it to Rem!",
@@ -4546,12 +4803,13 @@
     }, "rosanna": {
         "id": "rosanna",
         "name": "Rosanna",
-        "manufacturer": "Tetra",
-        "role": "Attacker",
-        "weapon_type": "MG",
-        "rarity": "SSR",
-        "burst": "Burst I",
-        "element": "Electric",
+        "manufacturer": NikkeManufacturer.Tetra,
+        "role": NikkeRole.Attacker,
+        "weapon_type": WeaponType.MG,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_I,
+        "element": NikkeElement.Electric,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "name": "On the Lam",
@@ -4604,12 +4862,13 @@
     }, "rosanna_chic_ocean": {
         "id": "rosanna_chic_ocean",
         "name": "Rosanna: Chic Ocean",
-        "manufacturer": "Tetra",
-        "role": "Supporter",
-        "weapon_type": "AR",
-        "rarity": "SSR",
-        "burst": "Burst II",
-        "element": "Wind",
+        "manufacturer": NikkeManufacturer.Tetra,
+        "role": NikkeRole.Supporter,
+        "weapon_type": WeaponType.AR,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_II,
+        "element": NikkeElement.Wind,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "name": "Ferita",
@@ -4663,12 +4922,13 @@
     }, "rupee": {
         "id": "rupee",
         "name": "Rupee",
-        "manufacturer": "Tetra",
-        "role": "Attacker",
-        "weapon_type": "AR",
-        "rarity": "SSR",
-        "burst": "Burst II",
-        "element": "Iron",
+        "manufacturer": NikkeManufacturer.Tetra,
+        "role": NikkeRole.Attacker,
+        "weapon_type": WeaponType.AR,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_II,
+        "element": NikkeElement.Iron,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "name": "Prize",
@@ -4721,12 +4981,13 @@
     }, "rupee_winter_shopper": {
         "id": "rupee_winter_shopper",
         "name": "Rupee: Winter Shopper",
-        "manufacturer": "Tetra",
-        "role": "Defender",
-        "weapon_type": "AR",
-        "rarity": "SSR",
-        "burst": "Burst I",
-        "element": "Electric",
+        "manufacturer": NikkeManufacturer.Tetra,
+        "role": NikkeRole.Defender,
+        "weapon_type": WeaponType.AR,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_I,
+        "element": NikkeElement.Electric,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "name": "Winter Premium",
@@ -4779,12 +5040,13 @@
     }, "sakura": {
         "id": "sakura",
         "name": "Sakura",
-        "manufacturer": "Tetra",
-        "role": "Supporter",
-        "weapon_type": "SR",
-        "rarity": "SSR",
-        "burst": "Burst I",
-        "element": "Fire",
+        "manufacturer": NikkeManufacturer.Tetra,
+        "role": NikkeRole.Supporter,
+        "weapon_type": WeaponType.SR,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_I,
+        "element": NikkeElement.Fire,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "name": "Cherry Blossom Tea",
@@ -4837,12 +5099,13 @@
     }, "sakura_bloom_in_summer": {
         "id": "sakura_bloom_in_summer",
         "name": "Sakura: Bloom in Summer",
-        "manufacturer": "Tetra",
-        "role": "Attacker",
-        "weapon_type": "AR",
-        "rarity": "SSR",
-        "burst": "Burst III",
-        "element": "Wind",
+        "manufacturer": NikkeManufacturer.Tetra,
+        "role": NikkeRole.Attacker,
+        "weapon_type": WeaponType.AR,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_III,
+        "element": NikkeElement.Wind,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "name": "Bloom",
@@ -4896,12 +5159,13 @@
     }, "scarlet": {
         "id": "scarlet",
         "name": "Scarlet",
-        "manufacturer": "Pilgrim",
-        "role": "Attacker",
-        "weapon_type": "AR",
-        "rarity": "SSR",
-        "burst": "Burst III",
-        "element": "Electric",
+        "manufacturer": NikkeManufacturer.Pilgrim,
+        "role": NikkeRole.Attacker,
+        "weapon_type": WeaponType.AR,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_III,
+        "element": NikkeElement.Electric,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "name": "Blood for Blood",
@@ -4954,12 +5218,13 @@
     }, "scarlet_black_shadow": {
         "id": "scarlet_black_shadow",
         "name": "Scarlet: Black Shadow",
-        "manufacturer": "Pilgrim",
-        "role": "Attacker",
-        "weapon_type": "RL",
-        "rarity": "SSR",
-        "burst": "Burst III",
-        "element": "Wind",
+        "manufacturer": NikkeManufacturer.Pilgrim,
+        "role": NikkeRole.Attacker,
+        "weapon_type": WeaponType.RL,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_III,
+        "element": NikkeElement.Wind,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "name": "Fleetly Fading: Breakthrough",
@@ -5012,12 +5277,13 @@
     }, "signal": {
         "id": "signal",
         "name": "Signal",
-        "manufacturer": "Elysion",
-        "role": "Attacker",
-        "weapon_type": "SMG",
-        "rarity": "SSR",
-        "burst": "Burst II",
-        "element": "Fire",
+        "manufacturer": NikkeManufacturer.Elysion,
+        "role": NikkeRole.Attacker,
+        "weapon_type": WeaponType.SMG,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_II,
+        "element": NikkeElement.Fire,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "name": "Attack Signal",
@@ -5070,12 +5336,13 @@
     }, "sin": {
         "id": "sin",
         "name": "Sin",
-        "manufacturer": "Missilis",
-        "role": "Defender",
-        "weapon_type": "AR",
-        "rarity": "SSR",
-        "burst": "Burst II",
-        "element": "Electric",
+        "manufacturer": NikkeManufacturer.Missilis,
+        "role": NikkeRole.Defender,
+        "weapon_type": WeaponType.AR,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_II,
+        "element": NikkeElement.Electric,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "name": "Full Stop",
@@ -5128,12 +5395,13 @@
     }, "snow_white": {
         "id": "snow_white",
         "name": "Snow White",
-        "manufacturer": "Pilgrim",
-        "role": "Attacker",
-        "weapon_type": "AR",
-        "rarity": "SSR",
-        "burst": "Burst III",
-        "element": "Iron",
+        "manufacturer": NikkeManufacturer.Pilgrim,
+        "role": NikkeRole.Attacker,
+        "weapon_type": WeaponType.AR,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_II,
+        "element": NikkeElement.Iron,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "name": "Determination",
@@ -5187,12 +5455,13 @@
     }, "snow_white_innocent_days": {
         "id": "snow_white_innocent_days",
         "name": "Snow White: Innocent Days",
-        "manufacturer": "Pilgrim",
-        "role": "Attacker",
-        "weapon_type": "AR",
-        "rarity": "SSR",
-        "burst": "Burst III",
-        "element": "Iron",
+        "manufacturer": NikkeManufacturer.Pilgrim,
+        "role": NikkeRole.Attacker,
+        "weapon_type": WeaponType.AR,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_III,
+        "element": NikkeElement.Iron,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "name": "Seven Dwarves V&VI",
@@ -5245,12 +5514,13 @@
     }, "soda": {
         "id": "soda",
         "name": "Soda",
-        "manufacturer": "Tetra",
-        "role": "Supporter",
-        "weapon_type": "MG",
-        "rarity": "SSR",
-        "burst": "Burst I",
-        "element": "Fire",
+        "manufacturer": NikkeManufacturer.Tetra,
+        "role": NikkeRole.Supporter,
+        "weapon_type": WeaponType.MG,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_I,
+        "element": NikkeElement.Fire,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "name": "Spotless Chair",
@@ -5304,12 +5574,13 @@
     }, "soda_twinkling_bunny": {
         "id": "soda_twinkling_bunny",
         "name": "Soda: Twinkling Bunny",
-        "manufacturer": "Tetra",
-        "role": "Attacker",
-        "weapon_type": "SG",
-        "rarity": "SSR",
-        "burst": "Burst III",
-        "element": "Iron",
+        "manufacturer": NikkeManufacturer.Tetra,
+        "role": NikkeRole.Attacker,
+        "weapon_type": WeaponType.SG,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_III,
+        "element": NikkeElement.Iron,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "name": "Lucky Golden Chip",
@@ -5362,12 +5633,13 @@
     }, "soline": {
         "id": "soline",
         "name": "Soline",
-        "manufacturer": "Elysion",
-        "role": "Attacker",
-        "weapon_type": "SMG",
-        "rarity": "SSR",
-        "burst": "Burst III",
-        "element": "Iron",
+        "manufacturer": NikkeManufacturer.Elysion,
+        "role": NikkeRole.Attacker,
+        "weapon_type": WeaponType.SMG,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_III,
+        "element": NikkeElement.Iron,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "name": "On the Ball!",
@@ -5420,12 +5692,13 @@
     }, "sugar": {
         "id": "sugar",
         "name": "Sugar",
-        "manufacturer": "Tetra",
-        "role": "Attacker",
-        "weapon_type": "SG",
-        "rarity": "SSR",
-        "burst": "Burst III",
-        "element": "Iron",
+        "manufacturer": NikkeManufacturer.Tetra,
+        "role": NikkeRole.Attacker,
+        "weapon_type": WeaponType.SG,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_III,
+        "element": NikkeElement.Iron,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "name": "Black Typhoon",
@@ -5478,12 +5751,13 @@
     }, "tia": {
         "id": "tia",
         "name": "Tia",
-        "manufacturer": "Missilis",
-        "role": "Defender",
-        "weapon_type": "RL",
-        "rarity": "SSR",
-        "burst": "Burst I",
-        "element": "Iron",
+        "manufacturer": NikkeManufacturer.Missilis,
+        "role": NikkeRole.Defender,
+        "weapon_type": WeaponType.RL,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_I,
+        "element": NikkeElement.Iron,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "name": "Reptile Lover",
@@ -5536,12 +5810,13 @@
     }, "tove": {
         "id": "tove",
         "name": "Tove",
-        "manufacturer": "Missilis",
-        "role": "Supporter",
-        "weapon_type": "AR",
-        "rarity": "SSR",
-        "burst": "Burst I",
-        "element": "Water",
+        "manufacturer": NikkeManufacturer.Missilis,
+        "role": NikkeRole.Supporter,
+        "weapon_type": WeaponType.AR,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_I,
+        "element": NikkeElement.Water,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "name": "Emergency-Crafted Bullets",
@@ -5594,12 +5869,13 @@
     }, "trony": {
         "id": "trony",
         "name": "Trony",
-        "manufacturer": "Missilis",
-        "role": "Attacker",
-        "weapon_type": "SR",
-        "rarity": "SSR",
-        "burst": "Burst III",
-        "element": "Fire",
+        "manufacturer": NikkeManufacturer.Missilis,
+        "role": NikkeRole.Attacker,
+        "weapon_type": WeaponType.SR,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_III,
+        "element": NikkeElement.Fire,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "name": "T.Rony Bomber",
@@ -5652,12 +5928,13 @@
     }, "vesti": {
         "id": "vesti",
         "name": "Vesti",
-        "manufacturer": "Elysion",
-        "role": "Attacker",
-        "weapon_type": "RL",
-        "rarity": "SSR",
-        "burst": "Burst III",
-        "element": "Water",
+        "manufacturer": NikkeManufacturer.Elysion,
+        "role": NikkeRole.Attacker,
+        "weapon_type": WeaponType.RL,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_III,
+        "element": NikkeElement.Water,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "name": "Dreams Do Come True",
@@ -5710,12 +5987,13 @@
     }, "viper": {
         "id": "viper",
         "name": "Viper",
-        "manufacturer": "Tetra",
-        "role": "Attacker",
-        "weapon_type": "SG",
-        "rarity": "SSR",
-        "burst": "Burst II",
-        "element": "Water",
+        "manufacturer": NikkeManufacturer.Tetra,
+        "role": NikkeRole.Attacker,
+        "weapon_type": WeaponType.SG,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_II,
+        "element": NikkeElement.Water,
+        has_treasure: true,
         "skills": {
             "skill_1": {
                 "name": "Snake Sense",
@@ -5768,12 +6046,13 @@
     }, "volume": {
         "id": "volume",
         "name": "Volume",
-        "manufacturer": "Tetra",
-        "role": "Attacker",
-        "weapon_type": "SMG",
-        "rarity": "SSR",
-        "burst": "Burst I",
-        "element": "Wind",
+        "manufacturer": NikkeManufacturer.Tetra,
+        "role": NikkeRole.Attacker,
+        "weapon_type": WeaponType.SMG,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_I,
+        "element": NikkeElement.Wind,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "name": "Freestyle",
@@ -5826,12 +6105,13 @@
     }, "yan": {
         "id": "yan",
         "name": "Yan",
-        "manufacturer": "Tetra",
-        "role": "Supporter",
-        "weapon_type": "RL",
-        "rarity": "SSR",
-        "burst": "Burst I",
-        "element": "Fire",
+        "manufacturer": NikkeManufacturer.Tetra,
+        "role": NikkeRole.Supporter,
+        "weapon_type": WeaponType.RL,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_I,
+        "element": NikkeElement.Fire,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "name": "Struck Dumb",
@@ -5884,12 +6164,13 @@
     }, "yulha": {
         "id": "yulha",
         "name": "Yulha",
-        "manufacturer": "Tetra",
-        "role": "Attacker",
-        "weapon_type": "SR",
-        "rarity": "SSR",
-        "burst": "Burst III",
-        "element": "Fire",
+        "manufacturer": NikkeManufacturer.Tetra,
+        "role": NikkeRole.Attacker,
+        "weapon_type": WeaponType.SR,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_III,
+        "element": NikkeElement.Fire,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "name": "Tough Leadership",
@@ -5943,12 +6224,13 @@
     }, "yuni": {
         "id": "yuni",
         "name": "Yuni",
-        "manufacturer": "Missilis",
-        "role": "Defender",
-        "weapon_type": "RL",
-        "rarity": "SSR",
-        "burst": "Burst II",
-        "element": "Fire",
+        "manufacturer": NikkeManufacturer.Missilis,
+        "role": NikkeRole.Defender,
+        "weapon_type": WeaponType.RL,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_II,
+        "element": NikkeElement.Fire,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "name": "DMNS",
@@ -6001,12 +6283,13 @@
     }, "zwei": {
         "id": "zwei",
         "name": "Zwei",
-        "manufacturer": "Elysion",
-        "role": "Supporter",
-        "weapon_type": "SG",
-        "rarity": "SSR",
-        "burst": "Burst I",
-        "element": "Electric",
+        "manufacturer": NikkeManufacturer.Elysion,
+        "role": NikkeRole.Supporter,
+        "weapon_type": WeaponType.SG,
+        "rarity": NikkeRarity.SSR,
+        "burst": Burst.Burst_I,
+        "element": NikkeElement.Electric,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "name": "Pierce Equation",
@@ -6059,12 +6342,13 @@
     }, "anis": {
         "id": "anis",
         "name": "Anis",
-        "manufacturer": "Tetra",
-        "role": "Defender",
-        "weapon_type": "RL",
-        "rarity": "SR",
-        "burst": "Burst II",
-        "element": "Iron",
+        "manufacturer": NikkeManufacturer.Tetra,
+        "role": NikkeRole.Defender,
+        "weapon_type": WeaponType.RL,
+        "rarity": NikkeRarity.SR,
+        "burst": Burst.Burst_II,
+        "element": NikkeElement.Iron,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "name": "D.H. Formation",
@@ -6115,15 +6399,75 @@
                 }
             }
         }
+    }, "misato_katsuragi": {
+        id: "misato_katsuragi",
+        name: "Misato Katsuragi",
+        manufacturer: NikkeManufacturer.Abnormal,
+        role: NikkeRole.Supporter,
+        weapon_type: WeaponType.SMG,
+        rarity: NikkeRarity.SR,
+        burst: Burst.Burst_III,
+        element: NikkeElement.Iron,
+        has_treasure: false,
+        skills: {
+            skill_1: {
+                name: "",
+                description: "",
+                values: {
+                    1: [],
+                    2: [],
+                    3: [],
+                    4: [],
+                    5: [],
+                    6: [],
+                    7: [],
+                    8: [],
+                    9: [],
+                    10: []
+                }
+            }, skill_2: {
+                name: "",
+                description: "",
+                values: {
+                    1: [],
+                    2: [],
+                    3: [],
+                    4: [],
+                    5: [],
+                    6: [],
+                    7: [],
+                    8: [],
+                    9: [],
+                    10: []
+                }
+            }, burst_skill: {
+                cooldown: 40,
+                name: "",
+                description: "",
+                values: {
+                    1: [],
+                    2: [],
+                    3: [],
+                    4: [],
+                    5: [],
+                    6: [],
+                    7: [],
+                    8: [],
+                    9: [],
+                    10: []
+                }
+            }
+        }
     }, "product_08": {
         "id": "product_08",
         "name": "Product 08",
-        "manufacturer": "Missilis",
-        "role": "Supporter",
-        "weapon_type": "SR",
-        "rarity": "R",
-        "burst": "Burst I",
-        "element": "Electric",
+        "manufacturer": NikkeManufacturer.Missilis,
+        "role": NikkeRole.Supporter,
+        "weapon_type": WeaponType.SR,
+        "rarity": NikkeRarity.R,
+        "burst": Burst.Burst_I,
+        "element": NikkeElement.Electric,
+        has_treasure: false,
         "skills": {
             "skill_1": {
                 "name": "Tactic: Enhance Armor",
@@ -6175,60 +6519,61 @@
             }
         }
     }, "template": {
-        "id": "",
-        "name": "",
-        "manufacturer": "",
-        "role": "",
-        "weapon_type": "",
-        "rarity": "",
-        "burst": "",
-        "element": "",
-        "skills": {
-            "skill_1": {
-                "name": "",
-                "description": "",
-                "values": {
-                    "1": [],
-                    "2": [],
-                    "3": [],
-                    "4": [],
-                    "5": [],
-                    "6": [],
-                    "7": [],
-                    "8": [],
-                    "9": [],
-                    "10": []
+        id: "",
+        name: "",
+        manufacturer: NikkeManufacturer.Abnormal,
+        role: NikkeRole.Attacker,
+        weapon_type: WeaponType.AR,
+        rarity: NikkeRarity.SSR,
+        burst: Burst.Burst_III,
+        element: NikkeElement.Electric,
+        has_treasure: false,
+        skills: {
+            skill_1: {
+                name: "",
+                description: "",
+                values: {
+                    1: [],
+                    2: [],
+                    3: [],
+                    4: [],
+                    5: [],
+                    6: [],
+                    7: [],
+                    8: [],
+                    9: [],
+                    10: []
                 }
-            }, "skill_2": {
-                "name": "",
-                "description": "",
-                "values": {
-                    "1": [],
-                    "2": [],
-                    "3": [],
-                    "4": [],
-                    "5": [],
-                    "6": [],
-                    "7": [],
-                    "8": [],
-                    "9": [],
-                    "10": []
+            }, skill_2: {
+                name: "",
+                description: "",
+                values: {
+                    1: [],
+                    2: [],
+                    3: [],
+                    4: [],
+                    5: [],
+                    6: [],
+                    7: [],
+                    8: [],
+                    9: [],
+                    10: []
                 }
-            }, "burst_skill": {
-                "cooldown": 40,
-                "name": "",
-                "description": "",
-                "values": {
-                    "1": [],
-                    "2": [],
-                    "3": [],
-                    "4": [],
-                    "5": [],
-                    "6": [],
-                    "7": [],
-                    "8": [],
-                    "9": [],
-                    "10": []
+            }, burst_skill: {
+                cooldown: 40,
+                name: "",
+                description: "",
+                values: {
+                    1: [],
+                    2: [],
+                    3: [],
+                    4: [],
+                    5: [],
+                    6: [],
+                    7: [],
+                    8: [],
+                    9: [],
+                    10: []
                 }
             }
         }

@@ -1,15 +1,21 @@
 import { useSelector } from "react-redux";
-import { color_scheme, RecommendationsPrydwen } from "../../types";
+import { color_scheme } from "../../types";
 import { Button, Tooltip } from "@blueprintjs/core";
 import { RootState } from "../../state/store";
 import { getMiscIcon } from "../../utility/iconGetters";
+import { recommendation_data_prydwen } from "../../data/recommendationsPrydwen";
 
 export interface RecommendationVisualizationPrydwenProps {
-    recommendations: RecommendationsPrydwen;
+    nikke_id: string;
+    treasure?: boolean;
 }
 
-const RecommendationVisualizationPrydwen: React.FC<RecommendationVisualizationPrydwenProps> = ({ recommendations }) => {
-    const post_overload: boolean = useSelector((state: RootState) => state.settings.post_overload) 
+const RecommendationVisualizationPrydwen: React.FC<RecommendationVisualizationPrydwenProps> = ({ nikke_id, treasure }) => {
+    const recommendations = treasure ? recommendation_data_prydwen[nikke_id].with_treasure : recommendation_data_prydwen[nikke_id];
+    const post_overload: boolean = useSelector((state: RootState) => state.settings.post_overload);
+
+    if (!recommendations)
+        return null;
 
     const ratingColors: { [key: string]: string } = {
         SSS: "#e84ce4",
@@ -40,7 +46,7 @@ const RecommendationVisualizationPrydwen: React.FC<RecommendationVisualizationPr
                 <div style={{ gridColumn: '1 / 2' }} >
                     <b>Story (low deficit)</b>
                     <div
-                        style={{ backgroundColor: ratingColors[recommendations.ratings.story_low_deficit], color: "black", fontWeight: "bold" }}
+                        style={{ backgroundColor: ratingColors[recommendations.ratings.story_low_deficit], color: "black", fontWeight: "bold", border: "1px solid black" }}
                     >
                         {recommendations.ratings.story_low_deficit}
                     </div>
@@ -48,7 +54,7 @@ const RecommendationVisualizationPrydwen: React.FC<RecommendationVisualizationPr
                 <div style={{ gridColumn: '2 / 3' }} >
                     <b>Story (high deficit)</b>
                     <div
-                        style={{ backgroundColor: ratingColors[recommendations.ratings.story_high_deficit], color: "black", fontWeight: "bold" }}
+                        style={{ backgroundColor: ratingColors[recommendations.ratings.story_high_deficit], color: "black", fontWeight: "bold", border: "1px solid black" }}
                     >
                         {recommendations.ratings.story_high_deficit}
                     </div>
@@ -64,7 +70,7 @@ const RecommendationVisualizationPrydwen: React.FC<RecommendationVisualizationPr
                 <div style={{ gridColumn: '1 / 2' }} >
                     <b>Boss (solo)</b>
                     <div
-                        style={{ backgroundColor: ratingColors[recommendations.ratings.boss_solo], color: "black", fontWeight: "bold" }}
+                        style={{ backgroundColor: ratingColors[recommendations.ratings.boss_solo], color: "black", fontWeight: "bold", border: "1px solid black" }}
                     >
                         {recommendations.ratings.boss_solo}
                     </div>
@@ -72,7 +78,7 @@ const RecommendationVisualizationPrydwen: React.FC<RecommendationVisualizationPr
                 <div style={{ gridColumn: '2 / 3' }} >
                     <b>Boss (adds)</b>
                     <div
-                        style={{ backgroundColor: ratingColors[recommendations.ratings.boss_adds], color: "black", fontWeight: "bold" }}
+                        style={{ backgroundColor: ratingColors[recommendations.ratings.boss_adds], color: "black", fontWeight: "bold", border: "1px solid black" }}
                     >
                         {recommendations.ratings.boss_adds}
                     </div>
@@ -80,7 +86,7 @@ const RecommendationVisualizationPrydwen: React.FC<RecommendationVisualizationPr
                 <div style={{ gridColumn: '3 / 4' }} >
                     <b>PVP</b>
                     <div
-                        style={{ backgroundColor: ratingColors[recommendations.ratings.pvp], color: "black", fontWeight: "bold" }}
+                        style={{ backgroundColor: ratingColors[recommendations.ratings.pvp], color: "black", fontWeight: "bold", border: "1px solid black" }}
                     >
                         {recommendations.ratings.pvp}
                     </div>
@@ -92,7 +98,7 @@ const RecommendationVisualizationPrydwen: React.FC<RecommendationVisualizationPr
                 <div>PVP: {recommendations.skills.pvp}</div>
             </div>
             {recommendations.overloads.ideal &&
-                <div style={{ marginTop: '10px' }} >
+                <div style={{ marginTop: '10px', backgroundColor: "#28242c", borderTop: "1px solid grey", borderBottom: "1px solid grey" }} >
                     <div>Overload investment priority: <b>{recommendations.overloads.priority}</b></div>
                     <div
                         style={{

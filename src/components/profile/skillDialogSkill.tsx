@@ -1,9 +1,8 @@
 import { NumericInput } from "@blueprintjs/core";
-import { Nikke, NikkeStaticData } from "../../types"
-import { useCallback, useState } from "react";
+import React, { useState, useCallback, useEffect } from "react";
 import { useDispatch } from "react-redux";
-import { modifyInvestment } from "../../state/investment";
-import React from "react";
+import { setTempSkill1, setTempSkill2, setTempSkillB } from "../../state/investment";
+import { Nikke, NikkeSkill, NikkeStaticData } from "../../types";
 
 interface SkillDialogSkillProps {
     nikke: Nikke;
@@ -26,73 +25,55 @@ function replacePlaceholders(description: string, values: number[]): (string | J
 const SkillDialogSkill: React.FC<SkillDialogSkillProps> = ({ nikke, nikke_static, skill_type }) => {
     const dispatch = useDispatch();
 
-    // Use local state for skill level
-    const [skillLevel, setSkillLevel] = useState(() => {
-        switch (skill_type) {
-            case "Skill 1":
-                return nikke.skill_levels[0] || 1;
-            case "Skill 2":
-                return nikke.skill_levels[1] || 1;
-            case "Burst Skill":
-            default:
-                return nikke.skill_levels[2] || 1;
-        }
-    });
+    const [skill_level, setSkillLevel] = useState(skill_type === "Skill 1" ?
+        nikke.skill_levels[0] : skill_type === "Skill 2" ?
+        nikke.skill_levels[1] : nikke.skill_levels[2]);
 
-    // Determine skill data based on skill_type
-    const skill_data = {
+    useEffect(() => {
+        switch(skill_type) {
+            case "Skill 1":
+                dispatch(setTempSkill1(skill_level))
+                break;
+            case "Skill 2":
+                dispatch(setTempSkill2(skill_level))
+                break;
+            case "Burst Skill":
+                dispatch(setTempSkillB(skill_level))
+                break;
+            default:
+        }
+    }, [skill_type, skill_level, dispatch]);
+
+    
+
+    const skill_data: NikkeSkill | undefined = {
         "Skill 1": nikke_static.skills.skill_1,
         "Skill 2": nikke_static.skills.skill_2,
         "Burst Skill": nikke_static.skills.burst_skill
     }[skill_type];
 
     const { name: skill_name = '', description: skill_description = '', values: skill_values = {}, cooldown: skill_cooldown } = skill_data || {};
-
-    // Get the current values and description
-    const values = skill_values[skillLevel] || [];
+    const values = skill_values[skill_level] || [];
     const description_with_values = replacePlaceholders(skill_description, values);
 
-    // Append cooldown to skill name if available
     const skillNameWithCooldown = skill_cooldown ? `${skill_name} (${skill_cooldown}s)` : skill_name;
 
-    // Function to handle skill level change
     const handleSkillChange = useCallback((value: number) => {
         if (value < 1 || value > 10) return;
-
-        const new_skill_levels = [...nikke.skill_levels];
-        switch (skill_type) {
-            case "Skill 1":
-                new_skill_levels[0] = value;
-                break;
-            case "Skill 2":
-                new_skill_levels[1] = value;
-                break;
-            case "Burst Skill":
-                new_skill_levels[2] = value;
-                break;
-        }
-
-        const new_nikke: Nikke = {
-            ...nikke,
-            skill_levels: new_skill_levels
-        };
-
-        setSkillLevel(value); // Update local state
-        dispatch(modifyInvestment(new_nikke)); // Dispatch Redux action
-    }, [dispatch, nikke, skill_type]);
+        setSkillLevel(value);
+    }, []);
 
     return (
         <div
             style={{
                 display: 'grid',
-                gridTemplateColumns: '1fr 4fr',
-                gridTemplateRows: 'repeat(2, auto)'
+                gridTemplateColumns: '1fr 4fr'
             }}
         >
-            <div style={{ gridColumn: '1 / 2', placeContent: 'center' }}>
+            <div style={{ gridColumn: '1 / 2', placeItems: 'top' }}>
                 <NumericInput
                     small
-                    value={skillLevel}
+                    value={skill_level}
                     min={1}
                     max={10}
                     stepSize={1}

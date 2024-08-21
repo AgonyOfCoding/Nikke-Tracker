@@ -4,10 +4,16 @@ import axios from "axios";
 
 export interface NikkeInvestments {
     investments: Nikke[];
+    temp_skill_1: number;
+    temp_skill_2: number;
+    temp_skill_B: number;
 }
 
 const initialState: NikkeInvestments = {
-    investments: []
+    investments: [],
+    temp_skill_1: 1,
+    temp_skill_2: 1,
+    temp_skill_B: 1
 }
 
 const saveInvestments = async (investments: Nikke[]) => {
@@ -49,9 +55,25 @@ export const investmentSlice = createSlice({
             new_investments.push(action.payload);
             state.investments = new_investments;
             saveInvestments(new_investments);
+        },
+        setTempSkill1: (state, action: PayloadAction<number>) => {
+            state.temp_skill_1 = action.payload;
+        },
+        setTempSkill2: (state, action: PayloadAction<number>) => {
+            state.temp_skill_2 = action.payload;
+        },
+        setTempSkillB: (state, action: PayloadAction<number>) => {
+            state.temp_skill_B = action.payload;
         }
     }
 })
 
-export const { initializeInvestments, addNikke, modifyInvestment } = investmentSlice.actions
+export const {
+    initializeInvestments,
+    addNikke,
+    modifyInvestment,
+    setTempSkill1,
+    setTempSkill2,
+    setTempSkillB
+} = investmentSlice.actions
 export default investmentSlice.reducer

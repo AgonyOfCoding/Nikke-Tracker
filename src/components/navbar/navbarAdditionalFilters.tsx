@@ -1,18 +1,36 @@
 import { Button, Menu, MenuDivider, MenuItem, Popover, Tooltip } from "@blueprintjs/core"
-import { CollectionItemRarity, color_scheme, NikkeElement, NikkeManufacturer, NikkeRarity } from "../../types"
+import { CollectionItemRarity, color_scheme, NikkeElement, NikkeManufacturer, NikkeRarity, WeaponType } from "../../types"
 import { useDispatch, useSelector } from "react-redux";
-import { FilterOptions, setCollectionItemRarityFilter, setElementFilter, setManufacturerFilter, setNikkeRarityFilter } from "../../state/filterOptions";
+import { FilterOptions, setCollectionItemRarityFilter, setElementFilter, setManufacturerFilter, setNikkeRarityFilter, setWeaponFilter } from "../../state/filterOptions";
 import { RootState } from "../../state/store";
 import { getMiscIcon } from "../../utility/iconGetters";
 
 const NavbarAdditionalFilters: React.FC = () => {
-
-    const filterState: FilterOptions = useSelector((state: RootState) => state.filter)
+    const wide_layout: boolean = useSelector((state: RootState) => state.settings.wide_layout);
+    const filterState: FilterOptions = useSelector((state: RootState) => state.filter);
     const dispatch = useDispatch();
 
     const additionalFiltersdMenu = () => {
         
         return <Menu style={{ backgroundColor: color_scheme[0] }} >
+            {!wide_layout && <>
+                {Object.values(WeaponType).map(weapon =>
+                    <MenuItem
+                        style={{ 
+                            backgroundColor: weapon === filterState.weapon ? color_scheme[3] : color_scheme[0],
+                            color: weapon === filterState.weapon ? color_scheme[0] : color_scheme[4]
+                        }}
+                        key={weapon}
+                        text={weapon}
+                        icon={<img src={getMiscIcon("weapon", weapon)} alt={weapon} style={{ height: 24 }} />}
+                        onClick={weapon === filterState.weapon ?
+                            () => dispatch(setWeaponFilter(undefined)) :
+                            () => dispatch(setWeaponFilter(weapon))
+                        }
+                    />
+                )}
+            <MenuDivider />
+            </>}
             {Object.values(NikkeManufacturer).map(manufacturer => 
                 <MenuItem
                     style={{ 

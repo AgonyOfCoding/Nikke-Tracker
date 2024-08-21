@@ -1,16 +1,12 @@
 import { useSelector } from "react-redux";
 import { RootState } from "../../state/store";
 import { TeamSet, TeamsState } from "../../state/teamsState";
-import { NikkeStaticData, RecommendationData } from "../../types";
+import { NikkeStaticData } from "../../types";
 import TeamsSummary from "./teamsSummary";
 import NikkeList from "../list/nikkeList";
+import { nikke_static_data } from "../../data/nikkeStaticData";
 
-interface TeamsViewProps {
-    nikke_static_data: { [key: string]: NikkeStaticData };
-    recommendation_data: { [key: string]: RecommendationData };
-}
-
-const TeamsView: React.FC<TeamsViewProps> = ({ nikke_static_data, recommendation_data }) => {
+const TeamsView: React.FC = () => {
     const teams_state: TeamsState = useSelector((state: RootState) => state.teams);
     const { selected_team_set, selected_team, teams_data } = teams_state;
 
@@ -20,12 +16,13 @@ const TeamsView: React.FC<TeamsViewProps> = ({ nikke_static_data, recommendation
     const team_set_key = selected_team_set === TeamSet.campaign ?
         "campaign" : selected_team_set === TeamSet.solo_raid ?
         "solo_raid" : selected_team_set === TeamSet.tribe_tower ?
-        "tribe_tower": selected_team_set === TeamSet.pvp ?
+        "tribe_tower" : selected_team_set === TeamSet.shooting_range ?
+        "shooting_range" : selected_team_set === TeamSet.pvp ?
         "pvp" : "custom";
 
     if (selected_team === "summary" ) {
         return (
-            <TeamsSummary teams={teams_data[team_set_key]} nikke_static_data={nikke_static_data} />
+            <TeamsSummary teams={teams_data[team_set_key]} />
         )
     }
 
@@ -41,7 +38,7 @@ const TeamsView: React.FC<TeamsViewProps> = ({ nikke_static_data, recommendation
     })
 
     return (
-        <NikkeList nikke_static_data={nikke_static_data} recommendation_data={recommendation_data} team_nikke_list={team_nikke_list} />
+        <NikkeList team_nikke_list={team_nikke_list} />
     )
 }
 

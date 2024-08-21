@@ -34,7 +34,7 @@ const RecommendationVisualizationSkyfall: React.FC<RecommendationVisualizationSk
                     <b>{recommendations.priority} priority</b>
                 </div>
                 <div style={{ gridColumn: '2 / 3', placeContent: 'center' }} >
-                    <Tooltip content={<div>{recommendations.notes.map(line => <p>{line}</p>)}</div>} >
+                    <Tooltip content={<div>{recommendations.notes.map(line => <p key={line}>{line}</p>)}</div>} >
                         <Button small minimal text="?" style={{ color: color_scheme[0], fontWeight: 'bold' }} />
                     </Tooltip>
                 </div>

@@ -1,4 +1,4 @@
-import { Nikke, NikkeStaticData, RecommendationData } from '../../types';
+import { Nikke, NikkeStaticData } from '../../types';
 import NikkeEntry from './nikkeEntry';
 import { useSelector } from 'react-redux';
 import { RootState } from '../../state/store';
@@ -9,16 +9,14 @@ import { VariableSizeList as List, ListChildComponentProps } from 'react-window'
 import useWindowSize from '../../utility/windowSizeHook';
 import { nikkeListFilterer } from '../../utility/nikkeListFilterer';
 import { RecommendationSource } from '../../state/recommendationSources';
-import { nikkes_with_treasure } from '../../data/miscData';
 import { useCallback, useEffect, useRef } from 'react';
+import { nikke_static_data } from '../../data/nikkeStaticData';
 
 interface NikkeListProps {
-    nikke_static_data: { [key: string]: NikkeStaticData };
-    recommendation_data: { [key: string]: RecommendationData };
     team_nikke_list?: NikkeStaticData[];
 }
 
-const NikkeList: React.FC<NikkeListProps> = ({ nikke_static_data, recommendation_data, team_nikke_list }) => {
+const NikkeList: React.FC<NikkeListProps> = ({ team_nikke_list }) => {
     const { height: windowHeight } = useWindowSize();
     const filterState: FilterOptions = useSelector((state: RootState) => state.filter);
     const sort_state: SortState = useSelector((state: RootState) => state.sort);
@@ -30,12 +28,11 @@ const NikkeList: React.FC<NikkeListProps> = ({ nikke_static_data, recommendation
     const list = Object.values(nikke_static_data);
     
     const filtered_static_data = search === "" ? 
-        nikkeListFilterer(list, recommendation_data, nikke_investment_data, filterState) :
+        nikkeListFilterer(list, nikke_investment_data, filterState) :
         list.filter((nikke) => nikke.name.toLowerCase().includes(search.toLowerCase()));
 
     const sorted_static_data: NikkeStaticData[] = nikkeListSorter(
         filtered_static_data,
-        recommendation_data,
         nikke_investment_data,
         sort_state.sort_option,
         sort_state.inverted
@@ -56,7 +53,7 @@ const NikkeList: React.FC<NikkeListProps> = ({ nikke_static_data, recommendation
             case RecommendationSource.nikke_gg:
                 return item_size_nikkegg;
             case RecommendationSource.prydwen:
-                return nikkes_with_treasure.includes(nikke.id) ? item_size_prydwen_treasure : item_size_prydwen
+                return nikke.has_treasure ? item_size_prydwen_treasure : item_size_prydwen
             case RecommendationSource.skyfall:
             default:
                 return item_size_skyfall;
@@ -76,8 +73,7 @@ const NikkeList: React.FC<NikkeListProps> = ({ nikke_static_data, recommendation
                 <NikkeEntry 
                     key={nikke.id} 
                     nikke_static={nikke} 
-                    index={index} 
-                    recommendation_data={recommendation_data[nikke.id]} 
+                    index={index}
                     height={getItemSize(index)}
                 />
             </div>

@@ -1,5 +1,5 @@
 import { Card, Elevation } from "@blueprintjs/core";
-import { color_scheme, EquipmentType, Nikke, NikkeStaticData, RecommendationData } from "../../types";
+import { color_scheme, EquipmentType, Nikke, NikkeStaticData } from "../../types";
 import EquipmentColumn from "../equipment/equipmentColumn";
 import OverloadRecommendationsList from "../recommendations/recommendationsColumn";
 import Profile from "../profile/profile";
@@ -10,12 +10,11 @@ import OverloadTotals from "../equipment/overloadTotals";
 
 interface NikkeEntryProps {
     nikke_static: NikkeStaticData;
-    recommendation_data: RecommendationData;
     index: number;
     height: number;
 }
 
-const NikkeEntry: React.FC<NikkeEntryProps> = ({ nikke_static, recommendation_data, index, height }) => {
+const NikkeEntry: React.FC<NikkeEntryProps> = ({ nikke_static, index, height }) => {
     const nikke_investments: Nikke[] = useSelector((state: RootState) => state.investments.investments);
     const wide_layout: boolean = useSelector((state: RootState) => state.settings.wide_layout);
     const nikke_data: Nikke | undefined = nikke_investments.find((nikke) => nikke.id === nikke_static.id);
@@ -38,14 +37,14 @@ const NikkeEntry: React.FC<NikkeEntryProps> = ({ nikke_static, recommendation_da
                 gridColumn: "1 / 2",
                 gridRow: wide_layout ? "1 / 3" : "1 / 3" 
             }}>
-                <Profile nikke_static={nikke_static} nikke_data={nikke_data} recommendations={recommendation_data} />
+                <Profile nikke_static={nikke_static} nikke_data={nikke_data} />
             </div>          
             <div style={{
                 gridColumn: wide_layout ? "2 / 3" : "1 / 2",
                 gridRow: wide_layout ? "1 / 3" : "3 / 5"
             }} >
                 {nikke_data && 
-                    <CollectionItemVisualization nikke={nikke_data} nikke_static={nikke_static} recommendations={recommendation_data} />
+                    <CollectionItemVisualization nikke={nikke_data} nikke_static={nikke_static} />
                 }
             </div>
             {nikke_data &&
@@ -77,16 +76,15 @@ const NikkeEntry: React.FC<NikkeEntryProps> = ({ nikke_static, recommendation_da
                     <EquipmentColumn equipment_type={EquipmentType.boots} nikke={nikke_data} nikke_static={nikke_static} />
                 </div>
             }
-            {recommendation_data &&
-                <div style={{
-                    gridColumn: wide_layout ? "7 / 8" : "4 / 5",
-                    gridRow: wide_layout ? "1 / 3" : "1 / 5",
-                    backgroundColor: color_scheme[4], color: color_scheme[0],
-                    borderRadius: "20px"
-                }}>
-                    <OverloadRecommendationsList weapon_type={nikke_static.weapon_type} recommendation_data={recommendation_data} />
-                </div>
-            } {nikke_data &&
+            <div style={{
+                gridColumn: wide_layout ? "7 / 8" : "4 / 5",
+                gridRow: wide_layout ? "1 / 3" : "1 / 5",
+                backgroundColor: color_scheme[4], color: color_scheme[0],
+                borderRadius: "20px"
+            }}>
+                <OverloadRecommendationsList nikke_id={nikke_static.id} weapon_type={nikke_static.weapon_type} has_treasure={nikke_static.has_treasure} />
+            </div>
+            {nikke_data &&
                 <div style={{
                     gridColumn: wide_layout ? "3 / 7" : "2 / 4",
                     gridRow: wide_layout ? "2 / 3" : "4 / 5"

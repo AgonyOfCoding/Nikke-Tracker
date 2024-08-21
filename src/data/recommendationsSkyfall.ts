@@ -160,6 +160,23 @@ export const recommendation_data_skyfall: {[nikke: string]: RecommendationsSkyfa
         },
         notes: [""]
     },
+    "asuka_shikinami_langley": {
+        priority: "",
+        collection_item_priority: "not_rated",
+        skills: ["", "", ""],
+        overloads: {
+            ideal: [],
+            good: [],
+            fine: [],
+            passable: [],
+            no: []
+        },
+        cube: {
+            cube: [],
+            notes: ""
+        },
+        notes: [""]
+    },
     "bay": {
         priority: "",
         collection_item_priority: "pvp",
@@ -368,6 +385,23 @@ export const recommendation_data_skyfall: {[nikke: string]: RecommendationsSkyfa
             notes: ""
         },
         notes: [""]
+    },
+    "dolla": {
+        priority: "Medium",
+        collection_item_priority: "useful_but_not_priority",
+        skills: ["4+", "4+", "1-4"],
+        overloads: {
+            ideal: [],
+            good: ["1-2x Max Ammo"],
+            fine: [],
+            passable: ["0-4x ATK", "0-4x Elemental Damage", "0-4x Charge Speed"],
+            no: []
+        }, cube: {
+            cube: [CubeName.Quantum, CubeName.Resilience],
+            notes: ""
+        }, notes: ["Not Recommended to OL to save your resources.",
+            "Sometimes Dolla is the only SR/RL in the team which is the main source for fast energy charge for burst so Max Ammo OL is good.",
+            "Dolla's skills don't scale well so they're fine at lower levels, but they're good nonetheless. I'd recommend to keep at 4/4/1 and 7/4/4 at best."]
     },
     "dorothy": {
         priority: "High",
@@ -853,6 +887,23 @@ export const recommendation_data_skyfall: {[nikke: string]: RecommendationsSkyfa
         },
         notes: [""]
     },
+    "mari_makinami_illustrious": {
+        priority: "",
+        collection_item_priority: "not_rated",
+        skills: ["", "", ""],
+        overloads: {
+            ideal: [],
+            good: [],
+            fine: [],
+            passable: [],
+            no: []
+        },
+        cube: {
+            cube: [],
+            notes: ""
+        },
+        notes: [""]
+    },
     "mary": {
         priority: "",
         collection_item_priority: "ignore_for_now",
@@ -1317,6 +1368,23 @@ export const recommendation_data_skyfall: {[nikke: string]: RecommendationsSkyfa
     "rei": {
         priority: "",
         collection_item_priority: "ignore_for_now",
+        skills: ["", "", ""],
+        overloads: {
+            ideal: [],
+            good: [],
+            fine: [],
+            passable: [],
+            no: []
+        },
+        cube: {
+            cube: [],
+            notes: ""
+        },
+        notes: [""]
+    },
+    "rei_ayanami": {
+        priority: "",
+        collection_item_priority: "not_rated",
         skills: ["", "", ""],
         overloads: {
             ideal: [],
@@ -1812,6 +1880,23 @@ export const recommendation_data_skyfall: {[nikke: string]: RecommendationsSkyfa
     "anis": {
         priority: "",
         collection_item_priority: "pvp",
+        skills: ["", "", ""],
+        overloads: {
+            ideal: [],
+            good: [],
+            fine: [],
+            passable: [],
+            no: []
+        },
+        cube: {
+            cube: [],
+            notes: ""
+        },
+        notes: [""]
+    },
+    "misato_katsuragi": {
+        priority: "",
+        collection_item_priority: "not_rated",
         skills: ["", "", ""],
         overloads: {
             ideal: [],

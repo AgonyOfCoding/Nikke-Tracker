@@ -1,15 +1,14 @@
 import { useDispatch } from "react-redux";
-import { CollectionItem, CollectionItemRarity, Nikke, NikkeStaticData, RecommendationData, WeaponType } from "../../types";
+import { CollectionItem, CollectionItemRarity, color_scheme, Nikke, NikkeStaticData, WeaponType } from "../../types";
 import { Button, NumericInput, Popover } from "@blueprintjs/core";
 import { useCallback, useState } from "react";
-import { getCollectionItemIcon } from "../../utility/iconGetters";
+import { getCollectionItemIcon, getMiscIcon } from "../../utility/iconGetters";
 import { modifyInvestment } from "../../state/investment";
-import { nikkes_with_treasure } from "../../data/miscData";
+import { recommendation_data_skyfall } from "../../data/recommendationsSkyfall";
 
 interface CollectionItemVisualizationProps {
     nikke: Nikke;
     nikke_static: NikkeStaticData;
-    recommendations: RecommendationData | undefined;
 }
 
 const collectionItemPriorityDescriptions: { [key: string]: string } = {
@@ -46,12 +45,13 @@ export const collectionItemPriorityRanks: { [key: string]: number } = {
     not_rated: 14,
 }
 
-const CollectionItemVisualization: React.FC<CollectionItemVisualizationProps> = ({ nikke, nikke_static, recommendations }) => {
+const CollectionItemVisualization: React.FC<CollectionItemVisualizationProps> = ({ nikke, nikke_static }) => {
     const dispatch = useDispatch();
     const [popover_open, setPopoverOpen] = useState(false);
     const collection_item: CollectionItem | undefined = nikke.collection_item;
-    const priority = collectionItemPriorityDescriptions[recommendations ? recommendations.skyfall.collection_item_priority : "not_rated"];
-    const rank = collectionItemPriorityRanks[recommendations ? recommendations.skyfall.collection_item_priority : "not_rated"];
+    const recommendation_priority = recommendation_data_skyfall[nikke_static.id].collection_item_priority;
+    const priority = collectionItemPriorityDescriptions[recommendation_priority];
+    const rank = collectionItemPriorityRanks[recommendation_priority];
     const [isHovered, setIsHovered] = useState(false);
     const handleMouseEnter = () => setIsHovered(true);
     const handleMouseLeave = () => setIsHovered(false);
@@ -73,7 +73,7 @@ const CollectionItemVisualization: React.FC<CollectionItemVisualizationProps> = 
                         onClick={() => setCollectionItemRarity(CollectionItemRarity.SR, nikke_static.weapon_type)}
                     />
                 }
-                {nikkes_with_treasure.includes(nikke_static.id) && collection_item?.rarity !== CollectionItemRarity.SSR &&
+                {nikke_static.has_treasure && collection_item?.rarity !== CollectionItemRarity.SSR &&
                     <img src={getCollectionItemIcon("SSR", nikke_static.id)}
                         alt="Icon not found"
                         style={{ width: '128px' }}
@@ -88,10 +88,12 @@ const CollectionItemVisualization: React.FC<CollectionItemVisualizationProps> = 
     };
 
     const setCollectionItemPhase = useCallback((phase: number) => {
-        if (phase && (phase < 1 || phase > 15))
+        if (phase && (phase < 0 || phase > 15))
             return
         if (!collection_item)
             return
+        if (collection_item.rarity === CollectionItemRarity.SSR && (phase < 1 || phase > 3))
+            return;
         const new_collection_item: CollectionItem ={
             ...collection_item,
             phase: phase 
@@ -107,7 +109,7 @@ const CollectionItemVisualization: React.FC<CollectionItemVisualizationProps> = 
         const new_collection_item: CollectionItem = {
             rarity: rarity,
             type: type,
-            phase: 0 
+            phase: rarity === CollectionItemRarity.SSR ? 1 : 0 
         }
         const new_nikke: Nikke = {
             ...nikke,
@@ -149,7 +151,39 @@ const CollectionItemVisualization: React.FC<CollectionItemVisualizationProps> = 
                     onMouseLeave={handleMouseLeave}
                 />
             </Popover>
-            {collection_item && 
+            {collection_item && collection_item.rarity === CollectionItemRarity.SSR ?
+                <div  
+                    style={{
+                        display: 'grid',
+                        gridTemplateColumns: '1fr 1fr 1fr',
+                    }}
+                >
+                    <div style={{ gridColumn: '1 / 2' }} >
+                        <Button 
+                            small
+                            disabled={collection_item.phase === 1}
+                            icon='small-minus'
+                            style={{ backgroundColor: color_scheme[0] }}
+                            onClick={() => setCollectionItemPhase(collection_item.phase - 1)}
+                        />
+                    </div>
+                    <div style={{ gridColumn: '2 / 3' }} >
+                        <img 
+                            src={getMiscIcon("treasure", `phase_${collection_item.phase}`)}
+                            alt="Icon not found"
+                            style={{ width: "80px" }}
+                        />
+                    </div>
+                    <div style={{ gridColumn: '3 / 4' }} >
+                        <Button
+                            small
+                            disabled={collection_item.phase === 3}
+                            icon='small-plus'
+                            style={{ backgroundColor: color_scheme[0] }}
+                            onClick={() => setCollectionItemPhase(collection_item.phase + 1)}
+                        />
+                    </div>
+                </div> : collection_item &&
                 <div
                     style={{
                         display: 'grid',

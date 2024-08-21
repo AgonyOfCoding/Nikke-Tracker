@@ -6,6 +6,7 @@ export enum TeamSet {
     campaign = "Campaign",
     solo_raid = "Solo Raid",
     tribe_tower = "Tribe Tower",
+    shooting_range = "Shooting Range",
     pvp = "PVP",
     custom = "Custom"
 }

@@ -2,10 +2,7 @@ import { NikkeStaticData, Nikke, Burst } from "../types";
 import { FilterOptions } from "../state/filterOptions";
 
 export function nikkeListFilterer(
-    list: NikkeStaticData[],
-    nikke_investment_data: Nikke[],
-    filterState: FilterOptions
-): NikkeStaticData[] {
+list: NikkeStaticData[], nikke_investment_data: Nikke[], filterState: FilterOptions): NikkeStaticData[] {
 
     const filtered_static_data: NikkeStaticData[] = list.filter((nikke) =>
         nikke.id !== '' &&

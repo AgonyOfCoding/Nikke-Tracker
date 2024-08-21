@@ -6,7 +6,8 @@ import { Burst, color_scheme, NikkeRole, WeaponType } from "../../types";
 import { getMiscIcon } from "../../utility/iconGetters";
 
 const NavbarFilters: React.FC = () => {
-    const filterState: FilterOptions = useSelector((state: RootState) => state.filter)
+    const filterState: FilterOptions = useSelector((state: RootState) => state.filter);
+    const wide_layout: boolean = useSelector((state: RootState) => state.settings.wide_layout);
     const dispatch = useDispatch();
 
     return (
@@ -58,23 +59,25 @@ const NavbarFilters: React.FC = () => {
                     }
                 />
             )}
-            <Navbar.Divider />
-            {Object.values(WeaponType).map(weapon =>
-                <Button
-                    style={{ 
-                        backgroundColor: weapon === filterState.weapon ? color_scheme[4] : color_scheme[1],
-                        marginLeft: '2px',
-                        marginRight: '2px'
-                    }}
-                    key={weapon}
-                    className="bp5-minimal"
-                    icon={<img src={getMiscIcon("weapon", weapon)} alt={weapon} style={{ height: 32 }} />}
-                    onClick={weapon === filterState.weapon ?
-                        () => dispatch(setWeaponFilter(undefined)) :
-                        () => dispatch(setWeaponFilter(weapon))
-                    }
-                />
-            )}
+            {wide_layout && <>
+                <Navbar.Divider />
+                {Object.values(WeaponType).map(weapon =>
+                    <Button
+                        style={{ 
+                            backgroundColor: weapon === filterState.weapon ? color_scheme[4] : color_scheme[1],
+                            marginLeft: '2px',
+                            marginRight: '2px'
+                        }}
+                        key={weapon}
+                        className="bp5-minimal"
+                        icon={<img src={getMiscIcon("weapon", weapon)} alt={weapon} style={{ height: 32 }} />}
+                        onClick={weapon === filterState.weapon ?
+                            () => dispatch(setWeaponFilter(undefined)) :
+                            () => dispatch(setWeaponFilter(weapon))
+                        }
+                    />
+                )}
+            </>}
         </>
     )
 }

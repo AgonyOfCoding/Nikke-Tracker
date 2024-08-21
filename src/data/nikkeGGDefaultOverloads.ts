@@ -1,12 +1,4 @@
-import { OverloadsNikkeGG, PriorityNikkeGG, WeaponType } from "../types";
-
-export const nikkes_with_treasure: string[] = [
-    "diesel",
-    "exia",
-    "frima",
-    "laplace",
-    "viper"
-];
+import { OverloadsNikkeGG, WeaponType } from "../types";
 
 export function getNikkeGGOverloadArchitype(weapon_type: WeaponType): OverloadsNikkeGG {
     switch (weapon_type) {
@@ -27,7 +19,7 @@ export function getNikkeGGOverloadArchitype(weapon_type: WeaponType): OverloadsN
 }
 
 const nikke_gg_overload_archetype_AR: OverloadsNikkeGG = {
-    priority: PriorityNikkeGG.no,
+    priority: "-",
     priority_rank: 0,
     elemental_damage: {
         priority: 3,
@@ -77,7 +69,7 @@ const nikke_gg_overload_archetype_AR: OverloadsNikkeGG = {
     notes: ""
 }
 const nikke_gg_overload_archetype_SMG: OverloadsNikkeGG = {
-    priority: PriorityNikkeGG.no,
+    priority: "-",
     priority_rank: 0,
     elemental_damage: {
         priority: 3,
@@ -127,7 +119,7 @@ const nikke_gg_overload_archetype_SMG: OverloadsNikkeGG = {
     notes: ""
 }
 const nikke_gg_overload_archetype_RL: OverloadsNikkeGG = {
-    priority: PriorityNikkeGG.no,
+    priority: "-",
     priority_rank: 0,
     elemental_damage: {
         priority: 3,
@@ -177,7 +169,7 @@ const nikke_gg_overload_archetype_RL: OverloadsNikkeGG = {
     notes: ""
 }
 const nikke_gg_overload_archetype_SR: OverloadsNikkeGG = {
-    priority: PriorityNikkeGG.no,
+    priority: "-",
     priority_rank: 0,
     elemental_damage: {
         priority: 3,
@@ -227,7 +219,7 @@ const nikke_gg_overload_archetype_SR: OverloadsNikkeGG = {
     notes: ""
 }
 const nikke_gg_overload_archetype_SG: OverloadsNikkeGG = {
-    priority: PriorityNikkeGG.no,
+    priority: "-",
     priority_rank: 0,
     elemental_damage: {
         priority: 3,
@@ -262,12 +254,12 @@ const nikke_gg_overload_archetype_SG: OverloadsNikkeGG = {
     crit_damage: {
         priority: 2,
         recommended: "0x",
-        notes: "SG’s Can’t Core hit very well, Critical Damage/Rate is more useful for them (Core hits and Crit damage share the same bracket in the damage formula)"
+        notes: "SG's Can't Core hit very well, Critical Damage/Rate is more useful for them (Core hits and Crit damage share the same bracket in the damage formula)"
     },
     crit_rate: {
         priority: 2,
         recommended: "0x",
-        notes: "SG’s Can’t Core hit very well, Critical Damage/Rate is more useful for them (Core hits and Crit damage share the same bracket in the damage formula)"
+        notes: "SG's Can't Core hit very well, Critical Damage/Rate is more useful for them (Core hits and Crit damage share the same bracket in the damage formula)"
     },
     def: {
         priority: 0,
@@ -277,7 +269,7 @@ const nikke_gg_overload_archetype_SG: OverloadsNikkeGG = {
     notes: ""
 }
 const nikke_gg_overload_archetype_MG: OverloadsNikkeGG = {
-    priority: PriorityNikkeGG.no,
+    priority: "-",
     priority_rank: 0,
     elemental_damage: {
         priority: 3,
@@ -287,17 +279,17 @@ const nikke_gg_overload_archetype_MG: OverloadsNikkeGG = {
     hit_rate: {
         priority: 0,
         recommended: "0x",
-        notes: "Mg’s have laser point accuracy if fired long enough, not needed at all."
+        notes: "Mg's have laser point accuracy if fired long enough, not needed at all."
     },
     max_ammo: {
         priority: 5,
         recommended: "3-4x",
-        notes: "Extremely useful to reducing the downtime of MG’s, as you want to reload as little as possible due to wind-up time and long reload times."
+        notes: "Extremely useful to reducing the downtime of MG's, as you want to reload as little as possible due to wind-up time and long reload times."
     },
     atk: {
         priority: 5,
         recommended: "4x",
-        notes: "MG’s scale really well with attack."
+        notes: "MG's scale really well with attack."
     },
     charge_damage: {
         priority: 0,

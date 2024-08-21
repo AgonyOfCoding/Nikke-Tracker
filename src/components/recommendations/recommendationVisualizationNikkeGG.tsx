@@ -1,12 +1,13 @@
-import { color_scheme, RecommendationsNikkeGG, WeaponType } from "../../types";
+import { color_scheme, WeaponType } from "../../types";
 import { Button, Tooltip } from "@blueprintjs/core";
 import { getMiscIcon } from "../../utility/iconGetters";
 import NikkeGGOverloadLine from "./nikkeGGOverloadLine";
-import { getNikkeGGOverloadArchitype } from "../../data/miscData";
+import { getNikkeGGOverloadArchitype } from "../../data/nikkeGGDefaultOverloads";
+import { recommendation_data_nikke_gg } from "../../data/recommendationsNikkeGG";
 
 export interface RecommendationVisualizationNikkeGGProps {
-    recommendations: RecommendationsNikkeGG;
     weapon_type: WeaponType;
+    nikke_id: string;
 }
 
 function ratingColor(rating: number): string {
@@ -21,7 +22,8 @@ function ratingColor(rating: number): string {
     return "#589c24"
 }
 
-const RecommendationVisualizationNikkeGG: React.FC<RecommendationVisualizationNikkeGGProps> = ({ recommendations, weapon_type }) => {
+const RecommendationVisualizationNikkeGG: React.FC<RecommendationVisualizationNikkeGGProps> = ({ nikke_id, weapon_type }) => {
+    const recommendations = recommendation_data_nikke_gg[nikke_id];
 
     return (
         <div>
@@ -34,15 +36,15 @@ const RecommendationVisualizationNikkeGG: React.FC<RecommendationVisualizationNi
             >
                 <div style={{ gridColumn: '1 / 2' }} >
                     <b>Story</b>
-                    <div style={{ backgroundColor: ratingColor(recommendations.ratings.story) }}>{recommendations.ratings.story}</div>
+                    <div style={{ backgroundColor: ratingColor(recommendations.ratings.story), border: "1px solid black" }}>{recommendations.ratings.story}</div>
                 </div>
                 <div style={{ gridColumn: '2 / 3' }} >
                     <b>PvP</b>
-                    <div style={{ backgroundColor: ratingColor(recommendations.ratings.pvp) }}>{recommendations.ratings.pvp}</div>
+                    <div style={{ backgroundColor: ratingColor(recommendations.ratings.pvp), border: "1px solid black" }}>{recommendations.ratings.pvp}</div>
                 </div>
                 <div style={{ gridColumn: '3 / 4' }} >
                     <b>Boss</b>
-                    <div style={{ backgroundColor: ratingColor(recommendations.ratings.boss) }}>{recommendations.ratings.boss}</div>
+                    <div style={{ backgroundColor: ratingColor(recommendations.ratings.boss), border: "1px solid black" }}>{recommendations.ratings.boss}</div>
                 </div>
                 {recommendations.ratings.notes !== "" &&
                     <div style={{ gridColumn: '4 / 5', placeContent: 'center' }} >
@@ -65,9 +67,9 @@ const RecommendationVisualizationNikkeGG: React.FC<RecommendationVisualizationNi
                         <div>Skill investment priority: <b>{recommendations.skills.priority}</b></div>
                         <div>{recommendations.skills.budget} → {recommendations.skills.recommended}</div>
                     </div>
-                    {recommendations.skills.notes !== "" &&
+                    {recommendations.skills.notes[0] !== "" &&
                         <div style={{ gridColumn: '2 / 3', placeContent: 'center' }} >
-                            <Tooltip content={recommendations.skills.notes} >
+                            <Tooltip content={<div>{recommendations.skills.notes.map(line => <p key={line}>{line}</p>)}</div>} >
                                 <Button small minimal text="?" style={{ color: color_scheme[0], fontWeight: 'bold' }} />
                             </Tooltip>
                         </div>
@@ -75,8 +77,8 @@ const RecommendationVisualizationNikkeGG: React.FC<RecommendationVisualizationNi
                 </div>
             }
             
-            <div style={{ marginTop: '10px' }}>
-                {recommendations.overloads.priority && recommendations.overloads.priority_rank !== 0 &&
+            <div style={{ marginTop: '10px', backgroundColor: "#28242c", borderTop: "1px solid grey", borderBottom: "1px solid grey" }}>
+                {recommendations.overloads ? 
                     <div
                         style={{
                             display: 'grid',
@@ -95,21 +97,18 @@ const RecommendationVisualizationNikkeGG: React.FC<RecommendationVisualizationNi
                                 </Tooltip>
                             </div>
                         }
-                    </div>
-                    
-                }
-                {!recommendations.overloads.priority && 
+                    </div> :
                     <div>Default weapon-specific overloads</div>
                 }
-                <NikkeGGOverloadLine attribute={"elemental_damage"} overload_line={recommendations.overloads.atk ? recommendations.overloads.elemental_damage : getNikkeGGOverloadArchitype(weapon_type).elemental_damage } />
-                <NikkeGGOverloadLine attribute={"hit_rate"} overload_line={recommendations.overloads.atk ? recommendations.overloads.hit_rate : getNikkeGGOverloadArchitype(weapon_type).hit_rate } />
-                <NikkeGGOverloadLine attribute={"max_ammo"} overload_line={recommendations.overloads.atk ? recommendations.overloads.max_ammo : getNikkeGGOverloadArchitype(weapon_type).max_ammo } />
-                <NikkeGGOverloadLine attribute={"atk"} overload_line={recommendations.overloads.atk ? recommendations.overloads.atk : getNikkeGGOverloadArchitype(weapon_type).atk } />
-                <NikkeGGOverloadLine attribute={"charge_damage"} overload_line={recommendations.overloads.atk ? recommendations.overloads.charge_damage : getNikkeGGOverloadArchitype(weapon_type).charge_damage } />
-                <NikkeGGOverloadLine attribute={"charge_speed"} overload_line={recommendations.overloads.atk ? recommendations.overloads.charge_speed : getNikkeGGOverloadArchitype(weapon_type).charge_speed } />
-                <NikkeGGOverloadLine attribute={"crit_damage"} overload_line={recommendations.overloads.atk ? recommendations.overloads.crit_damage : getNikkeGGOverloadArchitype(weapon_type).crit_damage } />
-                <NikkeGGOverloadLine attribute={"crit_rate"} overload_line={recommendations.overloads.atk ? recommendations.overloads.crit_rate : getNikkeGGOverloadArchitype(weapon_type).crit_rate } />
-                <NikkeGGOverloadLine attribute={"def"} overload_line={recommendations.overloads.atk ? recommendations.overloads.def : getNikkeGGOverloadArchitype(weapon_type).def } />
+                <NikkeGGOverloadLine attribute={"elemental_damage"} overload_line={recommendations.overloads ? recommendations.overloads.elemental_damage : getNikkeGGOverloadArchitype(weapon_type).elemental_damage } />
+                <NikkeGGOverloadLine attribute={"hit_rate"} overload_line={recommendations.overloads ? recommendations.overloads.hit_rate : getNikkeGGOverloadArchitype(weapon_type).hit_rate } />
+                <NikkeGGOverloadLine attribute={"max_ammo"} overload_line={recommendations.overloads ? recommendations.overloads.max_ammo : getNikkeGGOverloadArchitype(weapon_type).max_ammo } />
+                <NikkeGGOverloadLine attribute={"atk"} overload_line={recommendations.overloads ? recommendations.overloads.atk : getNikkeGGOverloadArchitype(weapon_type).atk } />
+                <NikkeGGOverloadLine attribute={"charge_damage"} overload_line={recommendations.overloads ? recommendations.overloads.charge_damage : getNikkeGGOverloadArchitype(weapon_type).charge_damage } />
+                <NikkeGGOverloadLine attribute={"charge_speed"} overload_line={recommendations.overloads ? recommendations.overloads.charge_speed : getNikkeGGOverloadArchitype(weapon_type).charge_speed } />
+                <NikkeGGOverloadLine attribute={"crit_damage"} overload_line={recommendations.overloads ? recommendations.overloads.crit_damage : getNikkeGGOverloadArchitype(weapon_type).crit_damage } />
+                <NikkeGGOverloadLine attribute={"crit_rate"} overload_line={recommendations.overloads ? recommendations.overloads.crit_rate : getNikkeGGOverloadArchitype(weapon_type).crit_rate } />
+                <NikkeGGOverloadLine attribute={"def"} overload_line={recommendations.overloads ? recommendations.overloads.def : getNikkeGGOverloadArchitype(weapon_type).def } />
             </div>
             {recommendations.cube.cube &&
                 <div>

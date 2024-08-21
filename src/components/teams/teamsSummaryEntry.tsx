@@ -1,22 +1,22 @@
-import { Button, Dialog, DialogBody, DialogFooter, Popover } from "@blueprintjs/core";
+import { Button, Dialog, DialogBody, DialogFooter, Popover, Tooltip } from "@blueprintjs/core";
 import { useState, useCallback } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "../../state/store";
 import { TeamsState, TeamSet, changeTeamsData } from "../../state/teamsState";
-import { CubeName, NikkeStaticData, NikkeElement, color_scheme } from "../../types";
+import { CubeName, NikkeElement, color_scheme } from "../../types";
 import { getMiscIcon, getNikkeIcon } from "../../utility/iconGetters";
 import TeamEdit from "./teamEdit";
+import { nikke_static_data } from "../../data/nikkeStaticData";
 
 interface SummaryEntryProps {
     pos: number;
     nikke: string | undefined;
     cube: CubeName | undefined;
     index: number;
-    nikke_static_data: { [key: string]: NikkeStaticData };
     selected_team: string;
 }
 
-const SummaryEntry: React.FC<SummaryEntryProps> = ({ pos, nikke, cube, index, nikke_static_data, selected_team }) => {
+const SummaryEntry: React.FC<SummaryEntryProps> = ({ pos, nikke, cube, index, selected_team }) => {
     const [popover_open, setPopoverOpen] = useState(false);
     const dispatch = useDispatch();
     const teams_state: TeamsState = useSelector((state: RootState) => state.teams);
@@ -24,7 +24,8 @@ const SummaryEntry: React.FC<SummaryEntryProps> = ({ pos, nikke, cube, index, ni
     const teamSetKey = selected_team_set === TeamSet.campaign ?
             "campaign" : selected_team_set === TeamSet.solo_raid ?
             "solo_raid" : selected_team_set === TeamSet.tribe_tower ?
-            "tribe_tower": selected_team_set === TeamSet.pvp ?
+            "tribe_tower" : selected_team_set === TeamSet.shooting_range ?
+            "shooting_range" : selected_team_set === TeamSet.pvp ?
             "pvp" : "custom";
     const team_set = teams_data![teamSetKey];
     const [edit_dialog_open, setEditDialogOpen] = useState(false);
@@ -92,17 +93,19 @@ const SummaryEntry: React.FC<SummaryEntryProps> = ({ pos, nikke, cube, index, ni
                 gap: '10px'
             }}>
                 {Object.values(CubeName).map(cube => (
-                    <div key={cube} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                        <img
-                            src={getMiscIcon("cube", cube)}
-                            alt="Icon not found"
-                            style={{ width: '80px' }}
-                            onClick={() => {
-                                changeTeamCube(cube)
-                                setPopoverOpen(false)
-                            }}
-                        />
-                    </div>
+                    <Tooltip key={cube} content={cube} >
+                        <div key={cube} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                            <img
+                                src={getMiscIcon("cube", cube)}
+                                alt="Icon not found"
+                                style={{ width: '80px' }}
+                                onClick={() => {
+                                    changeTeamCube(cube)
+                                    setPopoverOpen(false)
+                                }}
+                            />
+                        </div>
+                    </Tooltip>
                 ))}
             </div>
         )

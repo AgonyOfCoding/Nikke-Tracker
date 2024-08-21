@@ -1,5 +1,5 @@
 import { Button } from "@blueprintjs/core";
-import { Nikke, NikkeRarity, NikkeStaticData, RecommendationData } from "../../types";
+import { Nikke, NikkeRarity, NikkeStaticData } from "../../types";
 import NikkeIconRow from "./nikkeIconRow";
 import { useDispatch } from "react-redux";
 import { addNikke } from "../../state/investment";
@@ -12,7 +12,6 @@ import FavoriteIcon from "./favoriteIcon";
 interface ProfileProps {
     nikke_static: NikkeStaticData;
     nikke_data: Nikke | undefined;
-    recommendations: RecommendationData;
 }
 
 

@@ -1,27 +1,26 @@
 import { useDispatch, useSelector } from "react-redux";
 import { setHighlightedElement, setSelectedTeam, setSelectedTeamSet, TeamSet, TeamsState } from "../../state/teamsState";
 import { RootState } from "../../state/store";
-import { Alignment, Button, Dialog, DialogBody, DialogFooter, Navbar } from "@blueprintjs/core";
-import { color_scheme, NikkeElement } from "../../types";
-import { useState } from "react";
-import TeamEdit from "./teamEdit";
+import { Alignment, Button, Navbar } from "@blueprintjs/core";
+import { color_scheme, NikkeElement, Team } from "../../types";
 import { getMiscIcon } from "../../utility/iconGetters";
 import NavbarRecommendations from "../navbar/navbarRecommendations";
+import TeamsNavbarTeam from "./teamsNavbarTeam";
 
 const TeamsNavbar: React.FC = () => {
     const teamsState: TeamsState = useSelector((state: RootState) => state.teams);
     const { selected_team_set, selected_team, teams_data, highlighted_element } = teamsState;
     const dispatch = useDispatch();
-    const [edit_dialog_open, setEditDialogOpen] = useState(false);
     
     if (!selected_team_set || !teams_data) return null;
 
     const team_set_key = selected_team_set === TeamSet.campaign ?
             "campaign" : selected_team_set === TeamSet.solo_raid ?
             "solo_raid" : selected_team_set === TeamSet.tribe_tower ?
-            "tribe_tower": selected_team_set === TeamSet.pvp ?
+            "tribe_tower": selected_team_set === TeamSet.shooting_range ?
+            "shooting_range" : selected_team_set === TeamSet.pvp ?
             "pvp" : "custom";
-    const team_set = teams_data[team_set_key];
+    const team_set: Team[] = teams_data[team_set_key];
 
     return (
         <Navbar
@@ -54,33 +53,9 @@ const TeamsNavbar: React.FC = () => {
                 onClick={() => dispatch(setSelectedTeam("summary"))}
             />
             <Navbar.Divider />
-                {team_set.map(team =>
-                    <>   
-                        <Button
-                            style={{ 
-                                backgroundColor: team.name === selected_team ? color_scheme[3] : color_scheme[1],
-                            }}
-                            key={team.name}
-                            className="bp5-minimal"
-                            text={team.name}
-                            onClick={() => dispatch(setSelectedTeam(team.name))}
-                        />
-                        <Button
-                            style={{ 
-                                backgroundColor: color_scheme[1],
-                            }}
-                            key={team.name + "edit"}
-                            className="bp5-minimal"
-                            icon="edit"
-                            onClick={() => {
-                                setEditDialogOpen(true)
-                                dispatch(setSelectedTeam(team.name))
-                            }}
-                        />
-                        <Navbar.Divider />
-                    </>
-                )
-            }
+            {team_set.map(team =>
+                <TeamsNavbarTeam team={team} selected_team={selected_team} team_set={team_set} />
+            )}
             {selected_team_set === TeamSet.custom && 
                 <Button
                     style={{ 
@@ -109,19 +84,6 @@ const TeamsNavbar: React.FC = () => {
                 />
             )}
             </Navbar.Group>
-            <Dialog isOpen={edit_dialog_open} title="Edit Team" onClose={() => setEditDialogOpen(false)} >
-                <DialogBody>
-                    <TeamEdit team={team_set.find(team => team.name === selected_team)!} teams_state={teamsState} />
-                </DialogBody>
-                <DialogFooter
-                    actions={
-                        <Button
-                            style={{ backgroundColor: color_scheme[4], color: color_scheme[0] }}
-                            text="Close"
-                            onClick={() => setEditDialogOpen(false)} />
-                        }
-                />
-            </Dialog>
         </Navbar>
     )
 }

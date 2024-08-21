@@ -3,7 +3,8 @@ import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 export enum RecommendationSource {
     nikke_gg = "Nikke.gg",
     prydwen = "Prydwen",
-    skyfall = "skyJLV"
+    skyfall = "skyJLV",
+    keripo = "Keripo (PvP)"
 }
 
 export interface RecommendationSourceState {

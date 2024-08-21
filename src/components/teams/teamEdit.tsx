@@ -1,11 +1,11 @@
-import { useCallback } from "react";
-import { CubeName, Team } from "../../types";
+import { useCallback, useEffect, useState } from "react";
+import { CubeName, NikkeManufacturer, NikkeStaticData, Team } from "../../types";
 import { ItemPredicate, ItemRenderer, Select } from "@blueprintjs/select";
-import { getNikkeIDByName, nikke_names } from "../../data/nikke_names";
 import { Button, MenuItem } from "@blueprintjs/core";
 import { getNikkeIcon } from "../../utility/iconGetters";
 import { useDispatch } from "react-redux";
 import { changeTeamsData, TeamSet, TeamsState } from "../../state/teamsState";
+import { nikke_static_data } from "../../data/nikkeStaticData";
 
 interface TeamEditProps {
     team: Team;
@@ -49,47 +49,68 @@ interface NikkeSelectProps {
 
 const NikkeSelect: React.FC<NikkeSelectProps> = ({ pos, nikke, team, teams_state }) => {
     const { selected_team_set, selected_team, teams_data } = teams_state;
-    const select_items = Object.values(nikke_names);
+    const [ select_items, setSelectItems ] = useState(Object.values(nikke_static_data));
+    useEffect(() => {
+        switch (team.name) {
+            case "Elysion":
+                setSelectItems(Object.values(nikke_static_data).filter(nikke => nikke.manufacturer === NikkeManufacturer.Elysion));
+                break;
+            case "Missilis":
+                setSelectItems(Object.values(nikke_static_data).filter(nikke => nikke.manufacturer === NikkeManufacturer.Missilis));
+                break;
+            case "Tetra":
+                setSelectItems(Object.values(nikke_static_data).filter(nikke => nikke.manufacturer === NikkeManufacturer.Tetra));
+                break;
+            case "Pilgrim":
+                setSelectItems(Object.values(nikke_static_data).filter(nikke => nikke.manufacturer === NikkeManufacturer.Pilgrim));
+                break;
+            default:
+                setSelectItems(Object.values(nikke_static_data));
+        }
+    },[team.name]);
     const dispatch = useDispatch();
-    const nikke_name = nikke ? nikke_names[nikke] : "(Select a Nikke)";
+    const nikke_name = nikke ? nikke_static_data[nikke].name : "(Select a Nikke)";
 
-    const changeTeamNikke = useCallback((nikke_name: string) => {
-        if (!selected_team_set || selected_team === "summary" || !teams_data)
+    const changeTeamNikke = useCallback((nikke: NikkeStaticData) => {
+        if (!selected_team_set || !teams_data)
             throw new Error("Selected team not found.");
 
         const teamSetKey = selected_team_set === TeamSet.campaign ?
             "campaign" : selected_team_set === TeamSet.solo_raid ?
             "solo_raid" : selected_team_set === TeamSet.tribe_tower ?
-            "tribe_tower": selected_team_set === TeamSet.pvp ?
+            "tribe_tower" : selected_team_set === TeamSet.shooting_range ?
+            "shooting_range" : selected_team_set === TeamSet.pvp ?
             "pvp" : "custom";
         const teams = teams_data[teamSetKey];
 
-        const teamIndex = teams.findIndex(team => team.name === selected_team);
+        const team_to_edit = selected_team === "summary" ? team.name : selected_team;
+
+        const teamIndex = teams.findIndex(t => t.name === team_to_edit);
         if (teamIndex === -1)
-            throw new Error("Selected team not found.");
+            throw new Error("Selected team not found (index -1).");
 
         const updatedTeams = [...teams];
         const teamToUpdate = { ...updatedTeams[teamIndex] };
 
         switch (pos) {
             case 1:
-                teamToUpdate.nikke_1 = getNikkeIDByName(nikke_name);
+                teamToUpdate.nikke_1 = nikke.id;
                 teamToUpdate.cube_1 = undefined;
                 break;
             case 2:
-                teamToUpdate.nikke_2 = getNikkeIDByName(nikke_name);
+                teamToUpdate.nikke_2 = nikke.id;
                 teamToUpdate.cube_2 = undefined;
                 break;
             case 3:
-                teamToUpdate.nikke_3 = getNikkeIDByName(nikke_name);
+                teamToUpdate.nikke_3 = nikke.id;
                 teamToUpdate.cube_3 = undefined;
                 break;
             case 4:
-                teamToUpdate.nikke_4 = getNikkeIDByName(nikke_name);
+                teamToUpdate.nikke_4 = nikke.id;
                 teamToUpdate.cube_4 = undefined;
                 break;
             case 5:
-                teamToUpdate.nikke_5 = getNikkeIDByName(nikke_name);
+                teamToUpdate.nikke_5 = nikke.id;
                 teamToUpdate.cube_5 = undefined;
                 break;
             default:
@@ -103,10 +124,10 @@ const NikkeSelect: React.FC<NikkeSelectProps> = ({ pos, nikke, team, teams_state
             [teamSetKey]: updatedTeams,
         };
         dispatch(changeTeamsData(new_teams_data))
-    }, [dispatch, pos, selected_team_set, selected_team, teams_data]);
+    }, [dispatch, pos, selected_team_set, selected_team, teams_data, team.name]);
 
-    const filterNikke: ItemPredicate<string> = (query, nikke, _index, exactMatch) => {
-        const normalizednikke = nikke.toLowerCase();
+    const filterNikke: ItemPredicate<NikkeStaticData> = (query, nikke, _index, exactMatch) => {
+        const normalizednikke = nikke.name.toLowerCase();
         const normalizedQuery = query.toLowerCase();
     
         if (exactMatch) {
@@ -116,7 +137,7 @@ const NikkeSelect: React.FC<NikkeSelectProps> = ({ pos, nikke, team, teams_state
         }
     };
 
-    const renderNikke: ItemRenderer<string> = (nikke, { handleClick, handleFocus, modifiers, query }) => {
+    const renderNikke: ItemRenderer<NikkeStaticData> = (nikke, { handleClick, handleFocus, modifiers, query }) => {
         if (!modifiers.matchesPredicate) {
             return null;
         }
@@ -124,18 +145,18 @@ const NikkeSelect: React.FC<NikkeSelectProps> = ({ pos, nikke, team, teams_state
             <MenuItem
                 active={modifiers.active}
                 disabled={modifiers.disabled}
-                key={nikke}
-                labelElement={<img src={getNikkeIcon(getNikkeIDByName(nikke))} alt="Icon not found" width="50px" height="50px" />}
+                key={nikke.id}
+                labelElement={<img src={getNikkeIcon(nikke.id)} alt="Icon not found" width="50px" height="50px" />}
                 onClick={handleClick}
                 onFocus={handleFocus}
                 roleStructure="listoption"
-                text={nikke}
+                text={nikke.name}
             />
         );
     };
 
     return (
-        <Select<string>
+        <Select<NikkeStaticData>
             items={select_items}
             itemPredicate={filterNikke}
             itemRenderer={renderNikke}
@@ -147,4 +168,4 @@ const NikkeSelect: React.FC<NikkeSelectProps> = ({ pos, nikke, team, teams_state
     );
 };
 
-export default TeamEdit
+export default TeamEdit;

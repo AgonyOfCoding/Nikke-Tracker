@@ -61,7 +61,6 @@ const CoreVisualization: React.FC<CoreVisualizationProps> = ({ nikke_data }) => 
             style={{
                 display: 'grid',
                 gridTemplateColumns: '1fr 1fr 1fr',
-                gridTemplateRows: 'repeat(3, auto)'
             }}
         >
             <div style={{ gridColumn: '1 / 2' }} >

@@ -86,17 +86,17 @@ export enum OverloadAttribute {
 // Harmony Cubes
 
 export enum CubeName {
-    Adjutant = "adjutant",
-    Assault = "assault",
-    Bastion = "bastion",
-    Endurance = "endurance",
-    Healing = "healing",
-    Onslaught = "onslaught",
-    Quantum = "quantum",
-    Resilience = "resilience",
-    Tempering = "tempering",
-    Vigor = "vigor",
-    Wingman = "wingman"
+    Adjutant = "Adjutant",
+    Assault = "Assault",
+    Bastion = "Bastion",
+    Endurance = "Endurance",
+    Healing = "Healing",
+    Onslaught = "Onslaught",
+    Quantum = "Quantum",
+    Resilience = "Resilience",
+    Tempering = "Tempering",
+    Vigor = "Vigor",
+    Wingman = "Wingman"
 }
 
 // Collection Items
@@ -132,6 +132,7 @@ export interface NikkeStaticData {
     rarity: NikkeRarity;
     burst: Burst;
     element: NikkeElement;
+    has_treasure: boolean;
     skills: NikkeSkills;
 }
 
@@ -193,6 +194,7 @@ export interface TeamsData {
     solo_raid: Team[];
     tribe_tower: Team[];
     pvp: Team[];
+    shooting_range: Team[];
     custom: Team[];
 }
 
@@ -210,7 +212,7 @@ export interface Team {
     cube_5: CubeName | undefined;
 }
 
-// Recommendations
+//// Recommendations
 
 export interface RecommendationData {
     nikke_gg: RecommendationsNikkeGG;
@@ -218,10 +220,12 @@ export interface RecommendationData {
     skyfall: RecommendationsSkyfall;
 }
 
+// Nikke.gg
+
 export interface RecommendationsNikkeGG {
     ratings: RatingsNikkeGG;
     skills: SkillsNikkeGG;
-    overloads: OverloadsNikkeGG | undefined;
+    overloads?: OverloadsNikkeGG;
     cube: CubeNikkeGG;
 }
 
@@ -265,12 +269,14 @@ export interface CubeNikkeGG {
     notes: string;
 }
 
+// Prydwen
+
 export interface RecommendationsPrydwen {
     ratings: RatingsPrydwen;
     skills: SkillsPrydwen;
     overloads: OverloadsPrydwen;
     cube: CubePrydwen;
-    with_treasure: RecommendationsPrydwen | undefined;
+    with_treasure?: RecommendationsPrydwen;
 }
 
 export interface RatingsPrydwen {
@@ -301,6 +307,8 @@ export interface CubePrydwen {
     notes: string;
 }
 
+// skyJLB
+
 export interface RecommendationsSkyfall {
     priority: string;
     collection_item_priority: string;
@@ -321,4 +329,15 @@ export interface OverloadsSkyfall {
 export interface CubeSkyfall {
     cube: CubeName[];
     notes: string;
+}
+
+// Keripo
+
+export interface RecommendationsKeripo {
+    tier: string;
+    role: string;
+    skills: string;
+    cube: CubeName[];
+    tl_dr: string;
+    full: string[];
 }

@@ -8,6 +8,7 @@ import axios from 'axios';
 import { initializeInvestments } from './state/investment';
 import { initializeTeamsData } from './state/teamsState';
 import NITContent from './components/nitContent';
+import { emptyTeamsData } from './data/emptyTeams';
 
 const transformInvestmentData = ( data: any[] ): Nikke[] => {
   const transformedData: Nikke[] = [];
@@ -46,6 +47,8 @@ function App() {
             dispatch(initializeInvestments(investments));
         } catch (error) {
             console.error('Error fetching investment data:', error);
+            setNikkeInvestmentData([]);
+            dispatch(initializeInvestments([]));
         }
     };
     const fetchTeamsData = async () => {
@@ -56,6 +59,8 @@ function App() {
             dispatch(initializeTeamsData(teams));
         } catch (error) {
             console.error('Error fetching investment data:', error);
+            setNikkeTeamsData(emptyTeamsData);
+            dispatch(initializeTeamsData(emptyTeamsData));
         }
     };
     fetchInvestmentData();

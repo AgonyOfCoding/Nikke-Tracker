@@ -7,11 +7,11 @@
       "nikke_3": "alice",
       "nikke_4": "red_hood",
       "nikke_5": "naga",
-      "cube_1": "resilience",
-      "cube_2": "bastion",
-      "cube_3": "resilience",
-      "cube_4": "resilience",
-      "cube_5": "resilience"
+      "cube_1": "Resilience",
+      "cube_2": "Bastion",
+      "cube_3": "Resilience",
+      "cube_4": "Resilience",
+      "cube_5": "Resilience"
     },
     {
       "name": "Defend",
@@ -20,11 +20,11 @@
       "nikke_3": "red_hood",
       "nikke_4": "modernia",
       "nikke_5": "naga",
-      "cube_2": "quantum",
-      "cube_1": "resilience",
-      "cube_3": "resilience",
-      "cube_4": "bastion",
-      "cube_5": "resilience"
+      "cube_2": "Quantum",
+      "cube_1": "Resilience",
+      "cube_3": "Resilience",
+      "cube_4": "Bastion",
+      "cube_5": "Resilience"
     },
     {
       "name": "Boss"
@@ -32,123 +32,73 @@
   ],
   "solo_raid": [
     {
-      "name": "Team 1",
-      "nikke_1": "crown",
-      "cube_1": "resilience",
-      "nikke_2": "volume",
-      "cube_2": "quantum",
-      "nikke_3": "ein",
-      "cube_3": "resilience",
-      "nikke_4": "anis_sparkling_summer",
-      "cube_4": "resilience",
-      "nikke_5": "rapunzel",
-      "cube_5": "vigor"
+      "name": "Team 1"
     },
     {
-      "name": "Team 2",
-      "nikke_1": "tia",
-      "cube_1": "resilience",
-      "nikke_2": "scarlet_black_shadow",
-      "cube_2": "bastion",
-      "nikke_3": "alice",
-      "cube_3": "resilience",
-      "nikke_4": "liter",
-      "cube_4": "quantum",
-      "nikke_5": "naga",
-      "cube_5": "resilience"
+      "name": "Team 2"
     },
     {
-      "name": "Team 3",
-      "nikke_1": "d_killer_wife",
-      "cube_1": "resilience",
-      "nikke_2": "blanc",
-      "cube_2": "quantum",
-      "nikke_3": "red_hood",
-      "cube_3": "resilience",
-      "nikke_4": "noir",
-      "cube_4": "bastion",
-      "nikke_5": "scarlet",
-      "cube_5": "resilience"
+      "name": "Team 3"
     },
     {
-      "name": "Team 4",
-      "nikke_1": "alice_wonderland_bunny",
-      "cube_1": "bastion",
-      "nikke_2": "tove",
-      "cube_2": "bastion",
-      "nikke_3": "privaty_unkind_maid",
-      "cube_3": "bastion",
-      "nikke_4": "soda_twinkling_bunny",
-      "cube_4": "bastion",
-      "nikke_5": "leona",
-      "cube_5": "resilience"
+      "name": "Team 4"
     },
     {
-      "name": "Team 5",
-      "nikke_1": "dorothy",
-      "cube_1": "resilience",
-      "nikke_2": "marciana",
-      "cube_2": "quantum",
-      "nikke_3": "maxwell",
-      "cube_3": "resilience",
-      "nikke_4": "maiden",
-      "cube_4": "resilience",
-      "nikke_5": "privaty",
-      "cube_5": "resilience"
+      "name": "Team 5"
     }
   ],
   "tribe_tower": [
     {
       "name": "Elysion",
       "nikke_1": "d_killer_wife",
-      "nikke_2": "marciana",
-      "nikke_3": "vesti",
-      "nikke_5": "privaty",
-      "nikke_4": "maiden",
-      "cube_1": "resilience",
-      "cube_2": "quantum",
-      "cube_3": "resilience",
-      "cube_4": "resilience",
-      "cube_5": "resilience"
+      "nikke_2": "privaty_unkind_maid",
+      "nikke_3": "helm",
+      "nikke_5": "mast",
+      "nikke_4": "guillotine",
+      "cube_1": "Resilience",
+      "cube_2": "Bastion",
+      "cube_3": "Resilience",
+      "cube_4": "Bastion",
+      "cube_5": "Resilience"
     },
     {
       "name": "Missilis",
       "nikke_1": "tia",
+      "cube_1": "Resilience",
       "nikke_2": "liter",
+      "cube_2": "Quantum",
       "nikke_3": "ein",
+      "cube_3": "Resilience",
       "nikke_4": "maxwell",
+      "cube_4": "Resilience",
       "nikke_5": "naga",
-      "cube_1": "resilience",
-      "cube_2": "quantum",
-      "cube_3": "resilience",
-      "cube_4": "resilience",
-      "cube_5": "resilience"
+      "cube_5": "Resilience"
     },
     {
       "name": "Tetra",
       "nikke_1": "volume",
-      "nikke_2": "ludmilla_winter_owner",
+      "cube_1": "Quantum",
+      "nikke_2": "blanc",
+      "cube_2": "Vigor",
       "nikke_3": "alice",
-      "nikke_4": "blanc",
+      "cube_3": "Resilience",
+      "nikke_4": "ludmilla_winter_owner",
+      "cube_4": "Bastion",
       "nikke_5": "noir",
-      "cube_1": "quantum",
-      "cube_2": "bastion",
-      "cube_3": "resilience",
-      "cube_4": "vigor",
-      "cube_5": "bastion"
+      "cube_5": "Bastion"
     },
     {
       "name": "Pilgrim",
-      "nikke_1": "dorothy",
-      "nikke_2": "crown",
-      "nikke_3": "modernia",
-      "nikke_4": "red_hood",
+      "nikke_1": "crown",
+      "cube_1": "Resilience",
+      "nikke_2": "dorothy",
+      "cube_2": "Resilience",
+      "nikke_3": "red_hood",
+      "cube_3": "Resilience",
+      "nikke_4": "scarlet_black_shadow",
+      "cube_4": "Bastion",
       "nikke_5": "rapunzel",
-      "cube_1": "resilience",
-      "cube_2": "resilience",
-      "cube_3": "bastion",
-      "cube_4": "resilience",
-      "cube_5": "vigor"
+      "cube_5": "Healing"
     }
   ],
   "pvp": [
@@ -159,11 +109,11 @@
       "nikke_3": "rapunzel",
       "nikke_4": "jackal",
       "nikke_5": "noah",
-      "cube_4": "quantum",
-      "cube_2": "bastion",
-      "cube_5": "tempering",
-      "cube_1": "vigor",
-      "cube_3": "healing"
+      "cube_4": "Quantum",
+      "cube_2": "Bastion",
+      "cube_5": "Tempering",
+      "cube_1": "Vigor",
+      "cube_3": "Healing"
     },
     {
       "name": "SP Arena 1",
@@ -172,11 +122,11 @@
       "nikke_3": "centi",
       "nikke_4": "anis",
       "nikke_5": "jackal",
-      "cube_1": "bastion",
-      "cube_4": "quantum",
-      "cube_3": "quantum",
-      "cube_2": "adjutant",
-      "cube_5": "quantum"
+      "cube_1": "Bastion",
+      "cube_4": "Quantum",
+      "cube_3": "Quantum",
+      "cube_2": "Adjutant",
+      "cube_5": "Quantum"
     },
     {
       "name": "SP Arena 2",
@@ -185,11 +135,11 @@
       "nikke_3": "anis_sparkling_summer",
       "nikke_4": "noise",
       "nikke_5": "soda_twinkling_bunny",
-      "cube_1": "tempering",
-      "cube_3": "resilience",
-      "cube_2": "adjutant",
-      "cube_4": "vigor",
-      "cube_5": "quantum"
+      "cube_1": "Tempering",
+      "cube_3": "Resilience",
+      "cube_2": "Adjutant",
+      "cube_4": "Vigor",
+      "cube_5": "Quantum"
     },
     {
       "name": "SP Arena 3",
@@ -198,11 +148,78 @@
       "nikke_3": "blanc",
       "nikke_4": "red_hood",
       "nikke_5": "noir",
-      "cube_2": "adjutant",
-      "cube_1": "bastion",
-      "cube_3": "tempering",
-      "cube_4": "bastion",
-      "cube_5": "bastion"
+      "cube_2": "Adjutant",
+      "cube_1": "Bastion",
+      "cube_3": "Tempering",
+      "cube_4": "Bastion",
+      "cube_5": "Bastion"
+    }
+  ],
+  "shooting_range": [
+    {
+      "name": "Fire Weak",
+      "nikke_1": "crown",
+      "cube_1": "Resilience",
+      "nikke_2": "d_killer_wife",
+      "cube_2": "Resilience",
+      "nikke_3": "red_hood",
+      "cube_3": "Resilience",
+      "nikke_4": "ludmilla_winter_owner",
+      "cube_4": "Bastion",
+      "nikke_5": "naga",
+      "cube_5": "Resilience"
+    },
+    {
+      "name": "Wind Weak",
+      "nikke_1": "crown",
+      "cube_1": "Resilience",
+      "nikke_2": "scarlet_black_shadow",
+      "cube_2": "Bastion",
+      "nikke_3": "alice",
+      "cube_3": "Resilience",
+      "nikke_4": "naga",
+      "cube_4": "Resilience",
+      "nikke_5": "liter",
+      "cube_5": "Quantum"
+    },
+    {
+      "name": "Iron Weak",
+      "nikke_1": "crown",
+      "cube_1": "Resilience",
+      "nikke_2": "liter",
+      "cube_2": "Quantum",
+      "nikke_3": "red_hood",
+      "cube_3": "Resilience",
+      "nikke_4": "maxwell",
+      "cube_4": "Resilience",
+      "nikke_5": "naga",
+      "cube_5": "Resilience"
+    },
+    {
+      "name": "Water Weak",
+      "nikke_1": "crown",
+      "cube_1": "Resilience",
+      "nikke_2": "naga",
+      "cube_2": "Resilience",
+      "nikke_3": "red_hood",
+      "cube_3": "Resilience",
+      "nikke_4": "ludmilla_winter_owner",
+      "cube_4": "Bastion",
+      "nikke_5": "liter",
+      "cube_5": "Quantum"
+    },
+    {
+      "name": "Electric Weak",
+      "nikke_1": "crown",
+      "cube_1": "Resilience",
+      "nikke_2": "naga",
+      "cube_2": "Resilience",
+      "nikke_3": "alice",
+      "cube_3": "Resilience",
+      "nikke_4": "ludmilla_winter_owner",
+      "cube_4": "Bastion",
+      "nikke_5": "liter",
+      "cube_5": "Quantum"
     }
   ],
   "custom": []

@@ -34,6 +34,10 @@ const sort_options_sky: string[] = [
     "Priority[Skyfall]"
 ]
 
+const sort_options_keripo: string[] = [
+    "Tier[Keripo]"
+]
+
 function removeBrackets(str: string) {
     return str.replace(/\[.*?\]/g, '');
 }
@@ -47,7 +51,9 @@ const NavbarSort: React.FC = () => {
         sort_options_common.concat(sort_options_nikkegg) :
         recommendations_source === RecommendationSource.prydwen ?
         sort_options_common.concat(sort_options_prydwen) :
-        sort_options_common.concat(sort_options_sky);
+        recommendations_source === RecommendationSource.skyfall ?
+        sort_options_common.concat(sort_options_sky) :
+        sort_options_common.concat(sort_options_keripo)
 
     const sortMenu = () => {
         return <Menu style={{ backgroundColor: color_scheme[0] }} >

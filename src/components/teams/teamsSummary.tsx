@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-import { color_scheme, NikkeStaticData, Team } from "../../types"
+import { color_scheme, Team } from "../../types"
 import { RootState } from "../../state/store";
 import { useCallback } from "react";
 import { changeTeamsData, TeamSet, TeamsState } from "../../state/teamsState";
@@ -8,14 +8,13 @@ import SummaryEntry from "./teamsSummaryEntry";
 
 interface TeamsSummaryProps {
     teams: Team[];
-    nikke_static_data: { [key: string]: NikkeStaticData };
 }
 
-const TeamsSummary: React.FC<TeamsSummaryProps> = ({ teams, nikke_static_data }) => {
+const TeamsSummary: React.FC<TeamsSummaryProps> = ({ teams }) => {
     return (
         <div style={{ marginTop: '51px' }}>
             {teams.map((team, index) => 
-                <TeamRow index={index} key={team.name} team={team} nikke_static_data={nikke_static_data} />
+                <TeamRow index={index} key={team.name} team={team} />
             )}
         </div>
     )
@@ -24,10 +23,9 @@ const TeamsSummary: React.FC<TeamsSummaryProps> = ({ teams, nikke_static_data })
 interface TeamRowProps {
     index: number;
     team: Team;
-    nikke_static_data: { [key: string]: NikkeStaticData };
 }
 
-const TeamRow: React.FC<TeamRowProps> = ({ index, team, nikke_static_data }) => {
+const TeamRow: React.FC<TeamRowProps> = ({ index, team }) => {
     const { name, nikke_1, nikke_2, nikke_3, nikke_4, nikke_5, cube_1, cube_2, cube_3, cube_4, cube_5 } = team;
     const teams_state: TeamsState = useSelector((state: RootState) => state.teams);
     const { selected_team_set, teams_data } = teams_state;
@@ -40,7 +38,8 @@ const TeamRow: React.FC<TeamRowProps> = ({ index, team, nikke_static_data }) => 
         const teamSetKey = selected_team_set === TeamSet.campaign ?
             "campaign" : selected_team_set === TeamSet.solo_raid ?
             "solo_raid" : selected_team_set === TeamSet.tribe_tower ?
-            "tribe_tower": selected_team_set === TeamSet.pvp ?
+            "tribe_tower" : selected_team_set === TeamSet.shooting_range ?
+            "shooting_range" : selected_team_set === TeamSet.pvp ?
             "pvp" : "custom";
         const teams = teams_data[teamSetKey];
 
@@ -85,11 +84,11 @@ const TeamRow: React.FC<TeamRowProps> = ({ index, team, nikke_static_data }) => 
                     <Button icon="reset" onClick={clearTeam} intent="danger" />
                 </Tooltip>
             </div>
-            <SummaryEntry pos={1} nikke={nikke_1} cube={cube_1} index={2} nikke_static_data={nikke_static_data} selected_team={name} />
-            <SummaryEntry pos={2} nikke={nikke_2} cube={cube_2} index={3} nikke_static_data={nikke_static_data} selected_team={name} />
-            <SummaryEntry pos={3} nikke={nikke_3} cube={cube_3} index={4} nikke_static_data={nikke_static_data} selected_team={name} />
-            <SummaryEntry pos={4} nikke={nikke_4} cube={cube_4} index={5} nikke_static_data={nikke_static_data} selected_team={name} />
-            <SummaryEntry pos={5} nikke={nikke_5} cube={cube_5} index={6} nikke_static_data={nikke_static_data} selected_team={name} />
+            <SummaryEntry pos={1} nikke={nikke_1} cube={cube_1} index={2} selected_team={name} />
+            <SummaryEntry pos={2} nikke={nikke_2} cube={cube_2} index={3} selected_team={name} />
+            <SummaryEntry pos={3} nikke={nikke_3} cube={cube_3} index={4} selected_team={name} />
+            <SummaryEntry pos={4} nikke={nikke_4} cube={cube_4} index={5} selected_team={name} />
+            <SummaryEntry pos={5} nikke={nikke_5} cube={cube_5} index={6} selected_team={name} />
         </div>
     )
 }
