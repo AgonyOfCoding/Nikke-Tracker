@@ -39,13 +39,13 @@ The main feature of NIT is to provide a list of Nikke entries that can be filter
 Nikkes can also be favorited for quick access through favorite filtering.
 
 <div align="left">
-  <img src="src/assests/readme_images/overview.png"/>
+  <img src="src/assets/readme_images/overview.png"/>
 </div>
 
 ### Equipment
 
 <div align="left">
-  <img src="src/assests/readme_images/overload_line.png"/>
+  <img src="src/assets/readme_images/overload_line.png"/>
 </div>
 
 Each Nikke entry lets you select which equipment pieces she currently has and the overload lines for relevant pieces. The equipment level is also displayed. The overload lines show the attribute, value and which level that value corresponds to (1-15). Levels 12-15 are visualized with the same way that in-game. Below the equipment, the attribute values are pooled into a table to quickly gauge the number and level of specific attributes
@@ -55,7 +55,7 @@ Each Nikke entry lets you select which equipment pieces she currently has and th
 Skill levels are visualized for each Nikke entry, and clicking that button brings up a dialog that provides the full skill descriptions and bonus values. It can be used to test how much benefit increasing the levels would bring.
 
 <div align="left">
-  <img src="src/assests/readme_images/skill_dialog.png"/>
+  <img src="src/assets/readme_images/skill_dialog.png"/>
 </div>
 
 ### Collection Items
@@ -63,7 +63,7 @@ Skill levels are visualized for each Nikke entry, and clicking that button bring
 Collection item rarities and phases can be tracked. There is also a collection item priority for all Nikkes that is based on the tier list skyJLV made shortly after collection items were first introduced. As he hasn't updated the tier list since, the priorities contain some of my own opinions as well but are still based on his guide videos.
 
 <div align="left">
-  <img src="src/assests/readme_images/collection_items.png"/>
+  <img src="src/assets/readme_images/collection_items.png"/>
 </div>
 
 ## Teams
@@ -82,7 +82,7 @@ The Teams-feature is a way to quickly access the information about Nikkes you ar
 Beside the cubes, the element of each Nikke is shown on the summary tab. Clicking the element icons on the navbar highlight that element on the teams. This can be useful for solo raid bosses with element shields to quickly see that each team has it covered and which Nikkes can be used to destroy the shield.
 
 <div align="left">
-  <img src="src/assests/readme_images/teams_solo_raid.png"/>
+  <img src="src/assets/readme_images/teams_solo_raid.png"/>
 </div>
 
 ## Example cases
@@ -98,5 +98,5 @@ Unlocked Anomaly Interception and wondering which boss to fight? Sort by priorit
 Got a new collection item or wondering how to spend the upgrade materials or which collection item to get from the solo raid reward? Sort by collection item priority and filter by weapon type. Addtionally, sort by collection item phase to see which Nikkes already have invested collection items, or filter by a collection item rarity if you only want to spend the blue materials for blue collection items for example.
 
 <div align="left">
-  <img src="src/assests/readme_images/filter_ol_gloves.png"/>
+  <img src="src/assets/readme_images/filter_ol_gloves.png"/>
 </div>
