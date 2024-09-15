@@ -343,6 +343,21 @@ export const recommendation_data_nikke_gg: {[nikke: string]: RecommendationsNikk
             "cube": [CubeName.Resilience, CubeName.Vigor],
             "notes": "Wants Resilience to empty out her ammo, however it is still preferred to be on DPS if possible. Vigor increases her shield HP if needed."
         }
+    }, "asuka_shikinami_langley": {
+        ratings: {
+            story: 0,
+            pvp: 0,
+            boss: 0,
+            notes: ""
+        }, skills: {
+            priority: "Highest",
+            budget: "7/7/7",
+            recommended: "10/10/10",
+            notes: ["Skill 1 is able to give herself a massive attack boost, while providing shield breaking utility.","Skill 2 has a team buff that is rare for Nikkes, and that is core damage boost. which means no other buffs would dilute its value except for more of itself","Burst is extremely important for her self DPS, as it increases her pierce duration (15s at level 1, 20s at level 4, 25s at level 7), hit rate for guaranteed core hits, and ATK Damage ▲"]
+        }, cube: {
+            cube: [],
+            notes: ""
+        }
     }, "bay": {
         "ratings": {
             "story": 6.5,
@@ -2102,6 +2117,21 @@ export const recommendation_data_nikke_gg: {[nikke: string]: RecommendationsNikk
             "cube": [CubeName.Vigor, CubeName.Resilience],
             "notes": "Vigor Increases Decoy HP"
         }
+    }, "rei_ayanami": {
+        ratings: {
+            story: 0,
+            pvp: 0,
+            boss: 0,
+            notes: ""
+        }, skills: {
+            priority: "High",
+            budget: "4/4/7",
+            recommended: "7/7/10",
+            notes: ["Skill 1 and 2 have low scaling for their skills, and are not impactful enough to warrant spending gold books for.", "Her burst offers a high ATK damage up boost, which is good for Strong Sub-DPS Nikkes (Currently only Modernia as of now)"]
+        }, cube: {
+            cube: [],
+            notes: ""
+        }
     }, "rem": {
         "ratings": {
             "story": 8.4,
@@ -2741,6 +2771,21 @@ export const recommendation_data_nikke_gg: {[nikke: string]: RecommendationsNikk
             "cube": [],
             "notes": ""
         }
+    }, "anchor": {
+        ratings: {
+            story: 0,
+            pvp: 0,
+            boss: 0,
+            notes: ""
+        }, skills: {
+            priority: "",
+            budget: "",
+            recommended: "",
+            notes: [""]
+        }, cube: {
+            cube: [CubeName.Resilience],
+            notes: "Assuming using her for taunt purposes, she doesn't want non-ammo increasing cubes."
+        }
     }, "anis": {
         "ratings": {
             "story": 6.5,
@@ -2756,6 +2801,201 @@ export const recommendation_data_nikke_gg: {[nikke: string]: RecommendationsNikk
             "cube": [CubeName.Resilience, CubeName.Bastion],
             "notes": ""
         }
+    }, "belorta": {
+        ratings: {
+            story: 5.5,
+            pvp: 1.5,
+            boss: 2.4,
+            notes: ""
+        }, skills: {
+            priority: "",
+            budget: "",
+            recommended: "",
+            notes: [""]
+        }, cube: {
+            cube: [CubeName.Resilience, CubeName.Bastion],
+            notes: ""
+        }
+    }, "delta": {
+        ratings: {
+            story: 1.5,
+            pvp: 3,
+            boss: 1,
+            notes: "Can only taunt on burst with 40s cooldown. Self defensive buffs are not impactful without a consistent taunt."
+        }, skills: {
+            priority: "",
+            budget: "",
+            recommended: "",
+            notes: [""]
+        }, cube: {
+            cube: [CubeName.Resilience, CubeName.Bastion],
+            notes: ""
+        }
+    }, "ether": {
+        ratings: {
+            story: 2.5,
+            pvp: 5.5,
+            boss: 2,
+            notes: "Decent beginner shielder with a defense debuff and good damage taken reduction for 1 ally. Easily replaceable by any stronger shielder."
+        }, skills: {
+            priority: "",
+            budget: "",
+            recommended: "",
+            notes: [""]
+        }, cube: {
+            cube: [CubeName.Vigor, CubeName.Resilience],
+            notes: ""
+        }
+    }, "himeno": {
+        ratings: {
+            story: 5,
+            pvp: 4,
+            boss: 6,
+            notes: "A Collab Nikke that buffs sniper weapon Niche, however does not do a very great job at it"
+        }, skills: {
+            priority: "Low",
+            budget: "1/4/4",
+            recommended: "1/5/5",
+            notes: ["Skill 2 buffs sniper riflle nikkes periodically. Burst buffs highest current ATK Nikke"]
+        }, cube: {
+            cube: [],
+            notes: ""
+        }
+    }, "mica": {
+        ratings: {
+            story: 1.5,
+            pvp: 4,
+            boss: 1.1,
+            notes: "Severely outclassed by N102 and Anis, leaving her no use other than in Tetra Tower if you need a B1."
+        }, skills: {
+            priority: "",
+            budget: "",
+            recommended: "",
+            notes: [""]
+        }, cube: {
+            cube: [CubeName.Resilience, CubeName.Bastion],
+            notes: ""
+        }
+    }, "mihara": {
+        ratings: {
+            story: 6,
+            pvp: 4.9,
+            boss: 6,
+            notes: "Lowers full burst duration, allowing for faster rotations with CDR. Double CDR's are recommended when running her AoE burst for Story. Also, C tier for Cdub, don't question."
+        }, skills: {
+            priority: "",
+            budget: "",
+            recommended: "",
+            notes: [""]
+        }, cube: {
+            cube: [CubeName.Bastion, CubeName.Resilience],
+            notes: ""
+        }
+    }, "misato_katsuragi": {
+        ratings: {
+            story: 0,
+            pvp: 0,
+            boss: 0,
+            notes: ""
+        }, skills: {
+            priority: "",
+            budget: "",
+            recommended: "",
+            notes: [""]
+        }, cube: {
+            cube: [],
+            notes: ""
+        }
+    }, "n102": {
+        ratings: {
+            story: 6.9,
+            pvp: 3,
+            boss: 7.5,
+            notes: "F2P budget Liter. Does well on almost any team. Low CP due to being an SR can be somewhat mitigated with investment, although she is instantly replaceable if Liter is pulled."
+        }, skills: {
+            priority: "",
+            budget: "",
+            recommended: "",
+            notes: [""]
+        }, cube: {
+            cube: [CubeName.Resilience, CubeName.Bastion],
+            notes: ""
+        }
+    }, "neon": {
+        ratings: {
+            story: 2.5,
+            pvp: 7,
+            boss: 4,
+            notes: "Usually worse than N102 even on shotgun teams, which kills her niche. Good energy support and decent DPS."
+        }, skills: {
+            priority: "Low",
+            budget: "1/1/1",
+            recommended: "1/1/1",
+            notes: ["Only Skill 2 is even worth considering to upgrade, and that's if you are using her to reduce RNG grinding crit on Snow White one/shot team. Even there, only upgrade until level 4."]
+        }, cube: {
+            cube: [CubeName.Resilience, CubeName.Wingman],
+            notes: ""
+        }
+    }, "neve": {
+        ratings: {
+            story: 3.5,
+            pvp: 5,
+            boss: 6,
+            notes: "Great F2P SR shotgun DPS for interception S and other boss fights. Can go toe-to-toe with SSR shotguns in DPS."
+        }, skills: {
+            priority: "",
+            budget: "",
+            recommended: "",
+            notes: [""]
+        }, cube: {
+            cube: [CubeName.Resilience, CubeName.Wingman],
+            notes: ""
+        }
+    }, "pascal": {
+        ratings: {
+            story: 0,
+            pvp: 0,
+            boss: 0,
+            notes: ""
+        }, skills: {
+            priority: "",
+            budget: "",
+            recommended: "",
+            notes: [""]
+        }, cube: {
+            cube: [],
+            notes: ""
+        }
+    }, "ram": {
+        ratings: {
+            story: 4,
+            pvp: 4,
+            boss: 6.5,
+            notes: "Mostly used against chatterbox or bosses that can nuke Nikkes with one damage tick. Ram's shield is able to fully block those attacks unless the attacks have pierce"
+        }, skills: {
+            priority: "Low",
+            budget: "1/1/1",
+            recommended: "1/1/1",
+            notes: ["Skill 1 and Skill 2 don't do much at all unless running in very niche teams (Kilo,2B). Upgrading burst doesn't do much and can be left at level 1"]
+        }, cube: {
+            cube: [],
+            notes: ""
+        }
+    }, "rapi": {
+        ratings: {
+            story: 3,
+            pvp: 3,
+            boss: 4.5,
+            notes: "Best SR dps on auto. Does well on any beginner team, but starts dying in harder content from her own taunt and lower SR base stats."
+        }, skills: {
+            priority: "",
+            budget: "",
+            recommended: "",
+            notes: [""]
+        }, cube: {
+            cube: [CubeName.Bastion, CubeName.Resilience],
+            notes: ""
+        }
     }, "product_08": {
         "ratings": {
             "story": 1,
@@ -2770,6 +3010,126 @@ export const recommendation_data_nikke_gg: {[nikke: string]: RecommendationsNikk
         }, "cube": {
             "cube": [CubeName.Resilience, CubeName.Bastion],
             "notes": ""
+        }
+    }, "product_12": {
+        ratings: {
+            story: 1,
+            pvp: 1,
+            boss: 1,
+            notes: "A decent Missilis B3 until better ones are pulled."
+        }, skills: {
+            priority: "",
+            budget: "",
+            recommended: "",
+            notes: [""]
+        }, cube: {
+            cube: [],
+            notes: ""
+        }
+    }, "product_23": {
+        ratings: {
+            story: 1,
+            pvp: 5,
+            boss: 1.5,
+            notes: "Surprisingly strong defense down on burst and being a shotgun makes her valuable for newbies in boss fights."
+        }, skills: {
+            priority: "",
+            budget: "",
+            recommended: "",
+            notes: [""]
+        }, cube: {
+            cube: [CubeName.Resilience, CubeName.Wingman],
+            notes: ""
+        }
+    }, "soldier_eg": {
+        ratings: {
+            story: 1,
+            pvp: 1.5,
+            boss: 1,
+            notes: "No reason to use since Privaty and Rapi are free, but can be used until Privaty is unlocked."
+        }, skills: {
+            priority: "",
+            budget: "",
+            recommended: "",
+            notes: [""]
+        }, cube: {
+            cube: [CubeName.Bastion, CubeName.Resilience],
+            notes: ""
+        }
+    }, "soldier_fa": {
+        ratings: {
+            story: 1,
+            pvp: 2.5,
+            boss: 1.2,
+            notes: "She can heal herself to full with burst, but useless without a taunt. Does not fulfill any helpful roles. No use unless you don’t have enough units for Elysion Tower."
+        }, skills: {
+            priority: "",
+            budget: "",
+            recommended: "",
+            notes: [""]
+        }, cube: {
+            cube: [CubeName.Resilience, CubeName.Wingman],
+            notes: ""
+        }
+    }, "soldier_ow": {
+        ratings: {
+            story: 1,
+            pvp: 1,
+            boss: 1,
+            notes: "No real use since N102 is miles better."
+        }, skills: {
+            priority: "",
+            budget: "",
+            recommended: "",
+            notes: [""]
+        }, cube: {
+            cube: [CubeName.Bastion, CubeName.Resilience],
+            notes: ""
+        }
+    }, "idoll_flower": {
+        ratings: {
+            story: 1,
+            pvp: 3,
+            boss: 1,
+            notes: "Being an R taunter, she starts dying easily. But she is a good free attack debuffer if one is needed."
+        }, skills: {
+            priority: "",
+            budget: "",
+            recommended: "",
+            notes: [""]
+        }, cube: {
+            cube: [CubeName.Resilience],
+            notes: "Has last bullet mechanic, avoid ammo-increasing cubes."
+        }
+    }, "idoll_ocean": {
+        ratings: {
+            story: 2,
+            pvp: 3.5,
+            boss: 1.9,
+            notes: "A valuable free healer for F2P players. Unfortunately limited by R stats."
+        }, skills: {
+            priority: "",
+            budget: "",
+            recommended: "",
+            notes: [""]
+        }, cube: {
+            cube: [CubeName.Resilience],
+            notes: "Has last bullet mechanic, avoid ammo-increasing cubes."
+        }
+    }, "idoll_sun": {
+        ratings: {
+            story: 1,
+            pvp: 4.5,
+            boss: 1,
+            notes: "An acceptable Tetra B3 until any better one is pulled."
+        }, skills: {
+            priority: "",
+            budget: "",
+            recommended: "",
+            notes: [""]
+        }, cube: {
+            cube: [CubeName.Bastion, CubeName.Resilience],
+            notes: ""
         }
     }, "template": {
         ratings: {

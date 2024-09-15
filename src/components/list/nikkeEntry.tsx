@@ -1,7 +1,7 @@
 import { Card, Elevation } from "@blueprintjs/core";
 import { color_scheme, EquipmentType, Nikke, NikkeStaticData } from "../../types";
 import EquipmentColumn from "../equipment/equipmentColumn";
-import OverloadRecommendationsList from "../recommendations/recommendationsColumn";
+import RecommendationsList from "../recommendations/recommendationsColumn";
 import Profile from "../profile/profile";
 import { useSelector } from "react-redux";
 import { RootState } from "../../state/store";
@@ -82,7 +82,7 @@ const NikkeEntry: React.FC<NikkeEntryProps> = ({ nikke_static, index, height }) 
                 backgroundColor: color_scheme[4], color: color_scheme[0],
                 borderRadius: "20px"
             }}>
-                <OverloadRecommendationsList nikke_id={nikke_static.id} weapon_type={nikke_static.weapon_type} has_treasure={nikke_static.has_treasure} />
+                <RecommendationsList nikke_id={nikke_static.id} weapon_type={nikke_static.weapon_type} has_treasure={nikke_static.has_treasure} />
             </div>
             {nikke_data &&
                 <div style={{

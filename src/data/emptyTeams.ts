@@ -288,9 +288,78 @@ const emptyTeamSetShootingRange: Team[] = [
     }
 ];
 
+const emptyTeamSetAnomalyInterception: Team[] = [
+    {
+        name: "Kraken",
+        nikke_1: undefined,
+        cube_1: undefined,
+        nikke_2: undefined,
+        cube_2: undefined,
+        nikke_3: undefined,
+        cube_3: undefined,
+        nikke_4: undefined,
+        cube_4: undefined,
+        nikke_5: undefined,
+        cube_5: undefined
+    },
+    {
+        name: "Ultra",
+        nikke_1: undefined,
+        cube_1: undefined,
+        nikke_2: undefined,
+        cube_2: undefined,
+        nikke_3: undefined,
+        cube_3: undefined,
+        nikke_4: undefined,
+        cube_4: undefined,
+        nikke_5: undefined,
+        cube_5: undefined
+    },
+    {
+        name: "Mirror Container",
+        nikke_1: undefined,
+        cube_1: undefined,
+        nikke_2: undefined,
+        cube_2: undefined,
+        nikke_3: undefined,
+        cube_3: undefined,
+        nikke_4: undefined,
+        cube_4: undefined,
+        nikke_5: undefined,
+        cube_5: undefined
+    },
+    {
+        name: "Indivilia",
+        nikke_1: undefined,
+        cube_1: undefined,
+        nikke_2: undefined,
+        cube_2: undefined,
+        nikke_3: undefined,
+        cube_3: undefined,
+        nikke_4: undefined,
+        cube_4: undefined,
+        nikke_5: undefined,
+        cube_5: undefined
+    },
+    {
+        name: "Harvester",
+        nikke_1: undefined,
+        cube_1: undefined,
+        nikke_2: undefined,
+        cube_2: undefined,
+        nikke_3: undefined,
+        cube_3: undefined,
+        nikke_4: undefined,
+        cube_4: undefined,
+        nikke_5: undefined,
+        cube_5: undefined
+    }
+];
+
 export const emptyTeamsData: TeamsData = {
     campaign: emptyTeamSetCampaign,
     solo_raid: emptyTeamSetSoloRaid,
+    anomaly_interception: emptyTeamSetAnomalyInterception,
     tribe_tower: emptyTeamSetTribeTower,
     pvp: emptyTeamSetPVP,
     shooting_range: emptyTeamSetShootingRange,

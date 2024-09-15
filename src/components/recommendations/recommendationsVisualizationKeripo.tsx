@@ -52,21 +52,22 @@ const RecommendationVisualizationKeripo: React.FC<RecommendationVisualizationKer
     };
 
     return (
-        <div style={{ display: "flex", flexDirection: "column", gap: "10px", margin: "10px" }}>
-            <div style={{ display: "flex", flexDirection: "row", justifyContent: "space-evenly" }} >
+        <div style={{ display: "flex", flexDirection: "column", gap: '10px' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, auto)' }} >
                 <div
                     style={{
                         backgroundColor: tierColorsBackground[recommendations.tier],
                         color: tierColorsText[recommendations.tier],
-                        width: 50,
-                        height: 50,
+                        gridColumn: '1 / 2',
                         fontSize: 20,
-                        fontWeight: "bold"
+                        fontWeight: "bold",
+                        padding: "5px",
+                        borderTopLeftRadius: "20px"
                     }}
                 >
                     {recommendations.tier}
                 </div>
-                <div>
+                <div style={{  gridColumn: '2 / 3', backgroundColor: '#28242c', padding: "5px", borderTopRightRadius: "20px" }}>
                     {recommendations.role}
                 </div>
             </div>

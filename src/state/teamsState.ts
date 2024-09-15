@@ -5,6 +5,7 @@ import axios from "axios";
 export enum TeamSet {
     campaign = "Campaign",
     solo_raid = "Solo Raid",
+    anomaly_interception = "Anomaly Interception",
     tribe_tower = "Tribe Tower",
     shooting_range = "Shooting Range",
     pvp = "PVP",
@@ -25,12 +26,12 @@ const initialState: TeamsState = {
     highlighted_element: undefined
 }
 
-const saveTeamsData = async (teams_data: TeamsData) => {
+const saveTeamsData = async (teamsdata: TeamsData) => {
     try {
-        const response = await axios.post('/api/save-teams', teams_data);
+        const response = await axios.post('/api/save-team', teamsdata);
         console.log('Teams saved successfully:', response.data);
     } catch (error) {
-        console.error('Error saving teams:', error);
+        console.error('Error saving Teams:', error);
     }
 };
 

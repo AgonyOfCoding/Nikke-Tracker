@@ -14,6 +14,19 @@ interface ProfileProps {
     nikke_data: Nikke | undefined;
 }
 
+// const color_SSR_bright = "#fafe28";
+// const color_SSR_dark = "#806420";
+// const color_SR_bright = "#fb40f5";
+// const color_SR_dark = "#572572";
+// const color_R_bright = "#0ff6f9";
+// const color_R_dark = "#205c7d";
+
+const color_SSR_bright = "#c9a36a";
+const color_SSR_dark = "#895650";
+const color_SR_bright = "#8a5fcc";
+const color_SR_dark = "#35365a";
+const color_R_bright = "#4273ba";
+const color_R_dark = "#34375a";
 
 const Profile: React.FC<ProfileProps> = ({ nikke_static, nikke_data }) => {
     const dispatch = useDispatch();
@@ -21,12 +34,12 @@ const Profile: React.FC<ProfileProps> = ({ nikke_static, nikke_data }) => {
     const getGradientColors = (rarity: NikkeRarity) => {
         switch (rarity) {
             case NikkeRarity.SSR:
-                return 'linear-gradient(to top, #c9a36a, #895650)';
+                return `linear-gradient(to top, ${color_SSR_bright}, ${color_SSR_dark})`;
             case NikkeRarity.SR:
-                return 'linear-gradient(to top, #8a5fcc, #35365a)';
+                return `linear-gradient(to top, ${color_SR_bright}, ${color_SR_dark})`;
             case NikkeRarity.R:
             default:
-                return 'linear-gradient(to top, #4273ba, #34375a)';
+                return `linear-gradient(to top, ${color_R_bright}, ${color_R_dark})`;
         }
     };
     

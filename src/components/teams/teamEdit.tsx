@@ -77,7 +77,8 @@ const NikkeSelect: React.FC<NikkeSelectProps> = ({ pos, nikke, team, teams_state
 
         const teamSetKey = selected_team_set === TeamSet.campaign ?
             "campaign" : selected_team_set === TeamSet.solo_raid ?
-            "solo_raid" : selected_team_set === TeamSet.tribe_tower ?
+            "solo_raid" : selected_team_set === TeamSet.anomaly_interception ?
+            "anomaly_interception" : selected_team_set === TeamSet.tribe_tower ?
             "tribe_tower" : selected_team_set === TeamSet.shooting_range ?
             "shooting_range" : selected_team_set === TeamSet.pvp ?
             "pvp" : "custom";

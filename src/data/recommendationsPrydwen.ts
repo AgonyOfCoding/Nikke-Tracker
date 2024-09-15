@@ -199,6 +199,28 @@ export const recommendation_data_prydwen: {[nikke: string]: RecommendationsPrydw
             "post_overload": [CubeName.Resilience],
             "notes": "Despite being an MG user, Aria wants to empty her mag as fast as possible, so the usual MG Cubes aren't good for her. That's why Resilience Cube with the reload speed boost is what works on her best."
         }
+    }, "asuka_shikinami_langley": {
+        ratings: {
+            story_low_deficit: "SS",
+            story_high_deficit: "SS",
+            boss_solo: "SSS",
+            boss_adds: "SSS",
+            pvp: "A"
+        }, skills: {
+            priority: "Meta",
+            pve: "1/1/1 → 4/4/7 → 7/7/7 (→ 10/10/10)",
+            pvp: "1/1/1 → 4/4/7 "
+        }, overloads: {
+            priority: "Meta",
+            essential: ["2-3x Max Ammo"],
+            ideal: ["4x Elemental DMG", "1-2x Max Ammo", "4x ATK"],
+            passable: [],
+            notes: ""
+        }, cube: {
+            pre_overload: [CubeName.Resilience, CubeName.Bastion],
+            post_overload: [CubeName.Resilience, CubeName.Bastion],
+            notes: "With Reload Speed buffers, opt for Resilience. Without, use Bastion (Lv 7+ highly recommended)."
+        }
     }, "bay": {
         "ratings": {
             "story_low_deficit": "B",
@@ -1191,6 +1213,28 @@ export const recommendation_data_prydwen: {[nikke: string]: RecommendationsPrydw
             "post_overload": [CubeName.Resilience],
             "notes": "Resilience. Period. This will allow her to abuse her Skill 1 way more often. Bastion and Wingman are the opposite and should be avoided. Assault can be usedfor more hitrate, but why?"
         }
+    }, "mari_makinami_illustrious": {
+        ratings: {
+            story_low_deficit: "SS",
+            story_high_deficit: "SS",
+            boss_solo: "SS",
+            boss_adds: "SS",
+            pvp: "S"
+        }, skills: {
+            priority: "High",
+            pve: "4/4/4 → 7/4/7 → 10/7/10 (→ 10/10/10)",
+            pvp: "4/4/4 → 1/1/4 → 4/4/7 (→ 4/4/10)"
+        }, overloads: {
+            priority: "Low",
+            essential: [],
+            ideal: ["1x Max Ammo", "4x ATK", "4x ELE"],
+            passable: ["3x Max Ammo"],
+            notes: ""
+        }, cube: {
+            pre_overload: [CubeName.Resilience, CubeName.Bastion],
+            post_overload: [CubeName.Resilience, CubeName.Bastion],
+            notes: "We usually recommend Resilience Cube for Sniper Rifles because the shorter reload helps with smoother quick shots for burst gen. This is more true if you don't have any Max Ammo OL. Meanwhile, Bastion Cube technically allows her to shoot more shots over 3 minutes. "
+        }
     }, "mary": {
         "ratings": {
             "story_low_deficit": "C",
@@ -1784,6 +1828,28 @@ export const recommendation_data_prydwen: {[nikke: string]: RecommendationsPrydw
             "pre_overload": [CubeName.Assault, CubeName.Resilience],
             "post_overload": [CubeName.Assault, CubeName.Resilience],
             "notes": "Assault Cube helps SMG wielders to actually hit something past Near range. While the Resilience Cube is a generic DPS increase (but it's better in scenarios when you fight stuff only in Near range as there Hit Rate isn't that useful)."
+        }
+    }, "rei_ayanami": {
+        ratings: {
+            story_low_deficit: "SSS",
+            story_high_deficit: "SS",
+            boss_solo: "S",
+            boss_adds: "SS",
+            pvp: "SS"
+        }, skills: {
+            priority: "High",
+            pve: "4/4/7 → 7/7/7 → 7/10/10 (→ 10/10/10)",
+            pvp: "4/4/7 → 4/7/10 "
+        }, overloads: {
+            priority: "High",
+            essential: ["x× Max Ammo"],
+            ideal: ["4x ATK", "4x ELE", "1x Max Ammo"],
+            passable: [],
+            notes: ""
+        }, cube: {
+            pre_overload: [CubeName.Bastion, CubeName.Resilience],
+            post_overload: [CubeName.Bastion, CubeName.Resilience],
+            notes: "Bastion has the edge over Resilience on MGs. But, if you pair Rei with Reload Speed buffers like Crown or Privaty, then Resilience works just fine. As long as her reload is shorter than 0.6s (76% reload), she will not have to wind up. "
         }
     }, "rem": {
         "ratings": {
@@ -2401,6 +2467,28 @@ export const recommendation_data_prydwen: {[nikke: string]: RecommendationsPrydw
             "post_overload": [CubeName.Bastion],
             "notes": "Any cube works on Zwei. Zwei is not a good damage dealer herself, but to maximise the number of bullets shot, the best cubes are either Bastion or Resilience Cubes."
         }
+    }, "anchor": {
+        ratings: {
+            story_low_deficit: "C",
+            story_high_deficit: "D",
+            boss_solo: "D",
+            boss_adds: "D",
+            pvp: "B"
+        }, skills: {
+            priority: "-",
+            pve: "1/1/1",
+            pvp: "1/1/1"
+        }, overloads: {
+            priority: "-",
+            essential: [],
+            ideal: [],
+            passable: ["-"],
+            notes: ""
+        }, cube: {
+            pre_overload: [CubeName.Vigor, CubeName.Resilience],
+            post_overload: [CubeName.Vigor, CubeName.Resilience],
+            notes: "Any taunt tank would enjoy more HP. And Resilience works with any last bullet Nikke."
+        }
     }, "anis": {
         "ratings": {
             "story_low_deficit": "A",
@@ -2423,6 +2511,292 @@ export const recommendation_data_prydwen: {[nikke: string]: RecommendationsPrydw
             "post_overload": [CubeName.Quantum],
             "notes": "Anis's role is Burst Gen Battery, and Quantum on her is actually very important. It allows you to burst faster than enemy, leading to easier win in PVP. She's one of the Holy Trinity worth putting Quantum cube on."
         }
+    }, "belorta": {
+        ratings: {
+            story_low_deficit: "D",
+            story_high_deficit: "D",
+            boss_solo: "D",
+            boss_adds: "D",
+            pvp: "C"
+        }, skills: {
+            priority: "-",
+            pve: "1/1/1",
+            pvp: "1/1/1"
+        }, overloads: {
+            priority: "-",
+            essential: [],
+            ideal: [],
+            passable: ["-"],
+            notes: ""
+        }, cube: {
+            pre_overload: [CubeName.Adjutant, CubeName.Bastion, CubeName.Resilience],
+            post_overload: [CubeName.Adjutant, CubeName.Bastion, CubeName.Resilience],
+            notes: "Adjutant Cube will allow Belorta to reach Full Charge faster and keep the enemies debuffed with her S2. Bastion Cube allows her to shoot for longer before reloading, while Resilience is a general shooting uptime increase."
+        }
+    }, "delta": {
+        ratings: {
+            story_low_deficit: "D",
+            story_high_deficit: "D",
+            boss_solo: "D",
+            boss_adds: "D",
+            pvp: "C"
+        }, skills: {
+            priority: "-",
+            pve: "1/1/1",
+            pvp: "1/1/1"
+        }, overloads: {
+            priority: "-",
+            essential: [],
+            ideal: [],
+            passable: ["-"],
+            notes: ""
+        }, cube: {
+            pre_overload: [CubeName.Adjutant, CubeName.Resilience],
+            post_overload: [CubeName.Adjutant, CubeName.Resilience],
+            notes: "Adjutant Cube will allow her to reach Full Charge faster while Resilience Cube just offers generic uptime on shooting."
+        }
+    }, "ether": {
+        ratings: {
+            story_low_deficit: "D",
+            story_high_deficit: "D",
+            boss_solo: "D",
+            boss_adds: "D",
+            pvp: "D"
+        }, skills: {
+            priority: "-",
+            pve: "1/1/1",
+            pvp: "1/1/1"
+        }, overloads: {
+            priority: "-",
+            essential: [],
+            ideal: [],
+            passable: ["-"],
+            notes: ""
+        }, cube: {
+            pre_overload: [CubeName.Assault, CubeName.Resilience],
+            post_overload: [CubeName.Assault, CubeName.Resilience],
+            notes: "Assault Cube helps Shotgun wielders to actually hit something past Near range. While the Resilience Cube is a generic DPS increase (but it's better in scenarios when you fight stuff only in Near range as there Hit Rate isn't that useful)."
+        }
+    }, "himeno": {
+        ratings: {
+            story_low_deficit: "D",
+            story_high_deficit: "D",
+            boss_solo: "D",
+            boss_adds: "D",
+            pvp: "D"
+        }, skills: {
+            priority: "-",
+            pve: "1/1/1",
+            pvp: "1/1/1"
+        }, overloads: {
+            priority: "-",
+            essential: [],
+            ideal: [],
+            passable: ["-"],
+            notes: ""
+        }, cube: {
+            pre_overload: [CubeName.Adjutant],
+            post_overload: [CubeName.Adjutant],
+            notes: "Charge Speed increase helps with S1 uptime."
+        }
+    }, "mica": {
+        ratings: {
+            story_low_deficit: "D",
+            story_high_deficit: "D",
+            boss_solo: "D",
+            boss_adds: "D",
+            pvp: "B"
+        }, skills: {
+            priority: "-",
+            pve: "1/1/1",
+            pvp: "1/1/1"
+        }, overloads: {
+            priority: "-",
+            essential: [],
+            ideal: [],
+            passable: ["-"],
+            notes: ""
+        }, cube: {
+            pre_overload: [CubeName.Resilience, CubeName.Onslaught],
+            post_overload: [CubeName.Resilience, CubeName.Onslaught],
+            notes: "She doesn't really have anything in her kit that warrants the use of other than the generic damage increase cubes for an RL wielder."
+        }
+    }, "mihara": {
+        ratings: {
+            story_low_deficit: "D",
+            story_high_deficit: "D",
+            boss_solo: "D",
+            boss_adds: "D",
+            pvp: "C"
+        }, skills: {
+            priority: "-",
+            pve: "1/1/1",
+            pvp: "1/1/1"
+        }, overloads: {
+            priority: "-",
+            essential: [],
+            ideal: [],
+            passable: ["-"],
+            notes: ""
+        }, cube: {
+            pre_overload: [CubeName.Resilience],
+            post_overload: [CubeName.Resilience],
+            notes: "Resilience Cube is the best choice for anyone with the last bullet mechanism."
+        }
+    }, "misato_katsuragi": {
+        ratings: {
+            story_low_deficit: "C",
+            story_high_deficit: "C",
+            boss_solo: "C",
+            boss_adds: "C",
+            pvp: "C"
+        }, skills: {
+            priority: "-",
+            pve: "1/1/1",
+            pvp: "1/1/1"
+        }, overloads: {
+            priority: "-",
+            essential: [],
+            ideal: [],
+            passable: ["-"],
+            notes: ""
+        }, cube: {
+            pre_overload: [CubeName.Healing, CubeName.Vigor],
+            post_overload: [CubeName.Healing, CubeName.Vigor],
+            notes: ""
+        }
+    }, "n102": {
+        ratings: {
+            story_low_deficit: "A",
+            story_high_deficit: "A",
+            boss_solo: "B",
+            boss_adds: "B",
+            pvp: "C"
+        }, skills: {
+            priority: "Low",
+            pve: "1/1/1 → 1/1/4 ",
+            pvp: "1/1/1"
+        }, overloads: {
+            priority: "-",
+            essential: [],
+            ideal: [],
+            passable: ["-"],
+            notes: ""
+        }, cube: {
+            pre_overload: [CubeName.Adjutant],
+            post_overload: [CubeName.Adjutant],
+            notes: "Adjutant Cube is the clear winner for her as she will reach Full Charge faster."
+        }
+    }, "neon": {
+        ratings: {
+            story_low_deficit: "D",
+            story_high_deficit: "D",
+            boss_solo: "C",
+            boss_adds: "D",
+            pvp: "A"
+        }, skills: {
+            priority: "-",
+            pve: "1/1/1",
+            pvp: "1/1/1"
+        }, overloads: {
+            priority: "-",
+            essential: [],
+            ideal: [],
+            passable: ["-"],
+            notes: ""
+        }, cube: {
+            pre_overload: [CubeName.Adjutant, CubeName.Resilience],
+            post_overload: [CubeName.Adjutant, CubeName.Resilience],
+            notes: "Assault Cube helps Shotgun wielders to actually hit something past Near range. While the Resilience Cube is a generic DPS increase (but it's better in scenarios when you fight stuff only in Near range as there Hit Rate isn't that useful)."
+        }
+    }, "neve": {
+        ratings: {
+            story_low_deficit: "D",
+            story_high_deficit: "D",
+            boss_solo: "B",
+            boss_adds: "C",
+            pvp: "C"
+        }, skills: {
+            priority: "Very Low",
+            pve: "1/1/1 → 1/4/1 ",
+            pvp: "1/1/1"
+        }, overloads: {
+            priority: "Very Low",
+            essential: [],
+            ideal: ["4x Elemental Damage", "4x ATK"],
+            passable: [],
+            notes: ""
+        }, cube: {
+            pre_overload: [CubeName.Assault, CubeName.Resilience],
+            post_overload: [CubeName.Assault, CubeName.Resilience],
+            notes: "Assault Cube helps Shotgun wielders to actually hit something past Near range. While the Resilience Cube is a generic DPS increase (but it's better in scenarios when you fight stuff only in Near range as there Hit Rate isn't that useful)."
+        }
+    }, "pascal": {
+        ratings: {
+            story_low_deficit: "B",
+            story_high_deficit: "C",
+            boss_solo: "D",
+            boss_adds: "C",
+            pvp: "A"
+        }, skills: {
+            priority: "PVP",
+            pve: "1/1/1",
+            pvp: "1/1/1 (→ 4/4/4)"
+        }, overloads: {
+            priority: "Very Low",
+            essential: [],
+            ideal: ["1-2x Ammo"],
+            passable: [],
+            notes: "Cp Padding for PvP, 1 Ammo allows her to shoot for more time and provide burst gen for longer."
+        }, cube: {
+            pre_overload: [CubeName.Wingman, CubeName.Resilience],
+            post_overload: [CubeName.Wingman, CubeName.Resilience],
+            notes: "Wingman or Resilience Cube are best on Pascal."
+        }
+    }, "ram": {
+        ratings: {
+            story_low_deficit: "B",
+            story_high_deficit: "C",
+            boss_solo: "C",
+            boss_adds: "D",
+            pvp: "D"
+        }, skills: {
+            priority: "-",
+            pve: "1/1/1",
+            pvp: "1/1/1"
+        }, overloads: {
+            priority: "-",
+            essential: [],
+            ideal: [],
+            passable: ["-"],
+            notes: ""
+        }, cube: {
+            pre_overload: [CubeName.Resilience, CubeName.Onslaught],
+            post_overload: [CubeName.Resilience, CubeName.Onslaught],
+            notes: "Ram doesn't really have anything in her kit that warrants the use of other than the generic damage increase cubes for an SR wielder."
+        }
+    }, "rapi": {
+        ratings: {
+            story_low_deficit: "C",
+            story_high_deficit: "C",
+            boss_solo: "D",
+            boss_adds: "D",
+            pvp: "D"
+        }, skills: {
+            priority: "Very Low",
+            pve: "1/1/1 → 3/3/3",
+            pvp: "1/1/1"
+        }, overloads: {
+            priority: "-",
+            essential: [],
+            ideal: [],
+            passable: ["-"],
+            notes: ""
+        }, cube: {
+            pre_overload: [CubeName.Resilience, CubeName.Bastion],
+            post_overload: [CubeName.Resilience, CubeName.Bastion],
+            notes: "Resilience and Bastion Cubes work best on most AR wielders and she isn't an exception."
+        }
     }, "product_08": {
         "ratings": {
             "story_low_deficit": "E",
@@ -2444,6 +2818,182 @@ export const recommendation_data_prydwen: {[nikke: string]: RecommendationsPrydw
             "pre_overload": [CubeName.Resilience],
             "post_overload": [CubeName.Resilience],
             "notes": "Her S1 wants you to never fully charge your shots and just spam - this is why Reload Speed is important on her."
+        }
+    }, "product_12": {
+        ratings: {
+            story_low_deficit: "E",
+            story_high_deficit: "E",
+            boss_solo: "E",
+            boss_adds: "E",
+            pvp: "E"
+        }, skills: {
+            priority: "-",
+            pve: "1/1/1",
+            pvp: "1/1/1"
+        }, overloads: {
+            priority: "-",
+            essential: [],
+            ideal: [],
+            passable: ["-"],
+            notes: ""
+        }, cube: {
+            pre_overload: [CubeName.Bastion, CubeName.Resilience, CubeName.Wingman],
+            post_overload: [CubeName.Bastion, CubeName.Resilience, CubeName.Wingman],
+            notes: "MG goes brrr. Bastion Cube will allow her to shoot for longer, but if you don't have it upgraded, Resilience or Wingman Cubes are a better choice."
+        }
+    }, "product_23": {
+        ratings: {
+            story_low_deficit: "E",
+            story_high_deficit: "E",
+            boss_solo: "E",
+            boss_adds: "E",
+            pvp: "B"
+        }, skills: {
+            priority: "-",
+            pve: "1/1/1",
+            pvp: "1/1/1"
+        }, overloads: {
+            priority: "-",
+            essential: [],
+            ideal: [],
+            passable: ["-"],
+            notes: ""
+        }, cube: {
+            pre_overload: [CubeName.Resilience],
+            post_overload: [CubeName.Resilience],
+            notes: ""
+        }
+    }, "soldier_eg": {
+        ratings: {
+            story_low_deficit: "E",
+            story_high_deficit: "E",
+            boss_solo: "E",
+            boss_adds: "E",
+            pvp: "E"
+        }, skills: {
+            priority: "-",
+            pve: "1/1/1",
+            pvp: "1/1/1"
+        }, overloads: {
+            priority: "-",
+            essential: [],
+            ideal: [],
+            passable: [],
+            notes: ""
+        }, cube: {
+            pre_overload: [CubeName.Resilience],
+            post_overload: [CubeName.Resilience],
+            notes: "Resilience Cube helps with the long reload Soldier EG has."
+        }
+    }, "soldier_fa": {
+        ratings: {
+            story_low_deficit: "E",
+            story_high_deficit: "E",
+            boss_solo: "E",
+            boss_adds: "E",
+            pvp: "E"
+        }, skills: {
+            priority: "-",
+            pve: "1/1/1",
+            pvp: "1/1/1"
+        }, overloads: {
+            priority: "-",
+            essential: [],
+            ideal: [],
+            passable: [],
+            notes: ""
+        }, cube: {
+            pre_overload: [CubeName.Assault, CubeName.Resilience],
+            post_overload: [CubeName.Assault, CubeName.Resilience],
+            notes: "Assault Cube helps Shotgun wielders to actually hit something past Near range. While the Resilience Cube is a generic DPS increase (but it's better in scenarios when you fight stuff only in Near range as there Hit Rate isn't that useful)."
+        }
+    }, "soldier_ow": {
+        ratings: {
+            story_low_deficit: "E",
+            story_high_deficit: "E",
+            boss_solo: "E",
+            boss_adds: "E",
+            pvp: "E"
+        }, skills: {
+            priority: "-",
+            pve: "1/1/1",
+            pvp: "1/1/1"
+        }, overloads: {
+            priority: "-",
+            essential: [],
+            ideal: [],
+            passable: [],
+            notes: ""
+        }, cube: {
+            pre_overload: [CubeName.Resilience],
+            post_overload: [CubeName.Resilience],
+            notes: "A SMG wielder with a long reload time really needs the Resilience Cube."
+        }
+    }, "idoll_flower": {
+        ratings: {
+            story_low_deficit: "E",
+            story_high_deficit: "E",
+            boss_solo: "E",
+            boss_adds: "E",
+            pvp: "E"
+        }, skills: {
+            priority: "-",
+            pve: "1/1/1",
+            pvp: "1/1/1"
+        }, overloads: {
+            priority: "-",
+            essential: [],
+            ideal: [],
+            passable: ["-"],
+            notes: ""
+        }, cube: {
+            pre_overload: [CubeName.Resilience],
+            post_overload: [CubeName.Resilience],
+            notes: "Reload Speed is best choice for characters that use the last bullet mechanics."
+        }
+    }, "idoll_ocean": {
+        ratings: {
+            story_low_deficit: "E",
+            story_high_deficit: "E",
+            boss_solo: "E",
+            boss_adds: "E",
+            pvp: "E"
+        }, skills: {
+            priority: "-",
+            pve: "1/1/1",
+            pvp: "1/1/1"
+        }, overloads: {
+            priority: "-",
+            essential: [],
+            ideal: [],
+            passable: ["-"],
+            notes: ""
+        }, cube: {
+            pre_overload: [CubeName.Resilience],
+            post_overload: [CubeName.Resilience],
+            notes: "A SMG wielder with the last bullet mechanic really needs the Resilience Cube."
+        }
+    }, "idoll_sun": {
+        ratings: {
+            story_low_deficit: "E",
+            story_high_deficit: "E",
+            boss_solo: "E",
+            boss_adds: "E",
+            pvp: "E"
+        }, skills: {
+            priority: "-",
+            pve: "1/1/1",
+            pvp: "1/1/1"
+        }, overloads: {
+            priority: "-",
+            essential: [],
+            ideal: [],
+            passable: ["-"],
+            notes: ""
+        }, cube: {
+            pre_overload: [CubeName.Resilience, CubeName.Bastion],
+            post_overload: [CubeName.Bastion, CubeName.Resilience],
+            notes: "Resilience and Bastion Cubes work best on most AR wielders and she isn't an exception."
         }
     }, "template": {
         ratings: {

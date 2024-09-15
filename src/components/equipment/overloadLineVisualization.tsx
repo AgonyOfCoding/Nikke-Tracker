@@ -17,11 +17,14 @@ const OverloadLineVisualization: React.FC<OverloadLineVisualizationProps> = ({ o
     const dispatch = useDispatch();
     const overload_value: OverloadValues | undefined = overload_data.find((value) => value.attribute === overload_line?.attribute);
 
-    const setOverloadLine = useCallback((attribute: OverloadAttribute, level: number) => {
-        const new_overload_line: OverloadLine = {
-            attribute: attribute,
-            level: level
-        };
+    const setOverloadLine = useCallback((attribute?: OverloadAttribute, level?: number) => {
+        var new_overload_line: OverloadLine | undefined = undefined;
+        if (attribute && level) {
+            new_overload_line = {
+                attribute: attribute,
+                level: level
+            };
+        }
 
         const new_equipment_data: EquipmentData = {
             ...equipment_data,
@@ -56,7 +59,7 @@ const OverloadLineVisualization: React.FC<OverloadLineVisualizationProps> = ({ o
 
     const overloadMenu = () => {
         return <Menu>
-            <MenuItem text="Effect not obtained" />
+            <MenuItem text="Effect not obtained" onClick={() => setOverloadLine()} />
             {overload_data.map((attribute, index) => {
                 return (
                     <MenuItem key={index} text={attribute.attribute} >

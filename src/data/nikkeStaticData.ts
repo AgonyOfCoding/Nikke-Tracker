@@ -535,7 +535,7 @@ export const nikke_static_data: { [id: string]: NikkeStaticData } = {
         }
     }, "asuka_shikinami_langley": {
         id: "asuka_shikinami_langley",
-        name: "Asuka Shikinami Langley",
+        name: "Asuka",
         manufacturer: NikkeManufacturer.Abnormal,
         role: NikkeRole.Attacker,
         weapon_type: WeaponType.AR,
@@ -545,50 +545,50 @@ export const nikke_static_data: { [id: string]: NikkeStaticData } = {
         has_treasure: false,
         skills: {
             skill_1: {
-                name: "",
-                description: "",
+                name: "Competitiveness",
+                description: "■ Activates at the start of the battle. Affects self. Damage dealt to Shield ▲ __% continuously. ■ Activates when recovery takes effect. Affects self. ATK ▲ __% for 25 sec.",
                 values: {
-                    1: [],
-                    2: [],
-                    3: [],
-                    4: [],
-                    5: [],
-                    6: [],
-                    7: [],
-                    8: [],
-                    9: [],
-                    10: []
+                    1: [404.65, 57.93],
+                    2: [426.47, 62.27],
+                    3: [448.29, 66.61],
+                    4: [470.1, 70.94],
+                    5: [491.92, 75.28],
+                    6: [513.74, 79.62],
+                    7: [535.56, 83.96],
+                    8: [557.38, 88.3],
+                    9: [579.2, 92.64],
+                    10: [601.01, 96.98]
                 }
             }, skill_2: {
-                name: "",
-                description: "",
+                name: "Assault Tactics",
+                description: "■ Activates when entering Full Burst. Affects self when in Shield status. Damage as strong element ▲ __% for 10 sec. ■ Activates when entering Full Burst. Affects all Fire Code allies. Damage dealt when attacking core ▲ __% for 10 sec.",
                 values: {
-                    1: [],
-                    2: [],
-                    3: [],
-                    4: [],
-                    5: [],
-                    6: [],
-                    7: [],
-                    8: [],
-                    9: [],
-                    10: []
+                    1: [17.78, 33.19],
+                    2: [19.14, 36.18],
+                    3: [20.5, 39.17],
+                    4: [21.86, 42.15],
+                    5: [23.22, 45.14],
+                    6: [24.58, 48.13],
+                    7: [25.94, 51.11],
+                    8: [27.3, 54.1],
+                    9: [28.66, 57.09],
+                    10: [30.02, 60.07]
                 }
             }, burst_skill: {
                 cooldown: 40,
-                name: "",
-                description: "",
+                name: "Piercing Bullets",
+                description: "■ Affects self. Gain Pierce for 25 sec. Attack damage ▲ __% for 10 sec. Recovers __% of attack damage as HP over 10 sec. Hit Rate ▲ __% for 10 sec.",
                 values: {
-                    1: [],
-                    2: [],
-                    3: [],
-                    4: [],
-                    5: [],
-                    6: [],
-                    7: [],
-                    8: [],
-                    9: [],
-                    10: []
+                    1: [63.64, 1.87, 59.9],
+                    2: [73.24, 2.01, 64.51],
+                    3: [82.84, 2.16, 69.12],
+                    4: [92.44, 2.3, 73.72],
+                    5: [102.04, 2.44, 78.33],
+                    6: [111.64, 2.59, 82.94],
+                    7: [121.24, 2.73, 87.55],
+                    8: [130.84, 2.88, 92.16],
+                    9: [140.44, 3.02, 96.76],
+                    10: [150.04, 3.16, 101.37]
                 }
             }
         }
@@ -3025,7 +3025,7 @@ export const nikke_static_data: { [id: string]: NikkeStaticData } = {
         }
     }, "mari_makinami_illustrious": {
         id: "mari_makinami_illustrious",
-        name: "Mari Makinami Illustrious",
+        name: "Mari",
         manufacturer: NikkeManufacturer.Abnormal,
         role: NikkeRole.Supporter,
         weapon_type: WeaponType.SR,
@@ -3035,50 +3035,51 @@ export const nikke_static_data: { [id: string]: NikkeStaticData } = {
         has_treasure: false,
         skills: {
             skill_1: {
-                name: "",
-                description: "",
+                name: "Precision Sniping",
+                description: "■ Activates when landing an attack with Full Charge. Affects all allies. Damage dealt to Shield ▲ __% for 3 sec. ■ Activates when hitting the target's core. Affects all allies. Pierce Damage ▲ __% for 10 sec.",
                 values: {
-                    1: [],
-                    2: [],
-                    3: [],
-                    4: [],
-                    5: [],
-                    6: [],
-                    7: [],
-                    8: [],
-                    9: [],
-                    10: []
+                    1: [59.17, 24.25],
+                    2: [63.72, 26.11],
+                    3: [68.27, 27.97],
+                    4: [72.81, 29.83],
+                    5: [77.36, 31.69],
+                    6: [81.9, 33.55],
+                    7: [86.45, 35.41],
+                    8: [91, 37.27],
+                    9: [95.54, 39.13],
+                    10: [100.09, 40.99]
                 }
             }, skill_2: {
-                name: "",
-                description: "",
+                cooldown: 10,
+                name: "Full Focus",
+                description: "■ Affects self. Gain Pierce for 5 sec. ATK ▲ __% for 5 sec. ■ Affects all allies. ATK ▲ __% of caster's ATK for 5 sec.",
                 values: {
-                    1: [],
-                    2: [],
-                    3: [],
-                    4: [],
-                    5: [],
-                    6: [],
-                    7: [],
-                    8: [],
-                    9: [],
-                    10: []
+                    1: [17.98, 18.17],
+                    2: [19.4, 19.57],
+                    3: [20.82, 20.97],
+                    4: [22.25, 22.37],
+                    5: [23.67, 23.77],
+                    6: [25.09, 25.17],
+                    7: [26.52, 26.57],
+                    8: [27.94, 27.98],
+                    9: [29.36, 29.38],
+                    10: [30.78, 30.78]
                 }
             }, burst_skill: {
-                cooldown: 40,
-                name: "",
-                description: "",
+                cooldown: 20,
+                name: "GPS Guided Missile",
+                description: "■ Affects all enemies. Deals __% of final ATK as damage. ■ Affects all allies. Attack damage ▲ __% for 10 sec.",
                 values: {
-                    1: [],
-                    2: [],
-                    3: [],
-                    4: [],
-                    5: [],
-                    6: [],
-                    7: [],
-                    8: [],
-                    9: [],
-                    10: []
+                    1: [363.63, 24.25],
+                    2: [394.27, 26.11],
+                    3: [424.9, 27.97],
+                    4: [455.54, 29.83],
+                    5: [486.18, 31.69],
+                    6: [516.81, 33.55],
+                    7: [547.45, 35.41],
+                    8: [578.08, 37.27],
+                    9: [608.72, 39.13],
+                    10: [639.36, 40.99]
                 }
             }
         }
@@ -4684,7 +4685,7 @@ export const nikke_static_data: { [id: string]: NikkeStaticData } = {
         }
     }, "rei_ayanami": {
         id: "rei_ayanami",
-        name: "Rei Ayanami",
+        name: "Rei",
         manufacturer: NikkeManufacturer.Abnormal,
         role: NikkeRole.Attacker,
         weapon_type: WeaponType.MG,
@@ -4694,50 +4695,50 @@ export const nikke_static_data: { [id: string]: NikkeStaticData } = {
         has_treasure: false,
         skills: {
             skill_1: {
-                name: "",
-                description: "",
+                name: "Preemptive Subdual",
+                description: "■ Activates after 100 normal attack(s). Affects self. Damage as strong element ▲ __% for 3 sec. ■ Activates after landing 100 normal attack(s). Affects the enemy within attack range nearest to the crosshair. Deals __% of final ATK as damage.",
                 values: {
-                    1: [],
-                    2: [],
-                    3: [],
-                    4: [],
-                    5: [],
-                    6: [],
-                    7: [],
-                    8: [],
-                    9: [],
-                    10: []
+                    1: [22.91, 73.32],
+                    2: [23.72, 77.66],
+                    3: [24.54, 82],
+                    4: [25.35, 86.34],
+                    5: [26.16, 90.68],
+                    6: [26.98, 95.02],
+                    7: [27.79, 99.36],
+                    8: [28.61, 103.7],
+                    9: [29.42, 108.04],
+                    10: [30.23, 112.37]
                 }
             }, skill_2: {
-                name: "",
-                description: "",
+                name: "Attack Support",
+                description: "■ Activates at the start of the battle. Affects self. Damage dealt to Shield ▲ __% continuously. ■ Activates when entering Burst stage 3. Affects all Fire Code allies. ATK ▲ __% of caster's ATK for 10 sec.",
                 values: {
-                    1: [],
-                    2: [],
-                    3: [],
-                    4: [],
-                    5: [],
-                    6: [],
-                    7: [],
-                    8: [],
-                    9: [],
-                    10: []
+                    1: [472.72, 16.97],
+                    2: [498.03, 17.86],
+                    3: [523.34, 18.76],
+                    4: [548.65, 19.66],
+                    5: [573.96, 20.55],
+                    6: [599.27, 21.45],
+                    7: [624.58, 22.34],
+                    8: [649.89, 23.24],
+                    9: [675.2, 24.14],
+                    10: [700.5, 25.03]
                 }
             }, burst_skill: {
                 cooldown: 40,
-                name: "",
-                description: "",
+                name: "Annihilation: High Explosives",
+                description: "■ Affects all Fire Code allies. Creates a Shield equal to __% of the caster's final Max HP for 10 sec. Attack damage ▲ __% for 10 sec. ■ Affects all enemies. Deals __% of final ATK as damage.",
                 values: {
-                    1: [],
-                    2: [],
-                    3: [],
-                    4: [],
-                    5: [],
-                    6: [],
-                    7: [],
-                    8: [],
-                    9: [],
-                    10: []
+                    1: [9.98, 29.81, 654.54],
+                    2: [10.36, 31.84, 691.84],
+                    3: [10.75, 33.86, 729.13],
+                    4: [11.13, 35.88, 766.43],
+                    5: [11.52, 37.9, 803.72],
+                    6: [11.9, 39.93, 841.02],
+                    7: [12.28, 41.95, 878.32],
+                    8: [12.67, 43.97, 915.61],
+                    9: [13.05, 45.99, 952.91],
+                    10: [13.44, 48.02, 990.2]
                 }
             }
         }
@@ -6339,6 +6340,65 @@ export const nikke_static_data: { [id: string]: NikkeStaticData } = {
                 }
             }
         }
+    }, "anchor": {
+        id: "anchor",
+        name: "Anchor",
+        manufacturer: NikkeManufacturer.Elysion,
+        role: NikkeRole.Defender,
+        weapon_type: WeaponType.RL,
+        rarity: NikkeRarity.SR,
+        burst: Burst.Burst_I,
+        element: NikkeElement.Wind,
+        has_treasure: false,
+        skills: {
+            skill_1: {
+                name: "GS",
+                description: "■ Activates when the last bullet hits the target. Affects the target. Taunt for 5 sec. ■ Activates when the last bullet hits the target. Affects self. DEF ▲ __% for 5 sec.",
+                values: {
+                    1: [10.42],
+                    2: [11.91],
+                    3: [13.39],
+                    4: [14.88],
+                    5: [16.37],
+                    6: [17.86],
+                    7: [19.35],
+                    8: [20.84],
+                    9: [22.33],
+                    10: [23.82]
+                }
+            }, skill_2: {
+                name: "MDS",
+                description: "■ Activates when entering battle. Affects self. When attacking an enemy projectile, damage dealt to that projectile ▲ __% continuously.",
+                values: {
+                    1: [11.2],
+                    2: [12.8],
+                    3: [14.4],
+                    4: [16],
+                    5: [17.6],
+                    6: [19.2],
+                    7: [20.8],
+                    8: [22.4],
+                    9: [24],
+                    10: [25.6]
+                }
+            }, burst_skill: {
+                cooldown: 20,
+                name: "CIWS",
+                description: "■ Affects all enemies. Deals __% of final ATK as damage. ",
+                values: {
+                    1: [133.2],
+                    2: [152.22],
+                    3: [171.25],
+                    4: [190.28],
+                    5: [209.31],
+                    6: [228.34],
+                    7: [247.37],
+                    8: [266.4],
+                    9: [285.42],
+                    10: [304.45]
+                }
+            }
+        }
     }, "anis": {
         "id": "anis",
         "name": "Anis",
@@ -6399,62 +6459,778 @@ export const nikke_static_data: { [id: string]: NikkeStaticData } = {
                 }
             }
         }
+    }, "belorta": {
+        id: "belorta",
+        name: "Belorta",
+        manufacturer: NikkeManufacturer.Tetra,
+        role: NikkeRole.Attacker,
+        weapon_type: WeaponType.RL,
+        rarity: NikkeRarity.SR,
+        burst: Burst.Burst_II,
+        element: NikkeElement.Electric,
+        has_treasure: false,
+        skills: {
+            skill_1: {
+                name: "Surprise",
+                description: "■ Activates when hitting a target with Full Charge. Affects self. Explosion Radius ▲ __% for 5 sec.",
+                values: {
+                    1: [3.41],
+                    2: [4.09],
+                    3: [4.77],
+                    4: [5.46],
+                    5: [6.14],
+                    6: [6.82],
+                    7: [7.5],
+                    8: [8.18],
+                    9: [8.87],
+                    10: [9.55]
+                }
+            }, skill_2: {
+                name: "Greed",
+                description: "■ Activates when an attack hits more than 4 enemy unit(s). Affects the target(s). DEF ▼ __% for 5 sec. Deals __% of final ATK as additional damage.",
+                values: {
+                    1: [1.25, 5.34],
+                    2: [1.51, 6.41],
+                    3: [1.76, 7.48],
+                    4: [2.01, 8.55],
+                    5: [2.26, 9.61],
+                    6: [2.51, 10.68],
+                    7: [2.77, 11.75],
+                    8: [3.02, 12.82],
+                    9: [3.27, 13.89],
+                    10: [3.52, 14.96]
+                }
+            }, burst_skill: {
+                cooldown: 20,
+                name: "Tricky Bomber",
+                description: "■ Affects enemies within attack range. Deals __% of final ATK as damage. ■ Affects all allies. Charge Speed ▲ __% for 10 sec.",
+                values: {
+                    1: [68.57, 1.01],
+                    2: [82.28, 1.21],
+                    3: [95.99, 1.41],
+                    4: [109.71, 1.61],
+                    5: [123.42, 1.81],
+                    6: [137.14, 2.02],
+                    7: [150.85, 2.22],
+                    8: [164.57, 2.42],
+                    9: [178.28, 2.62],
+                    10: [192, 2.82]
+                }
+            }
+        }
+    }, "delta": {
+        id: "delta",
+        name: "Delta",
+        manufacturer: NikkeManufacturer.Elysion,
+        role: NikkeRole.Defender,
+        weapon_type: WeaponType.SR,
+        rarity: NikkeRarity.SR,
+        burst: Burst.Burst_II,
+        element: NikkeElement.Wind,
+        has_treasure: false,
+        skills: {
+            skill_1: {
+                name: "Recollection",
+                description: "■ Activates when hitting a target with Full Charge. Affects self. Max HP ▲ __% for 10 sec.",
+                values: {
+                    1: [3.15],
+                    2: [3.78],
+                    3: [4.41],
+                    4: [5.04],
+                    5: [5.67],
+                    6: [6.3],
+                    7: [6.93],
+                    8: [7.56],
+                    9: [8.18],
+                    10: [8.82]
+                }
+            }, skill_2: {
+                name: "Last Memory",
+                description: "■ Activates when using Burst Skills. Affects self. DEF ▲ __% for 20 sec.",
+                values: {
+                    1: [18.36],
+                    2: [22.04],
+                    3: [25.71],
+                    4: [29.38],
+                    5: [33.06],
+                    6: [36.73],
+                    7: [40.4],
+                    8: [44.08],
+                    9: [47.75],
+                    10: [51.42]
+                }
+            }, burst_skill: {
+                cooldown: 40,
+                name: "Remember Me",
+                description: "■ Affects self. Decoy: Creates an Avatar with __% of caster's final Max HP for 10 sec. Attract: Taunt all enemies for 10 sec.",
+                values: {
+                    1: [41.06],
+                    2: [46.68],
+                    3: [52.31],
+                    4: [57.93],
+                    5: [63.56],
+                    6: [69.18],
+                    7: [74.81],
+                    8: [80.43],
+                    9: [86.06],
+                    10: [91.68]
+                }
+            }
+        }
+    }, "ether": {
+        id: "ether",
+        name: "Ether",
+        manufacturer: NikkeManufacturer.Missilis,
+        role: NikkeRole.Defender,
+        weapon_type: WeaponType.SG,
+        rarity: NikkeRarity.SR,
+        burst: Burst.Burst_I,
+        element: NikkeElement.Electric,
+        has_treasure: false,
+        skills: {
+            skill_1: {
+                cooldown: 15,
+                name: "Corrosive Bullets",
+                description: "■ Affects 1 allies with the lowest remaining HP. Damage Taken ▼ __% for 5 sec.",
+                values: {
+                    1: [22.96],
+                    2: [26.25],
+                    3: [29.53],
+                    4: [32.81],
+                    5: [36.09],
+                    6: [39.37],
+                    7: [42.65],
+                    8: [45.93],
+                    9: [49.21],
+                    10: [52.5]
+                }
+            }, skill_2: {
+                cooldown: 13,
+                name: "Prognostic Response Experiment",
+                description: "■ Affects 3 enemy unit(s) with the highest DEF. Deals __% of final ATK as damage. ■ Affects the same enemy unit(s). Activates during Full Burst. DEF ▼ __% for 6 sec.",
+                values: {
+                    1: [24.64, 4.1],
+                    2: [28.16, 4.69],
+                    3: [31.68, 5.28],
+                    4: [35.2, 5.86],
+                    5: [38.72, 6.45],
+                    6: [42.24, 7.04],
+                    7: [45.76, 7.62],
+                    8: [49.28, 8.21],
+                    9: [52.8, 8.8],
+                    10: [56.32, 9.38]
+                }
+            }, burst_skill: {
+                cooldown: 40,
+                name: "Colossal Single Cell",
+                description: "■ Affects 3 ally unit(s) with the lowest remaining HP. Creates a Shield equal to 96% of the caster's final Max HP for 5 sec.",
+                values: {
+                    1: [42],
+                    2: [48],
+                    3: [54],
+                    4: [60],
+                    5: [66],
+                    6: [72],
+                    7: [78],
+                    8: [84],
+                    9: [90],
+                    10: [96]
+                }
+            }
+        }
+    }, "himeno": {
+        id: "himeno",
+        name: "Himeno",
+        manufacturer: NikkeManufacturer.Abnormal,
+        role: NikkeRole.Supporter,
+        weapon_type: WeaponType.SR,
+        rarity: NikkeRarity.SR,
+        burst: Burst.Burst_II,
+        element: NikkeElement.Wind,
+        has_treasure: false,
+        skills: {
+            skill_1: {
+                name: "Weak Spot Attack",
+                description: "■ Activates when hitting a target with Full Charge. Affects the target. DEF ▼ __% for 3 sec.",
+                values: {
+                    1: [3.03],
+                    2: [3.47],
+                    3: [3.9],
+                    4: [4.33],
+                    5: [4.77],
+                    6: [5.2],
+                    7: [5.64],
+                    8: [6.07],
+                    9: [6.5],
+                    10: [6.94]
+                }
+            }, skill_2: {
+                cooldown: 20,
+                name: "Invisible Hand",
+                description: "■ Affects all allies with sniper rifles. ATK ▲ __% for 10 sec. Max Ammunition Capacity ▲ 2 round(s) for 10 sec.",
+                values: {
+                    1: [1.47],
+                    2: [2.53],
+                    3: [3.59],
+                    4: [4.64],
+                    5: [5.7],
+                    6: [6.75],
+                    7: [7.81],
+                    8: [8.87],
+                    9: [9.92],
+                    10: [10.98]
+                }
+            }, burst_skill: {
+                cooldown: 20,
+                name: "Ghost",
+                description: "■ Affects 1 ally unit(s) with the highest ATK. Charge Damage ▲ __% for 10 sec. Critical Rate ▲ __% for 10 sec.",
+                values: {
+                    1: [7.56, 8.52],
+                    2: [9.36, 9.36],
+                    3: [11.16, 10.26],
+                    4: [12.96, 11.13],
+                    5: [14.76, 12],
+                    6: [16.56, 12.87],
+                    7: [18.36, 13.74],
+                    8: [20.16, 14.61],
+                    9: [21.96, 15.48],
+                    10: [23.76, 16.35]
+                }
+            }
+        }
+    }, "mica": {
+        id: "mica",
+        name: "Mica",
+        manufacturer: NikkeManufacturer.Tetra,
+        role: NikkeRole.Supporter,
+        weapon_type: WeaponType.RL,
+        rarity: NikkeRarity.SR,
+        burst: Burst.Burst_I,
+        element: NikkeElement.Wind,
+        has_treasure: false,
+        skills: {
+            skill_1: {
+                name: "Wonderous Star",
+                description: "■ Activates when attacked 20 time(s). Affects self. DEF ▲ __% for 10S.",
+                values: {
+                    1: [17.14],
+                    2: [19.59],
+                    3: [22.04],
+                    4: [24.48],
+                    5: [26.93],
+                    6: [29.38],
+                    7: [31.83],
+                    8: [34.28],
+                    9: [36.73],
+                    10: [39.18]
+                }
+            }, skill_2: {
+                cooldown: 20,
+                name: "Brave Star",
+                description: "■ Affects 2 allies with the highest ATK. Max Ammunition Capacity ▲ 2 round(s) for 10 sec. DEF ▲ __% for 10 sec.",
+                values: {
+                    1: [5.57],
+                    2: [7.16],
+                    3: [8.75],
+                    4: [10.34],
+                    5: [11.93],
+                    6: [13.53],
+                    7: [15.12],
+                    8: [16.71],
+                    9: [18.3],
+                    10: [19.89]
+                }
+            }, burst_skill: {
+                cooldown: 20,
+                name: "Sparkling Star",
+                description: "■ Affects all enemies. Deals __% of final ATK as damage. DEF ▼ __% for 5 sec.",
+                values: {
+                    1: [66.6, 5.82],
+                    2: [76.11, 6.66],
+                    3: [85.62, 7.49],
+                    4: [95.14, 8.32],
+                    5: [104.65, 9.15],
+                    6: [114.17, 9.99],
+                    7: [123.68, 10.82],
+                    8: [133.2, 11.65],
+                    9: [142.71, 12.48],
+                    10: [152.22, 13.32]
+                }
+            }
+        }
+    }, "mihara": {
+        id: "mihara",
+        name: "Mihara",
+        manufacturer: NikkeManufacturer.Missilis,
+        role: NikkeRole.Attacker,
+        weapon_type: WeaponType.AR,
+        rarity: NikkeRarity.SR,
+        burst: Burst.Burst_III,
+        element: NikkeElement.Water,
+        has_treasure: false,
+        skills: {
+            skill_1: {
+                name: "Endure",
+                description: "■ Activates when the last bullet hits the target. Affects self. Critical Damage ▲ __% for 10 sec.",
+                values: {
+                    1: [8.18],
+                    2: [9.35],
+                    3: [10.52],
+                    4: [11.69],
+                    5: [12.85],
+                    6: [14.02],
+                    7: [15.19],
+                    8: [16.36],
+                    9: [17.53],
+                    10: [18.7]
+                }
+            }, skill_2: {
+                name: "Highway to Hell",
+                description: "■ Activates when using Burst Skill. Affects self. Additional effects triggered according to the number of activation time(s). Previous effects trigger repeatedly: Once: Highway to Hell 1 - ATK ▲ __% for 45 sec. Twice: Highway to Hell 2 - Critical Rate ▲ __% for 45 sec.",
+                values: {
+                    1: [6.81, 4.93],
+                    2: [7.78, 5.46],
+                    3: [8.75, 6.34],
+                    4: [9.72, 7.05],
+                    5: [10.7, 7.75],
+                    6: [11.67, 8.46],
+                    7: [12.64, 9.17],
+                    8: [13.62, 9.87],
+                    9: [14.59, 10.58],
+                    10: [15.56, 11.28]
+                }
+            }, burst_skill: {
+                cooldown: 40,
+                name: "Sense Sharing",
+                description: "■ Affects all allies. Full Burst Time ▼ 5 sec. ■ Affects all enemies. Deals __% of final ATK as damage. ■ Activates during Highway to Hell 2. Affects all enemies. Deals __% of final ATK as additional damage.",
+                values: {
+                    1: [174.82, 116.55],
+                    2: [199.8, 133.2],
+                    3: [224.77, 149.85],
+                    4: [249.75, 166.5],
+                    5: [274.72, 183.15],
+                    6: [299.7, 199.8],
+                    7: [324.67, 216.45],
+                    8: [349.65, 233.1],
+                    9: [374.62, 249.75],
+                    10: [399.6, 266.4]
+                }
+            }
+        }
     }, "misato_katsuragi": {
         id: "misato_katsuragi",
-        name: "Misato Katsuragi",
+        name: "Misato",
         manufacturer: NikkeManufacturer.Abnormal,
         role: NikkeRole.Supporter,
         weapon_type: WeaponType.SMG,
         rarity: NikkeRarity.SR,
-        burst: Burst.Burst_III,
+        burst: Burst.Burst_I,
         element: NikkeElement.Iron,
         has_treasure: false,
         skills: {
             skill_1: {
-                name: "",
-                description: "",
+                name: "Shooting Manual",
+                description: "■ Activates after landing 60 normal attack(s). Affects self. Shooting Manual: Hit Rate ▲ __%, stacks up to 3 time(s) and lasts for 5 sec. ■ Activates after landing 120 normal attack(s). Affects 1 ally unit(s) with the lowest HP percentage. Recovers __% of the caster's final Max HP as HP.",
                 values: {
-                    1: [],
-                    2: [],
-                    3: [],
-                    4: [],
-                    5: [],
-                    6: [],
-                    7: [],
-                    8: [],
-                    9: [],
-                    10: []
+                    1: [2.52, 4.02],
+                    2: [2.8, 4.47],
+                    3: [3.08, 4.91],
+                    4: [3.36, 5.36],
+                    5: [3.64, 5.81],
+                    6: [3.92, 6.25],
+                    7: [4.2, 6.7],
+                    8: [4.48, 7.15],
+                    9: [4.76, 7.6],
+                    10: [5.04, 8.04]
                 }
             }, skill_2: {
-                name: "",
-                description: "",
+                name: "Recovery Assistant",
+                description: "■ Only activates when in Shooting Manual status. Affects all allies. Damage dealt to Shield ▲ __% continuously. ■ Only activates when Shooting Manual is fully stacked. Affects self. HP Potency ▲ __% continuously.",
                 values: {
-                    1: [],
-                    2: [],
-                    3: [],
-                    4: [],
-                    5: [],
-                    6: [],
-                    7: [],
-                    8: [],
-                    9: [],
-                    10: []
+                    1: [75, 15.02],
+                    2: [83.33, 16.69],
+                    3: [91.66, 18.36],
+                    4: [100, 20.03],
+                    5: [108.33, 21.7],
+                    6: [116.66, 23.37],
+                    7: [125, 25.04],
+                    8: [133.33, 26.71],
+                    9: [141.66, 28.38],
+                    10: [150, 30.05]
                 }
             }, burst_skill: {
                 cooldown: 40,
-                name: "",
-                description: "",
+                name: "Command to Rest",
+                description: "■ Affects all allies. Recovers __% of caster's final Max HP every 1 sec for 5 sec continuously.",
                 values: {
-                    1: [],
-                    2: [],
-                    3: [],
-                    4: [],
-                    5: [],
-                    6: [],
-                    7: [],
-                    8: [],
-                    9: [],
-                    10: []
+                    1: [2.42],
+                    2: [2.71],
+                    3: [3],
+                    4: [3.3],
+                    5: [3.59],
+                    6: [3.88],
+                    7: [4.18],
+                    8: [4.47],
+                    9: [4.76],
+                    10: [5.06]
+                }
+            }
+        }
+    }, "n102": {
+        id: "n102",
+        name: "N102",
+        manufacturer: NikkeManufacturer.Missilis,
+        role: NikkeRole.Supporter,
+        weapon_type: WeaponType.RL,
+        rarity: NikkeRarity.SR,
+        burst: Burst.Burst_I,
+        element: NikkeElement.Water,
+        has_treasure: false,
+        skills: {
+            skill_1: {
+                name: "Written Memories",
+                description: "■ Affects 1 allies with the highest ATK. Activates when attacking during Full Charge. [Target] Max Ammunition Capacity ▲ 3 shots for 10 sec. [Target] Critical Damage ▲ __% for 10 sec.",
+                values: {
+                    1: [2.45],
+                    2: [3.33],
+                    3: [4.2],
+                    4: [5.08],
+                    5: [5.96],
+                    6: [6.83],
+                    7: [7.71],
+                    8: [8.59],
+                    9: [9.46],
+                    10: [10.34]
+                }
+            }, skill_2: {
+                cooldown: 15,
+                name: "Impaired Memory",
+                description: "■ Affects 1 ally unit(s) with the highest HP. Charge Damage ▲ __% for 5 sec.",
+                values: {
+                    1: [11.3],
+                    2: [12.92],
+                    3: [14.53],
+                    4: [16.15],
+                    5: [17.76],
+                    6: [19.38],
+                    7: [21],
+                    8: [22.61],
+                    9: [24.23],
+                    10: [25.84]
+                }
+            }, burst_skill: {
+                cooldown: 20,
+                name: "Memories of Blue Butterflies",
+                description: "■ Affects all allies. ATK ▲ __% for 10 sec.",
+                values: {
+                    1: [11.31],
+                    2: [12.93],
+                    3: [14.54],
+                    4: [16.16],
+                    5: [17.77],
+                    6: [19.39],
+                    7: [21.01],
+                    8: [22.62],
+                    9: [24.24],
+                    10: [25.86]
+                }
+            }
+        }
+    }, "neon": {
+        id: "neon",
+        name: "Neon",
+        manufacturer: NikkeManufacturer.Elysion,
+        role: NikkeRole.Supporter,
+        weapon_type: WeaponType.SG,
+        rarity: NikkeRarity.SR,
+        burst: Burst.Burst_I,
+        element: NikkeElement.Fire,
+        has_treasure: false,
+        skills: {
+            skill_1: {
+                name: "Neon's Special Bullet",
+                description: "■ Affects 2 ally unit(s) with the highest ATK. Activates when killing an enemy. Critical Rate ▲ __% for 5 sec.",
+                values: {
+                    1: [1.78],
+                    2: [1.97],
+                    3: [2.17],
+                    4: [2.37],
+                    5: [2.57],
+                    6: [2.77],
+                    7: [2.96],
+                    8: [3.16],
+                    9: [3.36],
+                    10: [3.56]
+                }
+            }, skill_2: {
+                name: "Viva Firepower!",
+                description: "■ Activates at the beginning of Full Burst. Affects all allies. Critical Rate ▲ __% for 2 shots.",
+                values: {
+                    1: [22.96],
+                    2: [25.52],
+                    3: [28.07],
+                    4: [30.62],
+                    5: [33.17],
+                    6: [35.72],
+                    7: [38.28],
+                    8: [40.83],
+                    9: [43.38],
+                    10: [45.93]
+                }
+            }, burst_skill: {
+                cooldown: 20,
+                name: "Firepower Rules!",
+                description: "■ Affects 1 enemy unit(s) with the highest DEF. Deals __% of final ATK as damage. ■ Affects all allies with a Shotgun. Max Ammunition Capacity ▲ 3 round(s) for 10 sec.",
+                values: {
+                    1: [198.36],
+                    2: [235.1],
+                    3: [271.83],
+                    4: [308.57],
+                    5: [345.3],
+                    6: [382.04],
+                    7: [418.77],
+                    8: [455.51],
+                    9: [492.24],
+                    10: [528.97]
+                }
+            }
+        }
+    }, "neve": {
+        id: "neve",
+        name: "neve",
+        manufacturer: NikkeManufacturer.Tetra,
+        role: NikkeRole.Attacker,
+        weapon_type: WeaponType.SG,
+        rarity: NikkeRarity.SR,
+        burst: Burst.Burst_III,
+        element: NikkeElement.Water,
+        has_treasure: false,
+        skills: {
+            skill_1: {
+                cooldown: 10,
+                name: "Bear Power",
+                description: "■ Affects 1 enemy unit(s) with the lowest remaining HP. Deals __% of final ATK as damage.",
+                values: {
+                    1: [63.63],
+                    2: [72.72],
+                    3: [81.81],
+                    4: [90.9],
+                    5: [100],
+                    6: [109.09],
+                    7: [118.18],
+                    8: [127.27],
+                    9: [136.36],
+                    10: [145.45]
+                }
+            }, skill_2: {
+                name: "Hibernation",
+                description: "■ Activates when entering Full Burst. Affects self. Deals for Pierce for 2 round(s). ATK ▲ __% for 2 round(s).",
+                values: {
+                    1: [16.8],
+                    2: [28.8],
+                    3: [40.8],
+                    4: [52.8],
+                    5: [64.8],
+                    6: [76.8],
+                    7: [88.8],
+                    8: [100.8],
+                    9: [112.8],
+                    10: [124.8]
+                }
+            }, burst_skill: {
+                cooldown: 40,
+                name: "Roar",
+                description: "■ Affects self. Critical Rate ▲ __% for 20 sec. Hit Rate ▲ __% for 20 sec.",
+                values: {
+                    1: [13.98, 9.64],
+                    2: [15.97, 11.02],
+                    3: [17.97, 12.39],
+                    4: [19.97, 13.77],
+                    5: [21.97, 15.15],
+                    6: [23.96, 16.53],
+                    7: [25.96, 17.9],
+                    8: [27.96, 19.28],
+                    9: [29.96, 20.66],
+                    10: [31.95, 22.04]
+                }
+            }
+        }
+    }, "pascal": {
+        id: "pascal",
+        name: "Pascal",
+        manufacturer: NikkeManufacturer.Abnormal,
+        role: NikkeRole.Supporter,
+        weapon_type: WeaponType.RL,
+        rarity: NikkeRarity.SR,
+        burst: Burst.Burst_I,
+        element: NikkeElement.Iron,
+        has_treasure: false,
+        skills: {
+            skill_1: {
+                name: "Watch Out!",
+                description: "■ Activates after firing 10 time(s). Affects 1 ally unit(s) with the highest DEF. Recovers __% of the caster's final Max HP as HP.",
+                values: {
+                    1: [3.14],
+                    2: [3.49],
+                    3: [3.84],
+                    4: [4.18],
+                    5: [4.53],
+                    6: [4.88],
+                    7: [5.23],
+                    8: [5.58],
+                    9: [5.93],
+                    10: [6.28]
+                }
+            }, skill_2: {
+                name: "I'll Do My Best",
+                description: "■ Activates when entering Burst stage 1. Affects 3 ally unit(s) with the lowest HP. HP Potency ▲ __% for 10 sec.",
+                values: {
+                    1: [19.2],
+                    2: [21.33],
+                    3: [23.46],
+                    4: [25.6],
+                    5: [27.73],
+                    6: [29.86],
+                    7: [32],
+                    8: [34.13],
+                    9: [36.26],
+                    10: [38.4]
+                }
+            }, burst_skill: {
+                cooldown: 40,
+                name: "Stay Safe, Everyone!",
+                description: "■ Affects 3 ally unit(s) with the lowest HP. Recovers __% of the caster's final Max HP as HP.",
+                values: {
+                    1: [27.64],
+                    2: [30.72],
+                    3: [33.79],
+                    4: [36.86],
+                    5: [39.93],
+                    6: [43],
+                    7: [46.08],
+                    8: [49.15],
+                    9: [52.22],
+                    10: [55.29]
+                }
+            }
+        }
+    }, "ram": {
+        id: "ram",
+        name: "ram",
+        manufacturer: NikkeManufacturer.Abnormal,
+        role: NikkeRole.Defender,
+        weapon_type: WeaponType.SR,
+        rarity: NikkeRarity.SR,
+        burst: Burst.Burst_I,
+        element: NikkeElement.Wind,
+        has_treasure: false,
+        skills: {
+            skill_1: {
+                name: "Fura",
+                description: "■ Activates after landing 5 normal attack(s). Affects the target(s). ATK ▼ __% for 5 sec. ■ Activates when Full Burst ends with an ally from the same squad still on the battlefield. Affects self. Cooldown of Burst Skill ▼ 20.16 sec.",
+                values: {
+                    1: [3.77],
+                    2: [4.23],
+                    3: [4.7],
+                    4: [5.16],
+                    5: [5.63],
+                    6: [6.09],
+                    7: [6.56],
+                    8: [7.02],
+                    9: [7.49],
+                    10: [7.95]
+                }
+            }, skill_2: {
+                cooldown: 15,
+                name: "Sister's Authority",
+                description: "■ Affects self. Max HP ▲ __% without restoring HP for 10 sec. ■ Affects 2 ally unit(s) with the lowest remaining HP. DEF ▲ __% of caster's DEF for 5 sec.",
+                values: {
+                    1: [20.36, 5.67],
+                    2: [22.62, 6.3],
+                    3: [24.88, 6.93],
+                    4: [27.15, 7.56],
+                    5: [29.41, 8.19],
+                    6: [31.67, 8.82],
+                    7: [33.93, 9.45],
+                    8: [36.2, 10.08],
+                    9: [38.46, 10.71],
+                    10: [40.72, 11.34]
+                }
+            }, burst_skill: {
+                cooldown: 40,
+                name: "Don't Bother Ram",
+                description: "■ Affects all allies. Generates a Shield with __% of the caster's final Max HP for 10 sec.",
+                values: {
+                    1: [5.04],
+                    2: [5.6],
+                    3: [6.16],
+                    4: [6.72],
+                    5: [7.28],
+                    6: [7.84],
+                    7: [8.4],
+                    8: [8.96],
+                    9: [9.52],
+                    10: [10.08]
+                }
+            }
+        }
+    }, "rapi": {
+        id: "rapi",
+        name: "Rapi",
+        manufacturer: NikkeManufacturer.Elysion,
+        role: NikkeRole.Attacker,
+        weapon_type: WeaponType.AR,
+        rarity: NikkeRarity.SR,
+        burst: Burst.Burst_III,
+        element: NikkeElement.Fire,
+        has_treasure: false,
+        skills: {
+            skill_1: {
+                name: "FF Formation",
+                description: "■ Activates when attacked 20 time(s). Affects self. ATK ▲ __% for 20 sec.",
+                values: {
+                    1: [10.9],
+                    2: [12.12],
+                    3: [13.33],
+                    4: [14.54],
+                    5: [15.75],
+                    6: [16.96],
+                    7: [18.18],
+                    8: [19.39],
+                    9: [20.6],
+                    10: [21.81]
+                }
+            }, skill_2: {
+                cooldown: 20,
+                name: "Missile",
+                description: "■ Affects 1 enemy unit(s) with the highest ATK. Deals __% of final ATK as damage. Taunt for 5 sec.",
+                values: {
+                    1: [308.57],
+                    2: [333.06],
+                    3: [357.55],
+                    4: [382.04],
+                    5: [406.53],
+                    6: [431.02],
+                    7: [455.51],
+                    8: [480],
+                    9: [504.48],
+                    10: [528.97]
+                }
+            }, burst_skill: {
+                cooldown: 40,
+                name: "Warhead Volley",
+                description: "■ Affects 1 enemy unit(s) with the highest ATK. Deals __% of final ATK as damage. ■ Affects self. ATK ▲ __% for 10 sec.",
+                values: {
+                    1: [328.86, 30.37],
+                    2: [365.4, 33.75],
+                    3: [401.94, 37.12],
+                    4: [438.48, 40.5],
+                    5: [474.02, 43.87],
+                    6: [511.56, 47.25],
+                    7: [548.1, 50.62],
+                    8: [584.64, 54],
+                    9: [621.18, 57.37],
+                    10: [657.72, 60.75]
                 }
             }
         }
@@ -6515,6 +7291,485 @@ export const nikke_static_data: { [id: string]: NikkeStaticData } = {
                     "8": [16.16],
                     "9": [17.77],
                     "10": [19.39]
+                }
+            }
+        }
+    }, "product_12": {
+        id: "product_12",
+        name: "Product 12",
+        manufacturer: NikkeManufacturer.Missilis,
+        role: NikkeRole.Attacker,
+        weapon_type: WeaponType.MG,
+        rarity: NikkeRarity.R,
+        burst: Burst.Burst_III,
+        element: NikkeElement.Fire,
+        has_treasure: false,
+        skills: {
+            skill_1: {
+                name: "Action: Increase ATK",
+                description: "■ Affects self. Activates after 200 normal attack(s). ATK ▲ __% for 5 sec.",
+                values: {
+                    1: [2.07],
+                    2: [2.76],
+                    3: [3.45],
+                    4: [4.14],
+                    5: [4.83],
+                    6: [5.52],
+                    7: [6.21],
+                    8: [6.9],
+                    9: [7.59],
+                    10: [8.28]
+                }
+            }, skill_2: {
+                cooldown: 10,
+                name: "Action: Focus Fire",
+                description: "■ Affects 1 enemy unit(s) with the lowest remaining HP. Deals __% of final ATK as damage.",
+                values: {
+                    1: [27.27],
+                    2: [36.36],
+                    3: [45.45],
+                    4: [54.54],
+                    5: [63.63],
+                    6: [72.72],
+                    7: [81.81],
+                    8: [90.9],
+                    9: [100],
+                    10: [109.09]
+                }
+            }, burst_skill: {
+                cooldown: 40,
+                name: "Action: Precision Strike",
+                description: "■ Affects enemies within attack range. Deals __% of final ATK as damage.",
+                values: {
+                    1: [180],
+                    2: [240],
+                    3: [300],
+                    4: [360],
+                    5: [420],
+                    6: [480],
+                    7: [540],
+                    8: [600],
+                    9: [660],
+                    10: [720]
+                }
+            }
+        }
+    }, "product_23": {
+        id: "product_23",
+        name: "Product 23",
+        manufacturer: NikkeManufacturer.Missilis,
+        role: NikkeRole.Supporter,
+        weapon_type: WeaponType.SG,
+        rarity: NikkeRarity.R,
+        burst: Burst.Burst_II,
+        element: NikkeElement.Wind,
+        has_treasure: false,
+        skills: {
+            skill_1: {
+                name: "Order: Power Boost",
+                description: "■ Activates when the last bullet hits the target. Affects self. DEF ▲ __% for 10 sec.",
+                values: {
+                    1: [0.81],
+                    2: [1.62],
+                    3: [2.43],
+                    4: [3.24],
+                    5: [4.05],
+                    6: [4.86],
+                    7: [5.67],
+                    8: [6.48],
+                    9: [7.29],
+                    10: [8.1]
+                }
+            }, skill_2: {
+                cooldown: 15,
+                name: "Order: Emergency Measures",
+                description: "■ Affects self. Recover __% of attack damage as HP over 10 sec.",
+                values: {
+                    1: [1.61],
+                    2: [3.23],
+                    3: [4.84],
+                    4: [6.46],
+                    5: [8.07],
+                    6: [9.69],
+                    7: [11.3],
+                    8: [12.92],
+                    9: [14.53],
+                    10: [16.15]
+                }
+            }, burst_skill: {
+                cooldown: 20,
+                name: "Order: Special Bullets",
+                description: "■ Affects 2 enemy unit(s) with the highest ATK. DEF ▼ __% for 5 sec.",
+                values: {
+                    1: [4.87],
+                    2: [9.75],
+                    3: [14.62],
+                    4: [19.5],
+                    5: [24.37],
+                    6: [29.25],
+                    7: [34.12],
+                    8: [39],
+                    9: [43.87],
+                    10: [48.75]
+                }
+            }
+        }
+    }, "soldier_eg": {
+        id: "soldier_eg",
+        name: "Soldier EG",
+        manufacturer: NikkeManufacturer.Elysion,
+        role: NikkeRole.Attacker,
+        weapon_type: WeaponType.AR,
+        rarity: NikkeRarity.R,
+        burst: Burst.Burst_III,
+        element: NikkeElement.Electric,
+        has_treasure: false,
+        skills: {
+            skill_1: {
+                name: "Eagle Eye",
+                description: "■ When a normal attack hits, there is a 5% chance of affecting self. ATK ▲ __% for 5 sec.",
+                values: {
+                    1: [1.98],
+                    2: [2.64],
+                    3: [3.3],
+                    4: [3.96],
+                    5: [4.62],
+                    6: [5.28],
+                    7: [5.94],
+                    8: [6.59],
+                    9: [7.26],
+                    10: [7.92]
+                }
+            }, skill_2: {
+                cooldown: 9,
+                name: "Eagle's Gambit",
+                description: "■ Affects self. Max Ammunition Capacity ▲ __% for 5 sec.",
+                values: {
+                    1: [28.19],
+                    2: [37.59],
+                    3: [46.99],
+                    4: [56.38],
+                    5: [65.78],
+                    6: [75.18],
+                    7: [84.58],
+                    8: [93.98],
+                    9: [103.37],
+                    10: [112.77]
+                }
+            }, burst_skill: {
+                cooldown: 40,
+                name: "Eagle Shot",
+                description: "■ Affects enemies within attack range. Deals __% of final ATK as damage.",
+                values: {
+                    1: [180],
+                    2: [240],
+                    3: [300],
+                    4: [360],
+                    5: [420],
+                    6: [480],
+                    7: [540],
+                    8: [600],
+                    9: [660],
+                    10: [720]
+                }
+            }
+        }
+    }, "soldier_fa": {
+        id: "soldier_fa",
+        name: "Soldier FA",
+        manufacturer: NikkeManufacturer.Elysion,
+        role: NikkeRole.Defender,
+        weapon_type: WeaponType.SG,
+        rarity: NikkeRarity.R,
+        burst: Burst.Burst_II,
+        element: NikkeElement.Iron,
+        has_treasure: false,
+        skills: {
+            skill_1: {
+                name: "Falcon Wings",
+                description: "■ There is a 10% chance of activating when attacked. Affects self. DEF ▲ __% for 10 sec.",
+                values: {
+                    1: [0.9],
+                    2: [1.81],
+                    3: [2.72],
+                    4: [3.63],
+                    5: [4.54],
+                    6: [5.45],
+                    7: [6.36],
+                    8: [7.27],
+                    9: [8.18],
+                    10: [9.09]
+                }
+            }, skill_2: {
+                cooldown: 15,
+                name: "Falcon Nest",
+                description: "■ Affects self. Recover __% of attack damage as HP over 8 sec.",
+                values: {
+                    1: [2.01],
+                    2: [4.03],
+                    3: [6.05],
+                    4: [8.07],
+                    5: [10.09],
+                    6: [12.11],
+                    7: [14.13],
+                    8: [16.15],
+                    9: [18.17],
+                    10: [20.19]
+                }
+            }, burst_skill: {
+                cooldown: 20,
+                name: "Falcon Boost",
+                description: "■ Affects self. Max HP ▲ __% for 10 sec.",
+                values: {
+                    1: [11.25],
+                    2: [22.5],
+                    3: [33.75],
+                    4: [45],
+                    5: [56.25],
+                    6: [67.5],
+                    7: [78.75],
+                    8: [90],
+                    9: [101.25],
+                    10: [112.5]
+                }
+            }
+        }
+    }, "soldier_ow": {
+        id: "soldier_ow",
+        name: "Soldier OW",
+        manufacturer: NikkeManufacturer.Elysion,
+        role: NikkeRole.Supporter,
+        weapon_type: WeaponType.SMG,
+        rarity: NikkeRarity.R,
+        burst: Burst.Burst_I,
+        element: NikkeElement.Fire,
+        has_treasure: false,
+        skills: {
+            skill_1: {
+                name: "Owl's Claw",
+                description: "■ There is a 10% chance of activating after casting normal attack(s). Affects the target(s). Deals __% of final ATK as additional damage.",
+                values: {
+                    1: [18.9],
+                    2: [25.2],
+                    3: [31.5],
+                    4: [37.8],
+                    5: [44.1],
+                    6: [50.4],
+                    7: [56.7],
+                    8: [63],
+                    9: [69.3],
+                    10: [75.6]
+                }
+            }, skill_2: {
+                cooldown: 10,
+                name: "Owl Wind",
+                description: "■ Affects 3 ally unit(s) with the highest ATK. Cover's DEF ▲ __% for 5 sec.",
+                values: {
+                    1: [32.14],
+                    2: [42.85],
+                    3: [53.57],
+                    4: [64.28],
+                    5: [75],
+                    6: [85.71],
+                    7: [96.42],
+                    8: [107.14],
+                    9: [117.85],
+                    10: [128.57]
+                }
+            }, burst_skill: {
+                cooldown: 20,
+                name: "Owl Feather",
+                description: "■ Affects all Fire Code allies. Max Ammunition Capacity ▲ __% for 10 sec.",
+                values: {
+                    1: [70],
+                    2: [93.33],
+                    3: [116.66],
+                    4: [140],
+                    5: [163.33],
+                    6: [186.66],
+                    7: [210],
+                    8: [233.33],
+                    9: [256.66],
+                    10: [280]
+                }
+            }
+        }
+    }, "idoll_flower": {
+        id: "idoll_flower",
+        name: "iDoll Flower",
+        manufacturer: NikkeManufacturer.Tetra,
+        role: NikkeRole.Defender,
+        weapon_type: WeaponType.RL,
+        rarity: NikkeRarity.R,
+        burst: Burst.Burst_I,
+        element: NikkeElement.Wind,
+        has_treasure: false,
+        skills: {
+            skill_1: {
+                name: "Perennial Leaf",
+                description: "■ Activates when the last bullet hits the target. Affects the target. ATK ▼ __% for 5 sec.",
+                values: {
+                    1: [4.13],
+                    2: [5.5],
+                    3: [6.88],
+                    4: [8.26],
+                    5: [9.63],
+                    6: [11.01],
+                    7: [12.39],
+                    8: [13.77],
+                    9: [15.14],
+                    10: [16.52]
+                }
+            }, skill_2: {
+                cooldown: 15,
+                name: "Hue of the Perennial",
+                description: "■ Affects 1 enemy unit(s) with the highest ATK. ATK ▼ __% for 5 sec.",
+                values: {
+                    1: [9.84],
+                    2: [13.12],
+                    3: [16.4],
+                    4: [19.68],
+                    5: [22.96],
+                    6: [26.25],
+                    7: [29.53],
+                    8: [32.81],
+                    9: [36.09],
+                    10: [39.37]
+                }
+            }, burst_skill: {
+                cooldown: 20,
+                name: "Perennial Perfume",
+                description: "■ Affects 1 enemy unit(s) with the highest ATK. Deals __% of final ATK as damage. Taunt for 2 sec.",
+                values: {
+                    1: [110.2],
+                    2: [134.69],
+                    3: [159.18],
+                    4: [183.67],
+                    5: [208.16],
+                    6: [232.65],
+                    7: [257.14],
+                    8: [281.63],
+                    9: [306.12],
+                    10: [330.61]
+                }
+            }
+        }
+    }, "idoll_ocean": {
+        id: "idoll_ocean",
+        name: "iDoll Ocean",
+        manufacturer: NikkeManufacturer.Tetra,
+        role: NikkeRole.Supporter,
+        weapon_type: WeaponType.SMG,
+        rarity: NikkeRarity.R,
+        burst: Burst.Burst_I,
+        element: NikkeElement.Water,
+        has_treasure: false,
+        skills: {
+            skill_1: {
+                name: "Ocean Shower",
+                description: "■ Activates when the last bullet hits the target. Affects 1 ally unit(s) with the lowest HP percentage. Recovers __% of the caster's final Max HP as HP.",
+                values: {
+                    1: [1.21],
+                    2: [1.62],
+                    3: [2.02],
+                    4: [2.43],
+                    5: [2.83],
+                    6: [3.24],
+                    7: [3.64],
+                    8: [4.05],
+                    9: [4.45],
+                    10: [4.86]
+                }
+            }, skill_2: {
+                cooldown: 15,
+                name: "Ocean Cleansing",
+                description: "■ Affects 1 ally unit(s) with the lowest HP percentage. Recovers __% of the caster's final Max HP as HP.",
+                values: {
+                    1: [2.42],
+                    2: [3.23],
+                    3: [4.03],
+                    4: [4.84],
+                    5: [5.65],
+                    6: [6.46],
+                    7: [7.26],
+                    8: [8.07],
+                    9: [8.88],
+                    10: [9.69]
+                }
+            }, burst_skill: {
+                cooldown: 20,
+                name: "Ocean Dive",
+                description: "■ Affects all allies. Recovers __% of caster's final Max HP as HP.",
+                values: {
+                    1: [7.42],
+                    2: [9.9],
+                    3: [12.37],
+                    4: [14.85],
+                    5: [17.32],
+                    6: [19.8],
+                    7: [22.27],
+                    8: [24.75],
+                    9: [27.22],
+                    10: [29.7]
+                }
+            }
+        }
+    }, "idoll_sun": {
+        id: "idoll_sun",
+        name: "iDoll Sun",
+        manufacturer: NikkeManufacturer.Tetra,
+        role: NikkeRole.Supporter,
+        weapon_type: WeaponType.AR,
+        rarity: NikkeRarity.R,
+        burst: Burst.Burst_III,
+        element: NikkeElement.Iron,
+        has_treasure: false,
+        skills: {
+            skill_1: {
+                name: "Sunshine",
+                description: "■ Affects self. Activates after landing 10 normal attack(s). DEF ▲ __% for 5 sec.",
+                values: {
+                    1: [1.89],
+                    2: [2.52],
+                    3: [3.15],
+                    4: [3.78],
+                    5: [4.41],
+                    6: [5.04],
+                    7: [5.67],
+                    8: [6.3],
+                    9: [6.93],
+                    10: [7.56]
+                }
+            }, skill_2: {
+                name: "Sunlight",
+                description: "■ There is a 20% chance to activate when attacked. ATK ▲ __% for 5 sec.",
+                values: {
+                    1: [2.27],
+                    2: [3.03],
+                    3: [3.78],
+                    4: [4.54],
+                    5: [5.3],
+                    6: [6.06],
+                    7: [6.81],
+                    8: [7.57],
+                    9: [8.33],
+                    10: [9.09]
+                }
+            }, burst_skill: {
+                cooldown: 40,
+                name: "Sunset",
+                description: "■ Affects self. Max Ammunition Capacity ▲ __% for 10 sec.",
+                values: {
+                    1: [196.87],
+                    2: [262.5],
+                    3: [328.12],
+                    4: [393.75],
+                    5: [459.37],
+                    6: [525],
+                    7: [590.62],
+                    8: [656.25],
+                    9: [721.87],
+                    10: [787.5]
                 }
             }
         }

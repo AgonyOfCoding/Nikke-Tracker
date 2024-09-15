@@ -372,6 +372,13 @@ export const recommendation_data_keripo: {[nikke: string]: RecommendationsKeripo
         cube: [CubeName.Bastion],
         tl_dr: "SG Team Buffer",
         full: ["Tove is the premium SG buffer, giving SGs on your team a top tier attack buff as well as a crazy good attack speed buff (turning Sugar into the SG equivalent of Alice). Unfortunately SG teams are easily countered (by Jackal, Makima, and Biscuit) so you will be limited to using Tove on attack only. She also needs very high skill level and gear/core investments since her attack buff scales off of her own atk stats."]
+    }, "rei_ayanami": {
+        tier: "A",
+        role: "AoE Nuke + DPS Carry",
+        skills: "-/10/10",
+        cube: [CubeName.Bastion, CubeName.Wingman],
+        tl_dr: "Extremely strong AoE nuke Burst. Hard countered by Noah or Bay. Soft countered by Scarlet-Jackal",
+        full: ["Rei Ayanami is an extremely strong AoE nuker whose high multiplier and self buffs enable her to 1-shot with only one buffer (but two is always prefered due to dolls and tempering cube). She is an MG so she has very low burst gen and is vulnerable against Scarlet-Jackal comps. She is also hard countered by Noah and Bay like most other AoE nukers. Nevertheless, she is a stronger pick in other situations over most other AoE nukers. She is just a one-trick pony as she doesn't offer much else other than her nuke."]
     }, "template": {
         tier: "",
         role: "",

@@ -17,7 +17,7 @@ const NavbarAbout: React.FC = () => {
                     <p>Nikke profile icons from <a href="https://nikke-db.pages.dev/tierlistmaker" target="_blank" rel="noreferrer" >Nikke-DB</a>. Other icons are screenshots from the game.</p>
                     <h3>Hints</h3>
                     <p>Shift+click changes most values in larger increments.</p>
-                    <p>Not all equipment levels have icons yet, belive the numbers next to the icon.</p>
+                    <p>Not all equipment levels have icons yet, believe the numbers next to the icon.</p>
                 </DialogBody>
                 <DialogFooter
                     actions={

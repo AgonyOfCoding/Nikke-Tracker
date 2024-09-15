@@ -46,7 +46,7 @@ function App() {
             setNikkeInvestmentData(investments);
             dispatch(initializeInvestments(investments));
         } catch (error) {
-            console.error('Error fetching investment data:', error);
+            console.info('Existing investment data not found');
             setNikkeInvestmentData([]);
             dispatch(initializeInvestments([]));
         }
@@ -58,7 +58,7 @@ function App() {
             setNikkeTeamsData(teams);
             dispatch(initializeTeamsData(teams));
         } catch (error) {
-            console.error('Error fetching investment data:', error);
+            console.info('Existing teams data not found');
             setNikkeTeamsData(emptyTeamsData);
             dispatch(initializeTeamsData(emptyTeamsData));
         }

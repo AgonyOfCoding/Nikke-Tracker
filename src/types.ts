@@ -192,6 +192,7 @@ export interface CollectionItem {
 export interface TeamsData {
     campaign: Team[];
     solo_raid: Team[];
+    anomaly_interception: Team[];
     tribe_tower: Team[];
     pvp: Team[];
     shooting_range: Team[];

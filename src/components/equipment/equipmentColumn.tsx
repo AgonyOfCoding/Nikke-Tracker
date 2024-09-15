@@ -149,13 +149,15 @@ const EquipmentColumn: React.FC<EquipmentColumnProps> = ({ equipment_type, nikke
                             <Button
                                 icon='small-plus'
                                 small
-                                style={{ backgroundColor: color_scheme[0] }}
+                                disabled={equipment_data.level === 5}
+                                style={{ backgroundColor: equipment_data.level === 5 ? color_scheme[0] : "white" }}
                                 onClick={(event) => handleClick(event as React.MouseEvent<HTMLButtonElement>, 1)}
                             />
                             <Button
                                 icon='small-minus'
                                 small
-                                style={{ backgroundColor: color_scheme[0] }}
+                                disabled={equipment_data.level === 0}
+                                style={{ backgroundColor: equipment_data.level === 0 ? color_scheme[0] : "white" }}
                                 onClick={(event) => handleClick(event as React.MouseEvent<HTMLButtonElement>, -1)}
                             />
                         </ButtonGroup>

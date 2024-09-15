@@ -1,7 +1,7 @@
-import { Button, Menu, MenuDivider, MenuItem, Popover, Tooltip } from "@blueprintjs/core"
+import { Button, Icon, Menu, MenuDivider, MenuItem, Popover, Tooltip } from "@blueprintjs/core"
 import { CollectionItemRarity, color_scheme, NikkeElement, NikkeManufacturer, NikkeRarity, WeaponType } from "../../types"
 import { useDispatch, useSelector } from "react-redux";
-import { FilterOptions, setCollectionItemRarityFilter, setElementFilter, setManufacturerFilter, setNikkeRarityFilter, setWeaponFilter } from "../../state/filterOptions";
+import { EquipmentFilterOption, FilterOptions, setCollectionItemRarityFilter, setElementFilter, setEquipmentFilter, setManufacturerFilter, setMiscFilter, setNikkeRarityFilter, setWeaponFilter } from "../../state/filterOptions";
 import { RootState } from "../../state/store";
 import { getMiscIcon } from "../../utility/iconGetters";
 
@@ -106,6 +106,34 @@ const NavbarAdditionalFilters: React.FC = () => {
                     }
                 />
             )}
+            <MenuDivider />
+            {Object.values(EquipmentFilterOption).map(option =>
+                <MenuItem
+                    style={{ 
+                        backgroundColor: option === filterState.equipment ? color_scheme[3] : color_scheme[0],
+                        color: option === filterState.equipment ? color_scheme[0] : color_scheme[4]
+                    }}
+                    key={option}
+                    text={option}
+                    onClick={option === filterState.equipment ?
+                        () => dispatch(setEquipmentFilter(undefined)) :
+                        () => dispatch(setEquipmentFilter(option))
+                    }
+                />
+            )}
+            <MenuDivider />
+            <MenuItem
+                style={{ 
+                    backgroundColor: filterState.misc === "bond_not_maxed" ? color_scheme[3] : color_scheme[0],
+                    color: filterState.misc === "bond_not_maxed" ? color_scheme[0] : color_scheme[4]
+                }}
+                text={"Bond Not Maxed"}
+                icon={<Icon icon="heart" color="red" />}
+                onClick={filterState.misc === "bond_not_maxed" ?
+                    () => dispatch(setMiscFilter(undefined)) :
+                    () => dispatch(setMiscFilter("bond_not_maxed"))
+                }
+            />
         </Menu>
     };
 

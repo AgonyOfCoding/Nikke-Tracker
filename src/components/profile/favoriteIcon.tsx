@@ -1,4 +1,4 @@
-import { Icon } from "@blueprintjs/core";
+import { Icon, Tooltip } from "@blueprintjs/core";
 import { Nikke } from "../../types";
 import { useCallback } from "react";
 import { useDispatch } from "react-redux";
@@ -21,17 +21,19 @@ const FavoriteIcon: React.FC<FavoriteIconProps> = ({ nikke }) => {
     }, [dispatch, nikke]);
 
     return (
-        <Icon
-            size={20}
-            icon={nikke.favorite ? "star" : "star-empty"}
-            onClick={setFavorite}
-            style={{
-                position: 'absolute',
-                top: '5px',
-                left: '5px',
-                color: nikke.favorite ? "gold" : "black"
-            }}
-        />
+        <Tooltip content="Add to Favorites">
+            <Icon
+                size={20}
+                icon={nikke.favorite ? "star" : "star-empty"}
+                onClick={setFavorite}
+                style={{
+                    position: 'absolute',
+                    top: '5px',
+                    left: '5px',
+                    color: nikke.favorite ? "gold" : "black"
+                }}
+            />
+        </Tooltip>
     )
 }
 

@@ -1,7 +1,8 @@
 {
-  "name": "nikke-tracker",
-  "version": "0.1.0",
+  "name": "nikke-investment-tracker",
+  "version": "1.0.0",
   "private": true,
+  "main": "electron.ts",
   "dependencies": {
     "@blueprintjs/core": "^5.10.5",
     "@blueprintjs/icons": "^5.10.0",
@@ -31,9 +32,12 @@
     "start": "concurrently \"npm run server\" \"npm run client\"",
     "server": "node server/server.js",
     "client": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "electron-builder",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "electron": "electron .",
+    "dist": "electron-builder",
+    "main": "electron.js"
   },
   "proxy": "http://localhost:5000",
   "eslintConfig": {
@@ -57,9 +61,24 @@
   "resolutions": {
     "styled-components": "^5"
   },
+  "build": {
+    "appId": "com.yourapp.id",
+    "files": [
+        "build/**/*",
+        "server/**/*",
+        "main.js",
+        "package.json"
+    ],
+    "directories": {
+        "output": "dist"
+    }
+  },
   "devDependencies": {
     "@babel/plugin-transform-private-property-in-object": "^7.24.7",
     "@types/react-window": "^1.8.8",
-    "concurrently": "^8.2.2"
+    "concurrently": "^8.2.2",
+    "electron": "^32.0.1",
+    "electron-builder": "^24.13.3",
+    "electron-is-dev": "^3.0.1"
   }
 }

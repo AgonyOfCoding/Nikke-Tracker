@@ -161,21 +161,21 @@ export const recommendation_data_skyfall: {[nikke: string]: RecommendationsSkyfa
         notes: [""]
     },
     "asuka_shikinami_langley": {
-        priority: "",
-        collection_item_priority: "not_rated",
-        skills: ["", "", ""],
+        priority: "Medium to High",
+        collection_item_priority: "high",
+        skills: ["7-10", "7-10", "7-10"],
         overloads: {
-            ideal: [],
+            ideal: ["2-4x Max Ammo", "4x ATK", "4x Elemental Damage"],
             good: [],
-            fine: [],
-            passable: [],
+            fine: ["0-4x Crit Rate", "0-4x Crit Damage"],
+            passable: ["0-4x Hit Rate"],
             no: []
         },
         cube: {
-            cube: [],
+            cube: [CubeName.Resilience],
             notes: ""
         },
-        notes: [""]
+        notes: ["2x Max Ammo is good with Reload buffer like Crown. Otherwise aim for 3x+ Max Ammo."]
     },
     "bay": {
         priority: "",
@@ -267,7 +267,7 @@ export const recommendation_data_skyfall: {[nikke: string]: RecommendationsSkyfa
     },
     "clay": {
         priority: "",
-        collection_item_priority: "not_rated",
+        collection_item_priority: "ignore_for_now",
         skills: ["", "", ""],
         overloads: {
             ideal: [],
@@ -441,7 +441,7 @@ export const recommendation_data_skyfall: {[nikke: string]: RecommendationsSkyfa
     },
     "ein": {
         priority: "Medium",
-        collection_item_priority: "not_rated",
+        collection_item_priority: "priority_solo_raid",
         skills: ["7-10", "7-10", "4-10"],
         overloads: {
             ideal: ["4x Elemental Damage", "4x ATK", "1-2x Max Ammo"],
@@ -545,7 +545,7 @@ export const recommendation_data_skyfall: {[nikke: string]: RecommendationsSkyfa
     },
     "exia": {
         priority: "Low to Medium (with Treasure)",
-        collection_item_priority: "treasure",
+        collection_item_priority: "priority_treasure",
         skills: ["4+", "7-10", "10"],
         overloads: {
             ideal: ["4x ATK", "4x Elemental Damage"],
@@ -750,7 +750,7 @@ export const recommendation_data_skyfall: {[nikke: string]: RecommendationsSkyfa
     },
     "laplace": {
         priority: "Low to Medium (with Treasure)",
-        collection_item_priority: "priority_treasure",
+        collection_item_priority: "treasure",
         skills: ["1-4", "4-10", "4-10"],
         overloads: {
             ideal: ["4x ATK", "4x Elemental Damage", "0-4x Charge Speed", "0-2x Max Ammo"],
@@ -888,21 +888,21 @@ export const recommendation_data_skyfall: {[nikke: string]: RecommendationsSkyfa
         notes: [""]
     },
     "mari_makinami_illustrious": {
-        priority: "",
-        collection_item_priority: "not_rated",
-        skills: ["", "", ""],
+        priority: "Low to Medium",
+        collection_item_priority: "priority_stats",
+        skills: ["4-7-10", "4-7-10", "7-10"],
         overloads: {
-            ideal: [],
-            good: [],
+            ideal: ["0-4x ATK", "0-4x Elemental Damage"],
+            good: ["0-4x Max Ammo", "0-4x Charge Speed"],
             fine: [],
-            passable: [],
+            passable: ["0-4x Crit Damage", "0-4x Crit Rate", "0-4x Charge Damage"],
             no: []
         },
         cube: {
-            cube: [],
+            cube: [CubeName.Resilience],
             notes: ""
         },
-        notes: [""]
+        notes: ["Primary use for Mari is to use with Pierce units so skill 1 is useful if you know when to use her (with Pierce Units, against bosses with Core)"]
     },
     "mary": {
         priority: "",
@@ -1383,18 +1383,18 @@ export const recommendation_data_skyfall: {[nikke: string]: RecommendationsSkyfa
         notes: [""]
     },
     "rei_ayanami": {
-        priority: "",
-        collection_item_priority: "not_rated",
-        skills: ["", "", ""],
+        priority: "Low to Medium",
+        collection_item_priority: "priority_stats",
+        skills: ["4-7-10", "7-10", "7-10"],
         overloads: {
-            ideal: [],
+            ideal: ["2-4x Max Ammo", "4x Elemental Damage", "4x ATK"],
             good: [],
-            fine: [],
+            fine: ["0-3x Crit Rate", "0-3x Crit Damage"],
             passable: [],
             no: []
         },
         cube: {
-            cube: [],
+            cube: [CubeName.Bastion],
             notes: ""
         },
         notes: [""]
@@ -1437,7 +1437,7 @@ export const recommendation_data_skyfall: {[nikke: string]: RecommendationsSkyfa
     },
     "rosanna_chic_ocean": {
         priority: "Medium (with Liter)",
-        collection_item_priority: "not_rated",
+        collection_item_priority: "useful_but_not_priority",
         skills: ["4++", "4+", "10"],
         overloads: {
             ideal: ["0-4x ATK", "0-4x Elemental Damage"],
@@ -1506,7 +1506,7 @@ export const recommendation_data_skyfall: {[nikke: string]: RecommendationsSkyfa
     },
     "sakura_bloom_in_summer": {
         priority: "Medium",
-        collection_item_priority: "not_rated",
+        collection_item_priority: "priority_stats",
         skills: ["4-5", "4-10", "7-10"],
         overloads: {
             ideal: ["4x ATK", "4x Elemental Damage"],
@@ -1741,7 +1741,7 @@ export const recommendation_data_skyfall: {[nikke: string]: RecommendationsSkyfa
     },
     "trony": {
         priority: "",
-        collection_item_priority: "not_rated",
+        collection_item_priority: "ignore_for_now",
         skills: ["", "", ""],
         overloads: {
             ideal: [],
@@ -1775,7 +1775,7 @@ export const recommendation_data_skyfall: {[nikke: string]: RecommendationsSkyfa
     },
     "viper": {
         priority: "",
-        collection_item_priority: "treasure",
+        collection_item_priority: "priority_treasure",
         skills: ["", "", ""],
         overloads: {
             ideal: [],
@@ -1862,7 +1862,24 @@ export const recommendation_data_skyfall: {[nikke: string]: RecommendationsSkyfa
     },
     "zwei": {
         priority: "",
-        collection_item_priority: "not_rated",
+        collection_item_priority: "useful_but_not_priority",
+        skills: ["", "", ""],
+        overloads: {
+            ideal: [],
+            good: [],
+            fine: [],
+            passable: [],
+            no: []
+        },
+        cube: {
+            cube: [],
+            notes: ""
+        },
+        notes: [""]
+    },
+    "anchor": {
+        priority: "",
+        collection_item_priority: "dont_bother",
         skills: ["", "", ""],
         overloads: {
             ideal: [],
@@ -1893,25 +1910,7 @@ export const recommendation_data_skyfall: {[nikke: string]: RecommendationsSkyfa
             notes: ""
         },
         notes: [""]
-    },
-    "misato_katsuragi": {
-        priority: "",
-        collection_item_priority: "not_rated",
-        skills: ["", "", ""],
-        overloads: {
-            ideal: [],
-            good: [],
-            fine: [],
-            passable: [],
-            no: []
-        },
-        cube: {
-            cube: [],
-            notes: ""
-        },
-        notes: [""]
-    },
-    "product_08": {
+    }, "belorta": {
         priority: "",
         collection_item_priority: "dont_bother",
         skills: ["", "", ""],
@@ -1927,8 +1926,343 @@ export const recommendation_data_skyfall: {[nikke: string]: RecommendationsSkyfa
             notes: ""
         },
         notes: [""]
-    },
-    "template": {
+    }, "delta": {
+        priority: "",
+        collection_item_priority: "dont_bother",
+        skills: ["", "", ""],
+        overloads: {
+            ideal: [],
+            good: [],
+            fine: [],
+            passable: [],
+            no: []
+        },
+        cube: {
+            cube: [],
+            notes: ""
+        },
+        notes: [""]
+    }, "ether": {
+        priority: "",
+        collection_item_priority: "dont_bother",
+        skills: ["", "", ""],
+        overloads: {
+            ideal: [],
+            good: [],
+            fine: [],
+            passable: [],
+            no: []
+        },
+        cube: {
+            cube: [],
+            notes: ""
+        },
+        notes: [""]
+    }, "himeno": {
+        priority: "",
+        collection_item_priority: "dont_bother",
+        skills: ["", "", ""],
+        overloads: {
+            ideal: [],
+            good: [],
+            fine: [],
+            passable: [],
+            no: []
+        },
+        cube: {
+            cube: [],
+            notes: ""
+        },
+        notes: [""]
+    }, "mica": {
+        priority: "",
+        collection_item_priority: "dont_bother",
+        skills: ["", "", ""],
+        overloads: {
+            ideal: [],
+            good: [],
+            fine: [],
+            passable: [],
+            no: []
+        },
+        cube: {
+            cube: [],
+            notes: ""
+        },
+        notes: [""]
+    }, "mihara": {
+        priority: "",
+        collection_item_priority: "dont_bother",
+        skills: ["", "", ""],
+        overloads: {
+            ideal: [],
+            good: [],
+            fine: [],
+            passable: [],
+            no: []
+        },
+        cube: {
+            cube: [],
+            notes: ""
+        },
+        notes: [""]
+    }, "misato_katsuragi": {
+        priority: "",
+        collection_item_priority: "dont_bother",
+        skills: ["", "", ""],
+        overloads: {
+            ideal: [],
+            good: [],
+            fine: [],
+            passable: [],
+            no: []
+        },
+        cube: {
+            cube: [],
+            notes: ""
+        },
+        notes: [""]
+    }, "n102": {
+        priority: "",
+        collection_item_priority: "dont_bother",
+        skills: ["", "", ""],
+        overloads: {
+            ideal: [],
+            good: [],
+            fine: [],
+            passable: [],
+            no: []
+        },
+        cube: {
+            cube: [],
+            notes: ""
+        },
+        notes: [""]
+    }, "neon": {
+        priority: "",
+        collection_item_priority: "dont_bother",
+        skills: ["", "", ""],
+        overloads: {
+            ideal: [],
+            good: [],
+            fine: [],
+            passable: [],
+            no: []
+        },
+        cube: {
+            cube: [],
+            notes: ""
+        },
+        notes: [""]
+    }, "neve": {
+        priority: "",
+        collection_item_priority: "dont_bother",
+        skills: ["", "", ""],
+        overloads: {
+            ideal: [],
+            good: [],
+            fine: [],
+            passable: [],
+            no: []
+        },
+        cube: {
+            cube: [],
+            notes: ""
+        },
+        notes: [""]
+    }, "pascal": {
+        priority: "",
+        collection_item_priority: "pvp",
+        skills: ["", "", ""],
+        overloads: {
+            ideal: [],
+            good: [],
+            fine: [],
+            passable: [],
+            no: []
+        },
+        cube: {
+            cube: [],
+            notes: ""
+        },
+        notes: [""]
+    }, "ram": {
+        priority: "",
+        collection_item_priority: "dont_bother",
+        skills: ["", "", ""],
+        overloads: {
+            ideal: [],
+            good: [],
+            fine: [],
+            passable: [],
+            no: []
+        },
+        cube: {
+            cube: [],
+            notes: ""
+        },
+        notes: [""]
+    }, "rapi": {
+        priority: "",
+        collection_item_priority: "dont_bother",
+        skills: ["", "", ""],
+        overloads: {
+            ideal: [],
+            good: [],
+            fine: [],
+            passable: [],
+            no: []
+        },
+        cube: {
+            cube: [],
+            notes: ""
+        },
+        notes: [""]
+    }, "product_08": {
+        priority: "",
+        collection_item_priority: "dont_bother",
+        skills: ["", "", ""],
+        overloads: {
+            ideal: [],
+            good: [],
+            fine: [],
+            passable: [],
+            no: []
+        },
+        cube: {
+            cube: [],
+            notes: ""
+        },
+        notes: [""]
+    }, "product_12": {
+        priority: "",
+        collection_item_priority: "dont_bother",
+        skills: ["", "", ""],
+        overloads: {
+            ideal: [],
+            good: [],
+            fine: [],
+            passable: [],
+            no: []
+        },
+        cube: {
+            cube: [],
+            notes: ""
+        },
+        notes: [""]
+    }, "product_23": {
+        priority: "",
+        collection_item_priority: "dont_bother",
+        skills: ["", "", ""],
+        overloads: {
+            ideal: [],
+            good: [],
+            fine: [],
+            passable: [],
+            no: []
+        },
+        cube: {
+            cube: [],
+            notes: ""
+        },
+        notes: [""]
+    }, "soldier_eg": {
+        priority: "",
+        collection_item_priority: "dont_bother",
+        skills: ["", "", ""],
+        overloads: {
+            ideal: [],
+            good: [],
+            fine: [],
+            passable: [],
+            no: []
+        },
+        cube: {
+            cube: [],
+            notes: ""
+        },
+        notes: [""]
+    }, "soldier_fa": {
+        priority: "",
+        collection_item_priority: "dont_bother",
+        skills: ["", "", ""],
+        overloads: {
+            ideal: [],
+            good: [],
+            fine: [],
+            passable: [],
+            no: []
+        },
+        cube: {
+            cube: [],
+            notes: ""
+        },
+        notes: [""]
+    }, "soldier_ow": {
+        priority: "",
+        collection_item_priority: "dont_bother",
+        skills: ["", "", ""],
+        overloads: {
+            ideal: [],
+            good: [],
+            fine: [],
+            passable: [],
+            no: []
+        },
+        cube: {
+            cube: [],
+            notes: ""
+        },
+        notes: [""]
+    }, "idoll_flower": {
+        priority: "",
+        collection_item_priority: "dont_bother",
+        skills: ["", "", ""],
+        overloads: {
+            ideal: [],
+            good: [],
+            fine: [],
+            passable: [],
+            no: []
+        },
+        cube: {
+            cube: [],
+            notes: ""
+        },
+        notes: [""]
+    }, "idoll_ocean": {
+        priority: "",
+        collection_item_priority: "dont_bother",
+        skills: ["", "", ""],
+        overloads: {
+            ideal: [],
+            good: [],
+            fine: [],
+            passable: [],
+            no: []
+        },
+        cube: {
+            cube: [],
+            notes: ""
+        },
+        notes: [""]
+    }, "idoll_sun": {
+        priority: "",
+        collection_item_priority: "dont_bother",
+        skills: ["", "", ""],
+        overloads: {
+            ideal: [],
+            good: [],
+            fine: [],
+            passable: [],
+            no: []
+        },
+        cube: {
+            cube: [],
+            notes: ""
+        },
+        notes: [""]
+    }, "template": {
         priority: "",
         collection_item_priority: "",
         skills: ["", "", ""],
