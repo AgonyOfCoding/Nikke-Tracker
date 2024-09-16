@@ -1,6 +1,6 @@
 # NIT - NIKKE Investment Tracker
 
-This is a React app for keeping track of NIKKE investent like skill levels and Overload lines.
+This is a React app for keeping track of Nikke investents like skill levels and overload lines.
 
 ## Changelog
 
@@ -9,32 +9,38 @@ This is a React app for keeping track of NIKKE investent like skill levels and O
 ## Installation instructions
 
 Electron-based desktop application is planned, but for now only way to install is to run the source code locally
-<ol>
-    <li>Install Node. npm comes bundled with it and is required. Install git.</li>
-    <li>Clone the project with git. Open terminal/etc. where you want the code to go and run `git clone https://github.com/AgonyOfCoding/Nikke-Tracker`</li>
-    <li>Run:</li>
-</ol>
-```
-npm install
-npm start
-```
 
-The app opens on the default browser.
+1. Install Node. npm comes bundled with it and is required. Install git.
+2. Clone the project with git. Open terminal/etc. where you want to have the code and run:
+    
+  ```shell
+  git clone https://github.com/AgonyOfCoding/Nikke-Tracker
+  ```
+    
+3. Run the npm scripts:
+
+  ```shell
+  npm install
+  npm start
+  ```
+
+The app opens on the default browser. The install script is only required the first time. Stop the app with ctrl+c in the terminal or just close the terminal and browser. Run the start script again to restart.
+
+## Update
+
+Clone the source code again. Make sure not to lose the files in "server/data" folder or you will lose the tracked investments. The safe bet is to save the data folder somewhere else, delete everything else, clone the project and then move the data folder into the new server folder.
 
 ## Features
 
 The main feature of NIT is to provide a list of Nikke entries that can be filtered and sorted in any ways I thought would be useful. Each entry combines three sets of information about that Nikke into a semi-compact space:
-<ol>
-    <li>Static data. This is the general information about that Nikke. Name, portrait, burst stage, weapon type, element, manufacturer, skill info, etc.</li>
-    <li>Your investment. The primary information of interest are the skill levels and possible Oveload lines, but core and bond levels as well as collection item status can also be tracked.</li>
-    <li>Recommendations such as what skill levels and Overload lines are good for different Nikkes. Currently, there are four sources for the recommendations:</li>
-        <ol>
-            <li>[Nikke.gg](https://nikke.gg/)</li>
-            <li>[Prydwen](https://www.prydwen.gg/nikke/)</li>
-            <li>[skyJLV](https://docs.google.com/spreadsheets/d/1SGm58euwr0KntlWU4SEJrhNFTFNkKp7h41HiSKMF2QQ/edit?gid=668853492#gid=668853492)</li>
-            <li>[Keripo's PVP tierlist](https://tinyurl.com/nikke-pvp-tierlist)</li>
-        </ol>
-</ol>
+
+1. Static data. This is the general information about that Nikke. Name, portrait, burst stage, weapon type, element, manufacturer, skill info, etc.
+2. Your investment. The primary information of interest are the skill levels and possible Oveload lines, but core and bond levels as well as collection item status can also be tracked.
+3. Recommendations such as what skill levels and Overload lines are good for different Nikkes. Currently, there are four sources for the recommendations:
+  - [Nikke.gg](https://nikke.gg/)
+  - [Prydwen](https://www.prydwen.gg/nikke/)
+  - [skyJLV](https://docs.google.com/spreadsheets/d/1SGm58euwr0KntlWU4SEJrhNFTFNkKp7h41HiSKMF2QQ/edit?gid=668853492#gid=668853492)
+  - [Keripo's PVP tierlist](https://tinyurl.com/nikke-pvp-tierlist)
 
 Nikkes can also be favorited for quick access through favorite filtering.
 
@@ -70,14 +76,12 @@ Collection item rarities and phases can be tracked. There is also a collection i
 
 The Teams-feature is a way to quickly access the information about Nikkes you are using for different content. Each content type has a number of five-nikke teams, where you can select the Nikkes as well as what harmony cube you want to use. The content types are:
 
-<ol>
-    <li>Campaign. One team for the destroy-stages and another for defend-stages. This division is mainly because Red Hood can be used as the sole Burst I Nikke if the stage can be finished within two burst rotations. The third team (Boss) can be useful if stuck on a specific campaign boss such as Mother Whale...</li>
-    <li>Solo Raid. Five teams obviously.</li>
-    <li>Anomaly Interception. One team for each of the five bosses.</li>
-    <li>Tribe Tower. One team for each tower.</li>
-    <li>Shooting Range.</li>
-    <li>PVP. One team for Rookie Arena and three for SP. PVP enthusiasts would probably like dozens of teams but it's not exactly my favorite game mode so these are enough for me.</li>
-</ol>
+- <b>Campaign.</b> One team for the destroy-stages and another for defend-stages. This division is mainly because Red Hood can be used as the sole Burst I Nikke if the stage can be finished within two burst rotations. The third team (Boss) can be useful if stuck on a specific campaign boss such as Mother Whale...
+- <b>Solo Raid.</b> Five teams obviously.
+- <b>Anomaly Interception.</b> One team for each of the five bosses.
+- <b>Tribe Tower.</b> One team for each tower.
+- <b>Shooting Range.</b>
+- <b>PVP.</b> One team for Rookie Arena and three for SP. PVP enthusiasts would probably like dozens of teams but it's not exactly my favorite game mode so these have been enough for me.
 
 Beside the cubes, the element of each Nikke is shown on the summary tab. Clicking the element icons on the navbar highlight that element on the teams. This can be useful for solo raid bosses with element shields to quickly see that each team has it covered and which Nikkes can be used to destroy the shield.
 
